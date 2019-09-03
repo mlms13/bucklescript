@@ -119,13 +119,16 @@ var default_styles = /* record */[
   /* error : constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* Bold */0,
     "1": /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "FG",
+        length: 1,
         "0": /* Red */1
       },
       "1": /* [] */0
@@ -134,13 +137,16 @@ var default_styles = /* record */[
   /* warning : constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* Bold */0,
     "1": /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "FG",
+        length: 1,
         "0": /* Magenta */5
       },
       "1": /* [] */0
@@ -149,6 +155,7 @@ var default_styles = /* record */[
   /* loc : constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* Bold */0,
     "1": /* [] */0
   }
@@ -171,6 +178,7 @@ function style_of_tag(s) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* Dim */2,
                 "1": /* [] */0
               };
@@ -180,9 +188,11 @@ function style_of_tag(s) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* constructor */{
                   tag: 0,
                   name: "FG",
+                  length: 1,
                   "0": /* Cyan */6
                 },
                 "1": /* [] */0
@@ -191,13 +201,16 @@ function style_of_tag(s) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* Bold */0,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "FG",
+                    length: 1,
                     "0": /* Yellow */3
                   },
                   "1": /* [] */0
@@ -246,6 +259,7 @@ function set_color_tag_handling(ppf) {
         return ansi_of_style_l(/* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* Reset */1,
                     "1": /* [] */0
                   });
@@ -278,14 +292,17 @@ var first = /* record */[/* contents */true];
 var formatter_l = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": Format.std_formatter,
   "1": /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": Format.err_formatter,
     "1": /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": Format.str_formatter,
       "1": /* [] */0
     }
@@ -453,6 +470,7 @@ function loop(i) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": i,
             "1": loop(i - 1 | 0)
           };
@@ -469,10 +487,12 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 1,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": 2,
                   "1": /* [] */0
                 }
@@ -481,6 +501,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 3,
                 "1": /* [] */0
               };
@@ -488,6 +509,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 4,
                 "1": /* [] */0
               };
@@ -495,6 +517,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 5,
                 "1": /* [] */0
               };
@@ -502,34 +525,42 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 32,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": 33,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": 34,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": 35,
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": 36,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": 37,
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": 38,
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": 39,
                               "1": /* [] */0
                             }
@@ -544,6 +575,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 6,
                 "1": /* [] */0
               };
@@ -551,6 +583,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 7,
                 "1": /* [] */0
               };
@@ -558,6 +591,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 8,
                 "1": /* [] */0
               };
@@ -565,6 +599,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 9,
                 "1": /* [] */0
               };
@@ -572,6 +607,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 10,
                 "1": /* [] */0
               };
@@ -579,10 +615,12 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 11,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": 12,
                   "1": /* [] */0
                 }
@@ -591,6 +629,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 13,
                 "1": /* [] */0
               };
@@ -609,54 +648,67 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 14,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": 15,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": 16,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": 17,
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": 18,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": 19,
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": 20,
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": 21,
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": 22,
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": 23,
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": 24,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
+                                      length: 2,
                                       "0": 25,
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
+                                        length: 2,
                                         "0": 30,
                                         "1": /* [] */0
                                       }
@@ -676,6 +728,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 26,
                 "1": /* [] */0
               };
@@ -683,6 +736,7 @@ function letter(param) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": 27,
                 "1": /* [] */0
               };
@@ -947,14 +1001,17 @@ function message(param) {
               return $$String.concat(" ", /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": "the following methods are overridden by the class",
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": lab,
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": ":\n ",
                               "1": slist
                             }
@@ -991,14 +1048,17 @@ function message(param) {
               return $$String.concat(" ", /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": "the following instance variables are overridden by the class",
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": lab$1,
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": ":\n ",
                               "1": slist$1
                             }
@@ -1036,41 +1096,51 @@ function message(param) {
           return Curry._4(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "the ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* " " */32,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
+                                    length: 2,
                                     "0": " is defined in both types ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
+                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
+                                        length: 2,
                                         "0": " and ",
                                         "1": /* constructor */{
                                           tag: 2,
                                           name: "String",
+                                          length: 2,
                                           "0": /* No_padding */0,
                                           "1": /* constructor */{
                                             tag: 12,
                                             name: "Char_literal",
+                                            length: 2,
                                             "0": /* "." */46,
                                             "1": /* End_of_format */0
                                           }
@@ -1088,29 +1158,36 @@ function message(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "files ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": " and ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
+                                    length: 2,
                                     "0": " both define a module named ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
+                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* End_of_format */0
                                     }
@@ -1194,25 +1271,31 @@ function message(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "this open statement shadows the ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": " identifier ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
+                                    length: 2,
                                     "0": " (which is later used)",
                                     "1": /* End_of_format */0
                                   }
@@ -1226,25 +1309,31 @@ function message(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "this open statement shadows the ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* " " */32,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
+                                    length: 2,
                                     "0": " (which is later used)",
                                     "1": /* End_of_format */0
                                   }
@@ -1258,21 +1347,26 @@ function message(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "illegal environment variable ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": " : ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* End_of_format */0
                                 }
@@ -1285,21 +1379,26 @@ function message(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "illegal payload for attribute '",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": "'.\n",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* End_of_format */0
                                 }
@@ -1313,21 +1412,26 @@ function message(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "implicit elimination of optional argument",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* " " */32,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* End_of_format */0
                                 }
@@ -1363,19 +1467,23 @@ function print(ppf, w) {
   Curry._2(Format.fprintf(ppf, /* constructor */{
             tag: 0,
             name: "Format",
+            length: 2,
             "0": /* constructor */{
               tag: 4,
               name: "Int",
+              length: 4,
               "0": /* Int_d */0,
               "1": /* No_padding */0,
               "2": /* No_precision */0,
               "3": /* constructor */{
                 tag: 11,
                 name: "String_literal",
+                length: 2,
                 "0": ": ",
                 "1": /* constructor */{
                   tag: 2,
                   name: "String",
+                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* End_of_format */0
                 }
@@ -1523,33 +1631,40 @@ function highlight_dumb(ppf, lb, loc) {
   Curry._2(Format.fprintf(ppf, /* constructor */{
             tag: 0,
             name: "Format",
+            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
+              length: 2,
               "0": "Characters ",
               "1": /* constructor */{
                 tag: 4,
                 name: "Int",
+                length: 4,
                 "0": /* Int_i */3,
                 "1": /* No_padding */0,
                 "2": /* No_precision */0,
                 "3": /* constructor */{
                   tag: 12,
                   name: "Char_literal",
+                  length: 2,
                   "0": /* "-" */45,
                   "1": /* constructor */{
                     tag: 4,
                     name: "Int",
+                    length: 4,
                     "0": /* Int_i */3,
                     "1": /* No_padding */0,
                     "2": /* No_precision */0,
                     "3": /* constructor */{
                       tag: 12,
                       name: "Char_literal",
+                      length: 2,
                       "0": /* ":" */58,
                       "1": /* constructor */{
                         tag: 17,
                         name: "Formatting_lit",
+                        length: 2,
                         "0": /* Flush_newline */4,
                         "1": /* End_of_format */0
                       }
@@ -1592,13 +1707,16 @@ function highlight_dumb(ppf, lb, loc) {
         Format.fprintf(ppf, /* constructor */{
               tag: 0,
               name: "Format",
+              length: 2,
               "0": /* constructor */{
                 tag: 17,
                 name: "Formatting_lit",
+                length: 2,
                 "0": /* Flush_newline */4,
                 "1": /* constructor */{
                   tag: 11,
                   name: "String_literal",
+                  length: 2,
                   "0": "  ",
                   "1": /* End_of_format */0
                 }
@@ -1616,9 +1734,11 @@ function highlight_dumb(ppf, lb, loc) {
         Format.fprintf(ppf, /* constructor */{
               tag: 0,
               name: "Format",
+              length: 2,
               "0": /* constructor */{
                 tag: 17,
                 name: "Formatting_lit",
+                length: 2,
                 "0": /* Flush_newline */4,
                 "1": /* End_of_format */0
               },
@@ -1729,9 +1849,11 @@ function print_filename(ppf, file) {
   return Curry._1(Format.fprintf(ppf, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
+                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* End_of_format */0
                   },
@@ -1762,6 +1884,7 @@ function print_loc(ppf, loc) {
     if (highlight_locations(ppf, /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": loc,
             "1": /* [] */0
           })) {
@@ -1770,23 +1893,28 @@ function print_loc(ppf, loc) {
       return Curry._2(Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Characters ",
                         "1": /* constructor */{
                           tag: 4,
                           name: "Int",
+                          length: 4,
                           "0": /* Int_i */3,
                           "1": /* No_padding */0,
                           "2": /* No_precision */0,
                           "3": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
+                            length: 2,
                             "0": /* "-" */45,
                             "1": /* constructor */{
                               tag: 4,
                               name: "Int",
+                              length: 4,
                               "0": /* Int_i */3,
                               "1": /* No_padding */0,
                               "2": /* No_precision */0,
@@ -1802,22 +1930,28 @@ function print_loc(ppf, loc) {
     Curry._5(Format.fprintf(ppf, /* constructor */{
               tag: 0,
               name: "Format",
+              length: 2,
               "0": /* constructor */{
                 tag: 2,
                 name: "String",
+                length: 2,
                 "0": /* No_padding */0,
                 "1": /* constructor */{
                   tag: 18,
                   name: "Formatting_gen",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Open_tag",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "<loc>",
                         "1": /* End_of_format */0
                       },
@@ -1827,13 +1961,16 @@ function print_loc(ppf, loc) {
                   "1": /* constructor */{
                     tag: 15,
                     name: "Alpha",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 2,
                       name: "String",
+                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 4,
                         name: "Int",
+                        length: 4,
                         "0": /* Int_i */3,
                         "1": /* No_padding */0,
                         "2": /* No_precision */0,
@@ -1849,23 +1986,28 @@ function print_loc(ppf, loc) {
       Curry._4(Format.fprintf(ppf, /* constructor */{
                 tag: 0,
                 name: "Format",
+                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
+                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 4,
                     name: "Int",
+                    length: 4,
                     "0": /* Int_i */3,
                     "1": /* No_padding */0,
                     "2": /* No_precision */0,
                     "3": /* constructor */{
                       tag: 2,
                       name: "String",
+                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 4,
                         name: "Int",
+                        length: 4,
                         "0": /* Int_i */3,
                         "1": /* No_padding */0,
                         "2": /* No_precision */0,
@@ -1880,9 +2022,11 @@ function print_loc(ppf, loc) {
     return Format.fprintf(ppf, /* constructor */{
                 tag: 0,
                 name: "Format",
+                length: 2,
                 "0": /* constructor */{
                   tag: 17,
                   name: "Formatting_lit",
+                  length: 2,
                   "0": /* Close_tag */1,
                   "1": /* End_of_format */0
                 },
@@ -1896,6 +2040,7 @@ function print$1(ppf, loc) {
   if (loc[/* loc_start */0][/* pos_fname */0] === "//toplevel//" && highlight_locations(ppf, /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": loc,
           "1": /* [] */0
         })) {
@@ -1904,18 +2049,23 @@ function print$1(ppf, loc) {
     return Curry._3(Format.fprintf(ppf, /* constructor */{
                     tag: 0,
                     name: "Format",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 18,
                       name: "Formatting_gen",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Open_tag",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "<loc>",
                             "1": /* End_of_format */0
                           },
@@ -1925,17 +2075,21 @@ function print$1(ppf, loc) {
                       "1": /* constructor */{
                         tag: 15,
                         name: "Alpha",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 17,
                           name: "Formatting_lit",
+                          length: 2,
                           "0": /* Close_tag */1,
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 17,
                               name: "Formatting_lit",
+                              length: 2,
                               "0": /* Flush_newline */4,
                               "1": /* End_of_format */0
                             }
@@ -1957,18 +2111,23 @@ function print_error(ppf, loc) {
   Curry._1(Format.fprintf(ppf$1, /* constructor */{
             tag: 0,
             name: "Format",
+            length: 2,
             "0": /* constructor */{
               tag: 18,
               name: "Formatting_gen",
+              length: 2,
               "0": /* constructor */{
                 tag: 0,
                 name: "Open_tag",
+                length: 1,
                 "0": /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
+                    length: 2,
                     "0": "<error>",
                     "1": /* End_of_format */0
                   },
@@ -1978,14 +2137,17 @@ function print_error(ppf, loc) {
               "1": /* constructor */{
                 tag: 2,
                 name: "String",
+                length: 2,
                 "0": /* No_padding */0,
                 "1": /* constructor */{
                   tag: 17,
                   name: "Formatting_lit",
+                  length: 2,
                   "0": /* Close_tag */1,
                   "1": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
+                    length: 2,
                     "0": /* ":" */58,
                     "1": /* End_of_format */0
                   }
@@ -2004,18 +2166,23 @@ function default_warning_printer(loc, ppf, w) {
     return Curry._3(Format.fprintf(ppf, /* constructor */{
                     tag: 0,
                     name: "Format",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 18,
                       name: "Formatting_gen",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Open_tag",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "<warning>",
                             "1": /* End_of_format */0
                           },
@@ -2025,21 +2192,26 @@ function default_warning_printer(loc, ppf, w) {
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
+                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 17,
                           name: "Formatting_lit",
+                          length: 2,
                           "0": /* Close_tag */1,
                           "1": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
+                            length: 2,
                             "0": /* " " */32,
                             "1": /* constructor */{
                               tag: 15,
                               name: "Alpha",
+                              length: 1,
                               "0": /* constructor */{
                                 tag: 17,
                                 name: "Formatting_lit",
+                                length: 2,
                                 "0": /* Flush_newline */4,
                                 "1": /* End_of_format */0
                               }
@@ -2134,6 +2306,7 @@ function register_error_of_exn(f) {
   error_of_exn[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": f,
     "1": error_of_exn[0]
   };
@@ -2144,12 +2317,15 @@ function error_of_printer(loc, print, x) {
   return Curry._2(errorf(loc, undefined, undefined, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 15,
                     name: "Alpha",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 17,
                       name: "Formatting_lit",
+                      length: 2,
                       "0": /* FFlush */2,
                       "1": /* End_of_format */0
                     }
@@ -2163,13 +2339,16 @@ register_error_of_exn((function (param) {
           return Curry._1(errorf(in_file(input_name[0]), undefined, undefined, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "I/O error: ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -2180,19 +2359,23 @@ register_error_of_exn((function (param) {
           return Curry._1(errorf(in_file(input_name[0]), undefined, undefined, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Some fatal warnings were triggered (",
                             "1": /* constructor */{
                               tag: 4,
                               name: "Int",
+                              length: 4,
                               "0": /* Int_d */0,
                               "1": /* No_padding */0,
                               "2": /* No_precision */0,
                               "3": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": " occurrences)",
                                 "1": /* End_of_format */0
                               }
@@ -2406,6 +2589,7 @@ function warn_bad_docstrings(param) {
   if (is_active(/* constructor */{
           tag: 33,
           name: "Bad_docstring",
+          length: 1,
           "0": true
         })) {
     return List.iter((function (ds) {
@@ -2415,6 +2599,7 @@ function warn_bad_docstrings(param) {
                         return prerr_warning(ds[/* ds_loc */1], /* constructor */{
                                     tag: 33,
                                     name: "Bad_docstring",
+                                    length: 1,
                                     "0": true
                                   });
                     case 1 :
@@ -2425,6 +2610,7 @@ function warn_bad_docstrings(param) {
                           return prerr_warning(ds[/* ds_loc */1], /* constructor */{
                                       tag: 33,
                                       name: "Bad_docstring",
+                                      length: 1,
                                       "0": false
                                     });
                         } else {
@@ -2448,6 +2634,7 @@ function docstring(body, loc) {
   docstrings[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": ds,
     "1": docstrings[0]
   };
@@ -2468,9 +2655,11 @@ function docs_attr(ds) {
   var exp_000 = /* pexp_desc : constructor */{
     tag: 1,
     name: "Pexp_constant",
+    length: 1,
     "0": /* constructor */{
       tag: 2,
       name: "Const_string",
+      length: 2,
       "0": ds[/* ds_body */0],
       "1": undefined
     }
@@ -2484,6 +2673,7 @@ function docs_attr(ds) {
   var item_000 = /* pstr_desc : constructor */{
     tag: 0,
     name: "Pstr_eval",
+    length: 2,
     "0": exp,
     "1": /* [] */0
   };
@@ -2497,9 +2687,11 @@ function docs_attr(ds) {
           /* constructor */{
             tag: 0,
             name: "PStr",
+            length: 1,
             "0": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": item,
               "1": /* [] */0
             }
@@ -2512,6 +2704,7 @@ function add_docs_attrs(docs, attrs) {
   var attrs$1 = match !== undefined ? /* constructor */({
         tag: 0,
         name: "::",
+        length: 2,
         "0": docs_attr(match),
         "1": attrs
       }) : attrs;
@@ -2520,6 +2713,7 @@ function add_docs_attrs(docs, attrs) {
     return Pervasives.$at(attrs$1, /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": docs_attr(match$1),
                 "1": /* [] */0
               });
@@ -2533,6 +2727,7 @@ function add_info_attrs(info, attrs) {
     return Pervasives.$at(attrs, /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": docs_attr(info),
                 "1": /* [] */0
               });
@@ -2550,9 +2745,11 @@ function text_attr(ds) {
   var exp_000 = /* pexp_desc : constructor */{
     tag: 1,
     name: "Pexp_constant",
+    length: 1,
     "0": /* constructor */{
       tag: 2,
       name: "Const_string",
+      length: 2,
       "0": ds[/* ds_body */0],
       "1": undefined
     }
@@ -2566,6 +2763,7 @@ function text_attr(ds) {
   var item_000 = /* pstr_desc : constructor */{
     tag: 0,
     name: "Pstr_eval",
+    length: 2,
     "0": exp,
     "1": /* [] */0
   };
@@ -2579,9 +2777,11 @@ function text_attr(ds) {
           /* constructor */{
             tag: 0,
             name: "PStr",
+            length: 1,
             "0": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": item,
               "1": /* [] */0
             }
@@ -2628,6 +2828,7 @@ function get_docstrings(dsl) {
         _acc = /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": ds,
           "1": acc
         };
@@ -2877,6 +3078,7 @@ function attr(d, a) {
           /* ptyp_attributes */Pervasives.$at(d[/* ptyp_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -2900,6 +3102,7 @@ function attr$1(d, a) {
           /* ppat_attributes */Pervasives.$at(d[/* ppat_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -2923,6 +3126,7 @@ function attr$2(d, a) {
           /* pexp_attributes */Pervasives.$at(d[/* pexp_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -2933,6 +3137,7 @@ function ident(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 0,
               name: "Pexp_ident",
+              length: 1,
               "0": a
             });
 }
@@ -2941,6 +3146,7 @@ function constant(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 1,
               name: "Pexp_constant",
+              length: 1,
               "0": a
             });
 }
@@ -2949,6 +3155,7 @@ function let_(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 2,
               name: "Pexp_let",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -2959,6 +3166,7 @@ function fun_(loc, attrs, a, b, c, d) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 4,
               name: "Pexp_fun",
+              length: 4,
               "0": a,
               "1": b,
               "2": c,
@@ -2970,6 +3178,7 @@ function function_(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 3,
               name: "Pexp_function",
+              length: 1,
               "0": a
             });
 }
@@ -2978,6 +3187,7 @@ function apply(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 5,
               name: "Pexp_apply",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -2987,6 +3197,7 @@ function match_(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 6,
               name: "Pexp_match",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -2996,6 +3207,7 @@ function try_(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 7,
               name: "Pexp_try",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3005,6 +3217,7 @@ function tuple(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 8,
               name: "Pexp_tuple",
+              length: 1,
               "0": a
             });
 }
@@ -3013,6 +3226,7 @@ function construct(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 9,
               name: "Pexp_construct",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3022,6 +3236,7 @@ function variant(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 10,
               name: "Pexp_variant",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3031,6 +3246,7 @@ function record(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 11,
               name: "Pexp_record",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3040,6 +3256,7 @@ function field(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 12,
               name: "Pexp_field",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3049,6 +3266,7 @@ function setfield(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 13,
               name: "Pexp_setfield",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3059,6 +3277,7 @@ function array(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 14,
               name: "Pexp_array",
+              length: 1,
               "0": a
             });
 }
@@ -3067,6 +3286,7 @@ function ifthenelse(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 15,
               name: "Pexp_ifthenelse",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3077,6 +3297,7 @@ function sequence(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 16,
               name: "Pexp_sequence",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3086,6 +3307,7 @@ function while_(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 17,
               name: "Pexp_while",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3095,6 +3317,7 @@ function for_(loc, attrs, a, b, c, d, e) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 18,
               name: "Pexp_for",
+              length: 5,
               "0": a,
               "1": b,
               "2": c,
@@ -3107,6 +3330,7 @@ function constraint_(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 19,
               name: "Pexp_constraint",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3116,6 +3340,7 @@ function coerce(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 20,
               name: "Pexp_coerce",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3126,6 +3351,7 @@ function send(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 21,
               name: "Pexp_send",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3135,6 +3361,7 @@ function new_(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 22,
               name: "Pexp_new",
+              length: 1,
               "0": a
             });
 }
@@ -3143,6 +3370,7 @@ function setinstvar(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 23,
               name: "Pexp_setinstvar",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3152,6 +3380,7 @@ function override(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 24,
               name: "Pexp_override",
+              length: 1,
               "0": a
             });
 }
@@ -3160,6 +3389,7 @@ function letmodule(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 25,
               name: "Pexp_letmodule",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3170,6 +3400,7 @@ function assert_(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 26,
               name: "Pexp_assert",
+              length: 1,
               "0": a
             });
 }
@@ -3178,6 +3409,7 @@ function lazy_(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 27,
               name: "Pexp_lazy",
+              length: 1,
               "0": a
             });
 }
@@ -3186,6 +3418,7 @@ function poly(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 28,
               name: "Pexp_poly",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3195,6 +3428,7 @@ function object_(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 29,
               name: "Pexp_object",
+              length: 1,
               "0": a
             });
 }
@@ -3203,6 +3437,7 @@ function newtype(loc, attrs, a, b) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 30,
               name: "Pexp_newtype",
+              length: 2,
               "0": a,
               "1": b
             });
@@ -3212,6 +3447,7 @@ function pack(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 31,
               name: "Pexp_pack",
+              length: 1,
               "0": a
             });
 }
@@ -3220,6 +3456,7 @@ function open_(loc, attrs, a, b, c) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 32,
               name: "Pexp_open",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3230,6 +3467,7 @@ function extension(loc, attrs, a) {
   return mk$2(loc, attrs, /* constructor */{
               tag: 33,
               name: "Pexp_extension",
+              length: 1,
               "0": a
             });
 }
@@ -3259,6 +3497,7 @@ function attr$3(d, a) {
           /* pmty_attributes */Pervasives.$at(d[/* pmty_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3269,6 +3508,7 @@ function alias(loc, attrs, a) {
   return mk$3(loc, attrs, /* constructor */{
               tag: 6,
               name: "Pmty_alias",
+              length: 1,
               "0": a
             });
 }
@@ -3290,6 +3530,7 @@ function attr$4(d, a) {
           /* pmod_attributes */Pervasives.$at(d[/* pmod_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3311,6 +3552,7 @@ function text(txt) {
                 return mk$5(loc, /* constructor */{
                             tag: 11,
                             name: "Psig_attribute",
+                            length: 1,
                             "0": a
                           });
               }), txt);
@@ -3331,6 +3573,7 @@ function text$1(txt) {
                 return mk$6(loc, /* constructor */{
                             tag: 13,
                             name: "Pstr_attribute",
+                            length: 1,
                             "0": a
                           });
               }), txt);
@@ -3353,6 +3596,7 @@ function attr$5(d, a) {
           /* pcl_attributes */Pervasives.$at(d[/* pcl_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3376,6 +3620,7 @@ function attr$6(d, a) {
           /* pcty_attributes */Pervasives.$at(d[/* pcty_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3397,6 +3642,7 @@ function inherit_(loc, attrs, a) {
   return mk$9(loc, attrs, undefined, /* constructor */{
               tag: 0,
               name: "Pctf_inherit",
+              length: 1,
               "0": a
             });
 }
@@ -3405,6 +3651,7 @@ function val_(loc, attrs, a, b, c, d) {
   return mk$9(loc, attrs, undefined, /* constructor */{
               tag: 1,
               name: "Pctf_val",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b,
@@ -3418,6 +3665,7 @@ function method_(loc, attrs, a, b, c, d) {
   return mk$9(loc, attrs, undefined, /* constructor */{
               tag: 2,
               name: "Pctf_method",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b,
@@ -3431,6 +3679,7 @@ function constraint_$1(loc, attrs, a, b) {
   return mk$9(loc, attrs, undefined, /* constructor */{
               tag: 3,
               name: "Pctf_constraint",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b
@@ -3442,6 +3691,7 @@ function extension$1(loc, attrs, a) {
   return mk$9(loc, attrs, undefined, /* constructor */{
               tag: 5,
               name: "Pctf_extension",
+              length: 1,
               "0": a
             });
 }
@@ -3450,6 +3700,7 @@ function attribute(loc, a) {
   return mk$9(loc, undefined, undefined, /* constructor */{
               tag: 4,
               name: "Pctf_attribute",
+              length: 1,
               "0": a
             });
 }
@@ -3467,6 +3718,7 @@ function attr$7(d, a) {
           /* pctf_attributes */Pervasives.$at(d[/* pctf_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3488,6 +3740,7 @@ function inherit_$1(loc, attrs, a, b, c) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 0,
               name: "Pcf_inherit",
+              length: 3,
               "0": a,
               "1": b,
               "2": c
@@ -3498,6 +3751,7 @@ function val_$1(loc, attrs, a, b, c) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 1,
               name: "Pcf_val",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b,
@@ -3510,6 +3764,7 @@ function method_$1(loc, attrs, a, b, c) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 2,
               name: "Pcf_method",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b,
@@ -3522,6 +3777,7 @@ function constraint_$2(loc, attrs, a, b) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 3,
               name: "Pcf_constraint",
+              length: 1,
               "0": /* tuple */[
                 a,
                 b
@@ -3533,6 +3789,7 @@ function initializer_(loc, attrs, a) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 4,
               name: "Pcf_initializer",
+              length: 1,
               "0": a
             });
 }
@@ -3541,6 +3798,7 @@ function extension$2(loc, attrs, a) {
   return mk$10(loc, attrs, undefined, /* constructor */{
               tag: 6,
               name: "Pcf_extension",
+              length: 1,
               "0": a
             });
 }
@@ -3549,6 +3807,7 @@ function attribute$1(loc, a) {
   return mk$10(loc, undefined, undefined, /* constructor */{
               tag: 5,
               name: "Pcf_attribute",
+              length: 1,
               "0": a
             });
 }
@@ -3563,6 +3822,7 @@ function virtual_(ct) {
   return /* constructor */{
           tag: 0,
           name: "Cfk_virtual",
+          length: 1,
           "0": ct
         };
 }
@@ -3571,6 +3831,7 @@ function concrete(o, e) {
   return /* constructor */{
           tag: 1,
           name: "Cfk_concrete",
+          length: 2,
           "0": o,
           "1": e
         };
@@ -3583,6 +3844,7 @@ function attr$8(d, a) {
           /* pcf_attributes */Pervasives.$at(d[/* pcf_attributes */2], /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": a,
                 "1": /* [] */0
               })
@@ -3770,6 +4032,7 @@ function decl($staropt$star, $staropt$star$1, $staropt$star$2, $staropt$star$3, 
           /* pext_kind : constructor */{
             tag: 0,
             name: "Pext_decl",
+            length: 2,
             "0": args,
             "1": res
           },
@@ -3788,6 +4051,7 @@ function rebind($staropt$star, $staropt$star$1, $staropt$star$2, $staropt$star$3
           /* pext_kind : constructor */{
             tag: 1,
             name: "Pext_rebind",
+            length: 1,
             "0": lid
           },
           /* pext_loc */loc,
@@ -3874,20 +4138,25 @@ function prepare_error(param) {
         return Curry._1(errorf(param[2], /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": Curry._1(errorf(param[0], undefined, undefined, /* constructor */{
                                   tag: 0,
                                   name: "Format",
+                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
+                                    length: 2,
                                     "0": "This '",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
+                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
+                                        length: 2,
                                         "0": "' might be unmatched",
                                         "1": /* End_of_format */0
                                       }
@@ -3899,25 +4168,31 @@ function prepare_error(param) {
                       }, Curry._2(Printf.sprintf(/* constructor */{
                                 tag: 0,
                                 name: "Format",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
+                                  length: 2,
                                   "0": "Syntax error: '",
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
+                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
+                                      length: 2,
                                       "0": "' expected, the highlighted '",
                                       "1": /* constructor */{
                                         tag: 2,
                                         name: "String",
+                                        length: 2,
                                         "0": /* No_padding */0,
                                         "1": /* constructor */{
                                           tag: 11,
                                           name: "String_literal",
+                                          length: 2,
                                           "0": "' might be unmatched",
                                           "1": /* End_of_format */0
                                         }
@@ -3929,17 +4204,21 @@ function prepare_error(param) {
                               }), closing, opening), /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "Syntax error: '",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
+                              length: 2,
                               "0": "' expected",
                               "1": /* End_of_format */0
                             }
@@ -3951,17 +4230,21 @@ function prepare_error(param) {
         return Curry._1(errorf(param[0], undefined, undefined, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "Syntax error: ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
+                              length: 2,
                               "0": " expected.",
                               "1": /* End_of_format */0
                             }
@@ -3973,17 +4256,21 @@ function prepare_error(param) {
         return Curry._1(errorf(param[0], undefined, undefined, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "Syntax error: ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
+                              length: 2,
                               "0": " not expected.",
                               "1": /* End_of_format */0
                             }
@@ -3995,9 +4282,11 @@ function prepare_error(param) {
         return errorf(param[0], undefined, undefined, /* constructor */{
                     tag: 0,
                     name: "Format",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
+                      length: 2,
                       "0": "Syntax error: applicative paths of the form F(X).t are not supported when the option -no-app-func is set.",
                       "1": /* End_of_format */0
                     },
@@ -4008,25 +4297,31 @@ function prepare_error(param) {
         return Curry._2(errorf(param[0], undefined, undefined, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "In this scoped type, variable '",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
+                              length: 2,
                               "0": " is reserved for the local type ",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
+                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
+                                  length: 2,
                                   "0": /* "." */46,
                                   "1": /* End_of_format */0
                                 }
@@ -4040,9 +4335,11 @@ function prepare_error(param) {
         return errorf(param[0], undefined, undefined, /* constructor */{
                     tag: 0,
                     name: "Format",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
+                      length: 2,
                       "0": "Syntax error",
                       "1": /* End_of_format */0
                     },
@@ -4052,13 +4349,16 @@ function prepare_error(param) {
         return Curry._1(errorf(param[0], undefined, undefined, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "broken invariant in parsetree: ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* End_of_format */0
                           }
@@ -4132,13 +4432,16 @@ function mkoption(d) {
   return mk(loc, undefined, /* constructor */{
               tag: 3,
               name: "Ptyp_constr",
+              length: 2,
               "0": /* record */[
                 /* txt : constructor */{
                   tag: 1,
                   name: "Ldot",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Lident",
+                    length: 1,
                     "0": "*predef*"
                   },
                   "1": "option"
@@ -4148,6 +4451,7 @@ function mkoption(d) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": d,
                 "1": /* [] */0
               }
@@ -4175,10 +4479,12 @@ function mkoperator(name, pos) {
   return Curry._3(Ast_helper_Exp.mk, loc, undefined, /* constructor */{
               tag: 0,
               name: "Pexp_ident",
+              length: 1,
               "0": /* record */[
                 /* txt : constructor */{
                   tag: 0,
                   name: "Lident",
+                  length: 1,
                   "0": name
                 },
                 /* loc */loc
@@ -4190,6 +4496,7 @@ function mkpatvar(name, pos) {
   return mk$1(rhs_loc(pos), undefined, /* constructor */{
               tag: 0,
               name: "Ppat_var",
+              length: 1,
               "0": /* record */[
                 /* txt */name,
                 /* loc */rhs_loc(pos)
@@ -4213,10 +4520,12 @@ function mkinfix(arg1, name, arg2) {
   return mkexp(/* constructor */{
               tag: 5,
               name: "Pexp_apply",
+              length: 2,
               "0": mkoperator(name, 2),
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   "",
                   arg1
@@ -4224,6 +4533,7 @@ function mkinfix(arg1, name, arg2) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     "",
                     arg2
@@ -4246,10 +4556,12 @@ function mkexp_cons(consloc, args, loc) {
   return Curry._3(Ast_helper_Exp.mk, loc, undefined, /* constructor */{
               tag: 9,
               name: "Pexp_construct",
+              length: 2,
               "0": /* record */[
                 /* txt : constructor */{
                   tag: 0,
                   name: "Lident",
+                  length: 1,
                   "0": "::"
                 },
                 /* loc */consloc
@@ -4262,10 +4574,12 @@ function mkpat_cons(consloc, args, loc) {
   return mk$1(loc, undefined, /* constructor */{
               tag: 5,
               name: "Ppat_construct",
+              length: 2,
               "0": /* record */[
                 /* txt : constructor */{
                   tag: 0,
                   name: "Lident",
+                  length: 1,
                   "0": "::"
                 },
                 /* loc */consloc
@@ -4288,13 +4602,16 @@ function mktailexp(nilloc, param) {
     var arg = Curry._3(Ast_helper_Exp.mk, loc, undefined, /* constructor */{
           tag: 8,
           name: "Pexp_tuple",
+          length: 1,
           "0": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": e1,
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": exp_el,
               "1": /* [] */0
             }
@@ -4316,6 +4633,7 @@ function mktailexp(nilloc, param) {
     var nil_000 = /* txt : constructor */{
       tag: 0,
       name: "Lident",
+      length: 1,
       "0": "[]"
     };
     var nil = /* record */[
@@ -4325,6 +4643,7 @@ function mktailexp(nilloc, param) {
     return Curry._3(Ast_helper_Exp.mk, loc$1, undefined, /* constructor */{
                 tag: 9,
                 name: "Pexp_construct",
+                length: 2,
                 "0": nil,
                 "1": undefined
               });
@@ -4345,13 +4664,16 @@ function mktailpat(nilloc, param) {
     var arg = mk$1(loc, undefined, /* constructor */{
           tag: 4,
           name: "Ppat_tuple",
+          length: 1,
           "0": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": p1,
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": pat_pl,
               "1": /* [] */0
             }
@@ -4373,6 +4695,7 @@ function mktailpat(nilloc, param) {
     var nil_000 = /* txt : constructor */{
       tag: 0,
       name: "Lident",
+      length: 1,
       "0": "[]"
     };
     var nil = /* record */[
@@ -4382,6 +4705,7 @@ function mktailpat(nilloc, param) {
     return mk$1(loc$1, undefined, /* constructor */{
                 tag: 5,
                 name: "Ppat_construct",
+                length: 2,
                 "0": nil,
                 "1": undefined
               });
@@ -4393,6 +4717,7 @@ function mkstrexp(e, attrs) {
           /* pstr_desc : constructor */{
             tag: 0,
             name: "Pstr_eval",
+            length: 2,
             "0": e,
             "1": attrs
           },
@@ -4408,6 +4733,7 @@ function mkexp_constraint(e, param) {
       return ghexp(/* constructor */{
                   tag: 20,
                   name: "Pexp_coerce",
+                  length: 3,
                   "0": e,
                   "1": t1,
                   "2": t2
@@ -4416,6 +4742,7 @@ function mkexp_constraint(e, param) {
       return ghexp(/* constructor */{
                   tag: 19,
                   name: "Pexp_constraint",
+                  length: 2,
                   "0": e,
                   "1": t1
                 });
@@ -4424,6 +4751,7 @@ function mkexp_constraint(e, param) {
     return ghexp(/* constructor */{
                 tag: 20,
                 name: "Pexp_coerce",
+                length: 3,
                 "0": e,
                 "1": t1,
                 "2": t2
@@ -4445,9 +4773,11 @@ function array_function(str, name) {
           /* txt : constructor */{
             tag: 1,
             name: "Ldot",
+            length: 2,
             "0": /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": str
             },
             "1": fast[0] ? "unsafe_" + name : name
@@ -4462,6 +4792,7 @@ function unclosed(opening_name, opening_num, closing_name, closing_num) {
         /* constructor */{
           tag: 0,
           name: "Unclosed",
+          length: 4,
           "0": rhs_loc(opening_num),
           "1": opening_name,
           "2": rhs_loc(closing_num),
@@ -4476,6 +4807,7 @@ function expecting(pos, nonterm) {
         /* constructor */{
           tag: 1,
           name: "Expecting",
+          length: 2,
           "0": rhs_loc(pos),
           "1": nonterm
         }
@@ -4488,6 +4820,7 @@ function not_expecting(pos, nonterm) {
         /* constructor */{
           tag: 2,
           name: "Not_expecting",
+          length: 2,
           "0": rhs_loc(pos),
           "1": nonterm
         }
@@ -4499,12 +4832,15 @@ function bigarray_function(str, name) {
           /* txt : constructor */{
             tag: 1,
             name: "Ldot",
+            length: 2,
             "0": /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": /* constructor */{
                 tag: 0,
                 name: "Lident",
+                length: 1,
                 "0": "Bigarray"
               },
               "1": str
@@ -4523,6 +4859,7 @@ function bigarray_untuplify(exp) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": exp,
             "1": /* [] */0
           };
@@ -4533,11 +4870,13 @@ function exp_of_label(lbl, pos) {
   var rhs = /* constructor */{
     tag: 0,
     name: "Lident",
+    length: 1,
     "0": last(lbl)
   };
   return mkexp(/* constructor */{
               tag: 0,
               name: "Pexp_ident",
+              length: 1,
               "0": /* record */[
                 /* txt */rhs,
                 /* loc */rhs_loc(pos)
@@ -4550,6 +4889,7 @@ function pat_of_label(lbl, pos) {
   return mkpat(/* constructor */{
               tag: 0,
               name: "Ppat_var",
+              length: 1,
               "0": /* record */[
                 /* txt */rhs,
                 /* loc */rhs_loc(pos)
@@ -4564,6 +4904,7 @@ function check_variable(vl, loc, v) {
           /* constructor */{
             tag: 4,
             name: "Variable_in_scope",
+            length: 2,
             "0": loc,
             "1": v
           }
@@ -4587,6 +4928,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 0,
               name: "Ptyp_var",
+              length: 1,
               "0": x
             };
             break;
@@ -4594,6 +4936,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 1,
               name: "Ptyp_arrow",
+              length: 3,
               "0": match[0],
               "1": loop(match[1]),
               "2": loop(match[2])
@@ -4603,6 +4946,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 2,
               name: "Ptyp_tuple",
+              length: 1,
               "0": List.map(loop, match[0])
             };
             break;
@@ -4620,6 +4964,7 @@ function varify_constructors(var_names, t) {
                       desc = /* constructor */{
                         tag: 0,
                         name: "Ptyp_var",
+                        length: 1,
                         "0": s
                       };
                     } else {
@@ -4637,6 +4982,7 @@ function varify_constructors(var_names, t) {
               desc = /* constructor */{
                 tag: 3,
                 name: "Ptyp_constr",
+                length: 2,
                 "0": longident,
                 "1": List.map(loop, match[1])
               };
@@ -4646,6 +4992,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 4,
               name: "Ptyp_object",
+              length: 2,
               "0": List.map((function (param) {
                       return /* tuple */[
                               param[0],
@@ -4660,6 +5007,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 5,
               name: "Ptyp_class",
+              length: 2,
               "0": match[0],
               "1": List.map(loop, match[1])
             };
@@ -4670,6 +5018,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 6,
               name: "Ptyp_alias",
+              length: 2,
               "0": loop(match[0]),
               "1": string
             };
@@ -4678,6 +5027,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 7,
               name: "Ptyp_variant",
+              length: 3,
               "0": List.map(loop_row_field, match[0]),
               "1": match[1],
               "2": match[2]
@@ -4692,6 +5042,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 8,
               name: "Ptyp_poly",
+              length: 2,
               "0": string_lst,
               "1": loop(match[1])
             };
@@ -4701,6 +5052,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 9,
               name: "Ptyp_package",
+              length: 1,
               "0": /* tuple */[
                 match$2[0],
                 List.map((function (param) {
@@ -4717,6 +5069,7 @@ function varify_constructors(var_names, t) {
             desc = /* constructor */{
               tag: 10,
               name: "Ptyp_extension",
+              length: 1,
               "0": /* tuple */[
                 match$3[0],
                 match$3[1]
@@ -4737,12 +5090,14 @@ function varify_constructors(var_names, t) {
       return /* constructor */{
               tag: 1,
               name: "Rinherit",
+              length: 1,
               "0": loop(param[0])
             };
     } else {
       return /* constructor */{
               tag: 0,
               name: "Rtag",
+              length: 4,
               "0": param[0],
               "1": param[1],
               "2": param[2],
@@ -4757,6 +5112,7 @@ function wrap_type_annotation(newtypes, core_type, body) {
   var exp = mkexp(/* constructor */{
         tag: 19,
         name: "Pexp_constraint",
+        length: 2,
         "0": body,
         "1": core_type
       });
@@ -4764,6 +5120,7 @@ function wrap_type_annotation(newtypes, core_type, body) {
           return mkexp(/* constructor */{
                       tag: 30,
                       name: "Pexp_newtype",
+                      length: 2,
                       "0": newtype,
                       "1": exp
                     });
@@ -4773,6 +5130,7 @@ function wrap_type_annotation(newtypes, core_type, body) {
           ghtyp(/* constructor */{
                 tag: 8,
                 name: "Ptyp_poly",
+                length: 2,
                 "0": newtypes,
                 "1": varify_constructors(newtypes, core_type)
               })
@@ -4793,14 +5151,17 @@ function wrap_exp_attrs(body, param) {
     return ghexp(/* constructor */{
                 tag: 33,
                 name: "Pexp_extension",
+                length: 1,
                 "0": /* tuple */[
                   ext,
                   /* constructor */{
                     tag: 0,
                     name: "PStr",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": mkstrexp(body$1, /* [] */0),
                       "1": /* [] */0
                     }
@@ -4824,9 +5185,11 @@ function text_def(pos) {
   return /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Ptop_def",
+            length: 1,
             "0": text$1(get_text(Parsing.rhs_start_pos(pos)))
           },
           "1": /* [] */0
@@ -4859,11 +5222,13 @@ function add_nonrec(rf, attrs, pos) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               name,
               /* constructor */{
                 tag: 0,
                 name: "PStr",
+                length: 1,
                 "0": /* [] */0
               }
             ],
@@ -5032,6 +5397,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Ptop_def",
+              length: 1,
               "0": extra_text(text$1, 1, _1)
             };
     }),
@@ -5047,6 +5413,7 @@ var yyact = /* array */[
       return Pervasives.$at(text$1(get_text(Parsing.rhs_start_pos(1))), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": mkstrexp(_1, _2),
                   "1": /* [] */0
                 });
@@ -5063,6 +5430,7 @@ var yyact = /* array */[
       return Pervasives.$at(text$1(get_text(Parsing.rhs_start_pos(1))), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -5075,9 +5443,11 @@ var yyact = /* array */[
                     return /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* constructor */{
                               tag: 0,
                               name: "Ptop_def",
+                              length: 1,
                               "0": text$1(txt)
                             },
                             "1": /* [] */0
@@ -5094,12 +5464,15 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Ptop_def",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": mkstrexp(_1, _2),
                       "1": /* [] */0
                     }
@@ -5121,12 +5494,15 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), Pervasives.$at(text_def(2), /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Ptop_def",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": mkstrexp(_2, _3),
                           "1": /* [] */0
                         }
@@ -5140,12 +5516,15 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), Pervasives.$at(text_def(2), /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Ptop_def",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": _2,
                           "1": /* [] */0
                         }
@@ -5160,6 +5539,7 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), Pervasives.$at(text_def(2), /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": _2,
                       "1": _3
                     }));
@@ -5170,12 +5550,15 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Ptop_def",
+                    length: 1,
                     "0": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": _1,
                       "1": /* [] */0
                     }
@@ -5190,6 +5573,7 @@ var yyact = /* array */[
       return Pervasives.$at(text_def(1), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -5235,6 +5619,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -5244,6 +5629,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -5253,6 +5639,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 0,
                   name: "Pmod_ident",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -5264,6 +5651,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 1,
                   name: "Pmod_structure",
+                  length: 1,
                   "0": extra_text(text$1, 2, _2)
                 });
     }),
@@ -5278,6 +5666,7 @@ var yyact = /* array */[
                     return mkmod(/* constructor */{
                                 tag: 2,
                                 name: "Pmod_functor",
+                                length: 3,
                                 "0": param[0],
                                 "1": param[1],
                                 "2": acc
@@ -5290,6 +5679,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 3,
                   name: "Pmod_apply",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -5299,10 +5689,12 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 3,
                   name: "Pmod_apply",
+                  length: 2,
                   "0": _1,
                   "1": mkmod(/* constructor */{
                         tag: 1,
                         name: "Pmod_structure",
+                        length: 1,
                         "0": /* [] */0
                       })
                 });
@@ -5318,6 +5710,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 4,
                   name: "Pmod_constraint",
+                  length: 2,
                   "0": _2,
                   "1": _4
                 });
@@ -5339,6 +5732,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 5,
                   name: "Pmod_unpack",
+                  length: 1,
                   "0": _3
                 });
     }),
@@ -5348,13 +5742,16 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 5,
                   name: "Pmod_unpack",
+                  length: 1,
                   "0": ghexp(/* constructor */{
                         tag: 19,
                         name: "Pexp_constraint",
+                        length: 2,
                         "0": _3,
                         "1": ghtyp(/* constructor */{
                               tag: 9,
                               name: "Ptyp_package",
+                              length: 1,
                               "0": _5
                             })
                       })
@@ -5367,18 +5764,22 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 5,
                   name: "Pmod_unpack",
+                  length: 1,
                   "0": ghexp(/* constructor */{
                         tag: 20,
                         name: "Pexp_coerce",
+                        length: 3,
                         "0": _3,
                         "1": ghtyp(/* constructor */{
                               tag: 9,
                               name: "Ptyp_package",
+                              length: 1,
                               "0": _5
                             }),
                         "2": ghtyp(/* constructor */{
                               tag: 9,
                               name: "Ptyp_package",
+                              length: 1,
                               "0": _7
                             })
                       })
@@ -5390,14 +5791,17 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 5,
                   name: "Pmod_unpack",
+                  length: 1,
                   "0": ghexp(/* constructor */{
                         tag: 20,
                         name: "Pexp_coerce",
+                        length: 3,
                         "0": _3,
                         "1": undefined,
                         "2": ghtyp(/* constructor */{
                               tag: 9,
                               name: "Ptyp_package",
+                              length: 1,
                               "0": _5
                             })
                       })
@@ -5425,6 +5829,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 6,
                   name: "Pmod_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5436,6 +5841,7 @@ var yyact = /* array */[
       return Pervasives.$at(text$1(get_text(Parsing.rhs_start_pos(1))), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": mkstrexp(_1, _2),
                   "1": _3
                 });
@@ -5456,6 +5862,7 @@ var yyact = /* array */[
       return Pervasives.$at(text$1(get_text(Parsing.rhs_start_pos(1))), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -5475,6 +5882,7 @@ var yyact = /* array */[
           str = mkstr(/* constructor */{
                 tag: 0,
                 name: "Pstr_eval",
+                length: 2,
                 "0": exp,
                 "1": lb[/* lb_attributes */2]
               });
@@ -5491,6 +5899,7 @@ var yyact = /* array */[
                 /* constructor */{
                   tag: 2,
                   name: "Not_expecting",
+                  length: 2,
                   "0": lbs[/* lbs_loc */4],
                   "1": "attributes"
                 }
@@ -5502,6 +5911,7 @@ var yyact = /* array */[
         str = mkstr(/* constructor */{
               tag: 1,
               name: "Pstr_value",
+              length: 2,
               "0": lbs[/* lbs_rec */1],
               "1": List.rev(bindings$1)
             });
@@ -5511,14 +5921,17 @@ var yyact = /* array */[
         var d = /* constructor */{
           tag: 14,
           name: "Pstr_extension",
+          length: 2,
           "0": /* tuple */[
             match,
             /* constructor */{
               tag: 0,
               name: "PStr",
+              length: 1,
               "0": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": str,
                 "1": /* [] */0
               }
@@ -5536,6 +5949,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 2,
                   name: "Pstr_primitive",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5544,6 +5958,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 3,
                   name: "Pstr_type",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5552,6 +5967,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 4,
                   name: "Pstr_typext",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5560,6 +5976,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 5,
                   name: "Pstr_exception",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5568,6 +5985,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 6,
                   name: "Pstr_module",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5576,6 +5994,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 7,
                   name: "Pstr_recmodule",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5584,6 +6003,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 8,
                   name: "Pstr_modtype",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5592,6 +6012,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 9,
                   name: "Pstr_open",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5600,6 +6021,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 10,
                   name: "Pstr_class",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5608,6 +6030,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 11,
                   name: "Pstr_class_type",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5616,6 +6039,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 12,
                   name: "Pstr_include",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5625,6 +6049,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 14,
                   name: "Pstr_extension",
+                  length: 2,
                   "0": _1,
                   "1": add_docs_attrs(symbol_docs(/* () */0), _2)
                 });
@@ -5635,6 +6060,7 @@ var yyact = /* array */[
       return mkstr(/* constructor */{
                   tag: 13,
                   name: "Pstr_attribute",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5652,6 +6078,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 4,
                   name: "Pmod_constraint",
+                  length: 2,
                   "0": _4,
                   "1": _2
                 });
@@ -5662,6 +6089,7 @@ var yyact = /* array */[
       return mkmod(/* constructor */{
                   tag: 2,
                   name: "Pmod_functor",
+                  length: 3,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _2
@@ -5681,6 +6109,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -5691,6 +6120,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -5718,6 +6148,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 0,
                   name: "Pmty_ident",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -5729,6 +6160,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 1,
                   name: "Pmty_signature",
+                  length: 1,
                   "0": extra_text(text, 2, _2)
                 });
     }),
@@ -5743,6 +6175,7 @@ var yyact = /* array */[
                     return mkmty(/* constructor */{
                                 tag: 2,
                                 name: "Pmty_functor",
+                                length: 3,
                                 "0": param[0],
                                 "1": param[1],
                                 "2": acc
@@ -5755,6 +6188,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 3,
                   name: "Pmty_with",
+                  length: 2,
                   "0": _1,
                   "1": List.rev(_3)
                 });
@@ -5764,6 +6198,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 4,
                   name: "Pmty_typeof",
+                  length: 1,
                   "0": _4
                 });
     }),
@@ -5779,6 +6214,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 5,
                   name: "Pmty_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5800,6 +6236,7 @@ var yyact = /* array */[
       return Pervasives.$at(text(get_text(Parsing.rhs_start_pos(1))), /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -5809,6 +6246,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 0,
                   name: "Psig_value",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5817,6 +6255,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 0,
                   name: "Psig_value",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5825,6 +6264,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 1,
                   name: "Psig_type",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5833,6 +6273,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 2,
                   name: "Psig_typext",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5841,6 +6282,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 3,
                   name: "Psig_exception",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5849,6 +6291,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 4,
                   name: "Psig_module",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5857,6 +6300,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 4,
                   name: "Psig_module",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5865,6 +6309,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 5,
                   name: "Psig_recmodule",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5873,6 +6318,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 6,
                   name: "Psig_modtype",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5881,6 +6327,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 7,
                   name: "Psig_open",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5889,6 +6336,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 8,
                   name: "Psig_include",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5897,6 +6345,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 9,
                   name: "Psig_class",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5905,6 +6354,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 10,
                   name: "Psig_class_type",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -5914,6 +6364,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 12,
                   name: "Psig_extension",
+                  length: 2,
                   "0": _1,
                   "1": add_docs_attrs(symbol_docs(/* () */0), _2)
                 });
@@ -5924,6 +6375,7 @@ var yyact = /* array */[
       return mksig(/* constructor */{
                   tag: 11,
                   name: "Psig_attribute",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -5951,6 +6403,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 2,
                   name: "Pmty_functor",
+                  length: 3,
                   "0": /* record */[
                     /* txt */_2,
                     /* loc */rhs_loc(2)
@@ -5964,6 +6417,7 @@ var yyact = /* array */[
       return mkmty(/* constructor */{
                   tag: 2,
                   name: "Pmty_functor",
+                  length: 3,
                   "0": /* record */[
                     /* txt */"*",
                     /* loc */rhs_loc(1)
@@ -5998,6 +6452,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -6008,6 +6463,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -6050,6 +6506,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -6060,6 +6517,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -6095,6 +6553,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 5,
                   name: "Pcl_constraint",
+                  length: 2,
                   "0": _4,
                   "1": _2
                 });
@@ -6105,6 +6564,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 2,
                   name: "Pcl_fun",
+                  length: 4,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _1[2],
@@ -6123,6 +6583,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 2,
                   name: "Pcl_fun",
+                  length: 4,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _1[2],
@@ -6135,6 +6596,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 2,
                   name: "Pcl_fun",
+                  length: 4,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _1[2],
@@ -6153,6 +6615,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 3,
                   name: "Pcl_apply",
+                  length: 2,
                   "0": _1,
                   "1": List.rev(_2)
                 });
@@ -6169,6 +6632,7 @@ var yyact = /* array */[
                       /* constructor */{
                         tag: 2,
                         name: "Not_expecting",
+                        length: 2,
                         "0": lb[/* lb_loc */5],
                         "1": "item attribute"
                       }
@@ -6182,6 +6646,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 2,
                 name: "Not_expecting",
+                length: 2,
                 "0": lbs[/* lbs_loc */4],
                 "1": "extension"
               }
@@ -6193,6 +6658,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 2,
                 name: "Not_expecting",
+                length: 2,
                 "0": lbs[/* lbs_loc */4],
                 "1": "attributes"
               }
@@ -6201,6 +6667,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 4,
                   name: "Pcl_let",
+                  length: 3,
                   "0": lbs[/* lbs_rec */1],
                   "1": List.rev(bindings),
                   "2": body
@@ -6216,6 +6683,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 6,
                   name: "Pcl_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6225,6 +6693,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 0,
                   name: "Pcl_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_4,
                     /* loc */rhs_loc(4)
@@ -6237,6 +6706,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 0,
                   name: "Pcl_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -6249,6 +6719,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 1,
                   name: "Pcl_structure",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6262,6 +6733,7 @@ var yyact = /* array */[
       return mkclass(/* constructor */{
                   tag: 5,
                   name: "Pcl_constraint",
+                  length: 2,
                   "0": _2,
                   "1": _4
                 });
@@ -6295,6 +6767,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 10,
                   name: "Ppat_constraint",
+                  length: 2,
                   "0": _2,
                   "1": _4
                 });
@@ -6311,6 +6784,7 @@ var yyact = /* array */[
       return Pervasives.$at(/* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _2,
                   "1": text_cstr(2)
                 }, _1);
@@ -6323,6 +6797,7 @@ var yyact = /* array */[
       return mkcf(_5, symbol_docs(/* () */0), /* constructor */{
                   tag: 0,
                   name: "Pcf_inherit",
+                  length: 3,
                   "0": _2,
                   "1": _3,
                   "2": _4
@@ -6334,6 +6809,7 @@ var yyact = /* array */[
       return mkcf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 1,
                   name: "Pcf_val",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6343,6 +6819,7 @@ var yyact = /* array */[
       return mkcf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 2,
                   name: "Pcf_method",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6352,6 +6829,7 @@ var yyact = /* array */[
       return mkcf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 3,
                   name: "Pcf_constraint",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6361,6 +6839,7 @@ var yyact = /* array */[
       return mkcf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 4,
                   name: "Pcf_initializer",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6370,6 +6849,7 @@ var yyact = /* array */[
       return mkcf(_2, symbol_docs(/* () */0), /* constructor */{
                   tag: 6,
                   name: "Pcf_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6379,6 +6859,7 @@ var yyact = /* array */[
       return mkcf(undefined, undefined, /* constructor */{
                   tag: 5,
                   name: "Pcf_attribute",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6404,6 +6885,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Cfk_virtual",
+                length: 1,
                 "0": _6
               }
             ];
@@ -6421,6 +6903,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Cfk_virtual",
+                length: 1,
                 "0": _5
               }
             ];
@@ -6439,6 +6922,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Cfk_concrete",
+                length: 2,
                 "0": _1,
                 "1": _5
               }
@@ -6460,6 +6944,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Cfk_concrete",
+                length: 2,
                 "0": _1,
                 "1": e
               }
@@ -6481,6 +6966,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Cfk_virtual",
+                length: 1,
                 "0": _6
               }
             ];
@@ -6502,6 +6988,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Cfk_virtual",
+                length: 1,
                 "0": _6
               }
             ];
@@ -6520,10 +7007,12 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Cfk_concrete",
+                length: 2,
                 "0": _1,
                 "1": ghexp(/* constructor */{
                       tag: 28,
                       name: "Pexp_poly",
+                      length: 2,
                       "0": _4,
                       "1": undefined
                     })
@@ -6545,10 +7034,12 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Cfk_concrete",
+                length: 2,
                 "0": _1,
                 "1": ghexp(/* constructor */{
                       tag: 28,
                       name: "Pexp_poly",
+                      length: 2,
                       "0": _7,
                       "1": _5
                     })
@@ -6572,10 +7063,12 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Cfk_concrete",
+                length: 2,
                 "0": _1,
                 "1": ghexp(/* constructor */{
                       tag: 28,
                       name: "Pexp_poly",
+                      length: 2,
                       "0": match[0],
                       "1": match[1]
                     })
@@ -6592,6 +7085,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 2,
                   name: "Pcty_arrow",
+                  length: 3,
                   "0": "?" + _2,
                   "1": mkoption(_4),
                   "2": _6
@@ -6604,6 +7098,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 2,
                   name: "Pcty_arrow",
+                  length: 3,
                   "0": "?" + _1,
                   "1": mkoption(_2),
                   "2": _4
@@ -6616,6 +7111,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 2,
                   name: "Pcty_arrow",
+                  length: 3,
                   "0": _1,
                   "1": _3,
                   "2": _5
@@ -6627,6 +7123,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 2,
                   name: "Pcty_arrow",
+                  length: 3,
                   "0": "",
                   "1": _1,
                   "2": _3
@@ -6638,6 +7135,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 0,
                   name: "Pcty_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_4,
                     /* loc */rhs_loc(4)
@@ -6650,6 +7148,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 0,
                   name: "Pcty_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -6662,6 +7161,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 1,
                   name: "Pcty_signature",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6679,6 +7179,7 @@ var yyact = /* array */[
       return mkcty(/* constructor */{
                   tag: 3,
                   name: "Pcty_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6705,6 +7206,7 @@ var yyact = /* array */[
       return Pervasives.$at(/* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": _2,
                   "1": text_csig(2)
                 }, _1);
@@ -6715,6 +7217,7 @@ var yyact = /* array */[
       return mkctf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 0,
                   name: "Pctf_inherit",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6724,6 +7227,7 @@ var yyact = /* array */[
       return mkctf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 1,
                   name: "Pctf_val",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6735,6 +7239,7 @@ var yyact = /* array */[
       return mkctf(_6, symbol_docs(/* () */0), /* constructor */{
                   tag: 2,
                   name: "Pctf_method",
+                  length: 1,
                   "0": /* tuple */[
                     _3,
                     _2[0],
@@ -6749,6 +7254,7 @@ var yyact = /* array */[
       return mkctf(_3, symbol_docs(/* () */0), /* constructor */{
                   tag: 3,
                   name: "Pctf_constraint",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -6758,6 +7264,7 @@ var yyact = /* array */[
       return mkctf(_2, symbol_docs(/* () */0), /* constructor */{
                   tag: 5,
                   name: "Pctf_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6767,6 +7274,7 @@ var yyact = /* array */[
       return mkctf(undefined, undefined, /* constructor */{
                   tag: 4,
                   name: "Pctf_attribute",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -6824,6 +7332,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -6834,6 +7343,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -6865,6 +7375,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -6875,6 +7386,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -6913,6 +7425,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 16,
                   name: "Pexp_sequence",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -6991,6 +7504,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 0,
                   name: "Ppat_var",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -7017,6 +7531,7 @@ var yyact = /* array */[
               mkpat(/* constructor */{
                     tag: 10,
                     name: "Ppat_constraint",
+                    length: 2,
                     "0": _1[1],
                     "1": _3
                   })
@@ -7029,6 +7544,7 @@ var yyact = /* array */[
               mkpat(/* constructor */{
                     tag: 0,
                     name: "Ppat_var",
+                    length: 1,
                     "0": /* record */[
                       /* txt */_1,
                       /* loc */rhs_loc(1)
@@ -7045,6 +7561,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 10,
                   name: "Ppat_constraint",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -7058,6 +7575,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": _1,
                   "1": List.rev(_2)
                 });
@@ -7074,6 +7592,7 @@ var yyact = /* array */[
                       /* constructor */{
                         tag: 2,
                         name: "Not_expecting",
+                        length: 2,
                         "0": lb[/* lb_loc */5],
                         "1": "item attribute"
                       }
@@ -7084,6 +7603,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 2,
         name: "Pexp_let",
+        length: 3,
         "0": lbs[/* lbs_rec */1],
         "1": List.rev(bindings),
         "2": body
@@ -7101,6 +7621,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 25,
         name: "Pexp_letmodule",
+        length: 3,
         "0": /* record */[
           /* txt */_4,
           /* loc */rhs_loc(4)
@@ -7118,6 +7639,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 32,
         name: "Pexp_open",
+        length: 3,
         "0": _3,
         "1": /* record */[
           /* txt */_5,
@@ -7134,6 +7656,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 3,
         name: "Pexp_function",
+        length: 1,
         "0": List.rev(_4)
       };
       return wrap_exp_attrs(mkexp(d), _2);
@@ -7145,6 +7668,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 4,
                       name: "Pexp_fun",
+                      length: 4,
                       "0": _3[0],
                       "1": _3[1],
                       "2": _3[2],
@@ -7158,6 +7682,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 30,
                       name: "Pexp_newtype",
+                      length: 2,
                       "0": _5,
                       "1": _7
                     }), _2);
@@ -7170,6 +7695,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 6,
         name: "Pexp_match",
+        length: 2,
         "0": _3,
         "1": List.rev(_6)
       };
@@ -7183,6 +7709,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 7,
         name: "Pexp_try",
+        length: 2,
         "0": _3,
         "1": List.rev(_6)
       };
@@ -7198,6 +7725,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 8,
                   name: "Pexp_tuple",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -7207,6 +7735,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 9,
                   name: "Pexp_construct",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -7220,6 +7749,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 10,
                   name: "Pexp_variant",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -7232,6 +7762,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 15,
                       name: "Pexp_ifthenelse",
+                      length: 3,
                       "0": _3,
                       "1": _5,
                       "2": _7
@@ -7244,6 +7775,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 15,
                       name: "Pexp_ifthenelse",
+                      length: 3,
                       "0": _3,
                       "1": _5,
                       "2": undefined
@@ -7256,6 +7788,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 17,
                       name: "Pexp_while",
+                      length: 2,
                       "0": _3,
                       "1": _5
                     }), _2);
@@ -7270,6 +7803,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 18,
                       name: "Pexp_for",
+                      length: 5,
                       "0": _3,
                       "1": _5,
                       "2": _7,
@@ -7283,13 +7817,16 @@ var yyact = /* array */[
       return mkexp_cons(rhs_loc(2), ghexp(/* constructor */{
                       tag: 8,
                       name: "Pexp_tuple",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": _1,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": _3,
                           "1": /* [] */0
                         }
@@ -7302,13 +7839,16 @@ var yyact = /* array */[
       return mkexp_cons(rhs_loc(2), ghexp(/* constructor */{
                       tag: 8,
                       name: "Pexp_tuple",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": _5,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": _7,
                           "1": /* [] */0
                         }
@@ -7436,9 +7976,11 @@ var yyact = /* array */[
                     return mkexp(/* constructor */{
                                 tag: 1,
                                 name: "Pexp_constant",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 0,
                                   name: "Const_int",
+                                  length: 1,
                                   "0": -match$1[0] | 0
                                 }
                               });
@@ -7446,9 +7988,11 @@ var yyact = /* array */[
                     return mkexp(/* constructor */{
                                 tag: 1,
                                 name: "Pexp_constant",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 4,
                                   name: "Const_int32",
+                                  length: 1,
                                   "0": -match$1[0] | 0
                                 }
                               });
@@ -7456,9 +8000,11 @@ var yyact = /* array */[
                     return mkexp(/* constructor */{
                                 tag: 1,
                                 name: "Pexp_constant",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 5,
                                   name: "Const_int64",
+                                  length: 1,
                                   "0": Caml_int64.neg(match$1[0])
                                 }
                               });
@@ -7466,9 +8012,11 @@ var yyact = /* array */[
                     return mkexp(/* constructor */{
                                 tag: 1,
                                 name: "Pexp_constant",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 6,
                                   name: "Const_nativeint",
+                                  length: 1,
                                   "0": -match$1[0]
                                 }
                               });
@@ -7491,9 +8039,11 @@ var yyact = /* array */[
           return mkexp(/* constructor */{
                       tag: 1,
                       name: "Pexp_constant",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 3,
                         name: "Const_float",
+                        length: 1,
                         "0": neg_float_string(match$2[0])
                       }
                     });
@@ -7503,10 +8053,12 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": mkoperator("~" + name, 1),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       arg
@@ -7550,10 +8102,12 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": mkoperator("~" + name, 1),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       arg
@@ -7569,6 +8123,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 13,
                   name: "Pexp_setfield",
+                  length: 3,
                   "0": _1,
                   "1": /* record */[
                     /* txt */_3,
@@ -7584,14 +8139,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": array_function("Array", "set")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _1
@@ -7599,6 +8157,7 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         _4
@@ -7606,6 +8165,7 @@ var yyact = /* array */[
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "",
                           _7
@@ -7623,14 +8183,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": array_function("String", "set")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _1
@@ -7638,6 +8201,7 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         _4
@@ -7645,6 +8209,7 @@ var yyact = /* array */[
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "",
                           _7
@@ -7675,14 +8240,17 @@ var yyact = /* array */[
               return mkexp(/* constructor */{
                           tag: 5,
                           name: "Pexp_apply",
+                          length: 2,
                           "0": ghexp(/* constructor */{
                                 tag: 0,
                                 name: "Pexp_ident",
+                                length: 1,
                                 "0": bigarray_function("Array3", set)
                               }),
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "",
                               arr
@@ -7690,6 +8258,7 @@ var yyact = /* array */[
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "",
                                 c1
@@ -7697,6 +8266,7 @@ var yyact = /* array */[
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "",
                                   c2
@@ -7704,6 +8274,7 @@ var yyact = /* array */[
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": /* tuple */[
                                     "",
                                     match$1[0]
@@ -7711,6 +8282,7 @@ var yyact = /* array */[
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       "",
                                       newval
@@ -7728,14 +8300,17 @@ var yyact = /* array */[
             return mkexp(/* constructor */{
                         tag: 5,
                         name: "Pexp_apply",
+                        length: 2,
                         "0": ghexp(/* constructor */{
                               tag: 0,
                               name: "Pexp_ident",
+                              length: 1,
                               "0": bigarray_function("Array2", set)
                             }),
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "",
                             arr
@@ -7743,6 +8318,7 @@ var yyact = /* array */[
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "",
                               c1
@@ -7750,6 +8326,7 @@ var yyact = /* array */[
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "",
                                 c2
@@ -7757,6 +8334,7 @@ var yyact = /* array */[
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "",
                                   newval
@@ -7772,14 +8350,17 @@ var yyact = /* array */[
           return mkexp(/* constructor */{
                       tag: 5,
                       name: "Pexp_apply",
+                      length: 2,
                       "0": ghexp(/* constructor */{
                             tag: 0,
                             name: "Pexp_ident",
+                            length: 1,
                             "0": bigarray_function("Array1", set)
                           }),
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "",
                           arr
@@ -7787,6 +8368,7 @@ var yyact = /* array */[
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "",
                             c1
@@ -7794,6 +8376,7 @@ var yyact = /* array */[
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "",
                               newval
@@ -7808,14 +8391,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": bigarray_function("Genarray", "set")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       arr
@@ -7823,17 +8409,20 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         ghexp(/* constructor */{
                               tag: 14,
                               name: "Pexp_array",
+                              length: 1,
                               "0": coords
                             })
                       ],
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "",
                           newval
@@ -7850,6 +8439,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 23,
                   name: "Pexp_setinstvar",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -7863,6 +8453,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 26,
                       name: "Pexp_assert",
+                      length: 1,
                       "0": _3
                     }), _2);
     }),
@@ -7872,6 +8463,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 27,
                       name: "Pexp_lazy",
+                      length: 1,
                       "0": _3
                     }), _2);
     }),
@@ -7881,6 +8473,7 @@ var yyact = /* array */[
       return wrap_exp_attrs(mkexp(/* constructor */{
                       tag: 29,
                       name: "Pexp_object",
+                      length: 1,
                       "0": _3
                     }), _2);
     }),
@@ -7899,6 +8492,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 0,
                   name: "Pexp_ident",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -7910,6 +8504,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 1,
                   name: "Pexp_constant",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -7918,6 +8513,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 9,
                   name: "Pexp_construct",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -7930,6 +8526,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 10,
                   name: "Pexp_variant",
+                  length: 2,
                   "0": _1,
                   "1": undefined
                 });
@@ -7951,10 +8548,12 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 9,
         name: "Pexp_construct",
+        length: 2,
         "0": /* record */[
           /* txt : constructor */{
             tag: 0,
             name: "Lident",
+            length: 1,
             "0": "()"
           },
           /* loc */symbol_rloc(/* () */0)
@@ -7979,6 +8578,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 12,
                   name: "Pexp_field",
+                  length: 2,
                   "0": _1,
                   "1": /* record */[
                     /* txt */_3,
@@ -7992,6 +8592,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8011,14 +8612,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": array_function("Array", "get")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _1
@@ -8026,6 +8630,7 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         _4
@@ -8046,14 +8651,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": array_function("String", "get")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _1
@@ -8061,6 +8669,7 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         _4
@@ -8093,14 +8702,17 @@ var yyact = /* array */[
               return mkexp(/* constructor */{
                           tag: 5,
                           name: "Pexp_apply",
+                          length: 2,
                           "0": ghexp(/* constructor */{
                                 tag: 0,
                                 name: "Pexp_ident",
+                                length: 1,
                                 "0": bigarray_function("Array3", get)
                               }),
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "",
                               arr
@@ -8108,6 +8720,7 @@ var yyact = /* array */[
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "",
                                 c1
@@ -8115,6 +8728,7 @@ var yyact = /* array */[
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "",
                                   c2
@@ -8122,6 +8736,7 @@ var yyact = /* array */[
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": /* tuple */[
                                     "",
                                     match$1[0]
@@ -8138,14 +8753,17 @@ var yyact = /* array */[
             return mkexp(/* constructor */{
                         tag: 5,
                         name: "Pexp_apply",
+                        length: 2,
                         "0": ghexp(/* constructor */{
                               tag: 0,
                               name: "Pexp_ident",
+                              length: 1,
                               "0": bigarray_function("Array2", get)
                             }),
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "",
                             arr
@@ -8153,6 +8771,7 @@ var yyact = /* array */[
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "",
                               c1
@@ -8160,6 +8779,7 @@ var yyact = /* array */[
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "",
                                 c2
@@ -8174,14 +8794,17 @@ var yyact = /* array */[
           return mkexp(/* constructor */{
                       tag: 5,
                       name: "Pexp_apply",
+                      length: 2,
                       "0": ghexp(/* constructor */{
                             tag: 0,
                             name: "Pexp_ident",
+                            length: 1,
                             "0": bigarray_function("Array1", get)
                           }),
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "",
                           arr
@@ -8189,6 +8812,7 @@ var yyact = /* array */[
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "",
                             c1
@@ -8202,14 +8826,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 0,
                         name: "Pexp_ident",
+                        length: 1,
                         "0": bigarray_function("Genarray", "get")
                       }),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       arr
@@ -8217,11 +8844,13 @@ var yyact = /* array */[
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "",
                         ghexp(/* constructor */{
                               tag: 14,
                               name: "Pexp_array",
+                              length: 1,
                               "0": coords
                             })
                       ],
@@ -8240,6 +8869,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 11,
                   name: "Pexp_record",
+                  length: 2,
                   "0": _2[1],
                   "1": _2[0]
                 });
@@ -8254,12 +8884,14 @@ var yyact = /* array */[
       var rec_exp = mkexp(/* constructor */{
             tag: 11,
             name: "Pexp_record",
+            length: 2,
             "0": _4[1],
             "1": _4[0]
           });
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8279,6 +8911,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 14,
                   name: "Pexp_array",
+                  length: 1,
                   "0": List.rev(_2)
                 });
     }),
@@ -8291,6 +8924,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 14,
                   name: "Pexp_array",
+                  length: 1,
                   "0": /* [] */0
                 });
     }),
@@ -8301,6 +8935,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8309,6 +8944,7 @@ var yyact = /* array */[
                   "2": mkexp(/* constructor */{
                         tag: 14,
                         name: "Pexp_array",
+                        length: 1,
                         "0": List.rev(_4)
                       })
                 });
@@ -8337,6 +8973,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8357,10 +8994,12 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": mkoperator(_1, 1),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _2
@@ -8374,10 +9013,12 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 5,
                   name: "Pexp_apply",
+                  length: 2,
                   "0": mkoperator("!", 1),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "",
                       _2
@@ -8392,6 +9033,7 @@ var yyact = /* array */[
       var d = /* constructor */{
         tag: 22,
         name: "Pexp_new",
+        length: 1,
         "0": /* record */[
           /* txt */_3,
           /* loc */rhs_loc(3)
@@ -8405,6 +9047,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 24,
                   name: "Pexp_override",
+                  length: 1,
                   "0": List.rev(_2)
                 });
     }),
@@ -8417,6 +9060,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 24,
                   name: "Pexp_override",
+                  length: 1,
                   "0": /* [] */0
                 });
     }),
@@ -8427,6 +9071,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8435,6 +9080,7 @@ var yyact = /* array */[
                   "2": mkexp(/* constructor */{
                         tag: 24,
                         name: "Pexp_override",
+                        length: 1,
                         "0": List.rev(_4)
                       })
                 });
@@ -8451,6 +9097,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 21,
                   name: "Pexp_send",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -8466,6 +9113,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 31,
                   name: "Pexp_pack",
+                  length: 1,
                   "0": _3
                 });
     }),
@@ -8475,14 +9123,17 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 19,
                   name: "Pexp_constraint",
+                  length: 2,
                   "0": ghexp(/* constructor */{
                         tag: 31,
                         name: "Pexp_pack",
+                        length: 1,
                         "0": _3
                       }),
                   "1": ghtyp(/* constructor */{
                         tag: 9,
                         name: "Ptyp_package",
+                        length: 1,
                         "0": _5
                       })
                 });
@@ -8498,6 +9149,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 32,
                   name: "Pexp_open",
+                  length: 3,
                   "0": /* Fresh */1,
                   "1": /* record */[
                     /* txt */_1,
@@ -8506,14 +9158,17 @@ var yyact = /* array */[
                   "2": mkexp(/* constructor */{
                         tag: 19,
                         name: "Pexp_constraint",
+                        length: 2,
                         "0": ghexp(/* constructor */{
                               tag: 31,
                               name: "Pexp_pack",
+                              length: 1,
                               "0": _5
                             }),
                         "1": ghtyp(/* constructor */{
                               tag: 9,
                               name: "Ptyp_package",
+                              length: 1,
                               "0": _7
                             })
                       })
@@ -8529,6 +9184,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 33,
                   name: "Pexp_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -8537,6 +9193,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8547,6 +9204,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -8594,10 +9252,12 @@ var yyact = /* array */[
               mkexp(/* constructor */{
                     tag: 0,
                     name: "Pexp_ident",
+                    length: 1,
                     "0": /* record */[
                       /* txt : constructor */{
                         tag: 0,
                         name: "Lident",
+                        length: 1,
                         "0": _1
                       },
                       /* loc */rhs_loc(1)
@@ -8610,6 +9270,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8620,6 +9281,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _2
             };
@@ -8641,10 +9303,12 @@ var yyact = /* array */[
               ghpat(/* constructor */{
                     tag: 10,
                     name: "Ppat_constraint",
+                    length: 2,
                     "0": mkpatvar(_1, 1),
                     "1": ghtyp(/* constructor */{
                           tag: 8,
                           name: "Ptyp_poly",
+                          length: 2,
                           "0": List.rev(_3),
                           "1": _5
                         })
@@ -8662,6 +9326,7 @@ var yyact = /* array */[
               ghpat(/* constructor */{
                     tag: 10,
                     name: "Ppat_constraint",
+                    length: 2,
                     "0": mkpatvar(_1, 1),
                     "1": match[1]
                   }),
@@ -8684,6 +9349,7 @@ var yyact = /* array */[
               ghpat(/* constructor */{
                     tag: 10,
                     name: "Ppat_constraint",
+                    length: 2,
                     "0": _1,
                     "1": _3
                   }),
@@ -8702,6 +9368,7 @@ var yyact = /* array */[
               /* lbs_bindings : constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": lb,
                 "1": lbs[/* lbs_bindings */0]
               },
@@ -8723,6 +9390,7 @@ var yyact = /* array */[
               /* lbs_bindings : constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": lb,
                 "1": /* [] */0
               },
@@ -8754,6 +9422,7 @@ var yyact = /* array */[
       return ghexp(/* constructor */{
                   tag: 4,
                   name: "Pexp_fun",
+                  length: 4,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _1[2],
@@ -8766,6 +9435,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 30,
                   name: "Pexp_newtype",
+                  length: 2,
                   "0": _3,
                   "1": _5
                 });
@@ -8775,6 +9445,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8785,6 +9456,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -8809,6 +9481,7 @@ var yyact = /* array */[
       return ghexp(/* constructor */{
                   tag: 4,
                   name: "Pexp_fun",
+                  length: 4,
                   "0": _1[0],
                   "1": _1[1],
                   "2": _1[2],
@@ -8821,6 +9494,7 @@ var yyact = /* array */[
       return mkexp(/* constructor */{
                   tag: 30,
                   name: "Pexp_newtype",
+                  length: 2,
                   "0": _3,
                   "1": _5
                 });
@@ -8831,6 +9505,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -8841,10 +9516,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               }
@@ -8870,6 +9547,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8880,6 +9558,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -8889,6 +9568,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8920,6 +9600,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 /* record */[
                   /* txt */_1,
@@ -8937,6 +9618,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 /* record */[
                   /* txt */_3,
@@ -8952,6 +9634,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -8962,6 +9645,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9003,6 +9687,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 1,
                   name: "Ppat_alias",
+                  length: 2,
                   "0": _1,
                   "1": /* record */[
                     /* txt */_3,
@@ -9019,6 +9704,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 4,
                   name: "Ppat_tuple",
+                  length: 1,
                   "0": List.rev(_1)
                 });
     }),
@@ -9028,6 +9714,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 5,
                   name: "Ppat_construct",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -9041,6 +9728,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 6,
                   name: "Ppat_variant",
+                  length: 2,
                   "0": _1,
                   "1": _2
                 });
@@ -9051,13 +9739,16 @@ var yyact = /* array */[
       return mkpat_cons(rhs_loc(2), ghpat(/* constructor */{
                       tag: 4,
                       name: "Ppat_tuple",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": _1,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": _3,
                           "1": /* [] */0
                         }
@@ -9074,13 +9765,16 @@ var yyact = /* array */[
       return mkpat_cons(rhs_loc(2), ghpat(/* constructor */{
                       tag: 4,
                       name: "Ppat_tuple",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": _5,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": _7,
                           "1": /* [] */0
                         }
@@ -9098,6 +9792,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 9,
                   name: "Ppat_or",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -9111,6 +9806,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 12,
                   name: "Ppat_lazy",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -9119,6 +9815,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 14,
                   name: "Ppat_exception",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -9132,6 +9829,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 0,
                   name: "Ppat_var",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -9149,6 +9847,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 2,
                   name: "Ppat_constant",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -9158,6 +9857,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 3,
                   name: "Ppat_interval",
+                  length: 2,
                   "0": _1,
                   "1": _3
                 });
@@ -9167,6 +9867,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 5,
                   name: "Ppat_construct",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -9179,6 +9880,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 6,
                   name: "Ppat_variant",
+                  length: 2,
                   "0": _1,
                   "1": undefined
                 });
@@ -9188,6 +9890,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 11,
                   name: "Ppat_type",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_2,
                     /* loc */rhs_loc(2)
@@ -9199,6 +9902,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 7,
                   name: "Ppat_record",
+                  length: 2,
                   "0": _2[0],
                   "1": _2[1]
                 });
@@ -9223,6 +9927,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 8,
                   name: "Ppat_array",
+                  length: 1,
                   "0": List.rev(_2)
                 });
     }),
@@ -9230,6 +9935,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 8,
                   name: "Ppat_array",
+                  length: 1,
                   "0": /* [] */0
                 });
     }),
@@ -9251,6 +9957,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 10,
                   name: "Ppat_constraint",
+                  length: 2,
                   "0": _2,
                   "1": _4
                 });
@@ -9269,6 +9976,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 13,
                   name: "Ppat_unpack",
+                  length: 1,
                   "0": /* record */[
                     /* txt */_3,
                     /* loc */rhs_loc(3)
@@ -9281,9 +9989,11 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 10,
                   name: "Ppat_constraint",
+                  length: 2,
                   "0": mkpat(/* constructor */{
                         tag: 13,
                         name: "Ppat_unpack",
+                        length: 1,
                         "0": /* record */[
                           /* txt */_3,
                           /* loc */rhs_loc(3)
@@ -9292,6 +10002,7 @@ var yyact = /* array */[
                   "1": ghtyp(/* constructor */{
                         tag: 9,
                         name: "Ptyp_package",
+                        length: 1,
                         "0": _5
                       })
                 });
@@ -9306,6 +10017,7 @@ var yyact = /* array */[
       return mkpat(/* constructor */{
                   tag: 15,
                   name: "Ppat_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -9315,6 +10027,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9325,10 +10038,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               }
@@ -9343,6 +10058,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9353,6 +10069,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9363,6 +10080,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               },
@@ -9375,6 +10093,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               },
@@ -9388,6 +10107,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               },
@@ -9401,6 +10121,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": _3[0]
               },
@@ -9442,6 +10163,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1[0],
               "1": /* [] */0
             };
@@ -9452,6 +10174,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1[0],
               "1": _2
             };
@@ -9471,6 +10194,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9481,6 +10205,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -9514,6 +10239,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9550,6 +10276,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Ptype_variant",
+                length: 1,
                 "0": List.rev(_2)
               },
               /* Public */1,
@@ -9562,6 +10289,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Ptype_variant",
+                length: 1,
                 "0": List.rev(_3)
               },
               /* Private */0,
@@ -9582,6 +10310,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Ptype_record",
+                length: 1,
                 "0": _4
               },
               _2,
@@ -9596,6 +10325,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "Ptype_variant",
+                length: 1,
                 "0": List.rev(_5)
               },
               _4,
@@ -9618,6 +10348,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 1,
                 name: "Ptype_record",
+                length: 1,
                 "0": _6
               },
               _4,
@@ -9632,6 +10363,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9652,6 +10384,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9662,6 +10395,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9671,6 +10405,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 0,
                   name: "Ptyp_var",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -9685,6 +10420,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9714,6 +10450,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 0,
                   name: "Ptyp_var",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -9722,6 +10459,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9732,6 +10470,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -9741,6 +10480,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9750,6 +10490,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9760,6 +10501,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -9841,6 +10583,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9850,6 +10593,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9860,6 +10604,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _2
             };
@@ -9922,6 +10667,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9931,6 +10677,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9940,6 +10687,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9949,6 +10697,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9959,6 +10708,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -9969,6 +10719,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -9978,6 +10729,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9987,6 +10739,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -9997,6 +10750,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -10048,6 +10802,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10058,6 +10813,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10072,6 +10828,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Pwith_type",
+              length: 2,
               "0": /* record */[
                 /* txt */_3,
                 /* loc */rhs_loc(3)
@@ -10089,6 +10846,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "Pwith_typesubst",
+              length: 1,
               "0": mk$19(symbol_rloc(/* () */0), undefined, undefined, undefined, _2, undefined, undefined, undefined, _5, /* record */[
                     /* txt */_3,
                     /* loc */rhs_loc(3)
@@ -10101,6 +10859,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Pwith_module",
+              length: 2,
               "0": /* record */[
                 /* txt */_2,
                 /* loc */rhs_loc(2)
@@ -10117,6 +10876,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Pwith_modsubst",
+              length: 2,
               "0": /* record */[
                 /* txt */_2,
                 /* loc */rhs_loc(2)
@@ -10138,6 +10898,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": /* [] */0
             };
@@ -10148,6 +10909,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10161,6 +10923,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 8,
                   name: "Ptyp_poly",
+                  length: 2,
                   "0": List.rev(_1),
                   "1": _3
                 });
@@ -10174,6 +10937,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 8,
                   name: "Ptyp_poly",
+                  length: 2,
                   "0": List.rev(_1),
                   "1": _3
                 });
@@ -10195,6 +10959,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 6,
                   name: "Ptyp_alias",
+                  length: 2,
                   "0": _1,
                   "1": _4
                 });
@@ -10209,6 +10974,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 1,
                   name: "Ptyp_arrow",
+                  length: 3,
                   "0": "?" + _2,
                   "1": mkoption(_4),
                   "2": _6
@@ -10221,6 +10987,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 1,
                   name: "Ptyp_arrow",
+                  length: 3,
                   "0": "?" + _1,
                   "1": mkoption(_2),
                   "2": _4
@@ -10233,6 +11000,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 1,
                   name: "Ptyp_arrow",
+                  length: 3,
                   "0": _1,
                   "1": _3,
                   "2": _5
@@ -10244,6 +11012,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 1,
                   name: "Ptyp_arrow",
+                  length: 3,
                   "0": "",
                   "1": _1,
                   "2": _3
@@ -10282,6 +11051,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 0,
                   name: "Ptyp_var",
+                  length: 1,
                   "0": _2
                 });
     }),
@@ -10293,6 +11063,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 3,
                   name: "Ptyp_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_1,
                     /* loc */rhs_loc(1)
@@ -10306,6 +11077,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 3,
                   name: "Ptyp_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_2,
                     /* loc */rhs_loc(2)
@@ -10313,6 +11085,7 @@ var yyact = /* array */[
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _1,
                     "1": /* [] */0
                   }
@@ -10324,6 +11097,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 3,
                   name: "Ptyp_constr",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_4,
                     /* loc */rhs_loc(4)
@@ -10336,6 +11110,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 4,
                   name: "Ptyp_object",
+                  length: 2,
                   "0": _2[0],
                   "1": _2[1]
                 });
@@ -10344,6 +11119,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 4,
                   name: "Ptyp_object",
+                  length: 2,
                   "0": /* [] */0,
                   "1": /* Closed */0
                 });
@@ -10353,6 +11129,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 5,
                   name: "Ptyp_class",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_2,
                     /* loc */rhs_loc(2)
@@ -10366,6 +11143,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 5,
                   name: "Ptyp_class",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_3,
                     /* loc */rhs_loc(3)
@@ -10373,6 +11151,7 @@ var yyact = /* array */[
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _1,
                     "1": /* [] */0
                   }
@@ -10384,6 +11163,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 5,
                   name: "Ptyp_class",
+                  length: 2,
                   "0": /* record */[
                     /* txt */_5,
                     /* loc */rhs_loc(5)
@@ -10396,9 +11176,11 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _2,
                     "1": /* [] */0
                   },
@@ -10411,6 +11193,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": List.rev(_3),
                   "1": /* Closed */0,
                   "2": undefined
@@ -10422,9 +11205,11 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _2,
                     "1": List.rev(_4)
                   },
@@ -10438,6 +11223,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": List.rev(_3),
                   "1": /* Open */1,
                   "2": undefined
@@ -10447,6 +11233,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": /* [] */0,
                   "1": /* Open */1,
                   "2": undefined
@@ -10458,6 +11245,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": List.rev(_3),
                   "1": /* Closed */0,
                   "2": /* [] */0
@@ -10470,6 +11258,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 7,
                   name: "Ptyp_variant",
+                  length: 3,
                   "0": List.rev(_3),
                   "1": /* Closed */0,
                   "2": List.rev(_5)
@@ -10480,6 +11269,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 9,
                   name: "Ptyp_package",
+                  length: 1,
                   "0": _3
                 });
     }),
@@ -10488,6 +11278,7 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 10,
                   name: "Ptyp_extension",
+                  length: 1,
                   "0": _1
                 });
     }),
@@ -10528,6 +11319,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10538,6 +11330,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -10547,6 +11340,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10557,6 +11351,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10569,6 +11364,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Rinherit",
+              length: 1,
               "0": _1
             };
     }),
@@ -10580,6 +11376,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Rtag",
+              length: 4,
               "0": _1,
               "1": _5,
               "2": _3,
@@ -10592,6 +11389,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Rtag",
+              length: 4,
               "0": _1,
               "1": _2,
               "2": true,
@@ -10609,6 +11407,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10619,6 +11418,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10628,6 +11428,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10638,6 +11439,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _2,
               "1": _1
             };
@@ -10651,9 +11453,11 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 2,
                   name: "Ptyp_tuple",
+                  length: 1,
                   "0": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _1,
                     "1": List.rev(_3)
                   }
@@ -10668,9 +11472,11 @@ var yyact = /* array */[
       return mktyp(/* constructor */{
                   tag: 2,
                   name: "Ptyp_tuple",
+                  length: 1,
                   "0": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": _1,
                     "1": List.rev(_3)
                   }
@@ -10681,6 +11487,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10691,6 +11498,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10700,6 +11508,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10710,6 +11519,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10719,6 +11529,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -10729,6 +11540,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _3,
               "1": _1
             };
@@ -10740,6 +11552,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": _3[0]
               },
@@ -10753,6 +11566,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": /* [] */0
               },
@@ -10783,6 +11597,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Const_int",
+              length: 1,
               "0": _1
             };
     }),
@@ -10791,6 +11606,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Const_char",
+              length: 1,
               "0": _1
             };
     }),
@@ -10799,6 +11615,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "Const_string",
+              length: 2,
               "0": _1[0],
               "1": _1[1]
             };
@@ -10808,6 +11625,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Const_float",
+              length: 1,
               "0": _1
             };
     }),
@@ -10816,6 +11634,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 4,
               name: "Const_int32",
+              length: 1,
               "0": _1
             };
     }),
@@ -10824,6 +11643,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 5,
               name: "Const_int64",
+              length: 1,
               "0": _1
             };
     }),
@@ -10832,6 +11652,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 6,
               name: "Const_nativeint",
+              length: 1,
               "0": _1
             };
     }),
@@ -10843,6 +11664,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Const_int",
+              length: 1,
               "0": -_2 | 0
             };
     }),
@@ -10851,6 +11673,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Const_float",
+              length: 1,
               "0": "-" + _2
             };
     }),
@@ -10859,6 +11682,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 4,
               name: "Const_int32",
+              length: 1,
               "0": -_2 | 0
             };
     }),
@@ -10867,6 +11691,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 5,
               name: "Const_int64",
+              length: 1,
               "0": Caml_int64.neg(_2)
             };
     }),
@@ -10875,6 +11700,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 6,
               name: "Const_nativeint",
+              length: 1,
               "0": -_2
             };
     }),
@@ -10883,6 +11709,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Const_int",
+              length: 1,
               "0": _2
             };
     }),
@@ -10891,6 +11718,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Const_float",
+              length: 1,
               "0": _2
             };
     }),
@@ -10899,6 +11727,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 4,
               name: "Const_int32",
+              length: 1,
               "0": _2
             };
     }),
@@ -10907,6 +11736,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 5,
               name: "Const_int64",
+              length: 1,
               "0": _2
             };
     }),
@@ -10915,6 +11745,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 6,
               name: "Const_nativeint",
+              length: 1,
               "0": _2
             };
     }),
@@ -11029,6 +11860,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11038,6 +11870,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11049,6 +11882,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": "[]"
             };
     }),
@@ -11056,6 +11890,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": "()"
             };
     }),
@@ -11063,6 +11898,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": "false"
             };
     }),
@@ -11070,6 +11906,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": "true"
             };
     }),
@@ -11078,6 +11915,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11087,6 +11925,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11096,6 +11935,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11105,6 +11945,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11114,6 +11955,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11123,6 +11965,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11132,6 +11975,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11141,6 +11985,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11154,6 +11999,7 @@ var yyact = /* array */[
         return /* constructor */{
                 tag: 2,
                 name: "Lapply",
+                length: 2,
                 "0": p1,
                 "1": p2
               };
@@ -11163,6 +12009,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 3,
                 name: "Applicative_path",
+                length: 1,
                 "0": symbol_rloc(/* () */0)
               }
             ];
@@ -11173,6 +12020,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11182,6 +12030,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11191,6 +12040,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11200,6 +12050,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11209,6 +12060,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Lident",
+              length: 1,
               "0": _1
             };
     }),
@@ -11218,6 +12070,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ldot",
+              length: 2,
               "0": _1,
               "1": _3
             };
@@ -11227,6 +12080,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* Pdir_none */0
             };
@@ -11237,10 +12091,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 0,
                 name: "Pdir_string",
+                length: 1,
                 "0": _3[0]
               }
             };
@@ -11251,10 +12107,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 1,
                 name: "Pdir_int",
+                length: 1,
                 "0": _3
               }
             };
@@ -11265,10 +12123,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 2,
                 name: "Pdir_ident",
+                length: 1,
                 "0": _3
               }
             };
@@ -11279,10 +12139,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 2,
                 name: "Pdir_ident",
+                length: 1,
                 "0": _3
               }
             };
@@ -11292,10 +12154,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 3,
                 name: "Pdir_bool",
+                length: 1,
                 "0": false
               }
             };
@@ -11305,10 +12169,12 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Ptop_dir",
+              length: 2,
               "0": _2,
               "1": /* constructor */{
                 tag: 3,
                 name: "Pdir_bool",
+                length: 1,
                 "0": true
               }
             };
@@ -11610,6 +12476,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _2
             };
@@ -11623,6 +12490,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": _1,
               "1": _2
             };
@@ -11641,6 +12509,7 @@ var yyact = /* array */[
               /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": _1,
                 "1": _2
               }
@@ -11675,6 +12544,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "PStr",
+              length: 1,
               "0": _1
             };
     }),
@@ -11683,6 +12553,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "PTyp",
+              length: 1,
               "0": _2
             };
     }),
@@ -11691,6 +12562,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "PPat",
+              length: 2,
               "0": _2,
               "1": undefined
             };
@@ -11701,6 +12573,7 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "PPat",
+              length: 2,
               "0": _2,
               "1": _4
             };
@@ -11817,6 +12690,7 @@ function assert_same_type(lexbuf, x, y) {
           /* constructor */{
             tag: 7,
             name: "Conditional_expr_expected_type",
+            length: 2,
             "0": lhs,
             "1": rhs
           },
@@ -11831,6 +12705,7 @@ var directive_built_in_values = Hashtbl.create(undefined, 51);
 Hashtbl.replace(directive_built_in_values, "OCAML_VERSION", /* constructor */{
       tag: 3,
       name: "Dir_string",
+      length: 1,
       "0": Sys.ocaml_version
     });
 
@@ -11859,6 +12734,7 @@ if (exit === 1) {
 var v = /* constructor */{
   tag: 3,
   name: "Dir_string",
+  length: 1,
   "0": tmp
 };
 
@@ -11867,18 +12743,21 @@ Hashtbl.replace(directive_built_in_values, "OCAML_PATCH", v);
 Hashtbl.replace(directive_built_in_values, "OS_TYPE", /* constructor */{
       tag: 3,
       name: "Dir_string",
+      length: 1,
       "0": "Unix"
     });
 
 Hashtbl.replace(directive_built_in_values, "BIG_ENDIAN", /* constructor */{
       tag: 0,
       name: "Dir_bool",
+      length: 1,
       "0": Sys.big_endian
     });
 
 Hashtbl.replace(directive_built_in_values, "WORD_SIZE", /* constructor */{
       tag: 2,
       name: "Dir_int",
+      length: 1,
       "0": Sys.word_size
     });
 
@@ -11969,6 +12848,7 @@ function query(loc, str) {
           return /* constructor */{
                   tag: 0,
                   name: "Dir_bool",
+                  length: 1,
                   "0": false
                 };
         } else {
@@ -11980,6 +12860,7 @@ function query(loc, str) {
           return /* constructor */{
                   tag: 0,
                   name: "Dir_bool",
+                  length: 1,
                   "0": Pervasives.bool_of_string(v$1)
                 };
         }
@@ -11988,6 +12869,7 @@ function query(loc, str) {
             return /* constructor */{
                     tag: 2,
                     name: "Dir_int",
+                    length: 1,
                     "0": Caml_format.caml_int_of_string(v$1)
                   };
           }
@@ -11996,6 +12878,7 @@ function query(loc, str) {
               return /* constructor */{
                       tag: 1,
                       name: "Dir_float",
+                      length: 1,
                       "0": Caml_format.caml_float_of_string(v$1)
                     };
             }
@@ -12003,6 +12886,7 @@ function query(loc, str) {
               return /* constructor */{
                       tag: 3,
                       name: "Dir_string",
+                      length: 1,
                       "0": v$1
                     };
             }
@@ -12018,6 +12902,7 @@ function query(loc, str) {
     return /* constructor */{
             tag: 0,
             name: "Dir_bool",
+            length: 1,
             "0": false
           };
   } else {
@@ -12032,12 +12917,14 @@ function value_of_token(loc, t) {
           return /* constructor */{
                   tag: 0,
                   name: "Dir_bool",
+                  length: 1,
                   "0": false
                 };
       case 91 :
           return /* constructor */{
                   tag: 0,
                   name: "Dir_bool",
+                  length: 1,
                   "0": true
                 };
       default:
@@ -12053,18 +12940,21 @@ function value_of_token(loc, t) {
           return /* constructor */{
                   tag: 1,
                   name: "Dir_float",
+                  length: 1,
                   "0": Caml_format.caml_float_of_string(t[0])
                 };
       case 7 :
           return /* constructor */{
                   tag: 2,
                   name: "Dir_int",
+                  length: 1,
                   "0": t[0]
                 };
       case 16 :
           return /* constructor */{
                   tag: 3,
                   name: "Dir_string",
+                  length: 1,
                   "0": t[0][0]
                 };
       case 17 :
@@ -12166,6 +13056,7 @@ function directive_parse(token_with_comments, lexbuf) {
                           /* constructor */{
                             tag: 6,
                             name: "Illegal_semver",
+                            length: 1,
                             "0": str
                           },
                           loc
@@ -12193,6 +13084,7 @@ function directive_parse(token_with_comments, lexbuf) {
                                     /* constructor */{
                                       tag: 6,
                                       name: "Illegal_semver",
+                                      length: 1,
                                       "0": str
                                     },
                                     loc
@@ -12216,6 +13108,7 @@ function directive_parse(token_with_comments, lexbuf) {
                                     /* constructor */{
                                       tag: 6,
                                       name: "Illegal_semver",
+                                      length: 1,
                                       "0": str
                                     },
                                     loc
@@ -12282,6 +13175,7 @@ function directive_parse(token_with_comments, lexbuf) {
                         /* constructor */{
                           tag: 7,
                           name: "Conditional_expr_expected_type",
+                          length: 2,
                           "0": /* Dir_type_string */3,
                           "1": type_of_directive(lhs)
                         },
@@ -12296,6 +13190,7 @@ function directive_parse(token_with_comments, lexbuf) {
                       /* constructor */{
                         tag: 7,
                         name: "Conditional_expr_expected_type",
+                        length: 2,
                         "0": /* Dir_type_string */3,
                         "1": type_of_directive(lhs)
                       },
@@ -12409,6 +13304,7 @@ function directive_parse(token_with_comments, lexbuf) {
                                 /* constructor */{
                                   tag: 7,
                                   name: "Conditional_expr_expected_type",
+                                  length: 2,
                                   "0": /* Dir_type_bool */0,
                                   "1": /* Dir_type_float */1
                                 },
@@ -12417,6 +13313,7 @@ function directive_parse(token_with_comments, lexbuf) {
                         }), /* constructor */{
                         tag: 1,
                         name: "Dir_float",
+                        length: 1,
                         "0": Caml_format.caml_float_of_string(curr_token[0])
                       });
         case 7 :
@@ -12427,6 +13324,7 @@ function directive_parse(token_with_comments, lexbuf) {
                         }), /* constructor */{
                         tag: 2,
                         name: "Dir_int",
+                        length: 1,
                         "0": v$1
                       });
         case 11 :
@@ -12476,6 +13374,7 @@ function directive_parse(token_with_comments, lexbuf) {
                                 /* constructor */{
                                   tag: 7,
                                   name: "Conditional_expr_expected_type",
+                                  length: 2,
                                   "0": /* Dir_type_bool */0,
                                   "1": /* Dir_type_string */3
                                 },
@@ -12484,6 +13383,7 @@ function directive_parse(token_with_comments, lexbuf) {
                         }), /* constructor */{
                         tag: 3,
                         name: "Dir_string",
+                        length: 1,
                         "0": curr_token[0][0]
                       });
         case 17 :
@@ -12499,6 +13399,7 @@ function directive_parse(token_with_comments, lexbuf) {
                                 /* constructor */{
                                   tag: 7,
                                   name: "Conditional_expr_expected_type",
+                                  length: 2,
                                   "0": /* Dir_type_bool */0,
                                   "1": ty
                                 },
@@ -12575,6 +13476,7 @@ function is_elif(i) {
 var keyword_table = create_hashtable(149, /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* tuple */[
         "and",
         /* AND */2
@@ -12582,6 +13484,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           "as",
           /* AS */3
@@ -12589,6 +13492,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             "assert",
             /* ASSERT */4
@@ -12596,6 +13500,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               "begin",
               /* BEGIN */10
@@ -12603,6 +13508,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 "class",
                 /* CLASS */11
@@ -12610,6 +13516,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   "constraint",
                   /* CONSTRAINT */17
@@ -12617,6 +13524,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     "do",
                     /* DO */18
@@ -12624,6 +13532,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "done",
                       /* DONE */19
@@ -12631,6 +13540,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "downto",
                         /* DOWNTO */22
@@ -12638,6 +13548,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "else",
                           /* ELSE */23
@@ -12645,6 +13556,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "end",
                             /* END */24
@@ -12652,6 +13564,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "exception",
                               /* EXCEPTION */27
@@ -12659,6 +13572,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "external",
                                 /* EXTERNAL */28
@@ -12666,6 +13580,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "false",
                                   /* FALSE */29
@@ -12673,6 +13588,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": /* tuple */[
                                     "for",
                                     /* FOR */30
@@ -12680,6 +13596,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       "fun",
                                       /* FUN */31
@@ -12687,6 +13604,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
+                                      length: 2,
                                       "0": /* tuple */[
                                         "function",
                                         /* FUNCTION */32
@@ -12694,6 +13612,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
+                                        length: 2,
                                         "0": /* tuple */[
                                           "functor",
                                           /* FUNCTOR */33
@@ -12701,6 +13620,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "::",
+                                          length: 2,
                                           "0": /* tuple */[
                                             "if",
                                             /* IF */37
@@ -12708,6 +13628,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                           "1": /* constructor */{
                                             tag: 0,
                                             name: "::",
+                                            length: 2,
                                             "0": /* tuple */[
                                               "in",
                                               /* IN */38
@@ -12715,6 +13636,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                             "1": /* constructor */{
                                               tag: 0,
                                               name: "::",
+                                              length: 2,
                                               "0": /* tuple */[
                                                 "include",
                                                 /* INCLUDE */39
@@ -12722,6 +13644,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                               "1": /* constructor */{
                                                 tag: 0,
                                                 name: "::",
+                                                length: 2,
                                                 "0": /* tuple */[
                                                   "inherit",
                                                   /* INHERIT */40
@@ -12729,6 +13652,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                 "1": /* constructor */{
                                                   tag: 0,
                                                   name: "::",
+                                                  length: 2,
                                                   "0": /* tuple */[
                                                     "initializer",
                                                     /* INITIALIZER */41
@@ -12736,6 +13660,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                   "1": /* constructor */{
                                                     tag: 0,
                                                     name: "::",
+                                                    length: 2,
                                                     "0": /* tuple */[
                                                       "lazy",
                                                       /* LAZY */42
@@ -12743,6 +13668,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                     "1": /* constructor */{
                                                       tag: 0,
                                                       name: "::",
+                                                      length: 2,
                                                       "0": /* tuple */[
                                                         "let",
                                                         /* LET */53
@@ -12750,6 +13676,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                       "1": /* constructor */{
                                                         tag: 0,
                                                         name: "::",
+                                                        length: 2,
                                                         "0": /* tuple */[
                                                           "match",
                                                           /* MATCH */58
@@ -12757,6 +13684,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                         "1": /* constructor */{
                                                           tag: 0,
                                                           name: "::",
+                                                          length: 2,
                                                           "0": /* tuple */[
                                                             "method",
                                                             /* METHOD */59
@@ -12764,6 +13692,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                           "1": /* constructor */{
                                                             tag: 0,
                                                             name: "::",
+                                                            length: 2,
                                                             "0": /* tuple */[
                                                               "module",
                                                               /* MODULE */63
@@ -12771,6 +13700,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                             "1": /* constructor */{
                                                               tag: 0,
                                                               name: "::",
+                                                              length: 2,
                                                               "0": /* tuple */[
                                                                 "mutable",
                                                                 /* MUTABLE */64
@@ -12778,6 +13708,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                               "1": /* constructor */{
                                                                 tag: 0,
                                                                 name: "::",
+                                                                length: 2,
                                                                 "0": /* tuple */[
                                                                   "new",
                                                                   /* NEW */65
@@ -12785,6 +13716,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                 "1": /* constructor */{
                                                                   tag: 0,
                                                                   name: "::",
+                                                                  length: 2,
                                                                   "0": /* tuple */[
                                                                     "nonrec",
                                                                     /* NONREC */66
@@ -12792,6 +13724,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                   "1": /* constructor */{
                                                                     tag: 0,
                                                                     name: "::",
+                                                                    length: 2,
                                                                     "0": /* tuple */[
                                                                       "object",
                                                                       /* OBJECT */67
@@ -12799,6 +13732,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                     "1": /* constructor */{
                                                                       tag: 0,
                                                                       name: "::",
+                                                                      length: 2,
                                                                       "0": /* tuple */[
                                                                         "of",
                                                                         /* OF */68
@@ -12806,6 +13740,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                       "1": /* constructor */{
                                                                         tag: 0,
                                                                         name: "::",
+                                                                        length: 2,
                                                                         "0": /* tuple */[
                                                                           "open",
                                                                           /* OPEN */69
@@ -12813,6 +13748,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                         "1": /* constructor */{
                                                                           tag: 0,
                                                                           name: "::",
+                                                                          length: 2,
                                                                           "0": /* tuple */[
                                                                             "or",
                                                                             /* OR */70
@@ -12820,6 +13756,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                           "1": /* constructor */{
                                                                             tag: 0,
                                                                             name: "::",
+                                                                            length: 2,
                                                                             "0": /* tuple */[
                                                                               "private",
                                                                               /* PRIVATE */75
@@ -12827,6 +13764,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                             "1": /* constructor */{
                                                                               tag: 0,
                                                                               name: "::",
+                                                                              length: 2,
                                                                               "0": /* tuple */[
                                                                                 "rec",
                                                                                 /* REC */80
@@ -12834,6 +13772,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                               "1": /* constructor */{
                                                                                 tag: 0,
                                                                                 name: "::",
+                                                                                length: 2,
                                                                                 "0": /* tuple */[
                                                                                   "sig",
                                                                                   /* SIG */85
@@ -12841,6 +13780,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                 "1": /* constructor */{
                                                                                   tag: 0,
                                                                                   name: "::",
+                                                                                  length: 2,
                                                                                   "0": /* tuple */[
                                                                                     "struct",
                                                                                     /* STRUCT */87
@@ -12848,6 +13788,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                   "1": /* constructor */{
                                                                                     tag: 0,
                                                                                     name: "::",
+                                                                                    length: 2,
                                                                                     "0": /* tuple */[
                                                                                       "then",
                                                                                       /* THEN */88
@@ -12855,6 +13796,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                     "1": /* constructor */{
                                                                                       tag: 0,
                                                                                       name: "::",
+                                                                                      length: 2,
                                                                                       "0": /* tuple */[
                                                                                         "to",
                                                                                         /* TO */90
@@ -12862,6 +13804,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                       "1": /* constructor */{
                                                                                         tag: 0,
                                                                                         name: "::",
+                                                                                        length: 2,
                                                                                         "0": /* tuple */[
                                                                                           "true",
                                                                                           /* TRUE */91
@@ -12869,6 +13812,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                         "1": /* constructor */{
                                                                                           tag: 0,
                                                                                           name: "::",
+                                                                                          length: 2,
                                                                                           "0": /* tuple */[
                                                                                             "try",
                                                                                             /* TRY */92
@@ -12876,6 +13820,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                           "1": /* constructor */{
                                                                                             tag: 0,
                                                                                             name: "::",
+                                                                                            length: 2,
                                                                                             "0": /* tuple */[
                                                                                               "type",
                                                                                               /* TYPE */93
@@ -12883,6 +13828,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                             "1": /* constructor */{
                                                                                               tag: 0,
                                                                                               name: "::",
+                                                                                              length: 2,
                                                                                               "0": /* tuple */[
                                                                                                 "val",
                                                                                                 /* VAL */95
@@ -12890,6 +13836,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                               "1": /* constructor */{
                                                                                                 tag: 0,
                                                                                                 name: "::",
+                                                                                                length: 2,
                                                                                                 "0": /* tuple */[
                                                                                                   "virtual",
                                                                                                   /* VIRTUAL */96
@@ -12897,6 +13844,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                                 "1": /* constructor */{
                                                                                                   tag: 0,
                                                                                                   name: "::",
+                                                                                                  length: 2,
                                                                                                   "0": /* tuple */[
                                                                                                     "when",
                                                                                                     /* WHEN */97
@@ -12904,6 +13852,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                                   "1": /* constructor */{
                                                                                                     tag: 0,
                                                                                                     name: "::",
+                                                                                                    length: 2,
                                                                                                     "0": /* tuple */[
                                                                                                       "while",
                                                                                                       /* WHILE */98
@@ -12911,6 +13860,7 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                                     "1": /* constructor */{
                                                                                                       tag: 0,
                                                                                                       name: "::",
+                                                                                                      length: 2,
                                                                                                       "0": /* tuple */[
                                                                                                         "with",
                                                                                                         /* WITH */99
@@ -12918,77 +13868,91 @@ var keyword_table = create_hashtable(149, /* constructor */{
                                                                                                       "1": /* constructor */{
                                                                                                         tag: 0,
                                                                                                         name: "::",
+                                                                                                        length: 2,
                                                                                                         "0": /* tuple */[
                                                                                                           "mod",
                                                                                                           /* constructor */{
                                                                                                             tag: 5,
                                                                                                             name: "INFIXOP3",
+                                                                                                            length: 1,
                                                                                                             "0": "mod"
                                                                                                           }
                                                                                                         ],
                                                                                                         "1": /* constructor */{
                                                                                                           tag: 0,
                                                                                                           name: "::",
+                                                                                                          length: 2,
                                                                                                           "0": /* tuple */[
                                                                                                             "land",
                                                                                                             /* constructor */{
                                                                                                               tag: 5,
                                                                                                               name: "INFIXOP3",
+                                                                                                              length: 1,
                                                                                                               "0": "land"
                                                                                                             }
                                                                                                           ],
                                                                                                           "1": /* constructor */{
                                                                                                             tag: 0,
                                                                                                             name: "::",
+                                                                                                            length: 2,
                                                                                                             "0": /* tuple */[
                                                                                                               "lor",
                                                                                                               /* constructor */{
                                                                                                                 tag: 5,
                                                                                                                 name: "INFIXOP3",
+                                                                                                                length: 1,
                                                                                                                 "0": "lor"
                                                                                                               }
                                                                                                             ],
                                                                                                             "1": /* constructor */{
                                                                                                               tag: 0,
                                                                                                               name: "::",
+                                                                                                              length: 2,
                                                                                                               "0": /* tuple */[
                                                                                                                 "lxor",
                                                                                                                 /* constructor */{
                                                                                                                   tag: 5,
                                                                                                                   name: "INFIXOP3",
+                                                                                                                  length: 1,
                                                                                                                   "0": "lxor"
                                                                                                                 }
                                                                                                               ],
                                                                                                               "1": /* constructor */{
                                                                                                                 tag: 0,
                                                                                                                 name: "::",
+                                                                                                                length: 2,
                                                                                                                 "0": /* tuple */[
                                                                                                                   "lsl",
                                                                                                                   /* constructor */{
                                                                                                                     tag: 6,
                                                                                                                     name: "INFIXOP4",
+                                                                                                                    length: 1,
                                                                                                                     "0": "lsl"
                                                                                                                   }
                                                                                                                 ],
                                                                                                                 "1": /* constructor */{
                                                                                                                   tag: 0,
                                                                                                                   name: "::",
+                                                                                                                  length: 2,
                                                                                                                   "0": /* tuple */[
                                                                                                                     "lsr",
                                                                                                                     /* constructor */{
                                                                                                                       tag: 6,
                                                                                                                       name: "INFIXOP4",
+                                                                                                                      length: 1,
                                                                                                                       "0": "lsr"
                                                                                                                     }
                                                                                                                   ],
                                                                                                                   "1": /* constructor */{
                                                                                                                     tag: 0,
                                                                                                                     name: "::",
+                                                                                                                    length: 2,
                                                                                                                     "0": /* tuple */[
                                                                                                                       "asr",
                                                                                                                       /* constructor */{
                                                                                                                         tag: 6,
                                                                                                                         name: "INFIXOP4",
+                                                                                                                        length: 1,
                                                                                                                         "0": "asr"
                                                                                                                       }
                                                                                                                     ],
@@ -13103,6 +14067,7 @@ function with_comment_buffer(comment, lexbuf) {
   comment_start_loc[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": start_loc,
     "1": /* [] */0
   };
@@ -13162,6 +14127,7 @@ function char_for_decimal_code(lexbuf, i) {
             /* constructor */{
               tag: 1,
               name: "Illegal_escape",
+              length: 1,
               "0": Lexing.lexeme(lexbuf)
             },
             curr(lexbuf)
@@ -13238,6 +14204,7 @@ function get_label_name(lexbuf) {
           /* constructor */{
             tag: 4,
             name: "Keyword_as_label",
+            length: 1,
             "0": name
           },
           curr(lexbuf)
@@ -13268,6 +14235,7 @@ function add_comment(com) {
   comment_list[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": com,
     "1": comment_list[0]
   };
@@ -13288,9 +14256,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "String literal not terminated",
                         "1": /* End_of_format */0
                       },
@@ -13300,9 +14270,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Unterminated parens in conditional predicate",
                         "1": /* End_of_format */0
                       },
@@ -13312,9 +14284,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "#if not terminated",
                         "1": /* End_of_format */0
                       },
@@ -13324,9 +14298,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "#else not terminated",
                         "1": /* End_of_format */0
                       },
@@ -13336,9 +14312,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Unexpected token in conditional predicate",
                         "1": /* End_of_format */0
                       },
@@ -13348,9 +14326,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Expect `then` after conditional predicate",
                         "1": /* End_of_format */0
                       },
@@ -13360,9 +14340,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Unexpected directive",
                         "1": /* End_of_format */0
                       },
@@ -13376,17 +14358,21 @@ function report_error(ppf, param) {
           return Curry._1(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Illegal character (",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* ")" */41,
                                 "1": /* End_of_format */0
                               }
@@ -13398,17 +14384,21 @@ function report_error(ppf, param) {
           return Curry._1(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Illegal backslash escape in string or character (",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* ")" */41,
                                 "1": /* End_of_format */0
                               }
@@ -13420,9 +14410,11 @@ function report_error(ppf, param) {
           return Format.fprintf(ppf, /* constructor */{
                       tag: 0,
                       name: "Format",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
+                        length: 2,
                         "0": "Comment not terminated",
                         "1": /* End_of_format */0
                       },
@@ -13432,20 +14424,25 @@ function report_error(ppf, param) {
           return Curry._2(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "This comment contains an unterminated string literal",
                             "1": /* constructor */{
                               tag: 17,
                               name: "Formatting_lit",
+                              length: 2,
                               "0": /* Flush_newline */4,
                               "1": /* constructor */{
                                 tag: 15,
                                 name: "Alpha",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
+                                  length: 2,
                                   "0": "String literal begins here",
                                   "1": /* End_of_format */0
                                 }
@@ -13458,17 +14455,21 @@ function report_error(ppf, param) {
           return Curry._1(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
+                            length: 2,
                             "0": /* "`" */96,
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": "' is a keyword, it cannot be used as label name",
                                 "1": /* End_of_format */0
                               }
@@ -13480,13 +14481,16 @@ function report_error(ppf, param) {
           return Curry._1(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Integer literal exceeds the range of representable integers of type ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -13497,13 +14501,16 @@ function report_error(ppf, param) {
           return Curry._1(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Illegal semantic version string ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -13514,25 +14521,31 @@ function report_error(ppf, param) {
           return Curry._2(Format.fprintf(ppf, /* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
+                            length: 2,
                             "0": "Conditional expression type mismatch (",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* "," */44,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
+                                    length: 2,
                                     "0": /* ")" */41,
                                     "1": /* End_of_format */0
                                   }
@@ -13583,6 +14596,7 @@ function token(lexbuf) {
                   /* constructor */{
                     tag: 0,
                     name: "Illegal_character",
+                    length: 1,
                     "0": Lexing.lexeme_char(lexbuf$1, 0)
                   },
                   curr(lexbuf$1)
@@ -13603,17 +14617,20 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 10,
                   name: "LABEL",
+                  length: 1,
                   "0": get_label_name(lexbuf$1)
                 };
       case 6 :
           prerr_warning(curr(lexbuf$1), /* constructor */{
                 tag: 0,
                 name: "Deprecated",
+                length: 1,
                 "0": "ISO-Latin1 characters in identifiers"
               });
           return /* constructor */{
                   tag: 10,
                   name: "LABEL",
+                  length: 1,
                   "0": get_label_name(lexbuf$1)
                 };
       case 7 :
@@ -13622,17 +14639,20 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 13,
                   name: "OPTLABEL",
+                  length: 1,
                   "0": get_label_name(lexbuf$1)
                 };
       case 9 :
           prerr_warning(curr(lexbuf$1), /* constructor */{
                 tag: 0,
                 name: "Deprecated",
+                length: 1,
                 "0": "ISO-Latin1 characters in identifiers"
               });
           return /* constructor */{
                   tag: 13,
                   name: "OPTLABEL",
+                  length: 1,
                   "0": get_label_name(lexbuf$1)
                 };
       case 10 :
@@ -13645,6 +14665,7 @@ function token(lexbuf) {
               return /* constructor */{
                       tag: 11,
                       name: "LIDENT",
+                      length: 1,
                       "0": s
                     };
             } else {
@@ -13655,28 +14676,33 @@ function token(lexbuf) {
           prerr_warning(curr(lexbuf$1), /* constructor */{
                 tag: 0,
                 name: "Deprecated",
+                length: 1,
                 "0": "ISO-Latin1 characters in identifiers"
               });
           return /* constructor */{
                   tag: 11,
                   name: "LIDENT",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 12 :
           return /* constructor */{
                   tag: 17,
                   name: "UIDENT",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 13 :
           prerr_warning(curr(lexbuf$1), /* constructor */{
                 tag: 0,
                 name: "Deprecated",
+                length: 1,
                 "0": "ISO-Latin1 characters in identifiers"
               });
           return /* constructor */{
                   tag: 17,
                   name: "UIDENT",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 14 :
@@ -13684,6 +14710,7 @@ function token(lexbuf) {
             return /* constructor */{
                     tag: 7,
                     name: "INT",
+                    length: 1,
                     "0": cvt_int_literal(Lexing.lexeme(lexbuf$1))
                   };
           }
@@ -13695,6 +14722,7 @@ function token(lexbuf) {
                     /* constructor */{
                       tag: 5,
                       name: "Literal_overflow",
+                      length: 1,
                       "0": "int"
                     },
                     curr(lexbuf$1)
@@ -13706,6 +14734,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 1,
                   name: "FLOAT",
+                  length: 1,
                   "0": remove_underscores(Lexing.lexeme(lexbuf$1))
                 };
       case 16 :
@@ -13713,6 +14742,7 @@ function token(lexbuf) {
             return /* constructor */{
                     tag: 8,
                     name: "INT32",
+                    length: 1,
                     "0": cvt_int32_literal(Lexing.lexeme(lexbuf$1))
                   };
           }
@@ -13724,6 +14754,7 @@ function token(lexbuf) {
                     /* constructor */{
                       tag: 5,
                       name: "Literal_overflow",
+                      length: 1,
                       "0": "int32"
                     },
                     curr(lexbuf$1)
@@ -13736,6 +14767,7 @@ function token(lexbuf) {
             return /* constructor */{
                     tag: 9,
                     name: "INT64",
+                    length: 1,
                     "0": cvt_int64_literal(Lexing.lexeme(lexbuf$1))
                   };
           }
@@ -13747,6 +14779,7 @@ function token(lexbuf) {
                     /* constructor */{
                       tag: 5,
                       name: "Literal_overflow",
+                      length: 1,
                       "0": "int64"
                     },
                     curr(lexbuf$1)
@@ -13759,6 +14792,7 @@ function token(lexbuf) {
             return /* constructor */{
                     tag: 12,
                     name: "NATIVEINT",
+                    length: 1,
                     "0": cvt_nativeint_literal(Lexing.lexeme(lexbuf$1))
                   };
           }
@@ -13770,6 +14804,7 @@ function token(lexbuf) {
                     /* constructor */{
                       tag: 5,
                       name: "Literal_overflow",
+                      length: 1,
                       "0": "nativeint"
                     },
                     curr(lexbuf$1)
@@ -13788,6 +14823,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 16,
                   name: "STRING",
+                  length: 1,
                   "0": /* tuple */[
                     get_stored_string(/* () */0),
                     undefined
@@ -13806,6 +14842,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 16,
                   name: "STRING",
+                  length: 1,
                   "0": /* tuple */[
                     get_stored_string(/* () */0),
                     delim$1
@@ -13816,30 +14853,35 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 0,
                   name: "CHAR",
+                  length: 1,
                   "0": Lexing.lexeme_char(lexbuf$1, 1)
                 };
       case 22 :
           return /* constructor */{
                   tag: 0,
                   name: "CHAR",
+                  length: 1,
                   "0": Lexing.lexeme_char(lexbuf$1, 1)
                 };
       case 23 :
           return /* constructor */{
                   tag: 0,
                   name: "CHAR",
+                  length: 1,
                   "0": char_for_backslash(Lexing.lexeme_char(lexbuf$1, 2))
                 };
       case 24 :
           return /* constructor */{
                   tag: 0,
                   name: "CHAR",
+                  length: 1,
                   "0": char_for_decimal_code(lexbuf$1, 2)
                 };
       case 25 :
           return /* constructor */{
                   tag: 0,
                   name: "CHAR",
+                  length: 1,
                   "0": char_for_hexadecimal_code(lexbuf$1, 3)
                 };
       case 26 :
@@ -13850,6 +14892,7 @@ function token(lexbuf) {
                 /* constructor */{
                   tag: 1,
                   name: "Illegal_escape",
+                  length: 1,
                   "0": esc
                 },
                 curr(lexbuf$1)
@@ -13859,6 +14902,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 18,
                   name: "COMMENT",
+                  length: 1,
                   "0": /* tuple */[
                     match[0],
                     match[1]
@@ -13869,6 +14913,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 19,
                   name: "DOCSTRING",
+                  length: 1,
                   "0": docstring(match$1[0], match$1[1])
                 };
       case 29 :
@@ -13882,6 +14927,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 18,
                   name: "COMMENT",
+                  length: 1,
                   "0": /* tuple */[
                     match$2[0],
                     match$2[1]
@@ -13895,6 +14941,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 18,
                   name: "COMMENT",
+                  length: 1,
                   "0": /* tuple */[
                     match$3[0],
                     match$3[1]
@@ -13905,6 +14952,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 18,
                   name: "COMMENT",
+                  length: 1,
                   "0": /* tuple */[
                     stars$1,
                     curr(lexbuf$1)
@@ -14013,6 +15061,7 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 2,
                   name: "INFIXOP0",
+                  length: 1,
                   "0": "!="
                 };
       case 76 :
@@ -14030,30 +15079,35 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 14,
                   name: "PREFIXOP",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 83 :
           return /* constructor */{
                   tag: 2,
                   name: "INFIXOP0",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 84 :
           return /* constructor */{
                   tag: 3,
                   name: "INFIXOP1",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 85 :
           return /* constructor */{
                   tag: 4,
                   name: "INFIXOP2",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 86 :
           return /* constructor */{
                   tag: 6,
                   name: "INFIXOP4",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 87 :
@@ -14062,12 +15116,14 @@ function token(lexbuf) {
           return /* constructor */{
                   tag: 5,
                   name: "INFIXOP3",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 89 :
           return /* constructor */{
                   tag: 15,
                   name: "SHARPOP",
+                  length: 1,
                   "0": Lexing.lexeme(lexbuf$1)
                 };
       case 90 :
@@ -14093,6 +15149,7 @@ function token(lexbuf) {
                 /* constructor */{
                   tag: 0,
                   name: "Illegal_character",
+                  length: 1,
                   "0": Lexing.lexeme_char(lexbuf$1, 0)
                 },
                 curr(lexbuf$1)
@@ -14211,6 +15268,7 @@ function __ocaml_lex_comment_rec(lexbuf, ___ocaml_lex_state) {
           comment_start_loc[0] = /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": curr(lexbuf),
             "1": comment_start_loc[0]
           };
@@ -14264,6 +15322,7 @@ function __ocaml_lex_comment_rec(lexbuf, ___ocaml_lex_state) {
                         /* constructor */{
                           tag: 3,
                           name: "Unterminated_string_in_comment",
+                          length: 2,
                           "0": start,
                           "1": exn[2]
                         },
@@ -14316,6 +15375,7 @@ function __ocaml_lex_comment_rec(lexbuf, ___ocaml_lex_state) {
                         /* constructor */{
                           tag: 3,
                           name: "Unterminated_string_in_comment",
+                          length: 2,
                           "0": start$1,
                           "1": exn$1[2]
                         },
@@ -14359,6 +15419,7 @@ function __ocaml_lex_comment_rec(lexbuf, ___ocaml_lex_state) {
                   /* constructor */{
                     tag: 2,
                     name: "Unterminated_comment",
+                    length: 1,
                     "0": start$2
                   },
                   match$5[0]
@@ -14642,20 +15703,24 @@ function token$1(lexbuf) {
                 docs$prime = lines >= 2 ? /* constructor */({
                       tag: 1,
                       name: "Before",
+                      length: 3,
                       "0": /* [] */0,
                       "1": /* [] */0,
                       "2": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": /* [] */0
                       }
                     }) : /* constructor */({
                       tag: 0,
                       name: "After",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": /* [] */0
                       }
@@ -14667,22 +15732,26 @@ function token$1(lexbuf) {
                 docs$prime = lines >= 2 ? /* constructor */({
                       tag: 1,
                       name: "Before",
+                      length: 3,
                       "0": a,
                       "1": Pervasives.$at(b, f),
                       "2": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": /* [] */0
                       }
                     }) : /* constructor */({
                       tag: 1,
                       name: "Before",
+                      length: 3,
                       "0": a,
                       "1": f,
                       "2": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": b
                       }
@@ -14692,20 +15761,24 @@ function token$1(lexbuf) {
                 docs$prime = lines >= 2 ? /* constructor */({
                       tag: 1,
                       name: "Before",
+                      length: 3,
                       "0": a$1,
                       "1": /* [] */0,
                       "2": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": /* [] */0
                       }
                     }) : /* constructor */({
                       tag: 0,
                       name: "After",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": doc,
                         "1": a$1
                       }
@@ -14834,6 +15907,7 @@ function wrap(parsing_fun, lexbuf) {
           /* constructor */{
             tag: 5,
             name: "Other",
+            length: 1,
             "0": loc
           }
         ];
@@ -14849,12 +15923,14 @@ function eq(loc, x, y) {
   suites[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       loc + (" id " + String(test_id[0])),
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
+                  length: 2,
                   "0": x,
                   "1": y
                 };

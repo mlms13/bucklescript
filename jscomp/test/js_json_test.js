@@ -18,6 +18,7 @@ function add_test(loc, test) {
   suites[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       id,
       test
@@ -32,6 +33,7 @@ function eq(loc, x, y) {
                 return /* constructor */{
                         tag: 0,
                         name: "Eq",
+                        length: 2,
                         "0": x,
                         "1": y
                       };
@@ -43,6 +45,7 @@ function false_(loc) {
                 return /* constructor */{
                         tag: 4,
                         name: "Ok",
+                        length: 1,
                         "0": false
                       };
               }));
@@ -53,6 +56,7 @@ function true_(loc) {
                 return /* constructor */{
                         tag: 4,
                         name: "Ok",
+                        length: 1,
                         "0": true
                       };
               }));
@@ -66,6 +70,7 @@ add_test("File \"js_json_test.ml\", line 23, characters 11-18", (function (param
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         } else if (ty.tag === 2) {
@@ -76,6 +81,7 @@ add_test("File \"js_json_test.ml\", line 23, characters 11-18", (function (param
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             } else if (ty2.tag === 3) {
@@ -106,12 +112,14 @@ add_test("File \"js_json_test.ml\", line 23, characters 11-18", (function (param
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": true
                     };
             } else {
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             }
@@ -119,6 +127,7 @@ add_test("File \"js_json_test.ml\", line 23, characters 11-18", (function (param
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }
@@ -126,6 +135,7 @@ add_test("File \"js_json_test.ml\", line 23, characters 11-18", (function (param
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }
@@ -143,6 +153,7 @@ if (typeof ty === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": true
                   };
           }));
@@ -152,6 +163,7 @@ if (typeof ty === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -162,6 +174,7 @@ if (typeof ty === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -176,6 +189,7 @@ if (typeof ty$1 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -184,6 +198,7 @@ if (typeof ty$1 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -208,6 +223,7 @@ if (exit === 1) {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -230,6 +246,7 @@ if (exit$1 === 1) {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -249,6 +266,7 @@ function test(v) {
                         return /* constructor */{
                                 tag: 4,
                                 name: "Ok",
+                                length: 1,
                                 "0": false
                               };
                       }));
@@ -259,6 +277,7 @@ function test(v) {
                   return /* constructor */{
                           tag: 4,
                           name: "Ok",
+                          length: 1,
                           "0": false
                         };
                 }));
@@ -299,6 +318,7 @@ if (typeof ty$4 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -310,6 +330,7 @@ if (typeof ty$4 === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -318,6 +339,7 @@ if (typeof ty$4 === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -326,6 +348,7 @@ if (typeof ty$4 === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -336,6 +359,7 @@ if (typeof ty$4 === "number") {
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             }));
@@ -345,6 +369,7 @@ if (typeof ty$4 === "number") {
               return /* constructor */{
                       tag: 5,
                       name: "Approx",
+                      length: 2,
                       "0": 123.0,
                       "1": b
                     };
@@ -354,6 +379,7 @@ if (typeof ty$4 === "number") {
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             }));
@@ -364,6 +390,7 @@ if (typeof ty$4 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -376,6 +403,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                   return /* constructor */{
                           tag: 4,
                           name: "Ok",
+                          length: 1,
                           "0": false
                         };
                 }));
@@ -388,6 +416,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -396,6 +425,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -408,6 +438,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -418,6 +449,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -428,6 +460,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -438,6 +471,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -448,6 +482,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -458,6 +493,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -474,6 +510,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                                 return /* constructor */{
                                         tag: 4,
                                         name: "Ok",
+                                        length: 1,
                                         "0": false
                                       };
                               }));
@@ -484,6 +521,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -495,6 +533,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                             return /* constructor */{
                                     tag: 4,
                                     name: "Ok",
+                                    length: 1,
                                     "0": true
                                   };
                           }));
@@ -503,6 +542,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                             return /* constructor */{
                                     tag: 4,
                                     name: "Ok",
+                                    length: 1,
                                     "0": false
                                   };
                           }));
@@ -512,6 +552,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                           return /* constructor */{
                                   tag: 4,
                                   name: "Ok",
+                                  length: 1,
                                   "0": false
                                 };
                         }));
@@ -523,6 +564,7 @@ function eq_at_i(loc, json, i, kind, expected) {
                   return /* constructor */{
                           tag: 4,
                           name: "Ok",
+                          length: 1,
                           "0": false
                         };
                 }));
@@ -620,6 +662,7 @@ if (typeof ty$6 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -630,6 +673,7 @@ if (typeof ty$6 === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -640,6 +684,7 @@ if (typeof ty$6 === "number") {
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             }));
@@ -648,6 +693,7 @@ if (typeof ty$6 === "number") {
               return /* constructor */{
                       tag: 4,
                       name: "Ok",
+                      length: 1,
                       "0": false
                     };
             }));
@@ -659,6 +705,7 @@ if (typeof ty$6 === "number") {
             return /* constructor */{
                     tag: 4,
                     name: "Ok",
+                    length: 1,
                     "0": false
                   };
           }));
@@ -668,6 +715,7 @@ if (typeof ty$6 === "number") {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -679,6 +727,7 @@ try {
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": false
                 };
         }));
@@ -688,6 +737,7 @@ catch (exn){
           return /* constructor */{
                   tag: 4,
                   name: "Ok",
+                  length: 1,
                   "0": true
                 };
         }));

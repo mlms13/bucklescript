@@ -96,13 +96,16 @@ function from_of_string(xs) {
                             Curry._1(Printf.sprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
+                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
+                                        length: 2,
                                         "0": "of_string ",
                                         "1": /* constructor */{
                                           tag: 21,
                                           name: "Scan_get_counter",
+                                          length: 2,
                                           "0": /* Token_counter */2,
                                           "1": /* End_of_format */0
                                         }
@@ -113,6 +116,7 @@ function from_of_string(xs) {
                                 return /* constructor */{
                                         tag: 0,
                                         name: "Eq",
+                                        length: 2,
                                         "0": Caml_format.caml_int_of_string(b),
                                         "1": a
                                       };
@@ -125,13 +129,16 @@ function u(v) {
   return Curry._1(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 4,
                     name: "Int",
+                    length: 4,
                     "0": /* Int_d */0,
                     "1": /* constructor */{
                       tag: 0,
                       name: "Lit_padding",
+                      length: 2,
                       "0": /* Right */1,
                       "1": 33
                     },
@@ -147,13 +154,16 @@ var to_str = Caml_format.caml_int_of_string;
 var v = Curry._1(Printf.sprintf(/* constructor */{
           tag: 0,
           name: "Format",
+          length: 2,
           "0": /* constructor */{
             tag: 4,
             name: "Int",
+            length: 4,
             "0": /* Int_d */0,
             "1": /* constructor */{
               tag: 0,
               name: "Lit_padding",
+              length: 2,
               "0": /* Right */1,
               "1": 3
             },
@@ -204,12 +214,14 @@ var pairs$1 = /* array */[
 var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             "isnan_of_string",
             (function (param) {
                 return /* constructor */{
                         tag: 0,
                         name: "Eq",
+                        length: 2,
                         "0": true,
                         "1": Pervasives.classify_float(Caml_format.caml_float_of_string("nan")) === /* FP_nan */4
                       };
@@ -223,13 +235,16 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                                 Curry._1(Printf.sprintf(/* constructor */{
                                           tag: 0,
                                           name: "Format",
+                                          length: 2,
                                           "0": /* constructor */{
                                             tag: 11,
                                             name: "String_literal",
+                                            length: 2,
                                             "0": "infinity_of_string ",
                                             "1": /* constructor */{
                                               tag: 4,
                                               name: "Int",
+                                              length: 4,
                                               "0": /* Int_d */0,
                                               "1": /* No_padding */0,
                                               "2": /* No_precision */0,
@@ -242,6 +257,7 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                                     return /* constructor */{
                                             tag: 0,
                                             name: "Eq",
+                                            length: 2,
                                             "0": a,
                                             "1": Pervasives.classify_float(Caml_format.caml_float_of_string(b))
                                           };
@@ -250,12 +266,14 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                       }), pairs)), Pervasives.$at(/* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     "throw",
                     (function (param) {
                         return /* constructor */{
                                 tag: 7,
                                 name: "ThrowAny",
+                                length: 1,
                                 "0": (function (param) {
                                     Caml_format.caml_float_of_string("");
                                     return /* () */0;
@@ -266,12 +284,14 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "format_int",
                       (function (param) {
                           return /* constructor */{
                                   tag: 0,
                                   name: "Eq",
+                                  length: 2,
                                   "0": "                              33",
                                   "1": Caml_format.caml_format_int("%32d", 33)
                                 };
@@ -286,13 +306,16 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                                     Curry._1(Printf.sprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
+                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 11,
                                                 name: "String_literal",
+                                                length: 2,
                                                 "0": "normal_float_of_string ",
                                                 "1": /* constructor */{
                                                   tag: 4,
                                                   name: "Int",
+                                                  length: 4,
                                                   "0": /* Int_d */0,
                                                   "1": /* No_padding */0,
                                                   "2": /* No_precision */0,
@@ -305,6 +328,7 @@ var suites = Pervasives.$at(from_of_string(of_string), Pervasives.$at(/* constru
                                         return /* constructor */{
                                                 tag: 0,
                                                 name: "Eq",
+                                                length: 2,
                                                 "0": a,
                                                 "1": Caml_format.caml_float_of_string(b)
                                               };
@@ -319,30 +343,37 @@ function ff(param) {
 var formatter_suites = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": /* tuple */[
     "fmt_concat",
     (function (param) {
         return /* constructor */{
                 tag: 0,
                 name: "Eq",
+                length: 2,
                 "0": Curry._6(Format.asprintf(Pervasives.$caret$caret(/* constructor */{
                               tag: 0,
                               name: "Format",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 2,
                                 name: "String",
+                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
+                                  length: 2,
                                   "0": /* " " */32,
                                   "1": /* constructor */{
                                     tag: 4,
                                     name: "Int",
+                                    length: 4,
                                     "0": /* Int_d */0,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "Lit_padding",
+                                      length: 2,
                                       "0": /* Zeros */2,
                                       "1": 3
                                     },
@@ -350,10 +381,12 @@ var formatter_suites = /* constructor */{
                                     "3": /* constructor */{
                                       tag: 12,
                                       name: "Char_literal",
+                                      length: 2,
                                       "0": /* " " */32,
                                       "1": /* constructor */{
                                         tag: 21,
                                         name: "Scan_get_counter",
+                                        length: 2,
                                         "0": /* Token_counter */2,
                                         "1": /* End_of_format */0
                                       }
@@ -365,21 +398,26 @@ var formatter_suites = /* constructor */{
                             }, /* constructor */{
                               tag: 0,
                               name: "Format",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 3,
                                 name: "Caml_string",
+                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
+                                  length: 2,
                                   "0": /* " " */32,
                                   "1": /* constructor */{
                                     tag: 4,
                                     name: "Int",
+                                    length: 4,
                                     "0": /* Int_d */0,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "Lit_padding",
+                                      length: 2,
                                       "0": /* Zeros */2,
                                       "1": 3
                                     },
@@ -387,10 +425,12 @@ var formatter_suites = /* constructor */{
                                     "3": /* constructor */{
                                       tag: 12,
                                       name: "Char_literal",
+                                      length: 2,
                                       "0": /* " " */32,
                                       "1": /* constructor */{
                                         tag: 21,
                                         name: "Scan_get_counter",
+                                        length: 2,
                                         "0": /* Token_counter */2,
                                         "1": /* End_of_format */0
                                       }
@@ -407,30 +447,37 @@ var formatter_suites = /* constructor */{
   "1": /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       "fmt_gen",
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
+                  length: 2,
                   "0": Curry._8(Format.asprintf(Pervasives.$caret$caret(/* constructor */{
                                 tag: 0,
                                 name: "Format",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 2,
                                   name: "String",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
+                                    length: 2,
                                     "0": /* " " */32,
                                     "1": /* constructor */{
                                       tag: 4,
                                       name: "Int",
+                                      length: 4,
                                       "0": /* Int_d */0,
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "Lit_padding",
+                                        length: 2,
                                         "0": /* Zeros */2,
                                         "1": 3
                                       },
@@ -438,10 +485,12 @@ var formatter_suites = /* constructor */{
                                       "3": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
+                                        length: 2,
                                         "0": /* " " */32,
                                         "1": /* constructor */{
                                           tag: 21,
                                           name: "Scan_get_counter",
+                                          length: 2,
                                           "0": /* Token_counter */2,
                                           "1": /* End_of_format */0
                                         }
@@ -453,21 +502,26 @@ var formatter_suites = /* constructor */{
                               }, /* constructor */{
                                 tag: 0,
                                 name: "Format",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 3,
                                   name: "Caml_string",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
+                                    length: 2,
                                     "0": /* " " */32,
                                     "1": /* constructor */{
                                       tag: 4,
                                       name: "Int",
+                                      length: 4,
                                       "0": /* Int_d */0,
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "Lit_padding",
+                                        length: 2,
                                         "0": /* Zeros */2,
                                         "1": 3
                                       },
@@ -475,18 +529,22 @@ var formatter_suites = /* constructor */{
                                       "3": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
+                                        length: 2,
                                         "0": /* " " */32,
                                         "1": /* constructor */{
                                           tag: 21,
                                           name: "Scan_get_counter",
+                                          length: 2,
                                           "0": /* Token_counter */2,
                                           "1": /* constructor */{
                                             tag: 12,
                                             name: "Char_literal",
+                                            length: 2,
                                             "0": /* " " */32,
                                             "1": /* constructor */{
                                               tag: 15,
                                               name: "Alpha",
+                                              length: 1,
                                               "0": /* End_of_format */0
                                             }
                                           }
@@ -501,14 +559,17 @@ var formatter_suites = /* constructor */{
                         }), /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": 1,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": 2,
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": 3,
                             "1": /* [] */0
                           }
@@ -521,330 +582,401 @@ var formatter_suites = /* constructor */{
     "1": /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* tuple */[
         "long_fmt",
         (function (param) {
             return /* constructor */{
                     tag: 0,
                     name: "Eq",
+                    length: 2,
                     "0": Curry.app(Format.asprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 4,
                                 name: "Int",
+                                length: 4,
                                 "0": /* Int_d */0,
                                 "1": /* No_padding */0,
                                 "2": /* No_precision */0,
                                 "3": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
+                                  length: 2,
                                   "0": /* " " */32,
                                   "1": /* constructor */{
                                     tag: 4,
                                     name: "Int",
+                                    length: 4,
                                     "0": /* Int_i */3,
                                     "1": /* No_padding */0,
                                     "2": /* No_precision */0,
                                     "3": /* constructor */{
                                       tag: 12,
                                       name: "Char_literal",
+                                      length: 2,
                                       "0": /* " " */32,
                                       "1": /* constructor */{
                                         tag: 4,
                                         name: "Int",
+                                        length: 4,
                                         "0": /* Int_u */12,
                                         "1": /* No_padding */0,
                                         "2": /* No_precision */0,
                                         "3": /* constructor */{
                                           tag: 12,
                                           name: "Char_literal",
+                                          length: 2,
                                           "0": /* " " */32,
                                           "1": /* constructor */{
                                             tag: 21,
                                             name: "Scan_get_counter",
+                                            length: 2,
                                             "0": /* Char_counter */1,
                                             "1": /* constructor */{
                                               tag: 12,
                                               name: "Char_literal",
+                                              length: 2,
                                               "0": /* " " */32,
                                               "1": /* constructor */{
                                                 tag: 21,
                                                 name: "Scan_get_counter",
+                                                length: 2,
                                                 "0": /* Line_counter */0,
                                                 "1": /* constructor */{
                                                   tag: 12,
                                                   name: "Char_literal",
+                                                  length: 2,
                                                   "0": /* " " */32,
                                                   "1": /* constructor */{
                                                     tag: 21,
                                                     name: "Scan_get_counter",
+                                                    length: 2,
                                                     "0": /* Token_counter */2,
                                                     "1": /* constructor */{
                                                       tag: 12,
                                                       name: "Char_literal",
+                                                      length: 2,
                                                       "0": /* " " */32,
                                                       "1": /* constructor */{
                                                         tag: 21,
                                                         name: "Scan_get_counter",
+                                                        length: 2,
                                                         "0": /* Token_counter */2,
                                                         "1": /* constructor */{
                                                           tag: 12,
                                                           name: "Char_literal",
+                                                          length: 2,
                                                           "0": /* " " */32,
                                                           "1": /* constructor */{
                                                             tag: 4,
                                                             name: "Int",
+                                                            length: 4,
                                                             "0": /* Int_x */6,
                                                             "1": /* No_padding */0,
                                                             "2": /* No_precision */0,
                                                             "3": /* constructor */{
                                                               tag: 12,
                                                               name: "Char_literal",
+                                                              length: 2,
                                                               "0": /* " " */32,
                                                               "1": /* constructor */{
                                                                 tag: 4,
                                                                 name: "Int",
+                                                                length: 4,
                                                                 "0": /* Int_X */8,
                                                                 "1": /* No_padding */0,
                                                                 "2": /* No_precision */0,
                                                                 "3": /* constructor */{
                                                                   tag: 12,
                                                                   name: "Char_literal",
+                                                                  length: 2,
                                                                   "0": /* " " */32,
                                                                   "1": /* constructor */{
                                                                     tag: 4,
                                                                     name: "Int",
+                                                                    length: 4,
                                                                     "0": /* Int_o */10,
                                                                     "1": /* No_padding */0,
                                                                     "2": /* No_precision */0,
                                                                     "3": /* constructor */{
                                                                       tag: 12,
                                                                       name: "Char_literal",
+                                                                      length: 2,
                                                                       "0": /* " " */32,
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
+                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 12,
                                                                           name: "Char_literal",
+                                                                          length: 2,
                                                                           "0": /* " " */32,
                                                                           "1": /* constructor */{
                                                                             tag: 3,
                                                                             name: "Caml_string",
+                                                                            length: 2,
                                                                             "0": /* No_padding */0,
                                                                             "1": /* constructor */{
                                                                               tag: 12,
                                                                               name: "Char_literal",
+                                                                              length: 2,
                                                                               "0": /* " " */32,
                                                                               "1": /* constructor */{
                                                                                 tag: 0,
                                                                                 name: "Char",
+                                                                                length: 1,
                                                                                 "0": /* constructor */{
                                                                                   tag: 12,
                                                                                   name: "Char_literal",
+                                                                                  length: 2,
                                                                                   "0": /* " " */32,
                                                                                   "1": /* constructor */{
                                                                                     tag: 1,
                                                                                     name: "Caml_char",
+                                                                                    length: 1,
                                                                                     "0": /* constructor */{
                                                                                       tag: 12,
                                                                                       name: "Char_literal",
+                                                                                      length: 2,
                                                                                       "0": /* " " */32,
                                                                                       "1": /* constructor */{
                                                                                         tag: 8,
                                                                                         name: "Float",
+                                                                                        length: 4,
                                                                                         "0": /* Float_f */0,
                                                                                         "1": /* No_padding */0,
                                                                                         "2": /* No_precision */0,
                                                                                         "3": /* constructor */{
                                                                                           tag: 12,
                                                                                           name: "Char_literal",
+                                                                                          length: 2,
                                                                                           "0": /* " " */32,
                                                                                           "1": /* constructor */{
                                                                                             tag: 8,
                                                                                             name: "Float",
+                                                                                            length: 4,
                                                                                             "0": /* Float_F */15,
                                                                                             "1": /* No_padding */0,
                                                                                             "2": /* No_precision */0,
                                                                                             "3": /* constructor */{
                                                                                               tag: 12,
                                                                                               name: "Char_literal",
+                                                                                              length: 2,
                                                                                               "0": /* " " */32,
                                                                                               "1": /* constructor */{
                                                                                                 tag: 8,
                                                                                                 name: "Float",
+                                                                                                length: 4,
                                                                                                 "0": /* Float_e */3,
                                                                                                 "1": /* No_padding */0,
                                                                                                 "2": /* No_precision */0,
                                                                                                 "3": /* constructor */{
                                                                                                   tag: 12,
                                                                                                   name: "Char_literal",
+                                                                                                  length: 2,
                                                                                                   "0": /* " " */32,
                                                                                                   "1": /* constructor */{
                                                                                                     tag: 8,
                                                                                                     name: "Float",
+                                                                                                    length: 4,
                                                                                                     "0": /* Float_E */6,
                                                                                                     "1": /* No_padding */0,
                                                                                                     "2": /* No_precision */0,
                                                                                                     "3": /* constructor */{
                                                                                                       tag: 12,
                                                                                                       name: "Char_literal",
+                                                                                                      length: 2,
                                                                                                       "0": /* " " */32,
                                                                                                       "1": /* constructor */{
                                                                                                         tag: 8,
                                                                                                         name: "Float",
+                                                                                                        length: 4,
                                                                                                         "0": /* Float_g */9,
                                                                                                         "1": /* No_padding */0,
                                                                                                         "2": /* No_precision */0,
                                                                                                         "3": /* constructor */{
                                                                                                           tag: 12,
                                                                                                           name: "Char_literal",
+                                                                                                          length: 2,
                                                                                                           "0": /* " " */32,
                                                                                                           "1": /* constructor */{
                                                                                                             tag: 8,
                                                                                                             name: "Float",
+                                                                                                            length: 4,
                                                                                                             "0": /* Float_G */12,
                                                                                                             "1": /* No_padding */0,
                                                                                                             "2": /* No_precision */0,
                                                                                                             "3": /* constructor */{
                                                                                                               tag: 12,
                                                                                                               name: "Char_literal",
+                                                                                                              length: 2,
                                                                                                               "0": /* " " */32,
                                                                                                               "1": /* constructor */{
                                                                                                                 tag: 9,
                                                                                                                 name: "Bool",
+                                                                                                                length: 1,
                                                                                                                 "0": /* constructor */{
                                                                                                                   tag: 12,
                                                                                                                   name: "Char_literal",
+                                                                                                                  length: 2,
                                                                                                                   "0": /* " " */32,
                                                                                                                   "1": /* constructor */{
                                                                                                                     tag: 9,
                                                                                                                     name: "Bool",
+                                                                                                                    length: 1,
                                                                                                                     "0": /* constructor */{
                                                                                                                       tag: 12,
                                                                                                                       name: "Char_literal",
+                                                                                                                      length: 2,
                                                                                                                       "0": /* " " */32,
                                                                                                                       "1": /* constructor */{
                                                                                                                         tag: 5,
                                                                                                                         name: "Int32",
+                                                                                                                        length: 4,
                                                                                                                         "0": /* Int_d */0,
                                                                                                                         "1": /* No_padding */0,
                                                                                                                         "2": /* No_precision */0,
                                                                                                                         "3": /* constructor */{
                                                                                                                           tag: 12,
                                                                                                                           name: "Char_literal",
+                                                                                                                          length: 2,
                                                                                                                           "0": /* " " */32,
                                                                                                                           "1": /* constructor */{
                                                                                                                             tag: 5,
                                                                                                                             name: "Int32",
+                                                                                                                            length: 4,
                                                                                                                             "0": /* Int_i */3,
                                                                                                                             "1": /* No_padding */0,
                                                                                                                             "2": /* No_precision */0,
                                                                                                                             "3": /* constructor */{
                                                                                                                               tag: 12,
                                                                                                                               name: "Char_literal",
+                                                                                                                              length: 2,
                                                                                                                               "0": /* " " */32,
                                                                                                                               "1": /* constructor */{
                                                                                                                                 tag: 5,
                                                                                                                                 name: "Int32",
+                                                                                                                                length: 4,
                                                                                                                                 "0": /* Int_u */12,
                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                 "3": /* constructor */{
                                                                                                                                   tag: 12,
                                                                                                                                   name: "Char_literal",
+                                                                                                                                  length: 2,
                                                                                                                                   "0": /* " " */32,
                                                                                                                                   "1": /* constructor */{
                                                                                                                                     tag: 5,
                                                                                                                                     name: "Int32",
+                                                                                                                                    length: 4,
                                                                                                                                     "0": /* Int_x */6,
                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                     "3": /* constructor */{
                                                                                                                                       tag: 12,
                                                                                                                                       name: "Char_literal",
+                                                                                                                                      length: 2,
                                                                                                                                       "0": /* " " */32,
                                                                                                                                       "1": /* constructor */{
                                                                                                                                         tag: 5,
                                                                                                                                         name: "Int32",
+                                                                                                                                        length: 4,
                                                                                                                                         "0": /* Int_X */8,
                                                                                                                                         "1": /* No_padding */0,
                                                                                                                                         "2": /* No_precision */0,
                                                                                                                                         "3": /* constructor */{
                                                                                                                                           tag: 12,
                                                                                                                                           name: "Char_literal",
+                                                                                                                                          length: 2,
                                                                                                                                           "0": /* " " */32,
                                                                                                                                           "1": /* constructor */{
                                                                                                                                             tag: 5,
                                                                                                                                             name: "Int32",
+                                                                                                                                            length: 4,
                                                                                                                                             "0": /* Int_o */10,
                                                                                                                                             "1": /* No_padding */0,
                                                                                                                                             "2": /* No_precision */0,
                                                                                                                                             "3": /* constructor */{
                                                                                                                                               tag: 12,
                                                                                                                                               name: "Char_literal",
+                                                                                                                                              length: 2,
                                                                                                                                               "0": /* " " */32,
                                                                                                                                               "1": /* constructor */{
                                                                                                                                                 tag: 6,
                                                                                                                                                 name: "Nativeint",
+                                                                                                                                                length: 4,
                                                                                                                                                 "0": /* Int_d */0,
                                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                                 "3": /* constructor */{
                                                                                                                                                   tag: 12,
                                                                                                                                                   name: "Char_literal",
+                                                                                                                                                  length: 2,
                                                                                                                                                   "0": /* " " */32,
                                                                                                                                                   "1": /* constructor */{
                                                                                                                                                     tag: 6,
                                                                                                                                                     name: "Nativeint",
+                                                                                                                                                    length: 4,
                                                                                                                                                     "0": /* Int_i */3,
                                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                                     "3": /* constructor */{
                                                                                                                                                       tag: 12,
                                                                                                                                                       name: "Char_literal",
+                                                                                                                                                      length: 2,
                                                                                                                                                       "0": /* " " */32,
                                                                                                                                                       "1": /* constructor */{
                                                                                                                                                         tag: 6,
                                                                                                                                                         name: "Nativeint",
+                                                                                                                                                        length: 4,
                                                                                                                                                         "0": /* Int_u */12,
                                                                                                                                                         "1": /* No_padding */0,
                                                                                                                                                         "2": /* No_precision */0,
                                                                                                                                                         "3": /* constructor */{
                                                                                                                                                           tag: 12,
                                                                                                                                                           name: "Char_literal",
+                                                                                                                                                          length: 2,
                                                                                                                                                           "0": /* " " */32,
                                                                                                                                                           "1": /* constructor */{
                                                                                                                                                             tag: 6,
                                                                                                                                                             name: "Nativeint",
+                                                                                                                                                            length: 4,
                                                                                                                                                             "0": /* Int_x */6,
                                                                                                                                                             "1": /* No_padding */0,
                                                                                                                                                             "2": /* No_precision */0,
                                                                                                                                                             "3": /* constructor */{
                                                                                                                                                               tag: 12,
                                                                                                                                                               name: "Char_literal",
+                                                                                                                                                              length: 2,
                                                                                                                                                               "0": /* " " */32,
                                                                                                                                                               "1": /* constructor */{
                                                                                                                                                                 tag: 6,
                                                                                                                                                                 name: "Nativeint",
+                                                                                                                                                                length: 4,
                                                                                                                                                                 "0": /* Int_x */6,
                                                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                                                 "3": /* constructor */{
                                                                                                                                                                   tag: 12,
                                                                                                                                                                   name: "Char_literal",
+                                                                                                                                                                  length: 2,
                                                                                                                                                                   "0": /* " " */32,
                                                                                                                                                                   "1": /* constructor */{
                                                                                                                                                                     tag: 6,
                                                                                                                                                                     name: "Nativeint",
+                                                                                                                                                                    length: 4,
                                                                                                                                                                     "0": /* Int_o */10,
                                                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                                                     "3": /* constructor */{
                                                                                                                                                                       tag: 11,
                                                                                                                                                                       name: "String_literal",
+                                                                                                                                                                      length: 2,
                                                                                                                                                                       "0": "  ",
                                                                                                                                                                       "1": /* End_of_format */0
                                                                                                                                                                     }
@@ -959,24 +1091,30 @@ var formatter_suites = /* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           "long_fmt_2",
           (function (param) {
               return /* constructor */{
                       tag: 0,
                       name: "Eq",
+                      length: 2,
                       "0": Curry.app(Format.asprintf(/* constructor */{
                                 tag: 0,
                                 name: "Format",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 18,
                                   name: "Formatting_gen",
+                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 1,
                                     name: "Open_box",
+                                    length: 1,
                                     "0": /* constructor */{
                                       tag: 0,
                                       name: "Format",
+                                      length: 2,
                                       "0": /* End_of_format */0,
                                       "1": ""
                                     }
@@ -984,10 +1122,12 @@ var formatter_suites = /* constructor */{
                                   "1": /* constructor */{
                                     tag: 4,
                                     name: "Int",
+                                    length: 4,
                                     "0": /* Int_d */0,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "Lit_padding",
+                                      length: 2,
                                       "0": /* Right */1,
                                       "1": 23
                                     },
@@ -995,14 +1135,17 @@ var formatter_suites = /* constructor */{
                                     "3": /* constructor */{
                                       tag: 12,
                                       name: "Char_literal",
+                                      length: 2,
                                       "0": /* " " */32,
                                       "1": /* constructor */{
                                         tag: 4,
                                         name: "Int",
+                                        length: 4,
                                         "0": /* Int_i */3,
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "Lit_padding",
+                                          length: 2,
                                           "0": /* Right */1,
                                           "1": 2
                                         },
@@ -1010,14 +1153,17 @@ var formatter_suites = /* constructor */{
                                         "3": /* constructor */{
                                           tag: 12,
                                           name: "Char_literal",
+                                          length: 2,
                                           "0": /* " " */32,
                                           "1": /* constructor */{
                                             tag: 4,
                                             name: "Int",
+                                            length: 4,
                                             "0": /* Int_u */12,
                                             "1": /* constructor */{
                                               tag: 0,
                                               name: "Lit_padding",
+                                              length: 2,
                                               "0": /* Right */1,
                                               "1": 3
                                             },
@@ -1025,22 +1171,27 @@ var formatter_suites = /* constructor */{
                                             "3": /* constructor */{
                                               tag: 12,
                                               name: "Char_literal",
+                                              length: 2,
                                               "0": /* " " */32,
                                               "1": /* constructor */{
                                                 tag: 21,
                                                 name: "Scan_get_counter",
+                                                length: 2,
                                                 "0": /* Char_counter */1,
                                                 "1": /* constructor */{
                                                   tag: 12,
                                                   name: "Char_literal",
+                                                  length: 2,
                                                   "0": /* " " */32,
                                                   "1": /* constructor */{
                                                     tag: 4,
                                                     name: "Int",
+                                                    length: 4,
                                                     "0": /* Int_x */6,
                                                     "1": /* constructor */{
                                                       tag: 0,
                                                       name: "Lit_padding",
+                                                      length: 2,
                                                       "0": /* Right */1,
                                                       "1": 0
                                                     },
@@ -1048,14 +1199,17 @@ var formatter_suites = /* constructor */{
                                                     "3": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
+                                                      length: 2,
                                                       "0": "l ",
                                                       "1": /* constructor */{
                                                         tag: 4,
                                                         name: "Int",
+                                                        length: 4,
                                                         "0": /* Int_x */6,
                                                         "1": /* constructor */{
                                                           tag: 0,
                                                           name: "Lit_padding",
+                                                          length: 2,
                                                           "0": /* Right */1,
                                                           "1": 0
                                                         },
@@ -1063,22 +1217,27 @@ var formatter_suites = /* constructor */{
                                                         "3": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
+                                                          length: 2,
                                                           "0": "L ",
                                                           "1": /* constructor */{
                                                             tag: 21,
                                                             name: "Scan_get_counter",
+                                                            length: 2,
                                                             "0": /* Token_counter */2,
                                                             "1": /* constructor */{
                                                               tag: 12,
                                                               name: "Char_literal",
+                                                              length: 2,
                                                               "0": /* " " */32,
                                                               "1": /* constructor */{
                                                                 tag: 4,
                                                                 name: "Int",
+                                                                length: 4,
                                                                 "0": /* Int_x */6,
                                                                 "1": /* constructor */{
                                                                   tag: 0,
                                                                   name: "Lit_padding",
+                                                                  length: 2,
                                                                   "0": /* Zeros */2,
                                                                   "1": 3
                                                                 },
@@ -1086,64 +1245,79 @@ var formatter_suites = /* constructor */{
                                                                 "3": /* constructor */{
                                                                   tag: 12,
                                                                   name: "Char_literal",
+                                                                  length: 2,
                                                                   "0": /* " " */32,
                                                                   "1": /* constructor */{
                                                                     tag: 4,
                                                                     name: "Int",
+                                                                    length: 4,
                                                                     "0": /* Int_X */8,
                                                                     "1": /* No_padding */0,
                                                                     "2": /* No_precision */0,
                                                                     "3": /* constructor */{
                                                                       tag: 12,
                                                                       name: "Char_literal",
+                                                                      length: 2,
                                                                       "0": /* " " */32,
                                                                       "1": /* constructor */{
                                                                         tag: 4,
                                                                         name: "Int",
+                                                                        length: 4,
                                                                         "0": /* Int_o */10,
                                                                         "1": /* No_padding */0,
                                                                         "2": /* No_precision */0,
                                                                         "3": /* constructor */{
                                                                           tag: 12,
                                                                           name: "Char_literal",
+                                                                          length: 2,
                                                                           "0": /* " " */32,
                                                                           "1": /* constructor */{
                                                                             tag: 2,
                                                                             name: "String",
+                                                                            length: 2,
                                                                             "0": /* No_padding */0,
                                                                             "1": /* constructor */{
                                                                               tag: 12,
                                                                               name: "Char_literal",
+                                                                              length: 2,
                                                                               "0": /* " " */32,
                                                                               "1": /* constructor */{
                                                                                 tag: 3,
                                                                                 name: "Caml_string",
+                                                                                length: 2,
                                                                                 "0": /* No_padding */0,
                                                                                 "1": /* constructor */{
                                                                                   tag: 12,
                                                                                   name: "Char_literal",
+                                                                                  length: 2,
                                                                                   "0": /* " " */32,
                                                                                   "1": /* constructor */{
                                                                                     tag: 0,
                                                                                     name: "Char",
+                                                                                    length: 1,
                                                                                     "0": /* constructor */{
                                                                                       tag: 12,
                                                                                       name: "Char_literal",
+                                                                                      length: 2,
                                                                                       "0": /* " " */32,
                                                                                       "1": /* constructor */{
                                                                                         tag: 1,
                                                                                         name: "Caml_char",
+                                                                                        length: 1,
                                                                                         "0": /* constructor */{
                                                                                           tag: 12,
                                                                                           name: "Char_literal",
+                                                                                          length: 2,
                                                                                           "0": /* " " */32,
                                                                                           "1": /* constructor */{
                                                                                             tag: 8,
                                                                                             name: "Float",
+                                                                                            length: 4,
                                                                                             "0": /* Float_f */0,
                                                                                             "1": /* constructor */{
                                                                                               tag: 0,
                                                                                               name: "Lit_padding",
+                                                                                              length: 2,
                                                                                               "0": /* Right */1,
                                                                                               "1": 3
                                                                                             },
@@ -1151,14 +1325,17 @@ var formatter_suites = /* constructor */{
                                                                                             "3": /* constructor */{
                                                                                               tag: 12,
                                                                                               name: "Char_literal",
+                                                                                              length: 2,
                                                                                               "0": /* " " */32,
                                                                                               "1": /* constructor */{
                                                                                                 tag: 8,
                                                                                                 name: "Float",
+                                                                                                length: 4,
                                                                                                 "0": /* Float_F */15,
                                                                                                 "1": /* constructor */{
                                                                                                   tag: 0,
                                                                                                   name: "Lit_padding",
+                                                                                                  length: 2,
                                                                                                   "0": /* Right */1,
                                                                                                   "1": 2
                                                                                                 },
@@ -1166,14 +1343,17 @@ var formatter_suites = /* constructor */{
                                                                                                 "3": /* constructor */{
                                                                                                   tag: 12,
                                                                                                   name: "Char_literal",
+                                                                                                  length: 2,
                                                                                                   "0": /* " " */32,
                                                                                                   "1": /* constructor */{
                                                                                                     tag: 8,
                                                                                                     name: "Float",
+                                                                                                    length: 4,
                                                                                                     "0": /* Float_e */3,
                                                                                                     "1": /* constructor */{
                                                                                                       tag: 0,
                                                                                                       name: "Lit_padding",
+                                                                                                      length: 2,
                                                                                                       "0": /* Right */1,
                                                                                                       "1": 2
                                                                                                     },
@@ -1181,174 +1361,210 @@ var formatter_suites = /* constructor */{
                                                                                                     "3": /* constructor */{
                                                                                                       tag: 12,
                                                                                                       name: "Char_literal",
+                                                                                                      length: 2,
                                                                                                       "0": /* " " */32,
                                                                                                       "1": /* constructor */{
                                                                                                         tag: 8,
                                                                                                         name: "Float",
+                                                                                                        length: 4,
                                                                                                         "0": /* Float_E */6,
                                                                                                         "1": /* No_padding */0,
                                                                                                         "2": /* No_precision */0,
                                                                                                         "3": /* constructor */{
                                                                                                           tag: 12,
                                                                                                           name: "Char_literal",
+                                                                                                          length: 2,
                                                                                                           "0": /* " " */32,
                                                                                                           "1": /* constructor */{
                                                                                                             tag: 8,
                                                                                                             name: "Float",
+                                                                                                            length: 4,
                                                                                                             "0": /* Float_g */9,
                                                                                                             "1": /* No_padding */0,
                                                                                                             "2": /* No_precision */0,
                                                                                                             "3": /* constructor */{
                                                                                                               tag: 12,
                                                                                                               name: "Char_literal",
+                                                                                                              length: 2,
                                                                                                               "0": /* " " */32,
                                                                                                               "1": /* constructor */{
                                                                                                                 tag: 8,
                                                                                                                 name: "Float",
+                                                                                                                length: 4,
                                                                                                                 "0": /* Float_G */12,
                                                                                                                 "1": /* No_padding */0,
                                                                                                                 "2": /* No_precision */0,
                                                                                                                 "3": /* constructor */{
                                                                                                                   tag: 12,
                                                                                                                   name: "Char_literal",
+                                                                                                                  length: 2,
                                                                                                                   "0": /* " " */32,
                                                                                                                   "1": /* constructor */{
                                                                                                                     tag: 9,
                                                                                                                     name: "Bool",
+                                                                                                                    length: 1,
                                                                                                                     "0": /* constructor */{
                                                                                                                       tag: 12,
                                                                                                                       name: "Char_literal",
+                                                                                                                      length: 2,
                                                                                                                       "0": /* " " */32,
                                                                                                                       "1": /* constructor */{
                                                                                                                         tag: 9,
                                                                                                                         name: "Bool",
+                                                                                                                        length: 1,
                                                                                                                         "0": /* constructor */{
                                                                                                                           tag: 12,
                                                                                                                           name: "Char_literal",
+                                                                                                                          length: 2,
                                                                                                                           "0": /* " " */32,
                                                                                                                           "1": /* constructor */{
                                                                                                                             tag: 5,
                                                                                                                             name: "Int32",
+                                                                                                                            length: 4,
                                                                                                                             "0": /* Int_d */0,
                                                                                                                             "1": /* No_padding */0,
                                                                                                                             "2": /* No_precision */0,
                                                                                                                             "3": /* constructor */{
                                                                                                                               tag: 12,
                                                                                                                               name: "Char_literal",
+                                                                                                                              length: 2,
                                                                                                                               "0": /* " " */32,
                                                                                                                               "1": /* constructor */{
                                                                                                                                 tag: 5,
                                                                                                                                 name: "Int32",
+                                                                                                                                length: 4,
                                                                                                                                 "0": /* Int_i */3,
                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                 "3": /* constructor */{
                                                                                                                                   tag: 12,
                                                                                                                                   name: "Char_literal",
+                                                                                                                                  length: 2,
                                                                                                                                   "0": /* " " */32,
                                                                                                                                   "1": /* constructor */{
                                                                                                                                     tag: 5,
                                                                                                                                     name: "Int32",
+                                                                                                                                    length: 4,
                                                                                                                                     "0": /* Int_u */12,
                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                     "3": /* constructor */{
                                                                                                                                       tag: 12,
                                                                                                                                       name: "Char_literal",
+                                                                                                                                      length: 2,
                                                                                                                                       "0": /* " " */32,
                                                                                                                                       "1": /* constructor */{
                                                                                                                                         tag: 5,
                                                                                                                                         name: "Int32",
+                                                                                                                                        length: 4,
                                                                                                                                         "0": /* Int_x */6,
                                                                                                                                         "1": /* No_padding */0,
                                                                                                                                         "2": /* No_precision */0,
                                                                                                                                         "3": /* constructor */{
                                                                                                                                           tag: 12,
                                                                                                                                           name: "Char_literal",
+                                                                                                                                          length: 2,
                                                                                                                                           "0": /* " " */32,
                                                                                                                                           "1": /* constructor */{
                                                                                                                                             tag: 5,
                                                                                                                                             name: "Int32",
+                                                                                                                                            length: 4,
                                                                                                                                             "0": /* Int_X */8,
                                                                                                                                             "1": /* No_padding */0,
                                                                                                                                             "2": /* No_precision */0,
                                                                                                                                             "3": /* constructor */{
                                                                                                                                               tag: 12,
                                                                                                                                               name: "Char_literal",
+                                                                                                                                              length: 2,
                                                                                                                                               "0": /* " " */32,
                                                                                                                                               "1": /* constructor */{
                                                                                                                                                 tag: 5,
                                                                                                                                                 name: "Int32",
+                                                                                                                                                length: 4,
                                                                                                                                                 "0": /* Int_o */10,
                                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                                 "3": /* constructor */{
                                                                                                                                                   tag: 12,
                                                                                                                                                   name: "Char_literal",
+                                                                                                                                                  length: 2,
                                                                                                                                                   "0": /* " " */32,
                                                                                                                                                   "1": /* constructor */{
                                                                                                                                                     tag: 6,
                                                                                                                                                     name: "Nativeint",
+                                                                                                                                                    length: 4,
                                                                                                                                                     "0": /* Int_d */0,
                                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                                     "3": /* constructor */{
                                                                                                                                                       tag: 12,
                                                                                                                                                       name: "Char_literal",
+                                                                                                                                                      length: 2,
                                                                                                                                                       "0": /* " " */32,
                                                                                                                                                       "1": /* constructor */{
                                                                                                                                                         tag: 6,
                                                                                                                                                         name: "Nativeint",
+                                                                                                                                                        length: 4,
                                                                                                                                                         "0": /* Int_i */3,
                                                                                                                                                         "1": /* No_padding */0,
                                                                                                                                                         "2": /* No_precision */0,
                                                                                                                                                         "3": /* constructor */{
                                                                                                                                                           tag: 12,
                                                                                                                                                           name: "Char_literal",
+                                                                                                                                                          length: 2,
                                                                                                                                                           "0": /* " " */32,
                                                                                                                                                           "1": /* constructor */{
                                                                                                                                                             tag: 6,
                                                                                                                                                             name: "Nativeint",
+                                                                                                                                                            length: 4,
                                                                                                                                                             "0": /* Int_u */12,
                                                                                                                                                             "1": /* No_padding */0,
                                                                                                                                                             "2": /* No_precision */0,
                                                                                                                                                             "3": /* constructor */{
                                                                                                                                                               tag: 12,
                                                                                                                                                               name: "Char_literal",
+                                                                                                                                                              length: 2,
                                                                                                                                                               "0": /* " " */32,
                                                                                                                                                               "1": /* constructor */{
                                                                                                                                                                 tag: 6,
                                                                                                                                                                 name: "Nativeint",
+                                                                                                                                                                length: 4,
                                                                                                                                                                 "0": /* Int_x */6,
                                                                                                                                                                 "1": /* No_padding */0,
                                                                                                                                                                 "2": /* No_precision */0,
                                                                                                                                                                 "3": /* constructor */{
                                                                                                                                                                   tag: 12,
                                                                                                                                                                   name: "Char_literal",
+                                                                                                                                                                  length: 2,
                                                                                                                                                                   "0": /* " " */32,
                                                                                                                                                                   "1": /* constructor */{
                                                                                                                                                                     tag: 6,
                                                                                                                                                                     name: "Nativeint",
+                                                                                                                                                                    length: 4,
                                                                                                                                                                     "0": /* Int_x */6,
                                                                                                                                                                     "1": /* No_padding */0,
                                                                                                                                                                     "2": /* No_precision */0,
                                                                                                                                                                     "3": /* constructor */{
                                                                                                                                                                       tag: 12,
                                                                                                                                                                       name: "Char_literal",
+                                                                                                                                                                      length: 2,
                                                                                                                                                                       "0": /* " " */32,
                                                                                                                                                                       "1": /* constructor */{
                                                                                                                                                                         tag: 6,
                                                                                                                                                                         name: "Nativeint",
+                                                                                                                                                                        length: 4,
                                                                                                                                                                         "0": /* Int_o */10,
                                                                                                                                                                         "1": /* No_padding */0,
                                                                                                                                                                         "2": /* No_precision */0,
                                                                                                                                                                         "3": /* constructor */{
                                                                                                                                                                           tag: 11,
                                                                                                                                                                           name: "String_literal",
+                                                                                                                                                                          length: 2,
                                                                                                                                                                           "0": "  ",
                                                                                                                                                                           "1": /* constructor */{
                                                                                                                                                                             tag: 17,
                                                                                                                                                                             name: "Formatting_lit",
+                                                                                                                                                                            length: 2,
                                                                                                                                                                             "0": /* Close_box */0,
                                                                                                                                                                             "1": /* End_of_format */0
                                                                                                                                                                           }
@@ -1465,22 +1681,27 @@ var formatter_suites = /* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             "width_1",
             (function (param) {
                 return /* constructor */{
                         tag: 0,
                         name: "Eq",
+                        length: 2,
                         "0": Curry._1(Format.asprintf(/* constructor */{
                                   tag: 0,
                                   name: "Format",
+                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 4,
                                     name: "Int",
+                                    length: 4,
                                     "0": /* Int_d */0,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "Lit_padding",
+                                      length: 2,
                                       "0": /* Zeros */2,
                                       "1": 14
                                     },
@@ -1496,28 +1717,34 @@ var formatter_suites = /* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               "width_2",
               (function (param) {
                   return /* constructor */{
                           tag: 0,
                           name: "Eq",
+                          length: 2,
                           "0": Curry._1(Format.asprintf(/* constructor */{
                                     tag: 0,
                                     name: "Format",
+                                    length: 2,
                                     "0": /* constructor */{
                                       tag: 8,
                                       name: "Float",
+                                      length: 4,
                                       "0": /* Float_f */0,
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "Lit_padding",
+                                        length: 2,
                                         "0": /* Right */1,
                                         "1": 10
                                       },
                                       "2": /* constructor */{
                                         tag: 0,
                                         name: "Lit_precision",
+                                        length: 1,
                                         "0": 3
                                       },
                                       "3": /* End_of_format */0
@@ -1531,22 +1758,27 @@ var formatter_suites = /* constructor */{
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 "alternate_1",
                 (function (param) {
                     return /* constructor */{
                             tag: 0,
                             name: "Eq",
+                            length: 2,
                             "0": Curry._1(Format.asprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
+                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 4,
                                         name: "Int",
+                                        length: 4,
                                         "0": /* Int_x */6,
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "Lit_padding",
+                                          length: 2,
                                           "0": /* Right */1,
                                           "1": 0
                                         },
@@ -1562,22 +1794,27 @@ var formatter_suites = /* constructor */{
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   "alternate_2",
                   (function (param) {
                       return /* constructor */{
                               tag: 0,
                               name: "Eq",
+                              length: 2,
                               "0": Curry._1(Format.asprintf(/* constructor */{
                                         tag: 0,
                                         name: "Format",
+                                        length: 2,
                                         "0": /* constructor */{
                                           tag: 4,
                                           name: "Int",
+                                          length: 4,
                                           "0": /* Int_Cx */7,
                                           "1": /* constructor */{
                                             tag: 0,
                                             name: "Lit_padding",
+                                            length: 2,
                                             "0": /* Right */1,
                                             "1": 0
                                           },
@@ -1593,19 +1830,23 @@ var formatter_suites = /* constructor */{
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     "alternate_3",
                     (function (param) {
                         return /* constructor */{
                                 tag: 0,
                                 name: "Eq",
+                                length: 2,
                                 "0": /* tuple */[
                                   Curry._1(Format.asprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
+                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 4,
                                               name: "Int",
+                                              length: 4,
                                               "0": /* Int_Co */11,
                                               "1": /* No_padding */0,
                                               "2": /* No_precision */0,
@@ -1616,9 +1857,11 @@ var formatter_suites = /* constructor */{
                                   Curry._1(Format.asprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
+                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 4,
                                               name: "Int",
+                                              length: 4,
                                               "0": /* Int_o */10,
                                               "1": /* No_padding */0,
                                               "2": /* No_precision */0,
@@ -1637,12 +1880,14 @@ var formatter_suites = /* constructor */{
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "justify_0",
                       (function (param) {
                           return /* constructor */{
                                   tag: 0,
                                   name: "Eq",
+                                  length: 2,
                                   "0": Caml_format.caml_format_int("%-8d", 32),
                                   "1": "32      "
                                 };
@@ -1651,22 +1896,27 @@ var formatter_suites = /* constructor */{
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "sign_p",
                         (function (param) {
                             return /* constructor */{
                                     tag: 0,
                                     name: "Eq",
+                                    length: 2,
                                     "0": Curry._1(Format.asprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
+                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 4,
                                                 name: "Int",
+                                                length: 4,
                                                 "0": /* Int_pd */1,
                                                 "1": /* constructor */{
                                                   tag: 0,
                                                   name: "Lit_padding",
+                                                  length: 2,
                                                   "0": /* Right */1,
                                                   "1": 4
                                                 },
@@ -1682,22 +1932,27 @@ var formatter_suites = /* constructor */{
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "sign_2p",
                           (function (param) {
                               return /* constructor */{
                                       tag: 0,
                                       name: "Eq",
+                                      length: 2,
                                       "0": Curry._1(Format.asprintf(/* constructor */{
                                                 tag: 0,
                                                 name: "Format",
+                                                length: 2,
                                                 "0": /* constructor */{
                                                   tag: 4,
                                                   name: "Int",
+                                                  length: 4,
                                                   "0": /* Int_sd */2,
                                                   "1": /* constructor */{
                                                     tag: 0,
                                                     name: "Lit_padding",
+                                                    length: 2,
                                                     "0": /* Right */1,
                                                     "1": 4
                                                   },
@@ -1713,18 +1968,22 @@ var formatter_suites = /* constructor */{
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "sign_3p",
                             (function (param) {
                                 return /* constructor */{
                                         tag: 0,
                                         name: "Eq",
+                                        length: 2,
                                         "0": Curry._1(Format.asprintf(/* constructor */{
                                                   tag: 0,
                                                   name: "Format",
+                                                  length: 2,
                                                   "0": /* constructor */{
                                                     tag: 5,
                                                     name: "Int32",
+                                                    length: 4,
                                                     "0": /* Int_u */12,
                                                     "1": /* No_padding */0,
                                                     "2": /* No_precision */0,
@@ -1739,18 +1998,22 @@ var formatter_suites = /* constructor */{
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "sign_4p",
                               (function (param) {
                                   return /* constructor */{
                                           tag: 0,
                                           name: "Eq",
+                                          length: 2,
                                           "0": Curry._1(Format.asprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
+                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 5,
                                                       name: "Int32",
+                                                      length: 4,
                                                       "0": /* Int_d */0,
                                                       "1": /* No_padding */0,
                                                       "2": /* No_precision */0,
@@ -1765,12 +2028,14 @@ var formatter_suites = /* constructor */{
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "width_3",
                                 (function (param) {
                                     return /* constructor */{
                                             tag: 0,
                                             name: "Eq",
+                                            length: 2,
                                             "0": Caml_format.caml_format_int("%032d", 32),
                                             "1": "00000000000000000000000000000032"
                                           };
@@ -1779,23 +2044,28 @@ var formatter_suites = /* constructor */{
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "prec_1",
                                   (function (param) {
                                       return /* constructor */{
                                               tag: 0,
                                               name: "Eq",
+                                              length: 2,
                                               "0": Curry._1(Format.asprintf(/* constructor */{
                                                         tag: 0,
                                                         name: "Format",
+                                                        length: 2,
                                                         "0": /* constructor */{
                                                           tag: 4,
                                                           name: "Int",
+                                                          length: 4,
                                                           "0": /* Int_d */0,
                                                           "1": /* No_padding */0,
                                                           "2": /* constructor */{
                                                             tag: 0,
                                                             name: "Lit_precision",
+                                                            length: 1,
                                                             "0": 10
                                                           },
                                                           "3": /* End_of_format */0
@@ -1809,12 +2079,14 @@ var formatter_suites = /* constructor */{
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": /* tuple */[
                                     "prec_2",
                                     (function (param) {
                                         return /* constructor */{
                                                 tag: 0,
                                                 name: "Eq",
+                                                length: 2,
                                                 "0": Caml_format.caml_format_int("%.10d", 32),
                                                 "1": "0000000032"
                                               };
@@ -1823,12 +2095,14 @@ var formatter_suites = /* constructor */{
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       "prec_3",
                                       (function (param) {
                                           return /* constructor */{
                                                   tag: 0,
                                                   name: "Eq",
+                                                  length: 2,
                                                   "0": Caml_format.caml_format_int("%.d", 32),
                                                   "1": "32"
                                                 };
@@ -1837,12 +2111,14 @@ var formatter_suites = /* constructor */{
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
+                                      length: 2,
                                       "0": /* tuple */[
                                         "prec_4",
                                         (function (param) {
                                             return /* constructor */{
                                                     tag: 0,
                                                     name: "Eq",
+                                                    length: 2,
                                                     "0": Caml_format.caml_format_int("%.d", 32),
                                                     "1": "32"
                                                   };
@@ -1981,9 +2257,11 @@ function ident(ppf, s) {
   return Curry._1(Format.fprintf(ppf, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
+                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* End_of_format */0
                   },
@@ -1995,9 +2273,11 @@ function kwd(ppf, s) {
   return Curry._1(Format.fprintf(ppf, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
+                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* End_of_format */0
                   },
@@ -2011,9 +2291,11 @@ function pr_exp0(ppf, lam) {
         return Curry._2(Format.fprintf(ppf, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 15,
                           name: "Alpha",
+                          length: 1,
                           "0": /* End_of_format */0
                         },
                         "1": "%a"
@@ -2026,18 +2308,23 @@ function pr_exp0(ppf, lam) {
   return Curry._2(Format.fprintf(ppf, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 18,
                     name: "Formatting_gen",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 1,
                       name: "Open_box",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "<1>",
                           "1": /* End_of_format */0
                         },
@@ -2047,17 +2334,21 @@ function pr_exp0(ppf, lam) {
                     "1": /* constructor */{
                       tag: 12,
                       name: "Char_literal",
+                      length: 2,
                       "0": /* "(" */40,
                       "1": /* constructor */{
                         tag: 15,
                         name: "Alpha",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
+                          length: 2,
                           "0": /* ")" */41,
                           "1": /* constructor */{
                             tag: 17,
                             name: "Formatting_lit",
+                            length: 2,
                             "0": /* Close_box */0,
                             "1": /* End_of_format */0
                           }
@@ -2073,18 +2364,23 @@ function pr_app(ppf, e) {
   return Curry._2(Format.fprintf(ppf, /* constructor */{
                   tag: 0,
                   name: "Format",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 18,
                     name: "Formatting_gen",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 1,
                       name: "Open_box",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
+                          length: 2,
                           "0": "<2>",
                           "1": /* End_of_format */0
                         },
@@ -2094,9 +2390,11 @@ function pr_app(ppf, e) {
                     "1": /* constructor */{
                       tag: 15,
                       name: "Alpha",
+                      length: 1,
                       "0": /* constructor */{
                         tag: 17,
                         name: "Formatting_lit",
+                        length: 2,
                         "0": /* Close_box */0,
                         "1": /* End_of_format */0
                       }
@@ -2115,15 +2413,19 @@ function pr_other_applications(ppf, f) {
         return Curry._4(Format.fprintf(ppf, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 15,
                           name: "Alpha",
+                          length: 1,
                           "0": /* constructor */{
                             tag: 17,
                             name: "Formatting_lit",
+                            length: 2,
                             "0": /* constructor */{
                               tag: 0,
                               name: "Break",
+                              length: 3,
                               "0": "@ ",
                               "1": 1,
                               "2": 0
@@ -2131,6 +2433,7 @@ function pr_other_applications(ppf, f) {
                             "1": /* constructor */{
                               tag: 15,
                               name: "Alpha",
+                              length: 1,
                               "0": /* End_of_format */0
                             }
                           }
@@ -2147,18 +2450,23 @@ function pr_lambda(ppf, e) {
         return Curry._8(Format.fprintf(ppf, /* constructor */{
                         tag: 0,
                         name: "Format",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 18,
                           name: "Formatting_gen",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 1,
                             name: "Open_box",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 0,
                               name: "Format",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
+                                length: 2,
                                 "0": "<1>",
                                 "1": /* End_of_format */0
                               },
@@ -2168,18 +2476,23 @@ function pr_lambda(ppf, e) {
                           "1": /* constructor */{
                             tag: 15,
                             name: "Alpha",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 15,
                               name: "Alpha",
+                              length: 1,
                               "0": /* constructor */{
                                 tag: 15,
                                 name: "Alpha",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 17,
                                   name: "Formatting_lit",
+                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 0,
                                     name: "Break",
+                                    length: 3,
                                     "0": "@ ",
                                     "1": 1,
                                     "2": 0
@@ -2187,9 +2500,11 @@ function pr_lambda(ppf, e) {
                                   "1": /* constructor */{
                                     tag: 15,
                                     name: "Alpha",
+                                    length: 1,
                                     "0": /* constructor */{
                                       tag: 17,
                                       name: "Formatting_lit",
+                                      length: 2,
                                       "0": /* Close_box */0,
                                       "1": /* End_of_format */0
                                     }
@@ -2211,9 +2526,11 @@ function pr_lambda(ppf, e) {
 var string_of_lambda = Curry._1(Format.asprintf(/* constructor */{
           tag: 0,
           name: "Format",
+          length: 2,
           "0": /* constructor */{
             tag: 15,
             name: "Alpha",
+            length: 1,
             "0": /* End_of_format */0
           },
           "1": "%a"
@@ -2234,6 +2551,7 @@ var lambda_suites = /* array */[
     /* constructor */{
       tag: 1,
       name: "Var",
+      length: 1,
       "0": "x"
     },
     "x"
@@ -2242,14 +2560,17 @@ var lambda_suites = /* array */[
     /* constructor */{
       tag: 2,
       name: "Apply",
+      length: 2,
       "0": /* constructor */{
         tag: 1,
         name: "Var",
+        length: 1,
         "0": "x"
       },
       "1": /* constructor */{
         tag: 1,
         name: "Var",
+        length: 1,
         "0": "y"
       }
     },
@@ -2259,18 +2580,22 @@ var lambda_suites = /* array */[
     /* constructor */{
       tag: 0,
       name: "Lambda",
+      length: 2,
       "0": "z",
       "1": /* constructor */{
         tag: 2,
         name: "Apply",
+        length: 2,
         "0": /* constructor */{
           tag: 1,
           name: "Var",
+          length: 1,
           "0": "x"
         },
         "1": /* constructor */{
           tag: 1,
           name: "Var",
+          length: 1,
           "0": "y"
         }
       }
@@ -2281,22 +2606,27 @@ var lambda_suites = /* array */[
     /* constructor */{
       tag: 0,
       name: "Lambda",
+      length: 2,
       "0": "z",
       "1": /* constructor */{
         tag: 0,
         name: "Lambda",
+        length: 2,
         "0": "z",
         "1": /* constructor */{
           tag: 2,
           name: "Apply",
+          length: 2,
           "0": /* constructor */{
             tag: 1,
             name: "Var",
+            length: 1,
             "0": "x"
           },
           "1": /* constructor */{
             tag: 1,
             name: "Var",
+            length: 1,
             "0": "y"
           }
         }
@@ -2314,13 +2644,16 @@ function from_lambda_pairs(p) {
                             Curry._1(Printf.sprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
+                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
+                                        length: 2,
                                         "0": "lambda_print ",
                                         "1": /* constructor */{
                                           tag: 4,
                                           name: "Int",
+                                          length: 4,
                                           "0": /* Int_d */0,
                                           "1": /* No_padding */0,
                                           "2": /* No_precision */0,
@@ -2333,6 +2666,7 @@ function from_lambda_pairs(p) {
                                 return /* constructor */{
                                         tag: 0,
                                         name: "Eq",
+                                        length: 2,
                                         "0": Curry._1(string_of_lambda, a),
                                         "1": b
                                       };
@@ -2344,6 +2678,7 @@ function from_lambda_pairs(p) {
 var ksprintf_suites = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": /* tuple */[
     "ksprintf",
     (function (param) {
@@ -2355,24 +2690,30 @@ var ksprintf_suites = /* constructor */{
         return /* constructor */{
                 tag: 0,
                 name: "Eq",
+                length: 2,
                 "0": Curry._2(f(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
+                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 12,
                               name: "Char_literal",
+                              length: 2,
                               "0": /* " " */32,
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
+                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
+                                  length: 2,
                                   "0": " a ",
                                   "1": /* End_of_format */0
                                 }
@@ -2388,26 +2729,32 @@ var ksprintf_suites = /* constructor */{
   "1": /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       "sprintf",
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
+                  length: 2,
                   "0": Curry._2(Format.sprintf(/* constructor */{
                             tag: 0,
                             name: "Format",
+                            length: 2,
                             "0": /* constructor */{
                               tag: 2,
                               name: "String",
+                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
+                                length: 2,
                                 "0": /* " " */32,
                                 "1": /* constructor */{
                                   tag: 3,
                                   name: "Caml_string",
+                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* End_of_format */0
                                 }
@@ -2426,18 +2773,22 @@ var ksprintf_suites = /* constructor */{
 var int64_suites = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": /* tuple */[
     "i32_simple",
     (function (param) {
         return /* constructor */{
                 tag: 0,
                 name: "Eq",
+                length: 2,
                 "0": Curry._1(Format.asprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 6,
                             name: "Nativeint",
+                            length: 4,
                             "0": /* Int_x */6,
                             "1": /* No_padding */0,
                             "2": /* No_precision */0,
@@ -2452,18 +2803,22 @@ var int64_suites = /* constructor */{
   "1": /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       "i32_simple1",
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
+                  length: 2,
                   "0": Curry._1(Format.asprintf(/* constructor */{
                             tag: 0,
                             name: "Format",
+                            length: 2,
                             "0": /* constructor */{
                               tag: 6,
                               name: "Nativeint",
+                              length: 4,
                               "0": /* Int_o */10,
                               "1": /* No_padding */0,
                               "2": /* No_precision */0,
@@ -2478,18 +2833,22 @@ var int64_suites = /* constructor */{
     "1": /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* tuple */[
         "i64_simple",
         (function (param) {
             return /* constructor */{
                     tag: 0,
                     name: "Eq",
+                    length: 2,
                     "0": Curry._1(Format.asprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 7,
                                 name: "Int64",
+                                length: 4,
                                 "0": /* Int_d */0,
                                 "1": /* No_padding */0,
                                 "2": /* No_precision */0,
@@ -2507,18 +2866,22 @@ var int64_suites = /* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           "i64_simple2",
           (function (param) {
               return /* constructor */{
                       tag: 0,
                       name: "Eq",
+                      length: 2,
                       "0": Curry._1(Format.asprintf(/* constructor */{
                                 tag: 0,
                                 name: "Format",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 7,
                                   name: "Int64",
+                                  length: 4,
                                   "0": /* Int_x */6,
                                   "1": /* No_padding */0,
                                   "2": /* No_precision */0,
@@ -2536,18 +2899,22 @@ var int64_suites = /* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             "i64_simple3",
             (function (param) {
                 return /* constructor */{
                         tag: 0,
                         name: "Eq",
+                        length: 2,
                         "0": Curry._1(Format.asprintf(/* constructor */{
                                   tag: 0,
                                   name: "Format",
+                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 7,
                                     name: "Int64",
+                                    length: 4,
                                     "0": /* Int_i */3,
                                     "1": /* No_padding */0,
                                     "2": /* No_precision */0,
@@ -2565,18 +2932,22 @@ var int64_suites = /* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               "i64_simple4",
               (function (param) {
                   return /* constructor */{
                           tag: 0,
                           name: "Eq",
+                          length: 2,
                           "0": Curry._1(Format.asprintf(/* constructor */{
                                     tag: 0,
                                     name: "Format",
+                                    length: 2,
                                     "0": /* constructor */{
                                       tag: 7,
                                       name: "Int64",
+                                      length: 4,
                                       "0": /* Int_X */8,
                                       "1": /* No_padding */0,
                                       "2": /* No_precision */0,
@@ -2594,18 +2965,22 @@ var int64_suites = /* constructor */{
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 "i64_simple5",
                 (function (param) {
                     return /* constructor */{
                             tag: 0,
                             name: "Eq",
+                            length: 2,
                             "0": Curry._1(Format.asprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
+                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 7,
                                         name: "Int64",
+                                        length: 4,
                                         "0": /* Int_x */6,
                                         "1": /* No_padding */0,
                                         "2": /* No_precision */0,
@@ -2623,22 +2998,27 @@ var int64_suites = /* constructor */{
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   "i64_simple6",
                   (function (param) {
                       return /* constructor */{
                               tag: 0,
                               name: "Eq",
+                              length: 2,
                               "0": Curry._2(Format.asprintf(/* constructor */{
                                         tag: 0,
                                         name: "Format",
+                                        length: 2,
                                         "0": /* constructor */{
                                           tag: 7,
                                           name: "Int64",
+                                          length: 4,
                                           "0": /* Int_x */6,
                                           "1": /* constructor */{
                                             tag: 1,
                                             name: "Arg_padding",
+                                            length: 1,
                                             "0": /* Right */1
                                           },
                                           "2": /* No_precision */0,
@@ -2656,12 +3036,14 @@ var int64_suites = /* constructor */{
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     "i64_simple7",
                     (function (param) {
                         return /* constructor */{
                                 tag: 0,
                                 name: "Eq",
+                                length: 2,
                                 "0": Caml_format.caml_int64_format("%d", /* int64 */[
                                       /* hi */0,
                                       /* lo */3333
@@ -2673,28 +3055,34 @@ var int64_suites = /* constructor */{
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       "i64_simple8",
                       (function (param) {
                           return /* constructor */{
                                   tag: 0,
                                   name: "Eq",
+                                  length: 2,
                                   "0": Curry._2(Format.asprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
+                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 7,
                                               name: "Int64",
+                                              length: 4,
                                               "0": /* Int_d */0,
                                               "1": /* No_padding */0,
                                               "2": /* No_precision */0,
                                               "3": /* constructor */{
                                                 tag: 7,
                                                 name: "Int64",
+                                                length: 4,
                                                 "0": /* Int_d */0,
                                                 "1": /* constructor */{
                                                   tag: 0,
                                                   name: "Lit_padding",
+                                                  length: 2,
                                                   "0": /* Zeros */2,
                                                   "1": 18
                                                 },
@@ -2717,28 +3105,34 @@ var int64_suites = /* constructor */{
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* tuple */[
                         "i64_simple9",
                         (function (param) {
                             return /* constructor */{
                                     tag: 0,
                                     name: "Eq",
+                                    length: 2,
                                     "0": Curry._2(Format.asprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
+                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 7,
                                                 name: "Int64",
+                                                length: 4,
                                                 "0": /* Int_d */0,
                                                 "1": /* No_padding */0,
                                                 "2": /* No_precision */0,
                                                 "3": /* constructor */{
                                                   tag: 7,
                                                   name: "Int64",
+                                                  length: 4,
                                                   "0": /* Int_d */0,
                                                   "1": /* constructor */{
                                                     tag: 0,
                                                     name: "Lit_padding",
+                                                    length: 2,
                                                     "0": /* Zeros */2,
                                                     "1": 18
                                                   },
@@ -2761,18 +3155,22 @@ var int64_suites = /* constructor */{
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* tuple */[
                           "i64_simple10",
                           (function (param) {
                               return /* constructor */{
                                       tag: 0,
                                       name: "Eq",
+                                      length: 2,
                                       "0": Curry._1(Format.asprintf(/* constructor */{
                                                 tag: 0,
                                                 name: "Format",
+                                                length: 2,
                                                 "0": /* constructor */{
                                                   tag: 7,
                                                   name: "Int64",
+                                                  length: 4,
                                                   "0": /* Int_x */6,
                                                   "1": /* No_padding */0,
                                                   "2": /* No_precision */0,
@@ -2787,18 +3185,22 @@ var int64_suites = /* constructor */{
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             "i64_simple15",
                             (function (param) {
                                 return /* constructor */{
                                         tag: 0,
                                         name: "Eq",
+                                        length: 2,
                                         "0": Curry._1(Format.asprintf(/* constructor */{
                                                   tag: 0,
                                                   name: "Format",
+                                                  length: 2,
                                                   "0": /* constructor */{
                                                     tag: 7,
                                                     name: "Int64",
+                                                    length: 4,
                                                     "0": /* Int_d */0,
                                                     "1": /* No_padding */0,
                                                     "2": /* No_precision */0,
@@ -2816,18 +3218,22 @@ var int64_suites = /* constructor */{
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               "i64_simple16",
                               (function (param) {
                                   return /* constructor */{
                                           tag: 0,
                                           name: "Eq",
+                                          length: 2,
                                           "0": Curry._1(Format.asprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
+                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 7,
                                                       name: "Int64",
+                                                      length: 4,
                                                       "0": /* Int_d */0,
                                                       "1": /* No_padding */0,
                                                       "2": /* No_precision */0,
@@ -2845,18 +3251,22 @@ var int64_suites = /* constructor */{
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 "i64_simple14",
                                 (function (param) {
                                     return /* constructor */{
                                             tag: 0,
                                             name: "Eq",
+                                            length: 2,
                                             "0": Curry._1(Format.asprintf(/* constructor */{
                                                       tag: 0,
                                                       name: "Format",
+                                                      length: 2,
                                                       "0": /* constructor */{
                                                         tag: 7,
                                                         name: "Int64",
+                                                        length: 4,
                                                         "0": /* Int_X */8,
                                                         "1": /* No_padding */0,
                                                         "2": /* No_precision */0,
@@ -2874,18 +3284,22 @@ var int64_suites = /* constructor */{
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* tuple */[
                                   "i64_simple17",
                                   (function (param) {
                                       return /* constructor */{
                                               tag: 0,
                                               name: "Eq",
+                                              length: 2,
                                               "0": Curry._1(Format.asprintf(/* constructor */{
                                                         tag: 0,
                                                         name: "Format",
+                                                        length: 2,
                                                         "0": /* constructor */{
                                                           tag: 7,
                                                           name: "Int64",
+                                                          length: 4,
                                                           "0": /* Int_x */6,
                                                           "1": /* No_padding */0,
                                                           "2": /* No_precision */0,
@@ -2903,18 +3317,22 @@ var int64_suites = /* constructor */{
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": /* tuple */[
                                     "i64_simple11",
                                     (function (param) {
                                         return /* constructor */{
                                                 tag: 0,
                                                 name: "Eq",
+                                                length: 2,
                                                 "0": Curry._1(Format.asprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
+                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 7,
                                                             name: "Int64",
+                                                            length: 4,
                                                             "0": /* Int_X */8,
                                                             "1": /* No_padding */0,
                                                             "2": /* No_precision */0,
@@ -2929,18 +3347,22 @@ var int64_suites = /* constructor */{
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       "i64_simple12",
                                       (function (param) {
                                           return /* constructor */{
                                                   tag: 0,
                                                   name: "Eq",
+                                                  length: 2,
                                                   "0": Curry._1(Format.asprintf(/* constructor */{
                                                             tag: 0,
                                                             name: "Format",
+                                                            length: 2,
                                                             "0": /* constructor */{
                                                               tag: 7,
                                                               name: "Int64",
+                                                              length: 4,
                                                               "0": /* Int_X */8,
                                                               "1": /* No_padding */0,
                                                               "2": /* No_precision */0,
@@ -2955,18 +3377,22 @@ var int64_suites = /* constructor */{
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
+                                      length: 2,
                                       "0": /* tuple */[
                                         "i64_simple17",
                                         (function (param) {
                                             return /* constructor */{
                                                     tag: 0,
                                                     name: "Eq",
+                                                    length: 2,
                                                     "0": Curry._1(Format.asprintf(/* constructor */{
                                                               tag: 0,
                                                               name: "Format",
+                                                              length: 2,
                                                               "0": /* constructor */{
                                                                 tag: 7,
                                                                 name: "Int64",
+                                                                length: 4,
                                                                 "0": /* Int_u */12,
                                                                 "1": /* No_padding */0,
                                                                 "2": /* No_precision */0,
@@ -2984,18 +3410,22 @@ var int64_suites = /* constructor */{
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
+                                        length: 2,
                                         "0": /* tuple */[
                                           "i64_simple21",
                                           (function (param) {
                                               return /* constructor */{
                                                       tag: 0,
                                                       name: "Eq",
+                                                      length: 2,
                                                       "0": Curry._1(Format.asprintf(/* constructor */{
                                                                 tag: 0,
                                                                 name: "Format",
+                                                                length: 2,
                                                                 "0": /* constructor */{
                                                                   tag: 7,
                                                                   name: "Int64",
+                                                                  length: 4,
                                                                   "0": /* Int_u */12,
                                                                   "1": /* No_padding */0,
                                                                   "2": /* No_precision */0,
@@ -3013,18 +3443,22 @@ var int64_suites = /* constructor */{
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "::",
+                                          length: 2,
                                           "0": /* tuple */[
                                             "i64_simple19",
                                             (function (param) {
                                                 return /* constructor */{
                                                         tag: 0,
                                                         name: "Eq",
+                                                        length: 2,
                                                         "0": Curry._1(Format.asprintf(/* constructor */{
                                                                   tag: 0,
                                                                   name: "Format",
+                                                                  length: 2,
                                                                   "0": /* constructor */{
                                                                     tag: 7,
                                                                     name: "Int64",
+                                                                    length: 4,
                                                                     "0": /* Int_o */10,
                                                                     "1": /* No_padding */0,
                                                                     "2": /* No_precision */0,
@@ -3039,18 +3473,22 @@ var int64_suites = /* constructor */{
                                           "1": /* constructor */{
                                             tag: 0,
                                             name: "::",
+                                            length: 2,
                                             "0": /* tuple */[
                                               "i64_simple13",
                                               (function (param) {
                                                   return /* constructor */{
                                                           tag: 0,
                                                           name: "Eq",
+                                                          length: 2,
                                                           "0": Curry._1(Format.asprintf(/* constructor */{
                                                                     tag: 0,
                                                                     name: "Format",
+                                                                    length: 2,
                                                                     "0": /* constructor */{
                                                                       tag: 7,
                                                                       name: "Int64",
+                                                                      length: 4,
                                                                       "0": /* Int_X */8,
                                                                       "1": /* No_padding */0,
                                                                       "2": /* No_precision */0,
@@ -3068,22 +3506,27 @@ var int64_suites = /* constructor */{
                                             "1": /* constructor */{
                                               tag: 0,
                                               name: "::",
+                                              length: 2,
                                               "0": /* tuple */[
                                                 "i64_simple20",
                                                 (function (param) {
                                                     return /* constructor */{
                                                             tag: 0,
                                                             name: "Eq",
+                                                            length: 2,
                                                             "0": Curry._1(Format.asprintf(/* constructor */{
                                                                       tag: 0,
                                                                       name: "Format",
+                                                                      length: 2,
                                                                       "0": /* constructor */{
                                                                         tag: 7,
                                                                         name: "Int64",
+                                                                        length: 4,
                                                                         "0": /* Int_x */6,
                                                                         "1": /* constructor */{
                                                                           tag: 0,
                                                                           name: "Lit_padding",
+                                                                          length: 2,
                                                                           "0": /* Right */1,
                                                                           "1": 12
                                                                         },
@@ -3102,18 +3545,22 @@ var int64_suites = /* constructor */{
                                               "1": /* constructor */{
                                                 tag: 0,
                                                 name: "::",
+                                                length: 2,
                                                 "0": /* tuple */[
                                                   "i64_simple21",
                                                   (function (param) {
                                                       return /* constructor */{
                                                               tag: 0,
                                                               name: "Eq",
+                                                              length: 2,
                                                               "0": Curry._1(Format.asprintf(/* constructor */{
                                                                         tag: 0,
                                                                         name: "Format",
+                                                                        length: 2,
                                                                         "0": /* constructor */{
                                                                           tag: 7,
                                                                           name: "Int64",
+                                                                          length: 4,
                                                                           "0": /* Int_X */8,
                                                                           "1": /* No_padding */0,
                                                                           "2": /* No_precision */0,
@@ -3131,24 +3578,29 @@ var int64_suites = /* constructor */{
                                                 "1": /* constructor */{
                                                   tag: 0,
                                                   name: "::",
+                                                  length: 2,
                                                   "0": /* tuple */[
                                                     "missing_neline",
                                                     (function (param) {
                                                         return /* constructor */{
                                                                 tag: 0,
                                                                 name: "Eq",
+                                                                length: 2,
                                                                 "0": Curry._1(Format.asprintf(/* constructor */{
                                                                           tag: 0,
                                                                           name: "Format",
+                                                                          length: 2,
                                                                           "0": /* constructor */{
                                                                             tag: 7,
                                                                             name: "Int64",
+                                                                            length: 4,
                                                                             "0": /* Int_d */0,
                                                                             "1": /* No_padding */0,
                                                                             "2": /* No_precision */0,
                                                                             "3": /* constructor */{
                                                                               tag: 12,
                                                                               name: "Char_literal",
+                                                                              length: 2,
                                                                               "0": /* "\n" */10,
                                                                               "1": /* End_of_format */0
                                                                             }
@@ -3165,6 +3617,7 @@ var int64_suites = /* constructor */{
                                                   "1": /* constructor */{
                                                     tag: 0,
                                                     name: "::",
+                                                    length: 2,
                                                     "0": /* tuple */[
                                                       "missing_newline2",
                                                       (function (param) {
@@ -3172,18 +3625,22 @@ var int64_suites = /* constructor */{
                                                           return /* constructor */{
                                                                   tag: 0,
                                                                   name: "Eq",
+                                                                  length: 2,
                                                                   "0": (Curry._1(Printf.bprintf(buf, /* constructor */{
                                                                               tag: 0,
                                                                               name: "Format",
+                                                                              length: 2,
                                                                               "0": /* constructor */{
                                                                                 tag: 7,
                                                                                 name: "Int64",
+                                                                                length: 4,
                                                                                 "0": /* Int_d */0,
                                                                                 "1": /* No_padding */0,
                                                                                 "2": /* No_precision */0,
                                                                                 "3": /* constructor */{
                                                                                   tag: 12,
                                                                                   name: "Char_literal",
+                                                                                  length: 2,
                                                                                   "0": /* "\n" */10,
                                                                                   "1": /* End_of_format */0
                                                                                 }
@@ -3299,13 +3756,16 @@ Mt.from_pair_suites("Caml_format_test", Pervasives.$at(suites, Pervasives.$at(fo
                                             Curry._1(Printf.sprintf(/* constructor */{
                                                       tag: 0,
                                                       name: "Format",
+                                                      length: 2,
                                                       "0": /* constructor */{
                                                         tag: 11,
                                                         name: "String_literal",
+                                                        length: 2,
                                                         "0": "float_format ",
                                                         "1": /* constructor */{
                                                           tag: 4,
                                                           name: "Int",
+                                                          length: 4,
                                                           "0": /* Int_d */0,
                                                           "1": /* No_padding */0,
                                                           "2": /* No_precision */0,
@@ -3318,6 +3778,7 @@ Mt.from_pair_suites("Caml_format_test", Pervasives.$at(suites, Pervasives.$at(fo
                                                 return /* constructor */{
                                                         tag: 0,
                                                         name: "Eq",
+                                                        length: 2,
                                                         "0": Caml_format.caml_format_float(fmt, f),
                                                         "1": str_result
                                                       };
@@ -3330,19 +3791,23 @@ Mt.from_pair_suites("Caml_format_test", Pervasives.$at(suites, Pervasives.$at(fo
                                                 Curry._1(Printf.sprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
+                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 11,
                                                             name: "String_literal",
+                                                            length: 2,
                                                             "0": "int64_of_string ",
                                                             "1": /* constructor */{
                                                               tag: 4,
                                                               name: "Int",
+                                                              length: 4,
                                                               "0": /* Int_d */0,
                                                               "1": /* No_padding */0,
                                                               "2": /* No_precision */0,
                                                               "3": /* constructor */{
                                                                 tag: 12,
                                                                 name: "Char_literal",
+                                                                length: 2,
                                                                 "0": /* " " */32,
                                                                 "1": /* End_of_format */0
                                                               }
@@ -3354,6 +3819,7 @@ Mt.from_pair_suites("Caml_format_test", Pervasives.$at(suites, Pervasives.$at(fo
                                                     return /* constructor */{
                                                             tag: 0,
                                                             name: "Eq",
+                                                            length: 2,
                                                             "0": Caml_format.caml_int64_of_string(b),
                                                             "1": a
                                                           };
@@ -3366,6 +3832,7 @@ var a = Format.asprintf;
 var float_suites = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": "float_nan",
   "1": /* [] */0
 };

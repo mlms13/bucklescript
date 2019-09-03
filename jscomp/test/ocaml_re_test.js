@@ -29,12 +29,14 @@ function eq(loc, x, y) {
   suites[0] = /* constructor */{
     tag: 0,
     name: "::",
+    length: 2,
     "0": /* tuple */[
       loc + (" id " + String(test_id[0])),
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
+                  length: 2,
                   "0": x,
                   "1": y
                 };
@@ -63,6 +65,7 @@ function union(_l, _l$prime) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     c1,
                     c2
@@ -73,6 +76,7 @@ function union(_l, _l$prime) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     c1$prime,
                     c2$prime
@@ -83,6 +87,7 @@ function union(_l, _l$prime) {
           _l$prime = /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               c1 < c1$prime ? c1 : c1$prime,
               c2$prime
@@ -96,6 +101,7 @@ function union(_l, _l$prime) {
           _l = /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               c1 < c1$prime ? c1 : c1$prime,
               c2
@@ -136,6 +142,7 @@ function inter(_l, _l$prime) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   Caml_obj.caml_max(c1, c1$prime),
                   c2
@@ -146,6 +153,7 @@ function inter(_l, _l$prime) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   Caml_obj.caml_max(c1, c1$prime),
                   c2$prime
@@ -177,6 +185,7 @@ function diff(_l, _l$prime) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* tuple */[
                     c1,
                     c2
@@ -190,6 +199,7 @@ function diff(_l, _l$prime) {
           var r$prime$prime = c2$prime < c2 ? /* constructor */({
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   c2$prime + 1 | 0,
                   c2
@@ -200,6 +210,7 @@ function diff(_l, _l$prime) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* tuple */[
                       c1,
                       c1$prime - 1 | 0
@@ -225,6 +236,7 @@ function single(c) {
   return /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             c,
             c
@@ -238,6 +250,7 @@ function seq(c, c$prime) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               c,
               c$prime
@@ -248,6 +261,7 @@ function seq(c, c$prime) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               c$prime,
               c
@@ -263,6 +277,7 @@ function offset(o, l) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               match[0] + o | 0,
               match[1] + o | 0
@@ -336,6 +351,7 @@ function create(l, x, d, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
+          length: 5,
           "0": l,
           "1": x,
           "2": d,
@@ -395,6 +411,7 @@ function bal(l, x, d, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
+            length: 5,
             "0": l,
             "1": x,
             "2": d,
@@ -415,6 +432,7 @@ function add(x, data, param) {
       return /* constructor */{
               tag: 0,
               name: "Node",
+              length: 5,
               "0": l,
               "1": x,
               "2": data,
@@ -430,6 +448,7 @@ function add(x, data, param) {
     return /* constructor */{
             tag: 0,
             name: "Node",
+            length: 5,
             "0": /* Empty */0,
             "1": x,
             "2": data,
@@ -442,6 +461,7 @@ function add(x, data, param) {
 var cany = /* constructor */{
   tag: 0,
   name: "::",
+  length: 2,
   "0": /* tuple */[
     0,
     255
@@ -520,6 +540,7 @@ function create$1(l, v, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
+          length: 4,
           "0": l,
           "1": v,
           "2": r,
@@ -576,6 +597,7 @@ function bal$1(l, v, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
+            length: 4,
             "0": l,
             "1": v,
             "2": r,
@@ -601,6 +623,7 @@ function add$1(x, t) {
     return /* constructor */{
             tag: 0,
             name: "Node",
+            length: 4,
             "0": /* Empty */0,
             "1": x,
             "2": /* Empty */0,
@@ -644,6 +667,7 @@ function marks_set_idx(idx, marks) {
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 match[0],
                 idx
@@ -698,12 +722,14 @@ function cst(ids, s) {
     return mk_expr(ids, /* constructor */{
                 tag: 1,
                 name: "Alt",
+                length: 1,
                 "0": /* [] */0
               });
   } else {
     return mk_expr(ids, /* constructor */{
                 tag: 0,
                 name: "Cst",
+                length: 1,
                 "0": s
               });
   }
@@ -715,6 +741,7 @@ function alt(ids, l) {
       return mk_expr(ids, /* constructor */{
                   tag: 1,
                   name: "Alt",
+                  length: 1,
                   "0": l
                 });
     } else {
@@ -724,6 +751,7 @@ function alt(ids, l) {
     return mk_expr(ids, /* constructor */{
                 tag: 1,
                 name: "Alt",
+                length: 1,
                 "0": /* [] */0
               });
   }
@@ -754,6 +782,7 @@ function seq$1(ids, kind, x, y) {
   return mk_expr(ids, /* constructor */{
               tag: 2,
               name: "Seq",
+              length: 3,
               "0": kind,
               "1": x,
               "2": y
@@ -773,6 +802,7 @@ function rep(ids, kind, sem, x) {
   return mk_expr(ids, /* constructor */{
               tag: 3,
               name: "Rep",
+              length: 3,
               "0": kind,
               "1": sem,
               "2": x
@@ -783,6 +813,7 @@ function erase(ids, m, m$prime) {
   return mk_expr(ids, /* constructor */{
               tag: 5,
               name: "Erase",
+              length: 2,
               "0": m,
               "1": m$prime
             });
@@ -798,6 +829,7 @@ function rename(ids, x) {
           return mk_expr(ids, /* constructor */{
                       tag: 1,
                       name: "Alt",
+                      length: 1,
                       "0": List.map((function (param) {
                               return rename(ids, param);
                             }), match[0])
@@ -806,6 +838,7 @@ function rename(ids, x) {
           return mk_expr(ids, /* constructor */{
                       tag: 2,
                       name: "Seq",
+                      length: 3,
                       "0": match[0],
                       "1": rename(ids, match[1]),
                       "2": rename(ids, match[2])
@@ -814,6 +847,7 @@ function rename(ids, x) {
           return mk_expr(ids, /* constructor */{
                       tag: 3,
                       name: "Rep",
+                      length: 3,
                       "0": match[0],
                       "1": match[1],
                       "2": rename(ids, match[2])
@@ -937,9 +971,11 @@ function tseq(kind, x, y, rem) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 1,
                       name: "TExp",
+                      length: 2,
                       "0": match[0],
                       "1": y
                     },
@@ -958,9 +994,11 @@ function tseq(kind, x, y, rem) {
   return /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "TSeq",
+            length: 3,
             "0": x,
             "1": y,
             "2": kind
@@ -995,9 +1033,11 @@ function create$2(cat, e) {
   return mk(0, cat, /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* constructor */{
                 tag: 1,
                 name: "TExp",
+                length: 2,
                 "0": empty,
                 "1": e
               },
@@ -1097,6 +1137,7 @@ function split_at_match_rec(_l$prime, _param) {
             _l$prime = /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": x,
               "1": l$prime
             };
@@ -1146,6 +1187,7 @@ function remove_duplicates(prev, _l, y) {
                 var match$2 = remove_duplicates(/* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": y[/* id */0],
                       "1": prev
                     }, r, y);
@@ -1153,6 +1195,7 @@ function remove_duplicates(prev, _l, y) {
                         /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": x,
                           "1": match$2[0]
                         },
@@ -1168,6 +1211,7 @@ function remove_duplicates(prev, _l, y) {
                 var match$3 = remove_duplicates(/* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": x$2[/* id */0],
                       "1": prev
                     }, r$1, y);
@@ -1175,6 +1219,7 @@ function remove_duplicates(prev, _l, y) {
                         /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": x,
                           "1": match$3[0]
                         },
@@ -1187,6 +1232,7 @@ function remove_duplicates(prev, _l, y) {
                     /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": x,
                       "1": /* [] */0
                     },
@@ -1211,9 +1257,11 @@ function set_idx(idx, param) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "TSeq",
+                    length: 3,
                     "0": set_idx(idx, match[0]),
                     "1": match[1],
                     "2": match[2]
@@ -1224,9 +1272,11 @@ function set_idx(idx, param) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 1,
                     name: "TExp",
+                    length: 2,
                     "0": marks_set_idx$1(match[0], idx),
                     "1": match[1]
                   },
@@ -1236,9 +1286,11 @@ function set_idx(idx, param) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "TMatch",
+                    length: 1,
                     "0": marks_set_idx$1(match[0], idx)
                   },
                   "1": set_idx(idx, param[1])
@@ -1270,9 +1322,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
     return /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* constructor */{
               tag: 2,
               name: "TMatch",
+              length: 1,
               "0": marks
             },
             "1": rem
@@ -1284,9 +1338,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 1,
                       name: "TExp",
+                      length: 2,
                       "0": marks,
                       "1": eps_expr
                     },
@@ -1325,9 +1381,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 2,
                       name: "TMatch",
+                      length: 1,
                       "0": marks
                     },
                     "1": tseq(kind, y$prime$prime, x, rem)
@@ -1336,9 +1394,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
             return tseq(kind, y$prime$prime, x, /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 2,
                           name: "TMatch",
+                          length: 1,
                           "0": match$2[1]
                         },
                         "1": rem
@@ -1349,6 +1409,7 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
           var marks_000 = /* marks : constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               i,
               -1
@@ -1363,9 +1424,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "TMatch",
+                    length: 1,
                     "0": marks$1
                   },
                   "1": rem
@@ -1374,9 +1437,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "TMatch",
+                    length: 1,
                     "0": filter_marks(match[0], match[1], marks)
                   },
                   "1": rem
@@ -1386,9 +1451,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 2,
                       name: "TMatch",
+                      length: 1,
                       "0": marks
                     },
                     "1": rem
@@ -1401,9 +1468,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 2,
                       name: "TMatch",
+                      length: 1,
                       "0": marks
                     },
                     "1": rem
@@ -1421,9 +1490,11 @@ function delta_1(marks, c, next_cat, prev_cat, x, rem) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "TMatch",
+                    length: 1,
                     "0": marks$2
                   },
                   "1": rem
@@ -1486,6 +1557,7 @@ function delta_4(c, next_cat, prev_cat, l, rem) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": x,
                   "1": rem$1
                 };
@@ -1535,6 +1607,7 @@ function status(s) {
             st = /* constructor */{
               tag: 0,
               name: "Match",
+              length: 2,
               "0": flatten_match(m[/* marks */0]),
               "1": m[/* pmarks */1]
             };
@@ -1700,6 +1773,7 @@ function $$final(info, st, cat) {
       st[/* final */3] = /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           cat,
           res
@@ -1723,6 +1797,7 @@ function find_initial_state(re, cat) {
       re[/* initial_states */1] = /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           cat,
           st
@@ -1932,22 +2007,27 @@ var clower = offset(32, cupper);
 var calpha = List.fold_right(cadd, /* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* "\170" */170,
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* "\181" */181,
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* "\186" */186,
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* "\223" */223,
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* "\255" */255,
               "1": /* [] */0
             }
@@ -1963,6 +2043,7 @@ var calnum = union(calpha, cdigit);
 var cword = union(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* tuple */[
         /* "_" */95,
         /* "_" */95
@@ -1982,6 +2063,7 @@ function colorize(c, regexp) {
               return split(/* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             /* "\n" */10,
                             /* "\n" */10
@@ -2263,6 +2345,7 @@ function sequence(l) {
       return /* constructor */{
               tag: 1,
               name: "Sequence",
+              length: 1,
               "0": l
             };
     } else {
@@ -2272,6 +2355,7 @@ function sequence(l) {
     return /* constructor */{
             tag: 1,
             name: "Sequence",
+            length: 1,
             "0": l
           };
   }
@@ -2301,26 +2385,33 @@ function merge_sequences(_param) {
                       return /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* constructor */{
                                 tag: 1,
                                 name: "Sequence",
+                                length: 1,
                                 "0": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": x$1,
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* constructor */{
                                       tag: 2,
                                       name: "Alternative",
+                                      length: 1,
                                       "0": /* constructor */{
                                         tag: 0,
                                         name: "::",
+                                        length: 2,
                                         "0": sequence(y),
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "::",
+                                          length: 2,
                                           "0": sequence(match$2[1]),
                                           "1": /* [] */0
                                         }
@@ -2343,12 +2434,15 @@ function merge_sequences(_param) {
                   return /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 1,
                             name: "Sequence",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": x$1,
                               "1": y
                             }
@@ -2369,6 +2463,7 @@ function merge_sequences(_param) {
       return /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": x,
               "1": merge_sequences(param[1])
             };
@@ -2399,6 +2494,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 7,
                           name: "After",
+                          length: 1,
                           "0": c$1
                         }),
                     kind
@@ -2409,6 +2505,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 6,
                           name: "Before",
+                          length: 1,
                           "0": c$2
                         }),
                     kind
@@ -2420,10 +2517,12 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                               tag: 7,
                               name: "After",
+                              length: 1,
                               "0": c$3
                             }), mk_expr(ids, /* constructor */{
                               tag: 6,
                               name: "Before",
+                              length: 1,
                               "0": c$4
                             })),
                     kind
@@ -2435,10 +2534,12 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                               tag: 7,
                               name: "After",
+                              length: 1,
                               "0": c$5
                             }), mk_expr(ids, /* constructor */{
                               tag: 6,
                               name: "Before",
+                              length: 1,
                               "0": c$6
                             })),
                     kind
@@ -2448,25 +2549,31 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     alt(ids, /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                                     tag: 7,
                                     name: "After",
+                                    length: 1,
                                     "0": Re_automata_Category.letter
                                   }), mk_expr(ids, /* constructor */{
                                     tag: 6,
                                     name: "Before",
+                                    length: 1,
                                     "0": Re_automata_Category.letter
                                   })),
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                                       tag: 7,
                                       name: "After",
+                                      length: 1,
                                       "0": Re_automata_Category.letter
                                     }), mk_expr(ids, /* constructor */{
                                       tag: 6,
                                       name: "Before",
+                                      length: 1,
                                       "0": Re_automata_Category.letter
                                     })),
                             "1": /* [] */0
@@ -2479,6 +2586,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 7,
                           name: "After",
+                          length: 1,
                           "0": Re_automata_Category.inexistant
                         }),
                     kind
@@ -2488,6 +2596,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 6,
                           name: "Before",
+                          length: 1,
                           "0": Re_automata_Category.inexistant
                         }),
                     kind
@@ -2498,6 +2607,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 6,
                           name: "Before",
+                          length: 1,
                           "0": c$7
                         }),
                     kind
@@ -2507,6 +2617,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 7,
                           name: "After",
+                          length: 1,
                           "0": Re_automata_Category.search_boundary
                         }),
                     kind
@@ -2516,6 +2627,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     mk_expr(ids, /* constructor */{
                           tag: 6,
                           name: "Before",
+                          length: 1,
                           "0": Re_automata_Category.search_boundary
                         }),
                     kind
@@ -2565,10 +2677,12 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                   return alt(ids, /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": mk_expr(ids, /* Eps */0),
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": seq$1(ids, kind$prime, rename(ids, cr), rem),
                                 "1": /* [] */0
                               }
@@ -2579,10 +2693,12 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                   return alt(ids, /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": seq$1(ids, kind$prime, rename(ids, cr), rem),
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": mk_expr(ids, /* Eps */0),
                                 "1": /* [] */0
                               }
@@ -2625,10 +2741,12 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                       seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                                 tag: 4,
                                 name: "Mark",
+                                length: 1,
                                 "0": p
                               }), seq$1(ids, /* First */332064784, match$3[0], mk_expr(ids, /* constructor */{
                                     tag: 4,
                                     name: "Mark",
+                                    length: 1,
                                     "0": p + 1 | 0
                                   }))),
                       match$3[1]
@@ -2661,6 +2779,7 @@ function translate(ids, kind, _ign_group, ign_case, _greedy, pos, cache, c, _par
                     seq$1(ids, /* First */332064784, mk_expr(ids, /* constructor */{
                               tag: 8,
                               name: "Pmark",
+                              length: 1,
                               "0": param[0]
                             }), match$5[0]),
                     match$5[1]
@@ -2744,12 +2863,14 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": ign_case ? case_insens(s) : s
                   };
         case 1 :
             return /* constructor */{
                     tag: 1,
                     name: "Sequence",
+                    length: 1,
                     "0": List.map((function(ign_case){
                         return function (param) {
                           return handle_case(ign_case, param);
@@ -2765,11 +2886,13 @@ function handle_case(_ign_case, _r) {
             if (is_charset(/* constructor */{
                     tag: 2,
                     name: "Alternative",
+                    length: 1,
                     "0": l$prime
                   })) {
               return /* constructor */{
                       tag: 0,
                       name: "Set",
+                      length: 1,
                       "0": List.fold_left((function (s, r) {
                               return union(s, as_set(r));
                             }), /* [] */0, l$prime)
@@ -2778,6 +2901,7 @@ function handle_case(_ign_case, _r) {
               return /* constructor */{
                       tag: 2,
                       name: "Alternative",
+                      length: 1,
                       "0": l$prime
                     };
             }
@@ -2785,6 +2909,7 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 3,
                     name: "Repeat",
+                    length: 3,
                     "0": handle_case(ign_case, r[0]),
                     "1": r[1],
                     "2": r[2]
@@ -2797,6 +2922,7 @@ function handle_case(_ign_case, _r) {
               return /* constructor */{
                       tag: 4,
                       name: "Sem",
+                      length: 2,
                       "0": r[0],
                       "1": r$prime
                     };
@@ -2809,6 +2935,7 @@ function handle_case(_ign_case, _r) {
               return /* constructor */{
                       tag: 5,
                       name: "Sem_greedy",
+                      length: 2,
                       "0": r[0],
                       "1": r$prime$1
                     };
@@ -2817,6 +2944,7 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 6,
                     name: "Group",
+                    length: 1,
                     "0": handle_case(ign_case, r[0])
                   };
         case 7 :
@@ -2827,6 +2955,7 @@ function handle_case(_ign_case, _r) {
               return /* constructor */{
                       tag: 7,
                       name: "No_group",
+                      length: 1,
                       "0": r$prime$2
                     };
             }
@@ -2838,6 +2967,7 @@ function handle_case(_ign_case, _r) {
               return /* constructor */{
                       tag: 8,
                       name: "Nest",
+                      length: 1,
                       "0": r$prime$3
                     };
             }
@@ -2858,6 +2988,7 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": List.fold_left((function (s, r) {
                             return inter(s, as_set(r));
                           }), cany, l$prime$1)
@@ -2871,6 +3002,7 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": diff(cany, List.fold_left((function (s, r) {
                                 return union(s, as_set(r));
                               }), /* [] */0, l$prime$2))
@@ -2879,12 +3011,14 @@ function handle_case(_ign_case, _r) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": inter(as_set(handle_case(ign_case, r[0])), diff(cany, as_set(handle_case(ign_case, r[1]))))
                   };
         case 14 :
             return /* constructor */{
                     tag: 14,
                     name: "Pmark",
+                    length: 2,
                     "0": r[0],
                     "1": handle_case(ign_case, r[1])
                   };
@@ -2943,6 +3077,7 @@ function alt$1(l) {
       return /* constructor */{
               tag: 2,
               name: "Alternative",
+              length: 1,
               "0": l
             };
     } else {
@@ -2952,6 +3087,7 @@ function alt$1(l) {
     return /* constructor */{
             tag: 2,
             name: "Alternative",
+            length: 1,
             "0": l
           };
   }
@@ -2963,6 +3099,7 @@ function seq$2(l) {
       return /* constructor */{
               tag: 1,
               name: "Sequence",
+              length: 1,
               "0": l
             };
     } else {
@@ -2972,6 +3109,7 @@ function seq$2(l) {
     return /* constructor */{
             tag: 1,
             name: "Sequence",
+            length: 1,
             "0": l
           };
   }
@@ -2980,6 +3118,7 @@ function seq$2(l) {
 var epsilon = /* constructor */{
   tag: 1,
   name: "Sequence",
+  length: 1,
   "0": /* [] */0
 };
 
@@ -2999,6 +3138,7 @@ function repn(r, i, j) {
   return /* constructor */{
           tag: 3,
           name: "Repeat",
+          length: 3,
           "0": r,
           "1": i,
           "2": j
@@ -3013,6 +3153,7 @@ function set(str) {
   return /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": s
         };
 }
@@ -3021,6 +3162,7 @@ function compl(l) {
   var r = /* constructor */{
     tag: 12,
     name: "Complement",
+    length: 1,
     "0": l
   };
   if (is_charset(r)) {
@@ -3036,15 +3178,18 @@ function compl(l) {
 var any = /* constructor */{
   tag: 0,
   name: "Set",
+  length: 1,
   "0": cany
 };
 
 var notnl = /* constructor */{
   tag: 0,
   name: "Set",
+  length: 1,
   "0": diff(cany, /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* tuple */[
           /* "\n" */10,
           /* "\n" */10
@@ -3056,20 +3201,25 @@ var notnl = /* constructor */{
 var lower = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* "a" */97, /* "z" */122)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               /* "\181" */181,
               /* "\181" */181
@@ -3080,17 +3230,21 @@ var lower = alt$1(/* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Set",
+            length: 1,
             "0": seq(/* "\223" */223, /* "\246" */246)
           },
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* constructor */{
               tag: 0,
               name: "Set",
+              length: 1,
               "0": seq(/* "\248" */248, /* "\255" */255)
             },
             "1": /* [] */0
@@ -3102,25 +3256,31 @@ var lower = alt$1(/* constructor */{
 var upper = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* "A" */65, /* "Z" */90)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "\192" */192, /* "\214" */214)
         },
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Set",
+            length: 1,
             "0": seq(/* "\216" */216, /* "\222" */222)
           },
           "1": /* [] */0
@@ -3131,20 +3291,25 @@ var upper = alt$1(/* constructor */{
 var alpha = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": lower,
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": upper,
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Set",
+            length: 1,
             "0": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* tuple */[
                 /* "\170" */170,
                 /* "\170" */170
@@ -3155,12 +3320,15 @@ var alpha = alt$1(/* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* constructor */{
               tag: 0,
               name: "Set",
+              length: 1,
               "0": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* tuple */[
                   /* "\186" */186,
                   /* "\186" */186
@@ -3177,16 +3345,19 @@ var alpha = alt$1(/* constructor */{
 var digit = /* constructor */{
   tag: 0,
   name: "Set",
+  length: 1,
   "0": seq(/* "0" */48, /* "9" */57)
 };
 
 var alnum = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": alpha,
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": digit,
         "1": /* [] */0
       }
@@ -3195,16 +3366,20 @@ var alnum = alt$1(/* constructor */{
 var wordc = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": alnum,
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* tuple */[
               /* "_" */95,
               /* "_" */95
@@ -3219,6 +3394,7 @@ var wordc = alt$1(/* constructor */{
 var ascii = /* constructor */{
   tag: 0,
   name: "Set",
+  length: 1,
   "0": seq(/* "\000" */0, /* "\127" */127)
 };
 
@@ -3227,17 +3403,21 @@ var blank = set("\t ");
 var cntrl = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* "\000" */0, /* "\031" */31)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "\127" */127, /* "\159" */159)
         },
         "1": /* [] */0
@@ -3247,17 +3427,21 @@ var cntrl = alt$1(/* constructor */{
 var graph = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* "!" */33, /* "~" */126)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "\160" */160, /* "\255" */255)
         },
         "1": /* [] */0
@@ -3267,17 +3451,21 @@ var graph = alt$1(/* constructor */{
 var print = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* " " */32, /* "~" */126)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "\160" */160, /* "\255" */255)
         },
         "1": /* [] */0
@@ -3287,76 +3475,95 @@ var print = alt$1(/* constructor */{
 var punct = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": seq(/* "!" */33, /* "/" */47)
       },
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* ":" */58, /* "@" */64)
         },
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Set",
+            length: 1,
             "0": seq(/* "[" */91, /* "`" */96)
           },
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* constructor */{
               tag: 0,
               name: "Set",
+              length: 1,
               "0": seq(/* "{" */123, /* "~" */126)
             },
             "1": /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* constructor */{
                 tag: 0,
                 name: "Set",
+                length: 1,
                 "0": seq(/* "\160" */160, /* "\169" */169)
               },
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": /* constructor */{
                   tag: 0,
                   name: "Set",
+                  length: 1,
                   "0": seq(/* "\171" */171, /* "\180" */180)
                 },
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": seq(/* "\182" */182, /* "\185" */185)
                   },
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": /* constructor */{
                       tag: 0,
                       name: "Set",
+                      length: 1,
                       "0": seq(/* "\187" */187, /* "\191" */191)
                     },
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Set",
+                        length: 1,
                         "0": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* tuple */[
                             /* "\215" */215,
                             /* "\215" */215
@@ -3367,12 +3574,15 @@ var punct = alt$1(/* constructor */{
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Set",
+                          length: 1,
                           "0": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               /* "\247" */247,
                               /* "\247" */247
@@ -3395,12 +3605,15 @@ var punct = alt$1(/* constructor */{
 var space = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": /* constructor */{
         tag: 0,
         name: "Set",
+        length: 1,
         "0": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* tuple */[
             /* " " */32,
             /* " " */32
@@ -3411,9 +3624,11 @@ var space = alt$1(/* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "\t" */9, /* "\r" */13)
         },
         "1": /* [] */0
@@ -3423,21 +3638,26 @@ var space = alt$1(/* constructor */{
 var xdigit = alt$1(/* constructor */{
       tag: 0,
       name: "::",
+      length: 2,
       "0": digit,
       "1": /* constructor */{
         tag: 0,
         name: "::",
+        length: 2,
         "0": /* constructor */{
           tag: 0,
           name: "Set",
+          length: 1,
           "0": seq(/* "a" */97, /* "f" */102)
         },
         "1": /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 0,
             name: "Set",
+            length: 1,
             "0": seq(/* "A" */65, /* "F" */70)
           },
           "1": /* [] */0
@@ -3449,22 +3669,27 @@ function compile(r) {
   var regexp = anchored(r) ? /* constructor */({
         tag: 6,
         name: "Group",
+        length: 1,
         "0": r
       }) : seq$2(/* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* constructor */{
             tag: 4,
             name: "Sem",
+            length: 2,
             "0": /* Shortest */-1034406550,
             "1": repn(any, 0, undefined)
           },
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": /* constructor */{
               tag: 6,
               name: "Group",
+              length: 1,
               "0": r
             },
             "1": /* [] */0
@@ -3567,6 +3792,7 @@ function exec_internal(name, $staropt$star, $staropt$star$1, groups, re, s) {
     return /* constructor */{
             tag: 0,
             name: "Match",
+            length: 1,
             "0": /* record */[
               /* s */s$1,
               /* marks */res[0],
@@ -3695,6 +3921,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
       return /* constructor */{
               tag: 5,
               name: "Sem_greedy",
+              length: 2,
               "0": /* Non_greedy */620821490,
               "1": r
             };
@@ -3702,6 +3929,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
       return /* constructor */{
               tag: 5,
               name: "Sem_greedy",
+              length: 2,
               "0": /* Greedy */-904640576,
               "1": r
             };
@@ -3716,6 +3944,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         _left = /* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": piece(/* () */0),
           "1": left
         };
@@ -3730,10 +3959,12 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         _left = alt$1(/* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": left,
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": branch$prime(/* [] */0),
                 "1": /* [] */0
               }
@@ -3758,20 +3989,25 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
               return /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": /* constructor */{
                         tag: 0,
                         name: "Set",
+                        length: 1,
                         "0": single(c)
                       },
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Set",
+                          length: 1,
                           "0": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": /* tuple */[
                               /* "-" */45,
                               /* "-" */45
@@ -3788,9 +4024,11 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                 _s = /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": seq(c, match$1[1])
                   },
                   "1": s
@@ -3800,20 +4038,25 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                 return /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Set",
+                          length: 1,
                           "0": single(c)
                         },
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 0,
                             name: "Set",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 /* "-" */45,
                                 /* "-" */45
@@ -3824,6 +4067,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": match$1[1],
                             "1": s
                           }
@@ -3835,9 +4079,11 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             _s = /* constructor */{
               tag: 0,
               name: "::",
+              length: 2,
               "0": /* constructor */{
                 tag: 0,
                 name: "Set",
+                length: 1,
                 "0": single(c)
               },
               "1": s
@@ -3848,6 +4094,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
           _s = /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": match[1],
             "1": s
           };
@@ -3900,54 +4147,67 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
           cls = List.find(accept_s, /* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": "alnum",
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
+                  length: 2,
                   "0": "ascii",
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
+                    length: 2,
                     "0": "blank",
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
+                      length: 2,
                       "0": "cntrl",
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": "digit",
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": "lower",
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
+                            length: 2,
                             "0": "print",
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": "space",
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": "upper",
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
+                                  length: 2,
                                   "0": "word",
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": "punct",
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
+                                      length: 2,
                                       "0": "graph",
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
+                                        length: 2,
                                         "0": "xdigit",
                                         "1": /* [] */0
                                       }
@@ -3977,6 +4237,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         var re = compl$1 ? compl(/* constructor */{
                 tag: 0,
                 name: "::",
+                length: 2,
                 "0": posix_class,
                 "1": /* [] */0
               }) : posix_class;
@@ -4021,6 +4282,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                         compl(/* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": digit,
                               "1": /* [] */0
                             })
@@ -4031,6 +4293,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                         compl(/* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": space,
                               "1": /* [] */0
                             })
@@ -4041,16 +4304,20 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                         compl(/* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": alnum,
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 0,
                                   name: "Set",
+                                  length: 1,
                                   "0": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       /* "_" */95,
                                       /* "_" */95
@@ -4115,16 +4382,20 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
                         alt$1(/* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": alnum,
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
+                                length: 2,
                                 "0": /* constructor */{
                                   tag: 0,
                                   name: "Set",
+                                  length: 1,
                                   "0": /* constructor */{
                                     tag: 0,
                                     name: "::",
+                                    length: 2,
                                     "0": /* tuple */[
                                       /* "_" */95,
                                       /* "_" */95
@@ -4267,6 +4538,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         return /* constructor */{
                 tag: 6,
                 name: "Group",
+                length: 1,
                 "0": r$1
               };
       }
@@ -4315,6 +4587,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return compl(/* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": digit,
                         "1": /* [] */0
                       });
@@ -4324,6 +4597,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return compl(/* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": space,
                         "1": /* [] */0
                       });
@@ -4331,16 +4605,20 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return compl(/* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": alnum,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 0,
                             name: "Set",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 /* "_" */95,
                                 /* "_" */95
@@ -4369,16 +4647,19 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": single(c)
                   };
         case 98 :
             return alt$1(/* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": /* Beg_of_word */2,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* End_of_word */3,
                           "1": /* [] */0
                         }
@@ -4391,16 +4672,20 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return alt$1(/* constructor */{
                         tag: 0,
                         name: "::",
+                        length: 2,
                         "0": alnum,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
+                          length: 2,
                           "0": /* constructor */{
                             tag: 0,
                             name: "Set",
+                            length: 1,
                             "0": /* constructor */{
                               tag: 0,
                               name: "::",
+                              length: 2,
                               "0": /* tuple */[
                                 /* "_" */95,
                                 /* "_" */95
@@ -4458,6 +4743,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
           return /* constructor */{
                   tag: 0,
                   name: "Set",
+                  length: 1,
                   "0": single(c)
                 };
       }
@@ -4472,6 +4758,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
             return /* constructor */{
                     tag: 0,
                     name: "Set",
+                    length: 1,
                     "0": single(c$1)
                   };
           } else {
@@ -4487,6 +4774,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         return /* constructor */{
                 tag: 0,
                 name: "Set",
+                length: 1,
                 "0": single(c$1)
               };
       } else {
@@ -4496,6 +4784,7 @@ function parse(multiline, dollar_endonly, dotall, ungreedy, s) {
         return /* constructor */{
                 tag: 0,
                 name: "Set",
+                length: 1,
                 "0": single(c$1)
               };
       }
@@ -4528,10 +4817,12 @@ function re($staropt$star, pat) {
   var r$1 = List.memq(/* Anchored */616470068, opts$1) ? seq$2(/* constructor */{
           tag: 0,
           name: "::",
+          length: 2,
           "0": /* Start */8,
           "1": /* constructor */{
             tag: 0,
             name: "::",
+            length: 2,
             "0": r,
             "1": /* [] */0
           }
@@ -4540,6 +4831,7 @@ function re($staropt$star, pat) {
     return /* constructor */{
             tag: 10,
             name: "No_case",
+            length: 1,
             "0": r$1
           };
   } else {
