@@ -886,7 +886,6 @@ function spawn(spawnable, context, param) {
         return /* constructor */{
                 tag: 0,
                 name: "Player",
-                length: 3,
                 "0": spawnable[0],
                 "1": spr,
                 "2": obj
@@ -896,7 +895,6 @@ function spawn(spawnable, context, param) {
         return /* constructor */{
                 tag: 1,
                 name: "Enemy",
-                length: 3,
                 "0": spawnable[0],
                 "1": spr,
                 "2": obj
@@ -905,7 +903,6 @@ function spawn(spawnable, context, param) {
         return /* constructor */{
                 tag: 2,
                 name: "Item",
-                length: 3,
                 "0": spawnable[0],
                 "1": spr,
                 "2": obj
@@ -914,7 +911,6 @@ function spawn(spawnable, context, param) {
         return /* constructor */{
                 tag: 3,
                 name: "Block",
-                length: 3,
                 "0": spawnable[0],
                 "1": spr,
                 "2": obj
@@ -1019,7 +1015,6 @@ function update_player(player, keys, context) {
             make(/* constructor */{
                   tag: 0,
                   name: "SPlayer",
-                  length: 2,
                   "0": pl_typ,
                   "1": /* Jumping */1
                 }, player[/* dir */6], context)
@@ -1030,7 +1025,6 @@ function update_player(player, keys, context) {
             make(/* constructor */{
                   tag: 0,
                   name: "SPlayer",
-                  length: 2,
                   "0": pl_typ,
                   "1": /* Running */2
                 }, player[/* dir */6], context)
@@ -1041,7 +1035,6 @@ function update_player(player, keys, context) {
             make(/* constructor */{
                   tag: 0,
                   name: "SPlayer",
-                  length: 2,
                   "0": pl_typ,
                   "1": /* Jumping */1
                 }, player[/* dir */6], context)
@@ -1052,7 +1045,6 @@ function update_player(player, keys, context) {
             make(/* constructor */{
                   tag: 0,
                   name: "SPlayer",
-                  length: 2,
                   "0": pl_typ,
                   "1": /* Crouching */3
                 }, player[/* dir */6], context)
@@ -1063,7 +1055,6 @@ function update_player(player, keys, context) {
             make(/* constructor */{
                   tag: 0,
                   name: "SPlayer",
-                  length: 2,
                   "0": pl_typ,
                   "1": /* Standing */0
                 }, player[/* dir */6], context)
@@ -1152,7 +1143,6 @@ function evolve_enemy(player_dir, typ, spr, obj, context) {
         var match = make$2(undefined, obj[/* dir */6], /* constructor */{
               tag: 1,
               name: "SEnemy",
-              length: 1,
               "0": /* GKoopaShell */3
             }, context, /* tuple */[
               obj[/* pos */1][/* x */0],
@@ -1164,7 +1154,6 @@ function evolve_enemy(player_dir, typ, spr, obj, context) {
         return /* constructor */{
                 tag: 1,
                 name: "Enemy",
-                length: 3,
                 "0": /* GKoopaShell */3,
                 "1": new_spr,
                 "2": new_obj
@@ -1173,7 +1162,6 @@ function evolve_enemy(player_dir, typ, spr, obj, context) {
         var match$1 = make$2(undefined, obj[/* dir */6], /* constructor */{
               tag: 1,
               name: "SEnemy",
-              length: 1,
               "0": /* RKoopaShell */4
             }, context, /* tuple */[
               obj[/* pos */1][/* x */0],
@@ -1185,7 +1173,6 @@ function evolve_enemy(player_dir, typ, spr, obj, context) {
         return /* constructor */{
                 tag: 1,
                 name: "Enemy",
-                length: 3,
                 "0": /* RKoopaShell */4,
                 "1": new_spr$1,
                 "2": new_obj$1
@@ -1229,7 +1216,6 @@ function evolve_block(obj, context) {
   var match = make$2(undefined, undefined, /* constructor */{
         tag: 3,
         name: "SBlock",
-        length: 1,
         "0": /* QBlockUsed */0
       }, context, /* tuple */[
         obj[/* pos */1][/* x */0],
@@ -1238,7 +1224,6 @@ function evolve_block(obj, context) {
   return /* constructor */{
           tag: 3,
           name: "Block",
-          length: 3,
           "0": /* QBlockUsed */0,
           "1": match[0],
           "2": match[1]
@@ -1249,7 +1234,6 @@ function spawn_above(player_dir, obj, typ, context) {
   var item = spawn(/* constructor */{
         tag: 2,
         name: "SItem",
-        length: 1,
         "0": typ
       }, context, /* tuple */[
         obj[/* pos */1][/* x */0],
@@ -1369,14 +1353,12 @@ function kill(collid, ctx) {
         var score = o[/* score */11] > 0 ? /* constructor */({
               tag: 0,
               name: "::",
-              length: 2,
               "0": make_score(o[/* score */11], pos, ctx),
               "1": /* [] */0
             }) : /* [] */0;
         var remains = collid[0] !== 0 ? /* [] */0 : /* constructor */({
               tag: 0,
               name: "::",
-              length: 2,
               "0": make$1(undefined, undefined, /* GoombaSquish */0, pos, ctx),
               "1": /* [] */0
             });
@@ -1389,7 +1371,6 @@ function kill(collid, ctx) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": make_score(o$1[/* score */11], /* tuple */[
                         o$1[/* pos */1][/* x */0],
                         o$1[/* pos */1][/* y */1]
@@ -1438,22 +1419,18 @@ function kill(collid, ctx) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": p1,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": p2,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": p3,
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": p4,
                         "1": /* [] */0
                       }
@@ -2123,19 +2100,16 @@ function check_collisions(collid, all_collids, state) {
           acc$1 = match$2 !== undefined ? /* constructor */({
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": o,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": match$2,
                   "1": acc
                 }
               }) : /* constructor */({
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": o,
                 "1": acc
               });
@@ -2144,7 +2118,6 @@ function check_collisions(collid, all_collids, state) {
           acc$1 = match$3 !== undefined ? /* constructor */({
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": match$3,
                 "1": acc
               }) : acc;
@@ -2192,7 +2165,6 @@ function translate_keys(param) {
   var ctrls = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       pressed_keys[/* left */0],
       /* CLeft */0
@@ -2200,7 +2172,6 @@ function translate_keys(param) {
     "1": /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         pressed_keys[/* right */1],
         /* CRight */1
@@ -2208,7 +2179,6 @@ function translate_keys(param) {
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           pressed_keys[/* up */2],
           /* CUp */2
@@ -2216,7 +2186,6 @@ function translate_keys(param) {
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             pressed_keys[/* down */3],
             /* CDown */3
@@ -2231,7 +2200,6 @@ function translate_keys(param) {
                   return /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": x[1],
                           "1": a
                         };
@@ -2249,7 +2217,6 @@ function run_update_collid(state, collid, all_collids) {
       collid_objs[0] = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": collid,
         "1": Pervasives.$at(collid_objs[0], evolved)
       };
@@ -2270,7 +2237,6 @@ function run_update_collid(state, collid, all_collids) {
       player = /* constructor */{
         tag: 0,
         name: "Player",
-        length: 3,
         "0": match$1[0],
         "1": new_spr,
         "2": o
@@ -2350,7 +2316,6 @@ function update_loop(canvas, param, map_dim) {
                   particles[0] = /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": part$1,
                     "1": particles[0]
                   };
@@ -2511,7 +2476,6 @@ function convert_list(lst) {
     return Pervasives.$at(/* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   h[0],
                   /* tuple */[
@@ -2554,7 +2518,6 @@ function choose_sblock_typ(typ) {
         return /* constructor */{
                 tag: 0,
                 name: "QBlock",
-                length: 1,
                 "0": /* Mushroom */0
               };
     case 4 :
@@ -2580,7 +2543,6 @@ function avoid_overlap(_lst, currentLst) {
         return Pervasives.$at(/* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": h,
                     "1": /* [] */0
                   }, avoid_overlap(t, currentLst));
@@ -2608,7 +2570,6 @@ function trim_edges(_lst, blockw, blockh) {
         return Pervasives.$at(/* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": h,
                     "1": /* [] */0
                   }, trim_edges(t, blockw, blockh));
@@ -2626,7 +2587,6 @@ function generate_clouds(cbx, cby, typ, num) {
     return Pervasives.$at(/* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ,
                   /* tuple */[
@@ -2652,7 +2612,6 @@ function generate_coins(_block_coord) {
         return Pervasives.$at(/* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       0,
                       /* tuple */[
@@ -2686,7 +2645,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       stair_typ,
                       /* tuple */[
@@ -2697,7 +2655,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         middle_block,
                         /* tuple */[
@@ -2708,7 +2665,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           stair_typ,
                           /* tuple */[
@@ -2724,7 +2680,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       block_typ,
                       /* tuple */[
@@ -2735,7 +2690,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         block_typ,
                         /* tuple */[
@@ -2750,7 +2704,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       block_typ,
                       /* tuple */[
@@ -2776,7 +2729,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var four = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ,
                 /* tuple */[
@@ -2787,7 +2739,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ,
                   /* tuple */[
@@ -2798,7 +2749,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     typ,
                     /* tuple */[
@@ -2809,7 +2759,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       typ,
                       /* tuple */[
@@ -2825,7 +2774,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var three = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ,
                 /* tuple */[
@@ -2836,7 +2784,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ,
                   /* tuple */[
@@ -2847,7 +2794,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     typ,
                     /* tuple */[
@@ -2862,7 +2808,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var two = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ,
                 /* tuple */[
@@ -2873,7 +2818,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ,
                   /* tuple */[
@@ -2887,7 +2831,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var one = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ,
                 /* tuple */[
@@ -2909,7 +2852,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var three$1 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$1,
                 /* tuple */[
@@ -2920,7 +2862,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$1,
                   /* tuple */[
@@ -2931,7 +2872,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     typ$1,
                     /* tuple */[
@@ -2946,7 +2886,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var two$1 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$1,
                 /* tuple */[
@@ -2957,7 +2896,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$1,
                   /* tuple */[
@@ -2971,7 +2909,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var one$1 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$1,
                 /* tuple */[
@@ -2982,7 +2919,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$1,
                   /* tuple */[
@@ -3001,7 +2937,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var one$2 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$2,
                 /* tuple */[
@@ -3012,7 +2947,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$2,
                   /* tuple */[
@@ -3026,7 +2960,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var two$2 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$2,
                 /* tuple */[
@@ -3037,7 +2970,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$2,
                   /* tuple */[
@@ -3051,7 +2983,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             var three$2 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 typ$2,
                 /* tuple */[
@@ -3062,7 +2993,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   typ$2,
                   /* tuple */[
@@ -3073,7 +3003,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     typ$2,
                     /* tuple */[
@@ -3090,7 +3019,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       stair_typ,
                       /* tuple */[
@@ -3106,7 +3034,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       stair_typ,
                       /* tuple */[
@@ -3120,7 +3047,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       stair_typ,
                       /* tuple */[
@@ -3131,7 +3057,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         stair_typ,
                         /* tuple */[
@@ -3146,7 +3071,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       stair_typ,
                       /* tuple */[
@@ -3157,7 +3081,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         stair_typ,
                         /* tuple */[
@@ -3168,7 +3091,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           stair_typ,
                           /* tuple */[
@@ -3185,7 +3107,6 @@ function choose_block_pattern(blockw, blockh, cbx, cby, prob) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     3,
                     /* tuple */[
@@ -3226,7 +3147,6 @@ function generate_enemies(blockw, blockh, _cbx, _cby, acc) {
         var enemy = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             prob,
             /* tuple */[
@@ -3259,7 +3179,6 @@ function generate_block_enemies(_block_coord) {
         return Pervasives.$at(/* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       enemy_typ,
                       /* tuple */[
@@ -3317,7 +3236,6 @@ function generate_panel(context, blockw, blockh) {
   return spawn(/* constructor */{
               tag: 3,
               name: "SBlock",
-              length: 1,
               "0": /* Panel */4
             }, context, /* tuple */[
               blockw * 16 - 256,
@@ -3336,7 +3254,6 @@ function generate_ground(blockw, blockh, _inc, _acc) {
       var newacc = Pervasives.$at(acc, /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               4,
               /* tuple */[
@@ -3358,7 +3275,6 @@ function generate_ground(blockw, blockh, _inc, _acc) {
       var newacc$1 = Pervasives.$at(acc, /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               4,
               /* tuple */[
@@ -3382,13 +3298,11 @@ function convert_to_block_obj(lst, context) {
     var ob = spawn(/* constructor */{
           tag: 3,
           name: "SBlock",
-          length: 1,
           "0": sblock_typ
         }, context, h[1]);
     return Pervasives.$at(/* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": ob,
                 "1": /* [] */0
               }, convert_to_block_obj(lst[1], context));
@@ -3404,13 +3318,11 @@ function convert_to_enemy_obj(lst, context) {
     var ob = spawn(/* constructor */{
           tag: 1,
           name: "SEnemy",
-          length: 1,
           "0": senemy_typ
         }, context, h[1]);
     return Pervasives.$at(/* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": ob,
                 "1": /* [] */0
               }, convert_to_enemy_obj(lst[1], context));
@@ -3424,13 +3336,11 @@ function convert_to_coin_obj(lst, context) {
     var ob = spawn(/* constructor */{
           tag: 2,
           name: "SItem",
-          length: 1,
           "0": /* Coin */3
         }, context, lst[0][1]);
     return Pervasives.$at(/* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": ob,
                 "1": /* [] */0
               }, convert_to_coin_obj(lst[1], context));
@@ -3460,7 +3370,6 @@ function generate_helper(blockw, blockh, cx, cy, context) {
   return Pervasives.$at(all_blocks, Pervasives.$at(obj_converted_enemies, Pervasives.$at(coin_objects, Pervasives.$at(obj_enemy_blocks, /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": obj_panel,
                           "1": /* [] */0
                         }))));
@@ -3473,7 +3382,6 @@ function generate(w, h, context) {
   var player = spawn(/* constructor */{
         tag: 0,
         name: "SPlayer",
-        length: 2,
         "0": /* SmallM */1,
         "1": /* Standing */0
       }, context, /* tuple */[
@@ -3508,21 +3416,17 @@ function load(param) {
     Curry._1(Printf.printf(/* constructor */{
               tag: 0,
               name: "Format",
-              length: 2,
               "0": /* constructor */{
                 tag: 11,
                 name: "String_literal",
-                length: 2,
                 "0": "cant find canvas ",
                 "1": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " \n",
                     "1": /* End_of_format */0
                   }
@@ -3569,22 +3473,18 @@ function preload(param) {
               }), /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": "blocks.png",
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": "items.png",
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": "enemies.png",
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": "mario-small.png",
                     "1": /* [] */0
                   }

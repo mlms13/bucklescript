@@ -60,13 +60,11 @@ function extension_range_range(from, to_) {
   var to_$1 = typeof to_ === "number" ? /* To_max */0 : /* constructor */({
         tag: 0,
         name: "To_number",
-        length: 1,
         "0": to_[1]
       });
   return /* constructor */{
           tag: 1,
           name: "Extension_range",
-          length: 2,
           "0": from,
           "1": to_$1
         };
@@ -133,7 +131,6 @@ function proto(syntax, file_option, $$package, $$import, message, $$enum, proto$
       /* messages : constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": message,
         "1": proto$2[/* messages */4]
       },
@@ -149,7 +146,6 @@ function proto(syntax, file_option, $$package, $$import, message, $$enum, proto$
       /* enums : constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": $$enum,
         "1": proto$2[/* enums */5]
       },
@@ -160,7 +156,6 @@ function proto(syntax, file_option, $$package, $$import, message, $$enum, proto$
       /* imports : constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": $$import,
         "1": proto$2[/* imports */1]
       },
@@ -176,7 +171,6 @@ function proto(syntax, file_option, $$package, $$import, message, $$enum, proto$
       /* file_options : constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": file_option,
         "1": proto$2[/* file_options */2]
       },
@@ -196,7 +190,6 @@ function proto(syntax, file_option, $$package, $$import, message, $$enum, proto$
             /* extends : constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": extend,
               "1": proto$2[/* extends */6]
             }
@@ -229,7 +222,6 @@ function rev_split_by_char(c, s) {
       return loop(i$prime + 1 | 0, s$prime === "" ? l : /* constructor */({
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": s$prime,
                       "1": l
                     }));
@@ -239,7 +231,6 @@ function rev_split_by_char(c, s) {
         return /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": $$String.sub(s, i, s.length - i | 0),
                 "1": l
               };
@@ -258,7 +249,6 @@ function pop_last(param) {
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": param[0],
               "1": pop_last(tl)
             };
@@ -294,21 +284,17 @@ function string_of_string_list(l) {
   return Curry._1(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
-                    length: 2,
                     "0": /* "[" */91,
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 12,
                         name: "Char_literal",
-                        length: 2,
                         "0": /* "]" */93,
                         "1": /* End_of_format */0
                       }
@@ -365,33 +351,27 @@ function to_string(param) {
   return Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "File ",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": ", line ",
                         "1": /* constructor */{
                           tag: 4,
                           name: "Int",
-                          length: 4,
                           "0": /* Int_i */3,
                           "1": /* No_padding */0,
                           "2": /* No_precision */0,
                           "3": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ":\n",
                             "1": /* End_of_format */0
                           }
@@ -430,11 +410,9 @@ function prepare_error(param) {
     return Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "Syntax error",
                   "1": /* End_of_format */0
                 },
@@ -447,41 +425,33 @@ function prepare_error(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "unresolved type for field name : ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " (type:",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ", in message: ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
-                                        length: 2,
                                         "0": /* ")" */41,
                                         "1": /* End_of_format */0
                                       }
@@ -498,41 +468,33 @@ function prepare_error(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "duplicated field number for field name: ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " (previous field name:",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ", message: ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
-                                        length: 2,
                                         "0": /* ")" */41,
                                         "1": /* End_of_format */0
                                       }
@@ -549,31 +511,25 @@ function prepare_error(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "invalid default value for field name:",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " (info: ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
-                                    length: 2,
                                     "0": /* ")" */41,
                                     "1": /* End_of_format */0
                                   }
@@ -588,36 +544,29 @@ function prepare_error(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "unsupported field type for field name:",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " with type:",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": " in bakend: ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* End_of_format */0
                                     }
@@ -632,16 +581,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "programmatic error: ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -652,16 +598,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Invalid import qualified, only 'public' supported",
                               "1": /* End_of_format */0
                             }
@@ -672,21 +615,17 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(Pervasives.$caret$caret(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "Invalid file name: ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ", ",
                                     "1": /* End_of_format */0
                                   }
@@ -696,11 +635,9 @@ function prepare_error(param) {
                             }, /* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "format must <name>.proto",
                                 "1": /* End_of_format */0
                               },
@@ -710,21 +647,17 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(Pervasives.$caret$caret(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "File: ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ", ",
                                     "1": /* End_of_format */0
                                   }
@@ -734,11 +667,9 @@ function prepare_error(param) {
                             }, /* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "could not be found.",
                                 "1": /* End_of_format */0
                               },
@@ -748,16 +679,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Invalid packed option for field: ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -768,21 +696,17 @@ function prepare_error(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Missing semicolon for enum value: ",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* End_of_format */0
                               }
@@ -794,21 +718,17 @@ function prepare_error(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Missing enum specification (<identifier> = <id>;) for enum value: ",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* End_of_format */0
                               }
@@ -820,16 +740,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Invalid mutable option for field ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -840,16 +757,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Missing oneof name",
                               "1": /* End_of_format */0
                             }
@@ -860,16 +774,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Invalid field label. [required|repeated|optional] expected",
                               "1": /* End_of_format */0
                             }
@@ -880,16 +791,13 @@ function prepare_error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": "Missing field label. [required|repeated|optional] expected",
                               "1": /* End_of_format */0
                             }
@@ -900,38 +808,31 @@ function prepare_error(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "File ",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": ", line ",
                                 "1": /* constructor */{
                                   tag: 4,
                                   name: "Int",
-                                  length: 4,
                                   "0": /* Int_i */3,
                                   "1": /* No_padding */0,
                                   "2": /* No_precision */0,
                                   "3": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ":\n",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* End_of_format */0
                                     }
@@ -973,7 +874,6 @@ function add_loc(loc, exn) {
           /* constructor */{
             tag: 15,
             name: "Parsing_error",
-            length: 3,
             "0": file_name$1,
             "1": line$1,
             "2": detail
@@ -994,7 +894,6 @@ function invalid_default_value(field_name, info, param) {
         /* constructor */{
           tag: 2,
           name: "Invalid_default_value",
-          length: 1,
           "0": /* record */[
             /* field_name */field_name,
             /* info */info
@@ -1009,7 +908,6 @@ function unsupported_field_type(field_name, field_type, backend_name, param) {
         /* constructor */{
           tag: 3,
           name: "Unsupported_field_type",
-          length: 1,
           "0": /* record */[
             /* field_name */field_name,
             /* field_type */field_type,
@@ -1025,7 +923,6 @@ function invalid_enum_specification(enum_name, loc) {
         /* constructor */{
           tag: 10,
           name: "Invalid_enum_specification",
-          length: 2,
           "0": enum_name,
           "1": loc
         }
@@ -1204,7 +1101,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 5,
               name: "Invalid_import_qualifier",
-              length: 1,
               "0": _1
             }
           ];
@@ -1230,7 +1126,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -1241,7 +1136,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _2
             };
@@ -1250,7 +1144,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Message_field",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1258,7 +1151,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 1,
               name: "Message_map_field",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1266,7 +1158,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "Message_oneof_field",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1274,7 +1165,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Message_sub",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1282,7 +1172,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 4,
               name: "Message_enum",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1290,7 +1179,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 5,
               name: "Message_extension",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1316,7 +1204,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -1327,7 +1214,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _2
             };
@@ -1342,7 +1228,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -1353,7 +1238,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _3
             };
@@ -1362,7 +1246,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Extension_single_number",
-              length: 1,
               "0": Parsing.peek_val(__caml_parser_env, 0)
             };
     }),
@@ -1397,7 +1280,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 12,
               name: "Missing_one_of_name",
-              length: 1,
               "0": _1
             }
           ];
@@ -1411,7 +1293,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _2
             };
@@ -1476,7 +1357,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 14,
               name: "Missing_field_label",
-              length: 1,
               "0": _1[0]
             }
           ];
@@ -1491,7 +1371,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 14,
               name: "Missing_field_label",
-              length: 1,
               "0": _1[0]
             }
           ];
@@ -1565,7 +1444,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 13,
               name: "Invalid_field_label",
-              length: 1,
               "0": _1[0]
             }
           ];
@@ -1581,7 +1459,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": /* [] */0
             };
@@ -1592,7 +1469,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _3
             };
@@ -1641,7 +1517,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 2,
               name: "Constant_int",
-              length: 1,
               "0": _1
             };
     }),
@@ -1650,7 +1525,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 3,
               name: "Constant_float",
-              length: 1,
               "0": _1
             };
     }),
@@ -1662,21 +1536,18 @@ var yyact = /* array */[
             return /* constructor */{
                     tag: 1,
                     name: "Constant_bool",
-                    length: 1,
                     "0": false
                   };
         case "true" :
             return /* constructor */{
                     tag: 1,
                     name: "Constant_bool",
-                    length: 1,
                     "0": true
                   };
         default:
           return /* constructor */{
                   tag: 4,
                   name: "Constant_litteral",
-                  length: 1,
                   "0": litteral
                 };
       }
@@ -1686,7 +1557,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "Constant_string",
-              length: 1,
               "0": _1
             };
     }),
@@ -1713,7 +1583,6 @@ var yyact = /* array */[
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": _1,
               "1": _2
             };
@@ -1737,7 +1606,6 @@ var yyact = /* array */[
             /* constructor */{
               tag: 9,
               name: "Missing_semicolon_for_enum_value",
-              length: 2,
               "0": enum_value,
               "1": loc
             }
@@ -1908,7 +1776,6 @@ function __ocaml_lex_string_rec(_l, lexbuf, ___ocaml_lex_state) {
           _l = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Char.escaped(c),
             "1": l
           };
@@ -1917,7 +1784,6 @@ function __ocaml_lex_string_rec(_l, lexbuf, ___ocaml_lex_state) {
           return /* constructor */{
                   tag: 0,
                   name: "String_value",
-                  length: 1,
                   "0": $$String.concat("", List.rev(l))
                 };
       case 2 :
@@ -1925,7 +1791,6 @@ function __ocaml_lex_string_rec(_l, lexbuf, ___ocaml_lex_state) {
           _l = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Lexing.lexeme(lexbuf),
             "1": l
           };
@@ -1951,7 +1816,6 @@ function __ocaml_lex_comment_rec(_l, lexbuf, ___ocaml_lex_state) {
           return /* constructor */{
                   tag: 0,
                   name: "Comment_value",
-                  length: 1,
                   "0": $$String.concat("", List.rev(l))
                 };
       case 1 :
@@ -1959,7 +1823,6 @@ function __ocaml_lex_comment_rec(_l, lexbuf, ___ocaml_lex_state) {
           _l = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Lexing.lexeme(lexbuf),
             "1": l
           };
@@ -1989,7 +1852,6 @@ function __ocaml_lex_multi_line_comment_rec(_l, lexbuf, ___ocaml_lex_state) {
           return /* constructor */{
                   tag: 0,
                   name: "Comment_value",
-                  length: 1,
                   "0": $$String.concat("", List.rev(l))
                 };
       case 2 :
@@ -1997,7 +1859,6 @@ function __ocaml_lex_multi_line_comment_rec(_l, lexbuf, ___ocaml_lex_state) {
           _l = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Lexing.lexeme(lexbuf),
             "1": l
           };
@@ -2063,7 +1924,6 @@ function lexer(lexbuf) {
             return /* constructor */{
                     tag: 2,
                     name: "STRING",
-                    length: 1,
                     "0": match$2[0]
                   };
           } else {
@@ -2073,21 +1933,18 @@ function lexer(lexbuf) {
           return /* constructor */{
                   tag: 3,
                   name: "INT",
-                  length: 1,
                   "0": Caml_format.caml_int_of_string(Lexing.lexeme(lexbuf$1))
                 };
       case 15 :
           return /* constructor */{
                   tag: 4,
                   name: "FLOAT",
-                  length: 1,
                   "0": Caml_format.caml_float_of_string(Lexing.lexeme(lexbuf$1))
                 };
       case 16 :
           return /* constructor */{
                   tag: 4,
                   name: "FLOAT",
-                  length: 1,
                   "0": Number.NaN
                 };
       case 17 :
@@ -2111,7 +1968,6 @@ function lexer(lexbuf) {
                 return /* constructor */{
                         tag: 1,
                         name: "IMPORT",
-                        length: 1,
                         "0": loc
                       };
             case "map" :
@@ -2124,7 +1980,6 @@ function lexer(lexbuf) {
                 return /* constructor */{
                         tag: 0,
                         name: "ONE_OF",
-                        length: 1,
                         "0": loc
                       };
             case "option" :
@@ -2147,7 +2002,6 @@ function lexer(lexbuf) {
               return /* constructor */{
                       tag: 5,
                       name: "IDENT",
-                      length: 1,
                       "0": /* tuple */[
                         loc,
                         ident
@@ -2160,16 +2014,13 @@ function lexer(lexbuf) {
           var s = Curry._1(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "Unknown character found ",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* End_of_format */0
                       }
@@ -2249,36 +2100,29 @@ function string_of_record_field_type(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
-                            length: 2,
                             "0": /* "(" */40,
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": ", ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ") ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* End_of_format */0
                                     }
@@ -2293,36 +2137,29 @@ function string_of_record_field_type(param) {
           return Curry._3(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
-                            length: 2,
                             "0": /* "(" */40,
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " * ",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ") ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* End_of_format */0
                                     }
@@ -2346,31 +2183,25 @@ function function_name_of_user_defined(prefix, param) {
     return Curry._3(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 12,
                         name: "Char_literal",
-                        length: 2,
                         "0": /* "." */46,
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
-                            length: 2,
                             "0": /* "_" */95,
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* End_of_format */0
                             }
@@ -2384,21 +2215,17 @@ function function_name_of_user_defined(prefix, param) {
     return Curry._2(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 12,
                         name: "Char_literal",
-                        length: 2,
                         "0": /* "_" */95,
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* End_of_format */0
                         }
@@ -2438,11 +2265,9 @@ function line$1(scope, s) {
   scope[/* items */0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* constructor */{
       tag: 0,
       name: "Line",
-      length: 1,
       "0": s
     },
     "1": scope[/* items */0]
@@ -2456,11 +2281,9 @@ function scope(scope$1, f) {
   scope$1[/* items */0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* constructor */{
       tag: 1,
       name: "Scope",
-      length: 1,
       "0": sub_scope
     },
     "1": scope$1[/* items */0]
@@ -2511,7 +2334,6 @@ function print(scope) {
           _acc = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": indentation_prefix(i) + match[0],
             "1": acc
           };
@@ -2766,7 +2588,6 @@ function gen_decode_record(and_, param, sc) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": param[/* rf_label */0],
                     "1": acc
                   };
@@ -2776,33 +2597,27 @@ function gen_decode_record(and_, param, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "| Some (",
                     "1": /* constructor */{
                       tag: 4,
                       name: "Int",
-                      length: 4,
                       "0": /* Int_i */3,
                       "1": /* No_padding */0,
                       "2": /* No_precision */0,
                       "3": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": ", Pbrt.",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") -> (",
                             "1": /* End_of_format */0
                           }
@@ -2820,23 +2635,19 @@ function gen_decode_record(and_, param, sc) {
     line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "| Some (",
                     "1": /* constructor */{
                       tag: 4,
                       name: "Int",
-                      length: 4,
                       "0": /* Int_i */3,
                       "1": /* No_padding */0,
                       "2": /* No_precision */0,
                       "3": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": ", pk) -> raise (",
                         "1": /* End_of_format */0
                       }
@@ -2848,21 +2659,17 @@ function gen_decode_record(and_, param, sc) {
             return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                 tag: 0,
                                 name: "Format",
-                                length: 2,
                                 "0": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": "Protobuf.Decoder.Failure (Protobuf.Decoder.Unexpected_payload (",
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
-                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": ", pk))",
                                       "1": /* End_of_format */0
                                     }
@@ -2872,33 +2679,27 @@ function gen_decode_record(and_, param, sc) {
                               }), Curry._2(Printf.sprintf(/* constructor */{
                                     tag: 0,
                                     name: "Format",
-                                    length: 2,
                                     "0": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": "\"Message(",
                                       "1": /* constructor */{
                                         tag: 2,
                                         name: "String",
-                                        length: 2,
                                         "0": /* No_padding */0,
                                         "1": /* constructor */{
                                           tag: 11,
                                           name: "String_literal",
-                                          length: 2,
                                           "0": "), field(",
                                           "1": /* constructor */{
                                             tag: 4,
                                             name: "Int",
-                                            length: 4,
                                             "0": /* Int_i */3,
                                             "1": /* No_padding */0,
                                             "2": /* No_precision */0,
                                             "3": /* constructor */{
                                               tag: 11,
                                               name: "String_literal",
-                                              length: 2,
                                               "0": ")\"",
                                               "1": /* End_of_format */0
                                             }
@@ -2915,26 +2716,21 @@ function gen_decode_record(and_, param, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " decode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " d =",
                         "1": /* End_of_format */0
                       }
@@ -2947,21 +2743,17 @@ function gen_decode_record(and_, param, sc) {
                 line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "let v = default_",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": " () in",
                                     "1": /* End_of_format */0
                                   }
@@ -2978,31 +2770,25 @@ function gen_decode_record(and_, param, sc) {
                                               return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                   tag: 0,
                                                                   name: "Format",
-                                                                  length: 2,
                                                                   "0": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": "v.",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 11,
                                                                         name: "String_literal",
-                                                                        length: 2,
                                                                         "0": " <- List.rev v.",
                                                                         "1": /* constructor */{
                                                                           tag: 2,
                                                                           name: "String",
-                                                                          length: 2,
                                                                           "0": /* No_padding */0,
                                                                           "1": /* constructor */{
                                                                             tag: 12,
                                                                             name: "Char_literal",
-                                                                            length: 2,
                                                                             "0": /* ";" */59,
                                                                             "1": /* End_of_format */0
                                                                           }
@@ -3029,31 +2815,25 @@ function gen_decode_record(and_, param, sc) {
                                                     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                         tag: 0,
                                                                         name: "Format",
-                                                                        length: 2,
                                                                         "0": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": "v.",
                                                                           "1": /* constructor */{
                                                                             tag: 2,
                                                                             name: "String",
-                                                                            length: 2,
                                                                             "0": /* No_padding */0,
                                                                             "1": /* constructor */{
                                                                               tag: 11,
                                                                               name: "String_literal",
-                                                                              length: 2,
                                                                               "0": " <- ",
                                                                               "1": /* constructor */{
                                                                                 tag: 2,
                                                                                 name: "String",
-                                                                                length: 2,
                                                                                 "0": /* No_padding */0,
                                                                                 "1": /* constructor */{
                                                                                   tag: 12,
                                                                                   name: "Char_literal",
-                                                                                  length: 2,
                                                                                   "0": /* ";" */59,
                                                                                   "1": /* End_of_format */0
                                                                                 }
@@ -3074,31 +2854,25 @@ function gen_decode_record(and_, param, sc) {
                                                     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                         tag: 0,
                                                                         name: "Format",
-                                                                        length: 2,
                                                                         "0": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": "v.",
                                                                           "1": /* constructor */{
                                                                             tag: 2,
                                                                             name: "String",
-                                                                            length: 2,
                                                                             "0": /* No_padding */0,
                                                                             "1": /* constructor */{
                                                                               tag: 11,
                                                                               name: "String_literal",
-                                                                              length: 2,
                                                                               "0": " <- Some (",
                                                                               "1": /* constructor */{
                                                                                 tag: 2,
                                                                                 name: "String",
-                                                                                length: 2,
                                                                                 "0": /* No_padding */0,
                                                                                 "1": /* constructor */{
                                                                                   tag: 11,
                                                                                   name: "String_literal",
-                                                                                  length: 2,
                                                                                   "0": ");",
                                                                                   "1": /* End_of_format */0
                                                                                 }
@@ -3125,31 +2899,25 @@ function gen_decode_record(and_, param, sc) {
                                                                 return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                                     tag: 0,
                                                                                     name: "Format",
-                                                                                    length: 2,
                                                                                     "0": /* constructor */{
                                                                                       tag: 11,
                                                                                       name: "String_literal",
-                                                                                      length: 2,
                                                                                       "0": "Pbrt.Repeated_field.add (",
                                                                                       "1": /* constructor */{
                                                                                         tag: 2,
                                                                                         name: "String",
-                                                                                        length: 2,
                                                                                         "0": /* No_padding */0,
                                                                                         "1": /* constructor */{
                                                                                           tag: 11,
                                                                                           name: "String_literal",
-                                                                                          length: 2,
                                                                                           "0": ") v.",
                                                                                           "1": /* constructor */{
                                                                                             tag: 2,
                                                                                             name: "String",
-                                                                                            length: 2,
                                                                                             "0": /* No_padding */0,
                                                                                             "1": /* constructor */{
                                                                                               tag: 12,
                                                                                               name: "Char_literal",
-                                                                                              length: 2,
                                                                                               "0": /* ";" */59,
                                                                                               "1": /* End_of_format */0
                                                                                             }
@@ -3167,31 +2935,25 @@ function gen_decode_record(and_, param, sc) {
                                                         return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                             tag: 0,
                                                                             name: "Format",
-                                                                            length: 2,
                                                                             "0": /* constructor */{
                                                                               tag: 11,
                                                                               name: "String_literal",
-                                                                              length: 2,
                                                                               "0": "Pbrt.Repeated_field.add (",
                                                                               "1": /* constructor */{
                                                                                 tag: 2,
                                                                                 name: "String",
-                                                                                length: 2,
                                                                                 "0": /* No_padding */0,
                                                                                 "1": /* constructor */{
                                                                                   tag: 11,
                                                                                   name: "String_literal",
-                                                                                  length: 2,
                                                                                   "0": ") v.",
                                                                                   "1": /* constructor */{
                                                                                     tag: 2,
                                                                                     name: "String",
-                                                                                    length: 2,
                                                                                     "0": /* No_padding */0,
                                                                                     "1": /* constructor */{
                                                                                       tag: 11,
                                                                                       name: "String_literal",
-                                                                                      length: 2,
                                                                                       "0": "; ",
                                                                                       "1": /* End_of_format */0
                                                                                     }
@@ -3208,31 +2970,25 @@ function gen_decode_record(and_, param, sc) {
                                                       return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                           tag: 0,
                                                                           name: "Format",
-                                                                          length: 2,
                                                                           "0": /* constructor */{
                                                                             tag: 11,
                                                                             name: "String_literal",
-                                                                            length: 2,
                                                                             "0": "v.",
                                                                             "1": /* constructor */{
                                                                               tag: 2,
                                                                               name: "String",
-                                                                              length: 2,
                                                                               "0": /* No_padding */0,
                                                                               "1": /* constructor */{
                                                                                 tag: 11,
                                                                                 name: "String_literal",
-                                                                                length: 2,
                                                                                 "0": " <- Pbrt.Decoder.packed_fold (fun l d -> (",
                                                                                 "1": /* constructor */{
                                                                                   tag: 2,
                                                                                   name: "String",
-                                                                                  length: 2,
                                                                                   "0": /* No_padding */0,
                                                                                   "1": /* constructor */{
                                                                                     tag: 11,
                                                                                     name: "String_literal",
-                                                                                    length: 2,
                                                                                     "0": ")::l) [] d;",
                                                                                     "1": /* End_of_format */0
                                                                                   }
@@ -3248,41 +3004,33 @@ function gen_decode_record(and_, param, sc) {
                                                       return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                                           tag: 0,
                                                                           name: "Format",
-                                                                          length: 2,
                                                                           "0": /* constructor */{
                                                                             tag: 11,
                                                                             name: "String_literal",
-                                                                            length: 2,
                                                                             "0": "v.",
                                                                             "1": /* constructor */{
                                                                               tag: 2,
                                                                               name: "String",
-                                                                              length: 2,
                                                                               "0": /* No_padding */0,
                                                                               "1": /* constructor */{
                                                                                 tag: 11,
                                                                                 name: "String_literal",
-                                                                                length: 2,
                                                                                 "0": " <- (",
                                                                                 "1": /* constructor */{
                                                                                   tag: 2,
                                                                                   name: "String",
-                                                                                  length: 2,
                                                                                   "0": /* No_padding */0,
                                                                                   "1": /* constructor */{
                                                                                     tag: 11,
                                                                                     name: "String_literal",
-                                                                                    length: 2,
                                                                                     "0": ") :: v.",
                                                                                     "1": /* constructor */{
                                                                                       tag: 2,
                                                                                       name: "String",
-                                                                                      length: 2,
                                                                                       "0": /* No_padding */0,
                                                                                       "1": /* constructor */{
                                                                                         tag: 12,
                                                                                         name: "Char_literal",
-                                                                                        length: 2,
                                                                                         "0": /* ";" */59,
                                                                                         "1": /* End_of_format */0
                                                                                       }
@@ -3315,21 +3063,17 @@ function gen_decode_record(and_, param, sc) {
                                                     var decode_expression = Curry._1(Printf.sprintf(/* constructor */{
                                                               tag: 0,
                                                               name: "Format",
-                                                              length: 2,
                                                               "0": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "(Pbrt.Decoder.map_entry d ~decode_key:",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": " ~decode_value)",
                                                                     "1": /* End_of_format */0
                                                                   }
@@ -3341,21 +3085,17 @@ function gen_decode_record(and_, param, sc) {
                                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                                     tag: 0,
                                                                     name: "Format",
-                                                                    length: 2,
                                                                     "0": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": "let a, b = ",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": " in",
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -3366,21 +3106,17 @@ function gen_decode_record(and_, param, sc) {
                                                       return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                                           tag: 0,
                                                                           name: "Format",
-                                                                          length: 2,
                                                                           "0": /* constructor */{
                                                                             tag: 11,
                                                                             name: "String_literal",
-                                                                            length: 2,
                                                                             "0": "Hashtbl.add v.",
                                                                             "1": /* constructor */{
                                                                               tag: 2,
                                                                               name: "String",
-                                                                              length: 2,
                                                                               "0": /* No_padding */0,
                                                                               "1": /* constructor */{
                                                                                 tag: 11,
                                                                                 name: "String_literal",
-                                                                                length: 2,
                                                                                 "0": " a b;",
                                                                                 "1": /* End_of_format */0
                                                                               }
@@ -3392,21 +3128,17 @@ function gen_decode_record(and_, param, sc) {
                                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                                     tag: 0,
                                                                     name: "Format",
-                                                                    length: 2,
                                                                     "0": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": "v.",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": " <- (",
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -3418,26 +3150,21 @@ function gen_decode_record(and_, param, sc) {
                                                               return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                                   tag: 0,
                                                                                   name: "Format",
-                                                                                  length: 2,
                                                                                   "0": /* constructor */{
                                                                                     tag: 2,
                                                                                     name: "String",
-                                                                                    length: 2,
                                                                                     "0": /* No_padding */0,
                                                                                     "1": /* constructor */{
                                                                                       tag: 11,
                                                                                       name: "String_literal",
-                                                                                      length: 2,
                                                                                       "0": "::v.",
                                                                                       "1": /* constructor */{
                                                                                         tag: 2,
                                                                                         name: "String",
-                                                                                        length: 2,
                                                                                         "0": /* No_padding */0,
                                                                                         "1": /* constructor */{
                                                                                           tag: 12,
                                                                                           name: "Char_literal",
-                                                                                          length: 2,
                                                                                           "0": /* ";" */59,
                                                                                           "1": /* End_of_format */0
                                                                                         }
@@ -3463,41 +3190,33 @@ function gen_decode_record(and_, param, sc) {
                                                                     return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                                                         tag: 0,
                                                                                         name: "Format",
-                                                                                        length: 2,
                                                                                         "0": /* constructor */{
                                                                                           tag: 11,
                                                                                           name: "String_literal",
-                                                                                          length: 2,
                                                                                           "0": "v.",
                                                                                           "1": /* constructor */{
                                                                                             tag: 2,
                                                                                             name: "String",
-                                                                                            length: 2,
                                                                                             "0": /* No_padding */0,
                                                                                             "1": /* constructor */{
                                                                                               tag: 11,
                                                                                               name: "String_literal",
-                                                                                              length: 2,
                                                                                               "0": " <- ",
                                                                                               "1": /* constructor */{
                                                                                                 tag: 2,
                                                                                                 name: "String",
-                                                                                                length: 2,
                                                                                                 "0": /* No_padding */0,
                                                                                                 "1": /* constructor */{
                                                                                                   tag: 11,
                                                                                                   name: "String_literal",
-                                                                                                  length: 2,
                                                                                                   "0": " (",
                                                                                                   "1": /* constructor */{
                                                                                                     tag: 2,
                                                                                                     name: "String",
-                                                                                                    length: 2,
                                                                                                     "0": /* No_padding */0,
                                                                                                     "1": /* constructor */{
                                                                                                       tag: 11,
                                                                                                       name: "String_literal",
-                                                                                                      length: 2,
                                                                                                       "0": ");",
                                                                                                       "1": /* End_of_format */0
                                                                                                     }
@@ -3514,31 +3233,25 @@ function gen_decode_record(and_, param, sc) {
                                                                     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                                                         tag: 0,
                                                                                         name: "Format",
-                                                                                        length: 2,
                                                                                         "0": /* constructor */{
                                                                                           tag: 11,
                                                                                           name: "String_literal",
-                                                                                          length: 2,
                                                                                           "0": "v.",
                                                                                           "1": /* constructor */{
                                                                                             tag: 2,
                                                                                             name: "String",
-                                                                                            length: 2,
                                                                                             "0": /* No_padding */0,
                                                                                             "1": /* constructor */{
                                                                                               tag: 11,
                                                                                               name: "String_literal",
-                                                                                              length: 2,
                                                                                               "0": " <- ",
                                                                                               "1": /* constructor */{
                                                                                                 tag: 2,
                                                                                                 name: "String",
-                                                                                                length: 2,
                                                                                                 "0": /* No_padding */0,
                                                                                                 "1": /* constructor */{
                                                                                                   tag: 12,
                                                                                                   name: "Char_literal",
-                                                                                                  length: 2,
                                                                                                   "0": /* ";" */59,
                                                                                                   "1": /* End_of_format */0
                                                                                                 }
@@ -3561,21 +3274,17 @@ function gen_decode_record(and_, param, sc) {
                 line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "let v:",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": " = Obj.magic v in",
                                     "1": /* End_of_format */0
                                   }
@@ -3593,26 +3302,21 @@ function gen_decode_variant(and_, param, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " decode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " d = ",
                         "1": /* End_of_format */0
                       }
@@ -3625,11 +3329,9 @@ function gen_decode_variant(and_, param, sc) {
                 line$1(sc, Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "let rec loop () = ",
                             "1": /* End_of_format */0
                           },
@@ -3639,21 +3341,17 @@ function gen_decode_variant(and_, param, sc) {
                         line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
-                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
-                                        length: 2,
                                         "0": "let ret:",
                                         "1": /* constructor */{
                                           tag: 2,
                                           name: "String",
-                                          length: 2,
                                           "0": /* No_padding */0,
                                           "1": /* constructor */{
                                             tag: 11,
                                             name: "String_literal",
-                                            length: 2,
                                             "0": " = match Pbrt.Decoder.key d with",
                                             "1": /* End_of_format */0
                                           }
@@ -3673,43 +3371,35 @@ function gen_decode_variant(and_, param, sc) {
                                           return line$1(sc$1, Curry._3(Printf.sprintf(/* constructor */{
                                                               tag: 0,
                                                               name: "Format",
-                                                              length: 2,
                                                               "0": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "| Some (",
                                                                 "1": /* constructor */{
                                                                   tag: 4,
                                                                   name: "Int",
-                                                                  length: 4,
                                                                   "0": /* Int_i */3,
                                                                   "1": /* No_padding */0,
                                                                   "2": /* No_precision */0,
                                                                   "3": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": ", _) -> ",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 11,
                                                                         name: "String_literal",
-                                                                        length: 2,
                                                                         "0": " (",
                                                                         "1": /* constructor */{
                                                                           tag: 2,
                                                                           name: "String",
-                                                                          length: 2,
                                                                           "0": /* No_padding */0,
                                                                           "1": /* constructor */{
                                                                             tag: 12,
                                                                             name: "Char_literal",
-                                                                            length: 2,
                                                                             "0": /* ")" */41,
                                                                             "1": /* End_of_format */0
                                                                           }
@@ -3725,33 +3415,27 @@ function gen_decode_variant(and_, param, sc) {
                                           return line$1(sc$1, Curry._2(Printf.sprintf(/* constructor */{
                                                               tag: 0,
                                                               name: "Format",
-                                                              length: 2,
                                                               "0": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "| Some (",
                                                                 "1": /* constructor */{
                                                                   tag: 4,
                                                                   name: "Int",
-                                                                  length: 4,
                                                                   "0": /* Int_i */3,
                                                                   "1": /* No_padding */0,
                                                                   "2": /* No_precision */0,
                                                                   "3": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": ", _) -> (Pbrt.Decoder.empty_nested d ; ",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 12,
                                                                         name: "Char_literal",
-                                                                        length: 2,
                                                                         "0": /* ")" */41,
                                                                         "1": /* End_of_format */0
                                                                       }
@@ -3782,26 +3466,21 @@ function gen_decode_const_variant(and_, param, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " decode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " d = ",
                         "1": /* End_of_format */0
                       }
@@ -3816,43 +3495,35 @@ function gen_decode_const_variant(and_, param, sc) {
                         return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
-                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 11,
                                               name: "String_literal",
-                                              length: 2,
                                               "0": "| ",
                                               "1": /* constructor */{
                                                 tag: 4,
                                                 name: "Int",
-                                                length: 4,
                                                 "0": /* Int_i */3,
                                                 "1": /* No_padding */0,
                                                 "2": /* No_precision */0,
                                                 "3": /* constructor */{
                                                   tag: 11,
                                                   name: "String_literal",
-                                                  length: 2,
                                                   "0": " -> (",
                                                   "1": /* constructor */{
                                                     tag: 2,
                                                     name: "String",
-                                                    length: 2,
                                                     "0": /* No_padding */0,
                                                     "1": /* constructor */{
                                                       tag: 12,
                                                       name: "Char_literal",
-                                                      length: 2,
                                                       "0": /* ":" */58,
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 12,
                                                           name: "Char_literal",
-                                                          length: 2,
                                                           "0": /* ")" */41,
                                                           "1": /* End_of_format */0
                                                         }
@@ -3868,21 +3539,17 @@ function gen_decode_const_variant(and_, param, sc) {
                 return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                     tag: 0,
                                     name: "Format",
-                                    length: 2,
                                     "0": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": "| _ -> failwith \"Unknown value for enum ",
                                       "1": /* constructor */{
                                         tag: 2,
                                         name: "String",
-                                        length: 2,
                                         "0": /* No_padding */0,
                                         "1": /* constructor */{
                                           tag: 12,
                                           name: "Char_literal",
-                                          length: 2,
                                           "0": /* "\"" */34,
                                           "1": /* End_of_format */0
                                         }
@@ -3925,26 +3592,21 @@ function gen_sig(and_, t, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "val decode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " : Pbrt.Decoder.t -> ",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* End_of_format */0
                         }
@@ -3956,31 +3618,25 @@ function gen_sig(and_, t, sc) {
     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "(** [decode_",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " decoder] decodes a [",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": "] value from [decoder] *)",
                                   "1": /* End_of_format */0
                                 }
@@ -4038,16 +3694,13 @@ function endline(s) {
   return Curry._1(log(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 12,
                       name: "Char_literal",
-                      length: 2,
                       "0": /* "\n" */10,
                       "1": /* End_of_format */0
                     }
@@ -4063,16 +3716,13 @@ function gen_pp_field(field_type) {
   return Curry._1(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "Pbrt.Pp.pp_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* End_of_format */0
                     }
@@ -4087,21 +3737,17 @@ function gen_pp_record(and_, param, sc) {
   Curry._1(log(/* constructor */{
             tag: 0,
             name: "Format",
-            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
-              length: 2,
               "0": "gen_pp, record_name: ",
               "1": /* constructor */{
                 tag: 2,
                 name: "String",
-                length: 2,
                 "0": /* No_padding */0,
                 "1": /* constructor */{
                   tag: 12,
                   name: "Char_literal",
-                  length: 2,
                   "0": /* "\n" */10,
                   "1": /* End_of_format */0
                 }
@@ -4112,36 +3758,29 @@ function gen_pp_record(and_, param, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " pp_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " fmt (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") = ",
                             "1": /* End_of_format */0
                           }
@@ -4162,16 +3801,13 @@ function gen_pp_record(and_, param, sc) {
                                 var var_name = Curry._1(Printf.sprintf(/* constructor */{
                                           tag: 0,
                                           name: "Format",
-                                          length: 2,
                                           "0": /* constructor */{
                                             tag: 11,
                                             name: "String_literal",
-                                            length: 2,
                                             "0": "v.",
                                             "1": /* constructor */{
                                               tag: 2,
                                               name: "String",
-                                              length: 2,
                                               "0": /* No_padding */0,
                                               "1": /* End_of_format */0
                                             }
@@ -4184,41 +3820,33 @@ function gen_pp_record(and_, param, sc) {
                                       return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
-                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 11,
                                                             name: "String_literal",
-                                                            length: 2,
                                                             "0": "Pbrt.Pp.pp_record_field \"",
                                                             "1": /* constructor */{
                                                               tag: 2,
                                                               name: "String",
-                                                              length: 2,
                                                               "0": /* No_padding */0,
                                                               "1": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "\" ",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": " fmt ",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 12,
                                                                         name: "Char_literal",
-                                                                        length: 2,
                                                                         "0": /* ";" */59,
                                                                         "1": /* End_of_format */0
                                                                       }
@@ -4235,41 +3863,33 @@ function gen_pp_record(and_, param, sc) {
                                       return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
-                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 11,
                                                             name: "String_literal",
-                                                            length: 2,
                                                             "0": "Pbrt.Pp.pp_record_field \"",
                                                             "1": /* constructor */{
                                                               tag: 2,
                                                               name: "String",
-                                                              length: 2,
                                                               "0": /* No_padding */0,
                                                               "1": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "\" (Pbrt.Pp.pp_option ",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": ") fmt ",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 12,
                                                                         name: "Char_literal",
-                                                                        length: 2,
                                                                         "0": /* ";" */59,
                                                                         "1": /* End_of_format */0
                                                                       }
@@ -4288,41 +3908,33 @@ function gen_pp_record(and_, param, sc) {
                                         return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                             tag: 0,
                                                             name: "Format",
-                                                            length: 2,
                                                             "0": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": "Pbrt.Pp.pp_record_field \"",
                                                               "1": /* constructor */{
                                                                 tag: 2,
                                                                 name: "String",
-                                                                length: 2,
                                                                 "0": /* No_padding */0,
                                                                 "1": /* constructor */{
                                                                   tag: 11,
                                                                   name: "String_literal",
-                                                                  length: 2,
                                                                   "0": "\" (Pbrt.Pp.pp_list ",
                                                                   "1": /* constructor */{
                                                                     tag: 2,
                                                                     name: "String",
-                                                                    length: 2,
                                                                     "0": /* No_padding */0,
                                                                     "1": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": ") fmt (Pbrt.Repeated_field.to_list ",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": ");",
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -4338,41 +3950,33 @@ function gen_pp_record(and_, param, sc) {
                                         return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                             tag: 0,
                                                             name: "Format",
-                                                            length: 2,
                                                             "0": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": "Pbrt.Pp.pp_record_field \"",
                                                               "1": /* constructor */{
                                                                 tag: 2,
                                                                 name: "String",
-                                                                length: 2,
                                                                 "0": /* No_padding */0,
                                                                 "1": /* constructor */{
                                                                   tag: 11,
                                                                   name: "String_literal",
-                                                                  length: 2,
                                                                   "0": "\" (Pbrt.Pp.pp_list ",
                                                                   "1": /* constructor */{
                                                                     tag: 2,
                                                                     name: "String",
-                                                                    length: 2,
                                                                     "0": /* No_padding */0,
                                                                     "1": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": ") fmt ",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 12,
                                                                           name: "Char_literal",
-                                                                          length: 2,
                                                                           "0": /* ";" */59,
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -4391,68 +3995,55 @@ function gen_pp_record(and_, param, sc) {
                                       var pp_key = gen_pp_field(/* constructor */{
                                             tag: 0,
                                             name: "Ft_basic_type",
-                                            length: 1,
                                             "0": match$1[2][0]
                                           });
                                       var pp_value = gen_pp_field(match$1[3][0]);
                                       return line$1(sc, Curry._5(Printf.sprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
-                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 11,
                                                             name: "String_literal",
-                                                            length: 2,
                                                             "0": "Pbrt.Pp.pp_record_field \"",
                                                             "1": /* constructor */{
                                                               tag: 2,
                                                               name: "String",
-                                                              length: 2,
                                                               "0": /* No_padding */0,
                                                               "1": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "\" (Pbrt.Pp.",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 12,
                                                                     name: "Char_literal",
-                                                                    length: 2,
                                                                     "0": /* " " */32,
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 12,
                                                                         name: "Char_literal",
-                                                                        length: 2,
                                                                         "0": /* " " */32,
                                                                         "1": /* constructor */{
                                                                           tag: 2,
                                                                           name: "String",
-                                                                          length: 2,
                                                                           "0": /* No_padding */0,
                                                                           "1": /* constructor */{
                                                                             tag: 11,
                                                                             name: "String_literal",
-                                                                            length: 2,
                                                                             "0": ") fmt ",
                                                                             "1": /* constructor */{
                                                                               tag: 2,
                                                                               name: "String",
-                                                                              length: 2,
                                                                               "0": /* No_padding */0,
                                                                               "1": /* constructor */{
                                                                                 tag: 12,
                                                                                 name: "Char_literal",
-                                                                                length: 2,
                                                                                 "0": /* ";" */59,
                                                                                 "1": /* End_of_format */0
                                                                               }
@@ -4472,41 +4063,33 @@ function gen_pp_record(and_, param, sc) {
                                       return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                           tag: 0,
                                                           name: "Format",
-                                                          length: 2,
                                                           "0": /* constructor */{
                                                             tag: 11,
                                                             name: "String_literal",
-                                                            length: 2,
                                                             "0": "Pbrt.Pp.pp_record_field \"",
                                                             "1": /* constructor */{
                                                               tag: 2,
                                                               name: "String",
-                                                              length: 2,
                                                               "0": /* No_padding */0,
                                                               "1": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": "\" ",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": " fmt ",
                                                                     "1": /* constructor */{
                                                                       tag: 2,
                                                                       name: "String",
-                                                                      length: 2,
                                                                       "0": /* No_padding */0,
                                                                       "1": /* constructor */{
                                                                         tag: 12,
                                                                         name: "Char_literal",
-                                                                        length: 2,
                                                                         "0": /* ";" */59,
                                                                         "1": /* End_of_format */0
                                                                       }
@@ -4534,36 +4117,29 @@ function gen_pp_variant(and_, param, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " pp_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " fmt (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") =",
                             "1": /* End_of_format */0
                           }
@@ -4584,34 +4160,27 @@ function gen_pp_variant(and_, param, sc) {
                                 return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " x -> Format.fprintf fmt \"",
                                                           "1": /* constructor */{
                                                             tag: 18,
                                                             name: "Formatting_gen",
-                                                            length: 2,
                                                             "0": /* constructor */{
                                                               tag: 1,
                                                               name: "Open_box",
-                                                              length: 1,
                                                               "0": /* constructor */{
                                                                 tag: 0,
                                                                 name: "Format",
-                                                                length: 2,
                                                                 "0": /* End_of_format */0,
                                                                 "1": ""
                                                               }
@@ -4619,42 +4188,34 @@ function gen_pp_variant(and_, param, sc) {
                                                             "1": /* constructor */{
                                                               tag: 2,
                                                               name: "String",
-                                                              length: 2,
                                                               "0": /* No_padding */0,
                                                               "1": /* constructor */{
                                                                 tag: 12,
                                                                 name: "Char_literal",
-                                                                length: 2,
                                                                 "0": /* "(" */40,
                                                                 "1": /* constructor */{
                                                                   tag: 12,
                                                                   name: "Char_literal",
-                                                                  length: 2,
                                                                   "0": /* "%" */37,
                                                                   "1": /* constructor */{
                                                                     tag: 11,
                                                                     name: "String_literal",
-                                                                    length: 2,
                                                                     "0": "a)",
                                                                     "1": /* constructor */{
                                                                       tag: 17,
                                                                       name: "Formatting_lit",
-                                                                      length: 2,
                                                                       "0": /* Close_box */0,
                                                                       "1": /* constructor */{
                                                                         tag: 11,
                                                                         name: "String_literal",
-                                                                        length: 2,
                                                                         "0": "\" ",
                                                                         "1": /* constructor */{
                                                                           tag: 2,
                                                                           name: "String",
-                                                                          length: 2,
                                                                           "0": /* No_padding */0,
                                                                           "1": /* constructor */{
                                                                             tag: 11,
                                                                             name: "String_literal",
-                                                                            length: 2,
                                                                             "0": " x",
                                                                             "1": /* End_of_format */0
                                                                           }
@@ -4675,31 +4236,25 @@ function gen_pp_variant(and_, param, sc) {
                                 return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": "  -> Format.fprintf fmt \"",
                                                           "1": /* constructor */{
                                                             tag: 2,
                                                             name: "String",
-                                                            length: 2,
                                                             "0": /* No_padding */0,
                                                             "1": /* constructor */{
                                                               tag: 12,
                                                               name: "Char_literal",
-                                                              length: 2,
                                                               "0": /* "\"" */34,
                                                               "1": /* End_of_format */0
                                                             }
@@ -4720,36 +4275,29 @@ function gen_pp_const_variant(and_, param, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " pp_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " fmt (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") =",
                             "1": /* End_of_format */0
                           }
@@ -4767,31 +4315,25 @@ function gen_pp_const_variant(and_, param, sc) {
                               return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                   tag: 0,
                                                   name: "Format",
-                                                  length: 2,
                                                   "0": /* constructor */{
                                                     tag: 11,
                                                     name: "String_literal",
-                                                    length: 2,
                                                     "0": "| ",
                                                     "1": /* constructor */{
                                                       tag: 2,
                                                       name: "String",
-                                                      length: 2,
                                                       "0": /* No_padding */0,
                                                       "1": /* constructor */{
                                                         tag: 11,
                                                         name: "String_literal",
-                                                        length: 2,
                                                         "0": " -> Format.fprintf fmt \"",
                                                         "1": /* constructor */{
                                                           tag: 2,
                                                           name: "String",
-                                                          length: 2,
                                                           "0": /* No_padding */0,
                                                           "1": /* constructor */{
                                                             tag: 12,
                                                             name: "Char_literal",
-                                                            length: 2,
                                                             "0": /* "\"" */34,
                                                             "1": /* End_of_format */0
                                                           }
@@ -4827,31 +4369,25 @@ function gen_sig$1(and_, t, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "val pp_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " : Format.formatter -> ",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": " -> unit ",
                             "1": /* End_of_format */0
                           }
@@ -4864,21 +4400,17 @@ function gen_sig$1(and_, t, sc) {
     return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "(** [pp_",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " v] formats v] *)",
                               "1": /* End_of_format */0
                             }
@@ -4923,7 +4455,6 @@ function create(l, x, d, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
-          length: 5,
           "0": l,
           "1": x,
           "2": d,
@@ -4983,7 +4514,6 @@ function bal(l, x, d, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 5,
             "0": l,
             "1": x,
             "2": d,
@@ -5004,7 +4534,6 @@ function add(x, data, param) {
       return /* constructor */{
               tag: 0,
               name: "Node",
-              length: 5,
               "0": l,
               "1": x,
               "2": data,
@@ -5020,7 +4549,6 @@ function add(x, data, param) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 5,
             "0": /* Empty */0,
             "1": x,
             "2": data,
@@ -5055,7 +4583,6 @@ function map$1(f, param) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 5,
             "0": l$prime,
             "1": param[1],
             "2": d$prime,
@@ -5126,21 +4653,17 @@ function string_of_option(f, param) {
     return Curry._1(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "Some(",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* ")" */41,
                           "1": /* End_of_format */0
                         }
@@ -5168,35 +4691,29 @@ function strong_connect(g, sccs, stack, index, v) {
   Curry._2(log(/* constructor */{
             tag: 0,
             name: "Format",
-            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
-              length: 2,
               "0": "[Graph] processing v [",
               "1": /* constructor */{
                 tag: 4,
                 name: "Int",
-                length: 4,
                 "0": /* Int_i */3,
                 "1": /* No_padding */0,
                 "2": /* No_precision */0,
                 "3": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "], index: ",
                   "1": /* constructor */{
                     tag: 4,
                     name: "Int",
-                    length: 4,
                     "0": /* Int_i */3,
                     "1": /* No_padding */0,
                     "2": /* No_precision */0,
                     "3": /* constructor */{
                       tag: 12,
                       name: "Char_literal",
-                      length: 2,
                       "0": /* "\n" */10,
                       "1": /* End_of_format */0
                     }
@@ -5211,7 +4728,6 @@ function strong_connect(g, sccs, stack, index, v) {
   var stack$1 = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": v,
     "1": stack
   };
@@ -5224,33 +4740,27 @@ function strong_connect(g, sccs, stack, index, v) {
           Curry._2(log(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "[Graph] sub w [",
                       "1": /* constructor */{
                         tag: 4,
                         name: "Int",
-                        length: 4,
                         "0": /* Int_i */3,
                         "1": /* No_padding */0,
                         "2": /* No_precision */0,
                         "3": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "], w.index: ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 12,
                               name: "Char_literal",
-                              length: 2,
                               "0": /* "\n" */10,
                               "1": /* End_of_format */0
                             }
@@ -5298,43 +4808,35 @@ function strong_connect(g, sccs, stack, index, v) {
   Curry._3(log(/* constructor */{
             tag: 0,
             name: "Format",
-            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
-              length: 2,
               "0": "[Graph] after sub for v [",
               "1": /* constructor */{
                 tag: 4,
                 name: "Int",
-                length: 4,
                 "0": /* Int_i */3,
                 "1": /* No_padding */0,
                 "2": /* No_precision */0,
                 "3": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "], lowlink: ",
                   "1": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": ", index: ",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* "\n" */10,
                           "1": /* End_of_format */0
                         }
@@ -5353,21 +4855,17 @@ function strong_connect(g, sccs, stack, index, v) {
   Curry._1(log(/* constructor */{
             tag: 0,
             name: "Format",
-            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
-              length: 2,
               "0": "[Graph]   -> stack : ",
               "1": /* constructor */{
                 tag: 2,
                 name: "String",
-                length: 2,
                 "0": /* No_padding */0,
                 "1": /* constructor */{
                   tag: 12,
                   name: "Char_literal",
-                  length: 2,
                   "0": /* "\n" */10,
                   "1": /* End_of_format */0
                 }
@@ -5391,7 +4889,6 @@ function strong_connect(g, sccs, stack, index, v) {
                       /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": n,
                         "1": stack
                       },
@@ -5404,7 +4901,6 @@ function strong_connect(g, sccs, stack, index, v) {
                         /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": n[/* core */0][/* id */0],
                           "1": scc
                         },
@@ -5416,7 +4912,6 @@ function strong_connect(g, sccs, stack, index, v) {
                         /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": n[/* core */0][/* id */0],
                           "1": scc
                         },
@@ -5434,7 +4929,6 @@ function strong_connect(g, sccs, stack, index, v) {
             /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": match$1[0],
               "1": sccs$1
             },
@@ -5530,40 +5024,32 @@ function string_of_unresolved(param) {
   return Curry._3(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "unresolved:{scope ",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": ", type_name: ",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ", from_root: ",
                             "1": /* constructor */{
                               tag: 9,
                               name: "Bool",
-                              length: 1,
                               "0": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* "}" */125,
                                 "1": /* End_of_format */0
                               }
@@ -5605,7 +5091,6 @@ function unresolved_of_string(s) {
           /* constructor */{
             tag: 4,
             name: "Programatic_error",
-            length: 1,
             "0": /* Invalid_string_split */0
           }
         ];
@@ -5648,7 +5133,6 @@ function field_type_of_string(s) {
       return /* constructor */{
               tag: 0,
               name: "Field_type_type",
-              length: 1,
               "0": unresolved_of_string(s)
             };
   }
@@ -5727,7 +5211,6 @@ function compile_default_p2(all_types, field) {
                 return /* constructor */{
                         tag: 3,
                         name: "Constant_float",
-                        length: 1,
                         "0": constant[0]
                       };
             case 3 :
@@ -5852,7 +5335,6 @@ function compile_enum_p1(file_name, file_options, scope, param) {
   return type_of_spec(file_name, file_options, param[/* enum_id */0], scope, /* constructor */{
               tag: 0,
               name: "Enum",
-              length: 1,
               "0": /* record */[
                 /* enum_name */param[/* enum_name */1],
                 /* enum_values */enum_values
@@ -5866,7 +5348,6 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
   var sub_scope_001 = /* message_names */Pervasives.$at(message_scope[/* message_names */1], /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": message_name,
         "1": /* [] */0
       });
@@ -5883,14 +5364,12 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
                 var field = /* constructor */{
                   tag: 0,
                   name: "Message_field",
-                  length: 1,
                   "0": compile_field_p1(param$1[0])
                 };
                 return /* tuple */[
                         /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": field,
                           "1": message_body
                         },
@@ -5901,14 +5380,12 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
                 var field$1 = /* constructor */{
                   tag: 2,
                   name: "Message_map_field",
-                  length: 1,
                   "0": compile_map_p1(param$1[0])
                 };
                 return /* tuple */[
                         /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": field$1,
                           "1": message_body
                         },
@@ -5919,14 +5396,12 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
                 var field$2 = /* constructor */{
                   tag: 1,
                   name: "Message_oneof_field",
-                  length: 1,
                   "0": compile_oneof_p1(param$1[0])
                 };
                 return /* tuple */[
                         /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": field$2,
                           "1": message_body
                         },
@@ -5947,7 +5422,6 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
                         Pervasives.$at(all_types, /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": compile_enum_p1(file_name, file_options, sub_scope, param$1[0]),
                               "1": /* [] */0
                             })
@@ -5979,7 +5453,6 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 number,
                 name
@@ -5995,7 +5468,6 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
             /* constructor */{
               tag: 1,
               name: "Duplicated_field_number",
-              length: 1,
               "0": /* record */[
                 /* field_name */field_name$1,
                 /* previous_field_name */previous_field_name,
@@ -6019,11 +5491,9 @@ function compile_message_p1(file_name, file_options, message_scope, param) {
   return Pervasives.$at(match[2], /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": type_of_spec(file_name, file_options, param[/* id */0], message_scope, /* constructor */{
                     tag: 1,
                     name: "Message",
-                    length: 1,
                     "0": /* record */[
                       /* extensions */match[1],
                       /* message_name */message_name,
@@ -6041,7 +5511,6 @@ function compile_proto_p1(file_name, param) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": compile_enum_p1(file_name, file_options, scope, e),
                   "1": pbtt_msgs
                 };
@@ -6086,7 +5555,6 @@ function compile_message_p2(types, param, message) {
   var message_scope = Pervasives.$at(param[/* packages */0], Pervasives.$at(param[/* message_names */1], /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": message_name,
             "1": /* [] */0
           }));
@@ -6095,7 +5563,6 @@ function compile_message_p2(types, param, message) {
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": field_scope,
               "1": /* [] */0
             };
@@ -6109,7 +5576,6 @@ function compile_message_p2(types, param, message) {
             _scopes = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": Pervasives.$at(l, field_scope),
               "1": scopes
             };
@@ -6118,7 +5584,6 @@ function compile_message_p2(types, param, message) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": field_scope,
                     "1": scopes
                   };
@@ -6132,21 +5597,17 @@ function compile_message_p2(types, param, message) {
     Curry._1(log(/* constructor */{
               tag: 0,
               name: "Format",
-              length: 2,
               "0": /* constructor */{
                 tag: 11,
                 name: "String_literal",
-                length: 2,
                 "0": "[pbtt] field_name: ",
                 "1": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
-                    length: 2,
                     "0": /* "\n" */10,
                     "1": /* End_of_format */0
                   }
@@ -6164,7 +5625,6 @@ function compile_message_p2(types, param, message) {
               /* constructor */{
                 tag: 4,
                 name: "Programatic_error",
-                length: 1,
                 "0": /* Unexpected_field_type */1
               }
             ];
@@ -6177,21 +5637,17 @@ function compile_message_p2(types, param, message) {
       Curry._1(log(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "[pbtt] message scope: ",
                   "1": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 12,
                       name: "Char_literal",
-                      length: 2,
                       "0": /* "\n" */10,
                       "1": /* End_of_format */0
                     }
@@ -6203,21 +5659,17 @@ function compile_message_p2(types, param, message) {
               return Curry._2(log(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "[pbtt] search_scope[",
                                 "1": /* constructor */{
                                   tag: 4,
                                   name: "Int",
-                                  length: 4,
                                   "0": /* Int_i */3,
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "Lit_padding",
-                                    length: 2,
                                     "0": /* Right */1,
                                     "1": 2
                                   },
@@ -6225,17 +5677,14 @@ function compile_message_p2(types, param, message) {
                                   "3": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": "] : ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
-                                        length: 2,
                                         "0": /* "\n" */10,
                                         "1": /* End_of_format */0
                                       }
@@ -6269,7 +5718,6 @@ function compile_message_p2(types, param, message) {
         return /* constructor */{
                 tag: 0,
                 name: "Field_type_type",
-                length: 1,
                 "0": id
               };
       } else {
@@ -6281,7 +5729,6 @@ function compile_message_p2(types, param, message) {
               /* constructor */{
                 tag: 0,
                 name: "Unresolved_type",
-                length: 1,
                 "0": /* record */[
                   /* field_name */field_name$1,
                   /* type_ */type_,
@@ -6321,11 +5768,9 @@ function compile_message_p2(types, param, message) {
                 return /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 0,
                           name: "Message_field",
-                          length: 1,
                           "0": field$2
                         },
                         "1": message_body
@@ -6339,7 +5784,6 @@ function compile_message_p2(types, param, message) {
                         return /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": /* record */[
                                   /* field_parsed */field[/* field_parsed */0],
                                   /* field_type */field_type$3,
@@ -6353,11 +5797,9 @@ function compile_message_p2(types, param, message) {
                 return /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 1,
                           name: "Message_oneof_field",
-                          length: 1,
                           "0": /* record */[
                             /* oneof_name */oneof[/* oneof_name */0],
                             /* oneof_fields */oneof_fields$1
@@ -6373,7 +5815,6 @@ function compile_message_p2(types, param, message) {
                 var resolved_map = /* constructor */{
                   tag: 2,
                   name: "Message_map_field",
-                  length: 1,
                   "0": /* record */[
                     /* map_name */map_name,
                     /* map_number */map[/* map_number */1],
@@ -6385,7 +5826,6 @@ function compile_message_p2(types, param, message) {
                 return /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": resolved_map,
                         "1": message_body
                       };
@@ -6414,7 +5854,6 @@ function node_of_proto_type(param) {
                         return /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": field_type[0],
                                 "1": /* [] */0
                               };
@@ -6428,7 +5867,6 @@ function node_of_proto_type(param) {
                                           return /* constructor */{
                                                   tag: 0,
                                                   name: "::",
-                                                  length: 2,
                                                   "0": field_type[0],
                                                   "1": /* [] */0
                                                 };
@@ -6442,7 +5880,6 @@ function node_of_proto_type(param) {
                         return /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": map_value_type[0],
                                 "1": /* [] */0
                               };
@@ -6517,26 +5954,21 @@ function gen_type_record(mutable_, and_, param, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
-                    length: 2,
                     "0": /* " " */32,
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " = {",
                         "1": /* End_of_format */0
                       }
@@ -6553,31 +5985,25 @@ function gen_type_record(mutable_, and_, param, sc) {
                         return line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
-                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 2,
                                               name: "String",
-                                              length: 2,
                                               "0": /* No_padding */0,
                                               "1": /* constructor */{
                                                 tag: 2,
                                                 name: "String",
-                                                length: 2,
                                                 "0": /* No_padding */0,
                                                 "1": /* constructor */{
                                                   tag: 11,
                                                   name: "String_literal",
-                                                  length: 2,
                                                   "0": " : ",
                                                   "1": /* constructor */{
                                                     tag: 2,
                                                     name: "String",
-                                                    length: 2,
                                                     "0": /* No_padding */0,
                                                     "1": /* constructor */{
                                                       tag: 12,
                                                       name: "Char_literal",
-                                                      length: 2,
                                                       "0": /* ";" */59,
                                                       "1": /* End_of_format */0
                                                     }
@@ -6597,26 +6023,21 @@ function gen_type_variant(and_, variant, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
-                    length: 2,
                     "0": /* " " */32,
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " =",
                         "1": /* End_of_format */0
                       }
@@ -6634,26 +6055,21 @@ function gen_type_variant(and_, variant, sc) {
                                 return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " of ",
                                                           "1": /* constructor */{
                                                             tag: 2,
                                                             name: "String",
-                                                            length: 2,
                                                             "0": /* No_padding */0,
                                                             "1": /* End_of_format */0
                                                           }
@@ -6666,16 +6082,13 @@ function gen_type_variant(and_, variant, sc) {
                                 return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* End_of_format */0
                                                       }
@@ -6692,26 +6105,21 @@ function gen_type_const_variant(and_, param, sc) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 12,
                     name: "Char_literal",
-                    length: 2,
                     "0": /* " " */32,
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " =",
                         "1": /* End_of_format */0
                       }
@@ -6725,21 +6133,17 @@ function gen_type_const_variant(and_, param, sc) {
                               return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                   tag: 0,
                                                   name: "Format",
-                                                  length: 2,
                                                   "0": /* constructor */{
                                                     tag: 11,
                                                     name: "String_literal",
-                                                    length: 2,
                                                     "0": "| ",
                                                     "1": /* constructor */{
                                                       tag: 2,
                                                       name: "String",
-                                                      length: 2,
                                                       "0": /* No_padding */0,
                                                       "1": /* constructor */{
                                                         tag: 12,
                                                         name: "Char_literal",
-                                                        length: 2,
                                                         "0": /* " " */32,
                                                         "1": /* End_of_format */0
                                                       }
@@ -6800,33 +6204,27 @@ function gen_encode_field_key(sc, number, pk, is_packed) {
   return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                       tag: 0,
                       name: "Format",
-                      length: 2,
                       "0": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": "Pbrt.Encoder.key (",
                         "1": /* constructor */{
                           tag: 4,
                           name: "Int",
-                          length: 4,
                           "0": /* Int_i */3,
                           "1": /* No_padding */0,
                           "2": /* No_precision */0,
                           "3": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ", Pbrt.",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": ") encoder; ",
                                 "1": /* End_of_format */0
                               }
@@ -6865,31 +6263,25 @@ function gen_encode_field_type(with_key, sc, var_name, encoding_number, pk, is_p
       return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Pbrt.Encoder.nested (",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* " " */32,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ") encoder;",
                                     "1": /* End_of_format */0
                                   }
@@ -6903,26 +6295,21 @@ function gen_encode_field_type(with_key, sc, var_name, encoding_number, pk, is_p
       return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 12,
                               name: "Char_literal",
-                              length: 2,
                               "0": /* " " */32,
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": " encoder;",
                                   "1": /* End_of_format */0
                                 }
@@ -6938,26 +6325,21 @@ function gen_encode_field_type(with_key, sc, var_name, encoding_number, pk, is_p
     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 12,
                             name: "Char_literal",
-                            length: 2,
                             "0": /* " " */32,
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": " encoder;",
                                 "1": /* End_of_format */0
                               }
@@ -6975,21 +6357,17 @@ function gen_encode_record(and_, param, sc) {
   Curry._1(log(/* constructor */{
             tag: 0,
             name: "Format",
-            length: 2,
             "0": /* constructor */{
               tag: 11,
               name: "String_literal",
-              length: 2,
               "0": "gen_encode_record record_name: ",
               "1": /* constructor */{
                 tag: 2,
                 name: "String",
-                length: 2,
                 "0": /* No_padding */0,
                 "1": /* constructor */{
                   tag: 12,
                   name: "Char_literal",
-                  length: 2,
                   "0": /* "\n" */10,
                   "1": /* End_of_format */0
                 }
@@ -7000,36 +6378,29 @@ function gen_encode_record(and_, param, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " encode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") encoder = ",
                             "1": /* End_of_format */0
                           }
@@ -7050,16 +6421,13 @@ function gen_encode_record(and_, param, sc) {
                               var var_name = Curry._1(Printf.sprintf(/* constructor */{
                                         tag: 0,
                                         name: "Format",
-                                        length: 2,
                                         "0": /* constructor */{
                                           tag: 11,
                                           name: "String_literal",
-                                          length: 2,
                                           "0": "v.",
                                           "1": /* constructor */{
                                             tag: 2,
                                             name: "String",
-                                            length: 2,
                                             "0": /* No_padding */0,
                                             "1": /* End_of_format */0
                                           }
@@ -7077,21 +6445,17 @@ function gen_encode_record(and_, param, sc) {
                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "match v.",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " with ",
                                                           "1": /* End_of_format */0
                                                         }
@@ -7102,11 +6466,9 @@ function gen_encode_record(and_, param, sc) {
                                       line$1(sc, Printf.sprintf(/* constructor */{
                                                 tag: 0,
                                                 name: "Format",
-                                                length: 2,
                                                 "0": /* constructor */{
                                                   tag: 11,
                                                   name: "String_literal",
-                                                  length: 2,
                                                   "0": "| Some x -> (",
                                                   "1": /* End_of_format */0
                                                 },
@@ -7137,21 +6499,17 @@ function gen_encode_record(and_, param, sc) {
                                           return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                               tag: 0,
                                                               name: "Format",
-                                                              length: 2,
                                                               "0": /* constructor */{
                                                                 tag: 11,
                                                                 name: "String_literal",
-                                                                length: 2,
                                                                 "0": ") v.",
                                                                 "1": /* constructor */{
                                                                   tag: 2,
                                                                   name: "String",
-                                                                  length: 2,
                                                                   "0": /* No_padding */0,
                                                                   "1": /* constructor */{
                                                                     tag: 12,
                                                                     name: "Char_literal",
-                                                                    length: 2,
                                                                     "0": /* ";" */59,
                                                                     "1": /* End_of_format */0
                                                                   }
@@ -7169,21 +6527,17 @@ function gen_encode_record(and_, param, sc) {
                                   return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                       tag: 0,
                                                       name: "Format",
-                                                      length: 2,
                                                       "0": /* constructor */{
                                                         tag: 11,
                                                         name: "String_literal",
-                                                        length: 2,
                                                         "0": ") v.",
                                                         "1": /* constructor */{
                                                           tag: 2,
                                                           name: "String",
-                                                          length: 2,
                                                           "0": /* No_padding */0,
                                                           "1": /* constructor */{
                                                             tag: 12,
                                                             name: "Char_literal",
-                                                            length: 2,
                                                             "0": /* ";" */59,
                                                             "1": /* End_of_format */0
                                                           }
@@ -7203,21 +6557,17 @@ function gen_encode_record(and_, param, sc) {
                                         return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                             tag: 0,
                                                             name: "Format",
-                                                            length: 2,
                                                             "0": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": ") v.",
                                                               "1": /* constructor */{
                                                                 tag: 2,
                                                                 name: "String",
-                                                                length: 2,
                                                                 "0": /* No_padding */0,
                                                                 "1": /* constructor */{
                                                                   tag: 12,
                                                                   name: "Char_literal",
-                                                                  length: 2,
                                                                   "0": /* ";" */59,
                                                                   "1": /* End_of_format */0
                                                                 }
@@ -7235,21 +6585,17 @@ function gen_encode_record(and_, param, sc) {
                                 return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": ") v.",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 12,
                                                           name: "Char_literal",
-                                                          length: 2,
                                                           "0": /* ";" */59,
                                                           "1": /* End_of_format */0
                                                         }
@@ -7269,21 +6615,17 @@ function gen_encode_record(and_, param, sc) {
                               line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                             tag: 0,
                                             name: "Format",
-                                            length: 2,
                                             "0": /* constructor */{
                                               tag: 11,
                                               name: "String_literal",
-                                              length: 2,
                                               "0": "let encode_key = ",
                                               "1": /* constructor */{
                                                 tag: 2,
                                                 name: "String",
-                                                length: 2,
                                                 "0": /* No_padding */0,
                                                 "1": /* constructor */{
                                                   tag: 11,
                                                   name: "String_literal",
-                                                  length: 2,
                                                   "0": " in",
                                                   "1": /* End_of_format */0
                                                 }
@@ -7306,31 +6648,25 @@ function gen_encode_record(and_, param, sc) {
                                       line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "let map_entry = (k, Pbrt.",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": "), (v, Pbrt.",
                                                           "1": /* constructor */{
                                                             tag: 2,
                                                             name: "String",
-                                                            length: 2,
                                                             "0": /* No_padding */0,
                                                             "1": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": ") in",
                                                               "1": /* End_of_format */0
                                                             }
@@ -7345,21 +6681,17 @@ function gen_encode_record(and_, param, sc) {
                               return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                   tag: 0,
                                                   name: "Format",
-                                                  length: 2,
                                                   "0": /* constructor */{
                                                     tag: 11,
                                                     name: "String_literal",
-                                                    length: 2,
                                                     "0": ") v.",
                                                     "1": /* constructor */{
                                                       tag: 2,
                                                       name: "String",
-                                                      length: 2,
                                                       "0": /* No_padding */0,
                                                       "1": /* constructor */{
                                                         tag: 12,
                                                         name: "Char_literal",
-                                                        length: 2,
                                                         "0": /* ";" */59,
                                                         "1": /* End_of_format */0
                                                       }
@@ -7374,21 +6706,17 @@ function gen_encode_record(and_, param, sc) {
                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "match v.",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " with",
                                                           "1": /* End_of_format */0
                                                         }
@@ -7406,21 +6734,17 @@ function gen_encode_record(and_, param, sc) {
                                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                                     tag: 0,
                                                                     name: "Format",
-                                                                    length: 2,
                                                                     "0": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": "| ",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": " x -> (",
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -7436,21 +6760,17 @@ function gen_encode_record(and_, param, sc) {
                                                       line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                                                     tag: 0,
                                                                     name: "Format",
-                                                                    length: 2,
                                                                     "0": /* constructor */{
                                                                       tag: 11,
                                                                       name: "String_literal",
-                                                                      length: 2,
                                                                       "0": "| ",
                                                                       "1": /* constructor */{
                                                                         tag: 2,
                                                                         name: "String",
-                                                                        length: 2,
                                                                         "0": /* No_padding */0,
                                                                         "1": /* constructor */{
                                                                           tag: 11,
                                                                           name: "String_literal",
-                                                                          length: 2,
                                                                           "0": " -> (",
                                                                           "1": /* End_of_format */0
                                                                         }
@@ -7480,36 +6800,29 @@ function gen_encode_variant(and_, variant, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " encode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") encoder = ",
                             "1": /* End_of_format */0
                           }
@@ -7532,21 +6845,17 @@ function gen_encode_variant(and_, variant, sc) {
                                 line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
-                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 11,
                                                 name: "String_literal",
-                                                length: 2,
                                                 "0": "| ",
                                                 "1": /* constructor */{
                                                   tag: 2,
                                                   name: "String",
-                                                  length: 2,
                                                   "0": /* No_padding */0,
                                                   "1": /* constructor */{
                                                     tag: 11,
                                                     name: "String_literal",
-                                                    length: 2,
                                                     "0": " x -> (",
                                                     "1": /* End_of_format */0
                                                   }
@@ -7562,21 +6871,17 @@ function gen_encode_variant(and_, variant, sc) {
                                 line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
-                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 11,
                                                 name: "String_literal",
-                                                length: 2,
                                                 "0": "| ",
                                                 "1": /* constructor */{
                                                   tag: 2,
                                                   name: "String",
-                                                  length: 2,
                                                   "0": /* No_padding */0,
                                                   "1": /* constructor */{
                                                     tag: 11,
                                                     name: "String_literal",
-                                                    length: 2,
                                                     "0": " -> (",
                                                     "1": /* End_of_format */0
                                                   }
@@ -7600,36 +6905,29 @@ function gen_encode_const_variant(and_, param, sc) {
   line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 2,
                   name: "String",
-                  length: 2,
                   "0": /* No_padding */0,
                   "1": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": " encode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " (v:",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": ") encoder =",
                             "1": /* End_of_format */0
                           }
@@ -7648,33 +6946,27 @@ function gen_encode_const_variant(and_, param, sc) {
                               return line$1(sc, value > 0 ? Curry._2(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " -> Pbrt.Encoder.int_as_varint ",
                                                           "1": /* constructor */{
                                                             tag: 4,
                                                             name: "Int",
-                                                            length: 4,
                                                             "0": /* Int_i */3,
                                                             "1": /* No_padding */0,
                                                             "2": /* No_precision */0,
                                                             "3": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": " encoder",
                                                               "1": /* End_of_format */0
                                                             }
@@ -7686,33 +6978,27 @@ function gen_encode_const_variant(and_, param, sc) {
                                                   }), name, value) : Curry._2(Printf.sprintf(/* constructor */{
                                                     tag: 0,
                                                     name: "Format",
-                                                    length: 2,
                                                     "0": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": "| ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 11,
                                                           name: "String_literal",
-                                                          length: 2,
                                                           "0": " -> Pbrt.Encoder.int_as_varint (",
                                                           "1": /* constructor */{
                                                             tag: 4,
                                                             name: "Int",
-                                                            length: 4,
                                                             "0": /* Int_i */3,
                                                             "1": /* No_padding */0,
                                                             "2": /* No_precision */0,
                                                             "3": /* constructor */{
                                                               tag: 11,
                                                               name: "String_literal",
-                                                              length: 2,
                                                               "0": ") encoder",
                                                               "1": /* End_of_format */0
                                                             }
@@ -7758,31 +7044,25 @@ function gen_sig$3(and_, t, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "val encode_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " : ",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": " -> Pbrt.Encoder.t -> unit",
                             "1": /* End_of_format */0
                           }
@@ -7795,21 +7075,17 @@ function gen_sig$3(and_, t, sc) {
     return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "(** [encode_",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " v encoder] encodes [v] with the given [encoder] *)",
                               "1": /* End_of_format */0
                             }
@@ -7869,21 +7145,17 @@ function default_value_of_field_type(field_name, field_type, field_default) {
               return Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* "\"" */34,
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
-                                    length: 2,
                                     "0": /* "\"" */34,
                                     "1": /* End_of_format */0
                                   }
@@ -7924,18 +7196,15 @@ function default_value_of_field_type(field_name, field_type, field_default) {
               return Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 4,
                                 name: "Int",
-                                length: 4,
                                 "0": /* Int_i */3,
                                 "1": /* No_padding */0,
                                 "2": /* No_precision */0,
                                 "3": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
-                                  length: 2,
                                   "0": /* "l" */108,
                                   "1": /* End_of_format */0
                                 }
@@ -7955,18 +7224,15 @@ function default_value_of_field_type(field_name, field_type, field_default) {
               return Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 4,
                                 name: "Int",
-                                length: 4,
                                 "0": /* Int_i */3,
                                 "1": /* No_padding */0,
                                 "2": /* No_precision */0,
                                 "3": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
-                                  length: 2,
                                   "0": /* "L" */76,
                                   "1": /* End_of_format */0
                                 }
@@ -7988,21 +7254,17 @@ function default_value_of_field_type(field_name, field_type, field_default) {
               return Curry._1(Printf.sprintf(/* constructor */{
                               tag: 0,
                               name: "Format",
-                              length: 2,
                               "0": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "Bytes.of_string \"",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 12,
                                     name: "Char_literal",
-                                    length: 2,
                                     "0": /* "\"" */34,
                                     "1": /* End_of_format */0
                                   }
@@ -8054,21 +7316,17 @@ function record_field_default_info(record_field) {
         default_value = default_value$1 !== undefined ? Curry._1(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "Some (",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* ")" */41,
                           "1": /* End_of_format */0
                         }
@@ -8082,21 +7340,17 @@ function record_field_default_info(record_field) {
         default_value = match$2[0] ? Curry._1(Printf.sprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "Pbrt.Repeated_field.make (",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* ")" */41,
                           "1": /* End_of_format */0
                         }
@@ -8117,26 +7371,21 @@ function record_field_default_info(record_field) {
           default_value = vc_field_type ? Curry._2(Printf.sprintf(/* constructor */{
                       tag: 0,
                       name: "Format",
-                      length: 2,
                       "0": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": " (",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 12,
                               name: "Char_literal",
-                              length: 2,
                               "0": /* ")" */41,
                               "1": /* End_of_format */0
                             }
@@ -8173,36 +7422,29 @@ function gen_default_record(mutable_, and_, param, sc) {
     line$1(sc, Curry._3(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " default_",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": " () : ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " = {",
                               "1": /* End_of_format */0
                             }
@@ -8218,26 +7460,21 @@ function gen_default_record(mutable_, and_, param, sc) {
                           return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
-                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 2,
                                                 name: "String",
-                                                length: 2,
                                                 "0": /* No_padding */0,
                                                 "1": /* constructor */{
                                                   tag: 11,
                                                   name: "String_literal",
-                                                  length: 2,
                                                   "0": " = ",
                                                   "1": /* constructor */{
                                                     tag: 2,
                                                     name: "String",
-                                                    length: 2,
                                                     "0": /* No_padding */0,
                                                     "1": /* constructor */{
                                                       tag: 12,
                                                       name: "Char_literal",
-                                                      length: 2,
                                                       "0": /* ";" */59,
                                                       "1": /* End_of_format */0
                                                     }
@@ -8252,26 +7489,21 @@ function gen_default_record(mutable_, and_, param, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " default_",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* " " */32,
                           "1": /* End_of_format */0
                         }
@@ -8286,51 +7518,41 @@ function gen_default_record(mutable_, and_, param, sc) {
                     return line$1(sc, Curry._4(Printf.sprintf(/* constructor */{
                                         tag: 0,
                                         name: "Format",
-                                        length: 2,
                                         "0": /* constructor */{
                                           tag: 12,
                                           name: "Char_literal",
-                                          length: 2,
                                           "0": /* "?" */63,
                                           "1": /* constructor */{
                                             tag: 2,
                                             name: "String",
-                                            length: 2,
                                             "0": /* No_padding */0,
                                             "1": /* constructor */{
                                               tag: 11,
                                               name: "String_literal",
-                                              length: 2,
                                               "0": ":((",
                                               "1": /* constructor */{
                                                 tag: 2,
                                                 name: "String",
-                                                length: 2,
                                                 "0": /* No_padding */0,
                                                 "1": /* constructor */{
                                                   tag: 12,
                                                   name: "Char_literal",
-                                                  length: 2,
                                                   "0": /* ":" */58,
                                                   "1": /* constructor */{
                                                     tag: 2,
                                                     name: "String",
-                                                    length: 2,
                                                     "0": /* No_padding */0,
                                                     "1": /* constructor */{
                                                       tag: 11,
                                                       name: "String_literal",
-                                                      length: 2,
                                                       "0": ") = ",
                                                       "1": /* constructor */{
                                                         tag: 2,
                                                         name: "String",
-                                                        length: 2,
                                                         "0": /* No_padding */0,
                                                         "1": /* constructor */{
                                                           tag: 12,
                                                           name: "Char_literal",
-                                                          length: 2,
                                                           "0": /* ")" */41,
                                                           "1": /* End_of_format */0
                                                         }
@@ -8348,21 +7570,17 @@ function gen_default_record(mutable_, and_, param, sc) {
             return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                 tag: 0,
                                 name: "Format",
-                                length: 2,
                                 "0": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": "() : ",
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
-                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": "  = {",
                                       "1": /* End_of_format */0
                                     }
@@ -8376,16 +7594,13 @@ function gen_default_record(mutable_, and_, param, sc) {
                           return line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                               tag: 0,
                                               name: "Format",
-                                              length: 2,
                                               "0": /* constructor */{
                                                 tag: 2,
                                                 name: "String",
-                                                length: 2,
                                                 "0": /* No_padding */0,
                                                 "1": /* constructor */{
                                                   tag: 12,
                                                   name: "Char_literal",
-                                                  length: 2,
                                                   "0": /* ";" */59,
                                                   "1": /* End_of_format */0
                                                 }
@@ -8411,56 +7626,45 @@ function gen_default_variant(and_, param, sc) {
       return line$1(sc, Curry._5(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " default_",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": " () : ",
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
-                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": " = ",
                                       "1": /* constructor */{
                                         tag: 2,
                                         name: "String",
-                                        length: 2,
                                         "0": /* No_padding */0,
                                         "1": /* constructor */{
                                           tag: 11,
                                           name: "String_literal",
-                                          length: 2,
                                           "0": " (",
                                           "1": /* constructor */{
                                             tag: 2,
                                             name: "String",
-                                            length: 2,
                                             "0": /* No_padding */0,
                                             "1": /* constructor */{
                                               tag: 12,
                                               name: "Char_literal",
-                                              length: 2,
                                               "0": /* ")" */41,
                                               "1": /* End_of_format */0
                                             }
@@ -8479,41 +7683,33 @@ function gen_default_variant(and_, param, sc) {
       return line$1(sc, Curry._4(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " default_",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": " (): ",
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
-                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 11,
                                       name: "String_literal",
-                                      length: 2,
                                       "0": " = ",
                                       "1": /* constructor */{
                                         tag: 2,
                                         name: "String",
-                                        length: 2,
                                         "0": /* No_padding */0,
                                         "1": /* End_of_format */0
                                       }
@@ -8549,46 +7745,37 @@ function gen_default_const_variant(and_, param, sc) {
   return line$1(sc, Curry._4(Printf.sprintf(/* constructor */{
                       tag: 0,
                       name: "Format",
-                      length: 2,
                       "0": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": " default_",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " () = (",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 12,
                                   name: "Char_literal",
-                                  length: 2,
                                   "0": /* ":" */58,
                                   "1": /* constructor */{
                                     tag: 2,
                                     name: "String",
-                                    length: 2,
                                     "0": /* No_padding */0,
                                     "1": /* constructor */{
                                       tag: 12,
                                       name: "Char_literal",
-                                      length: 2,
                                       "0": /* ")" */41,
                                       "1": /* End_of_format */0
                                     }
@@ -8636,21 +7823,17 @@ function gen_sig_record(sc, param) {
   line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "val default_",
                   "1": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " : ",
                       "1": /* End_of_format */0
                     }
@@ -8664,31 +7847,25 @@ function gen_sig_record(sc, param) {
                   return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                                       tag: 0,
                                       name: "Format",
-                                      length: 2,
                                       "0": /* constructor */{
                                         tag: 12,
                                         name: "Char_literal",
-                                        length: 2,
                                         "0": /* "?" */63,
                                         "1": /* constructor */{
                                           tag: 2,
                                           name: "String",
-                                          length: 2,
                                           "0": /* No_padding */0,
                                           "1": /* constructor */{
                                             tag: 12,
                                             name: "Char_literal",
-                                            length: 2,
                                             "0": /* ":" */58,
                                             "1": /* constructor */{
                                               tag: 2,
                                               name: "String",
-                                              length: 2,
                                               "0": /* No_padding */0,
                                               "1": /* constructor */{
                                                 tag: 11,
                                                 name: "String_literal",
-                                                length: 2,
                                                 "0": " ->",
                                                 "1": /* End_of_format */0
                                               }
@@ -8705,31 +7882,25 @@ function gen_sig_record(sc, param) {
   line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "(** [default_",
                   "1": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " ()] is the default value for type [",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "] *)",
                           "1": /* End_of_format */0
                         }
@@ -8747,26 +7918,21 @@ function gen_sig$4(and_, t, sc) {
     line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "val default_",
                     "1": /* constructor */{
                       tag: 2,
                       name: "String",
-                      length: 2,
                       "0": /* No_padding */0,
                       "1": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " : unit -> ",
                         "1": /* constructor */{
                           tag: 2,
                           name: "String",
-                          length: 2,
                           "0": /* No_padding */0,
                           "1": /* End_of_format */0
                         }
@@ -8778,31 +7944,25 @@ function gen_sig$4(and_, t, sc) {
     return line$1(sc, Curry._2(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "(** [default_",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": " ()] is the default value for type [",
                               "1": /* constructor */{
                                 tag: 2,
                                 name: "String",
-                                length: 2,
                                 "0": /* No_padding */0,
                                 "1": /* constructor */{
                                   tag: 11,
                                   name: "String_literal",
-                                  length: 2,
                                   "0": "] *)",
                                   "1": /* End_of_format */0
                                 }
@@ -8860,7 +8020,6 @@ function rev_split_by_naming_convention(s) {
       return /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": $$String.sub(s, start_i, end_i - start_i | 0),
               "1": l
             };
@@ -8987,7 +8146,6 @@ function module_of_file_name(file_name) {
             /* constructor */{
               tag: 6,
               name: "Invalid_file_name",
-              length: 1,
               "0": file_name$1
             }
           ];
@@ -9001,7 +8159,6 @@ function type_name(message_scope, name) {
   var all_names = Pervasives.$at(message_scope, /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": name,
         "1": /* [] */0
       });
@@ -9031,7 +8188,6 @@ function encoding_info_of_field_type(all_types, field_type) {
           return /* constructor */{
                   tag: 0,
                   name: "Pk_varint",
-                  length: 1,
                   "0": true
                 };
       case 1 :
@@ -9050,7 +8206,6 @@ function encoding_info_of_field_type(all_types, field_type) {
           return /* constructor */{
                   tag: 0,
                   name: "Pk_varint",
-                  length: 1,
                   "0": false
                 };
       case 13 :
@@ -9066,7 +8221,6 @@ function encoding_info_of_field_type(all_types, field_type) {
       return /* constructor */{
               tag: 0,
               name: "Pk_varint",
-              length: 1,
               "0": false
             };
     }
@@ -9087,7 +8241,6 @@ function encoding_of_field(all_types, field) {
             /* constructor */{
               tag: 8,
               name: "Invalid_packed_option",
-              length: 1,
               "0": field_name$1
             }
           ];
@@ -9121,25 +8274,21 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
         match$3[0] === "int_t" ? /* constructor */({
               tag: 0,
               name: "Ft_basic_type",
-              length: 1,
               "0": /* Bt_int */2
             }) : /* constructor */({
               tag: 0,
               name: "Ft_basic_type",
-              length: 1,
               "0": /* Bt_int32 */3
             })
       ) : /* constructor */({
           tag: 0,
           name: "Ft_basic_type",
-          length: 1,
           "0": /* Bt_int32 */3
         });
   } else {
     int32_type = /* constructor */{
       tag: 0,
       name: "Ft_basic_type",
-      length: 1,
       "0": /* Bt_int32 */3
     };
   }
@@ -9151,25 +8300,21 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
         match$5[0] === "int_t" ? /* constructor */({
               tag: 0,
               name: "Ft_basic_type",
-              length: 1,
               "0": /* Bt_int */2
             }) : /* constructor */({
               tag: 0,
               name: "Ft_basic_type",
-              length: 1,
               "0": /* Bt_int64 */4
             })
       ) : /* constructor */({
           tag: 0,
           name: "Ft_basic_type",
-          length: 1,
           "0": /* Bt_int64 */4
         });
   } else {
     int64_type = /* constructor */{
       tag: 0,
       name: "Ft_basic_type",
-      length: 1,
       "0": /* Bt_int64 */4
     };
   }
@@ -9180,7 +8325,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
           return /* constructor */{
                   tag: 0,
                   name: "Ft_basic_type",
-                  length: 1,
                   "0": /* Bt_float */1
                 };
       case 2 :
@@ -9193,7 +8337,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
             return /* constructor */{
                     tag: 0,
                     name: "Ft_basic_type",
-                    length: 1,
                     "0": /* Bt_int */2
                   };
           }
@@ -9207,7 +8350,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
             return /* constructor */{
                     tag: 0,
                     name: "Ft_basic_type",
-                    length: 1,
                     "0": /* Bt_int */2
                   };
           }
@@ -9219,21 +8361,18 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
           return /* constructor */{
                   tag: 0,
                   name: "Ft_basic_type",
-                  length: 1,
                   "0": /* Bt_bool */6
                 };
       case 13 :
           return /* constructor */{
                   tag: 0,
                   name: "Ft_basic_type",
-                  length: 1,
                   "0": /* Bt_string */0
                 };
       case 14 :
           return /* constructor */{
                   tag: 0,
                   name: "Ft_basic_type",
-                  length: 1,
                   "0": /* Bt_bytes */5
                 };
       
@@ -9254,7 +8393,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
               /* constructor */{
                 tag: 4,
                 name: "Programatic_error",
-                length: 1,
                 "0": /* No_type_found_for_id */2
               }
             ];
@@ -9273,7 +8411,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
         return /* constructor */{
                 tag: 1,
                 name: "Ft_user_defined_type",
-                length: 1,
                 "0": /* record */[
                   /* udt_module */undefined,
                   /* udt_type_name */udt_type_name,
@@ -9284,7 +8421,6 @@ function compile_field_type(field_name, all_types, file_options, field_options, 
         return /* constructor */{
                 tag: 1,
                 name: "Ft_user_defined_type",
-                length: 1,
                 "0": /* record */[
                   /* udt_module */field_type_module,
                   /* udt_type_name */udt_type_name,
@@ -9308,7 +8444,6 @@ function is_mutable(field_name, field_options) {
             /* constructor */{
               tag: 11,
               name: "Invalid_mutable_option",
-              length: 1,
               "0": field_name
             }
           ];
@@ -9342,7 +8477,6 @@ function variant_of_oneof(include_oneof_name, outer_message_names, all_types, fi
                   /* vc_field_type */typeof field_type$1 === "number" ? /* Vct_nullary */0 : /* constructor */({
                         tag: 0,
                         name: "Vct_non_nullary_constructor",
-                        length: 1,
                         "0": field_type$1
                       }),
                   /* vc_encoding_number */match[1],
@@ -9369,7 +8503,6 @@ function compile_enum(file_name, scope, param) {
           /* spec : constructor */{
             tag: 2,
             name: "Const_variant",
-            length: 1,
             "0": /* record */[
               /* cv_name */type_name(scope[/* message_names */1], param[/* enum_name */0]),
               /* cv_constructors */cv_constructors
@@ -9381,27 +8514,22 @@ function compile_enum(file_name, scope, param) {
 var all_code_gen = /* constructor */{
   tag: 0,
   name: "::",
-  length: 2,
   "0": Codegen_type,
   "1": /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": Codegen_default,
     "1": /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": Codegen_decode,
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": Codegen_encode,
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": Codegen_pp,
           "1": /* [] */0
         }
@@ -9438,7 +8566,6 @@ function compile(proto_definition) {
                     /* spec : constructor */{
                       tag: 1,
                       name: "Message",
-                      length: 1,
                       "0": compile_message_p2(all_types, scope, spec[0])
                     }
                   ];
@@ -9478,7 +8605,6 @@ function compile(proto_definition) {
                                     var outer_message_names = Pervasives.$at(message_names, /* constructor */{
                                           tag: 0,
                                           name: "::",
-                                          length: 2,
                                           "0": message_name,
                                           "1": /* [] */0
                                         });
@@ -9486,13 +8612,11 @@ function compile(proto_definition) {
                                     return /* constructor */{
                                             tag: 0,
                                             name: "::",
-                                            length: 2,
                                             "0": /* record */[
                                               /* module_ */module_,
                                               /* spec : constructor */{
                                                 tag: 1,
                                                 name: "Variant",
-                                                length: 1,
                                                 "0": variant
                                               }
                                             ],
@@ -9529,7 +8653,6 @@ function compile(proto_definition) {
                                             record_field_type = /* constructor */{
                                               tag: 0,
                                               name: "Rft_required",
-                                              length: 1,
                                               "0": /* tuple */[
                                                 field_type$1,
                                                 encoding_number,
@@ -9555,7 +8678,6 @@ function compile(proto_definition) {
                                             record_field_type = /* constructor */{
                                               tag: 2,
                                               name: "Rft_repeated_field",
-                                              length: 1,
                                               "0": /* tuple */[
                                                 repeated_type,
                                                 field_type$1,
@@ -9569,7 +8691,6 @@ function compile(proto_definition) {
                                           record_field_type = /* constructor */{
                                             tag: 1,
                                             name: "Rft_optional",
-                                            length: 1,
                                             "0": /* tuple */[
                                               field_type$1,
                                               encoding_number,
@@ -9589,7 +8710,6 @@ function compile(proto_definition) {
                                                 /* constructor */{
                                                   tag: 0,
                                                   name: "::",
-                                                  length: 2,
                                                   "0": record_field,
                                                   "1": fields
                                                 }
@@ -9599,7 +8719,6 @@ function compile(proto_definition) {
                                         var outer_message_names = Pervasives.$at(message_names, /* constructor */{
                                               tag: 0,
                                               name: "::",
-                                              length: 2,
                                               "0": message_name,
                                               "1": /* [] */0
                                             });
@@ -9608,7 +8727,6 @@ function compile(proto_definition) {
                                         var record_field_001 = /* rf_field_type : constructor */{
                                           tag: 4,
                                           name: "Rft_variant_field",
-                                          length: 1,
                                           "0": variant
                                         };
                                         var record_field$1 = /* record */[
@@ -9619,13 +8737,11 @@ function compile(proto_definition) {
                                         var variants$1 = /* constructor */{
                                           tag: 0,
                                           name: "::",
-                                          length: 2,
                                           "0": /* record */[
                                             /* module_ */module_,
                                             /* spec : constructor */{
                                               tag: 1,
                                               name: "Variant",
-                                              length: 1,
                                               "0": variant
                                             }
                                           ],
@@ -9634,7 +8750,6 @@ function compile(proto_definition) {
                                         var fields$1 = /* constructor */{
                                           tag: 0,
                                           name: "::",
-                                          length: 2,
                                           "0": record_field$1,
                                           "1": fields
                                         };
@@ -9651,16 +8766,13 @@ function compile(proto_definition) {
                                         var key_type = compile_field_type(Curry._1(Printf.sprintf(/* constructor */{
                                                       tag: 0,
                                                       name: "Format",
-                                                      length: 2,
                                                       "0": /* constructor */{
                                                         tag: 11,
                                                         name: "String_literal",
-                                                        length: 2,
                                                         "0": "key of ",
                                                         "1": /* constructor */{
                                                           tag: 2,
                                                           name: "String",
-                                                          length: 2,
                                                           "0": /* No_padding */0,
                                                           "1": /* End_of_format */0
                                                         }
@@ -9685,16 +8797,13 @@ function compile(proto_definition) {
                                         var value_type = compile_field_type(Curry._1(Printf.sprintf(/* constructor */{
                                                       tag: 0,
                                                       name: "Format",
-                                                      length: 2,
                                                       "0": /* constructor */{
                                                         tag: 11,
                                                         name: "String_literal",
-                                                        length: 2,
                                                         "0": "value of ",
                                                         "1": /* constructor */{
                                                           tag: 2,
                                                           name: "String",
-                                                          length: 2,
                                                           "0": /* No_padding */0,
                                                           "1": /* End_of_format */0
                                                         }
@@ -9719,7 +8828,6 @@ function compile(proto_definition) {
                                         var record_field_type$1 = /* constructor */{
                                           tag: 3,
                                           name: "Rft_associative_field",
-                                          length: 1,
                                           "0": /* tuple */[
                                             associative_type,
                                             mf[/* map_number */1],
@@ -9745,7 +8853,6 @@ function compile(proto_definition) {
                                                 /* constructor */{
                                                   tag: 0,
                                                   name: "::",
-                                                  length: 2,
                                                   "0": record_field$2,
                                                   "1": fields
                                                 }
@@ -9765,7 +8872,6 @@ function compile(proto_definition) {
                           var type__001 = /* spec : constructor */{
                             tag: 0,
                             name: "Record",
-                            length: 1,
                             "0": record
                           };
                           var type_ = /* record */[
@@ -9775,7 +8881,6 @@ function compile(proto_definition) {
                           return List.rev(/* constructor */{
                                       tag: 0,
                                       name: "::",
-                                      length: 2,
                                       "0": type_,
                                       "1": match$2[0]
                                     });
@@ -9783,7 +8888,6 @@ function compile(proto_definition) {
                           return /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": compile_enum(file_name, scope, match[0]),
                                   "1": /* [] */0
                                 };
@@ -9802,21 +8906,17 @@ function compile(proto_definition) {
                     line$1(sc, Curry._1(Printf.sprintf(/* constructor */{
                                   tag: 0,
                                   name: "Format",
-                                  length: 2,
                                   "0": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": "(** {2 ",
                                     "1": /* constructor */{
                                       tag: 2,
                                       name: "String",
-                                      length: 2,
                                       "0": /* No_padding */0,
                                       "1": /* constructor */{
                                         tag: 11,
                                         name: "String_literal",
-                                        length: 2,
                                         "0": "} *)",
                                         "1": /* End_of_format */0
                                       }
@@ -9854,21 +8954,17 @@ function compile(proto_definition) {
   line$1(sc$1, Curry._1(Printf.sprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "(** ",
                   "1": /* constructor */{
                     tag: 2,
                     name: "String",
-                    length: 2,
                     "0": /* No_padding */0,
                     "1": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " Generated Types and Encoding *)",
                       "1": /* End_of_format */0
                     }
@@ -9900,14 +8996,12 @@ function eq(loc, x, y) {
   suites[0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       loc + (" id " + String(test_id[0])),
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
-                  length: 2,
                   "0": x,
                   "1": y
                 };

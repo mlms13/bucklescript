@@ -294,31 +294,25 @@ function error(param) {
           return Curry._2(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Unexpected token `",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "`. Did you mean `",
                                 "1": /* constructor */{
                                   tag: 2,
                                   name: "String",
-                                  length: 2,
                                   "0": /* No_padding */0,
                                   "1": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": "`?",
                                     "1": /* End_of_format */0
                                   }
@@ -340,21 +334,17 @@ function error(param) {
           return Curry._1(Printf.sprintf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Duplicate export for `",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* "`" */96,
                                 "1": /* End_of_format */0
                               }
@@ -1519,7 +1509,6 @@ function lex_error(env, loc, err) {
   var lex_errors_acc = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       loc,
       err
@@ -1543,7 +1532,6 @@ function unexpected_error(env, loc, value) {
   return lex_error(env, loc, /* constructor */{
               tag: 1,
               name: "UnexpectedToken",
-              length: 1,
               "0": value
             });
 }
@@ -1552,7 +1540,6 @@ function unexpected_error_w_suggest(env, loc, value, suggest) {
   return lex_error(env, loc, /* constructor */{
               tag: 2,
               name: "UnexpectedTokenWithSuggestion",
-              length: 2,
               "0": value,
               "1": suggest
             });
@@ -1564,7 +1551,6 @@ function illegal_number(env, lexbuf, word, token) {
   var env$1 = lex_error(env, loc, /* constructor */{
         tag: 1,
         name: "UnexpectedToken",
-        length: 1,
         "0": "ILLEGAL"
       });
   return /* tuple */[
@@ -1596,7 +1582,6 @@ function start(str) {
           todo[0] = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": c,
             "1": todo[0]
           };
@@ -1792,18 +1777,15 @@ function save_comment(env, start, _end, buf, multiline) {
   var c = multiline ? /* constructor */({
         tag: 0,
         name: "Block",
-        length: 1,
         "0": s
       }) : /* constructor */({
         tag: 1,
         name: "Line",
-        length: 1,
         "0": s
       });
   var lex_comments_acc = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       loc,
       c
@@ -1894,22 +1876,18 @@ function utf16to8(code) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Char.chr(240 | (code >>> 18)),
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": Char.chr(128 | (code >>> 12) & 63),
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": Char.chr(128 | (code >>> 6) & 63),
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": Char.chr(128 | code & 63),
                   "1": /* [] */0
                 }
@@ -1920,17 +1898,14 @@ function utf16to8(code) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Char.chr(224 | (code >>> 12)),
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": Char.chr(128 | (code >>> 6) & 63),
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": Char.chr(128 | code & 63),
                 "1": /* [] */0
               }
@@ -1940,12 +1915,10 @@ function utf16to8(code) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Char.chr(192 | (code >>> 6)),
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": Char.chr(128 | code & 63),
               "1": /* [] */0
             }
@@ -1954,7 +1927,6 @@ function utf16to8(code) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": Char.chr(code),
             "1": /* [] */0
           };
@@ -1983,7 +1955,6 @@ function mk_num_singleton(number_type, num, neg) {
   return /* constructor */{
           tag: 5,
           name: "T_NUMBER_SINGLETON_TYPE",
-          length: 2,
           "0": number_type,
           "1": value$1
         };
@@ -1998,7 +1969,6 @@ List.iter((function (param) {
       }), /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         "function",
         /* T_FUNCTION */13
@@ -2006,7 +1976,6 @@ List.iter((function (param) {
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           "if",
           /* T_IF */14
@@ -2014,7 +1983,6 @@ List.iter((function (param) {
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             "in",
             /* T_IN */15
@@ -2022,7 +1990,6 @@ List.iter((function (param) {
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               "instanceof",
               /* T_INSTANCEOF */16
@@ -2030,7 +1997,6 @@ List.iter((function (param) {
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 "return",
                 /* T_RETURN */17
@@ -2038,7 +2004,6 @@ List.iter((function (param) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   "switch",
                   /* T_SWITCH */18
@@ -2046,7 +2011,6 @@ List.iter((function (param) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     "this",
                     /* T_THIS */19
@@ -2054,7 +2018,6 @@ List.iter((function (param) {
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       "throw",
                       /* T_THROW */20
@@ -2062,7 +2025,6 @@ List.iter((function (param) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         "try",
                         /* T_TRY */21
@@ -2070,7 +2032,6 @@ List.iter((function (param) {
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           "var",
                           /* T_VAR */22
@@ -2078,7 +2039,6 @@ List.iter((function (param) {
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": /* tuple */[
                             "while",
                             /* T_WHILE */23
@@ -2086,7 +2046,6 @@ List.iter((function (param) {
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": /* tuple */[
                               "with",
                               /* T_WITH */24
@@ -2094,7 +2053,6 @@ List.iter((function (param) {
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": /* tuple */[
                                 "const",
                                 /* T_CONST */25
@@ -2102,7 +2060,6 @@ List.iter((function (param) {
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": /* tuple */[
                                   "let",
                                   /* T_LET */26
@@ -2110,7 +2067,6 @@ List.iter((function (param) {
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": /* tuple */[
                                     "null",
                                     /* T_NULL */27
@@ -2118,7 +2074,6 @@ List.iter((function (param) {
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
-                                    length: 2,
                                     "0": /* tuple */[
                                       "false",
                                       /* T_FALSE */28
@@ -2126,7 +2081,6 @@ List.iter((function (param) {
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
-                                      length: 2,
                                       "0": /* tuple */[
                                         "true",
                                         /* T_TRUE */29
@@ -2134,7 +2088,6 @@ List.iter((function (param) {
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
-                                        length: 2,
                                         "0": /* tuple */[
                                           "break",
                                           /* T_BREAK */30
@@ -2142,7 +2095,6 @@ List.iter((function (param) {
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "::",
-                                          length: 2,
                                           "0": /* tuple */[
                                             "case",
                                             /* T_CASE */31
@@ -2150,7 +2102,6 @@ List.iter((function (param) {
                                           "1": /* constructor */{
                                             tag: 0,
                                             name: "::",
-                                            length: 2,
                                             "0": /* tuple */[
                                               "catch",
                                               /* T_CATCH */32
@@ -2158,7 +2109,6 @@ List.iter((function (param) {
                                             "1": /* constructor */{
                                               tag: 0,
                                               name: "::",
-                                              length: 2,
                                               "0": /* tuple */[
                                                 "continue",
                                                 /* T_CONTINUE */33
@@ -2166,7 +2116,6 @@ List.iter((function (param) {
                                               "1": /* constructor */{
                                                 tag: 0,
                                                 name: "::",
-                                                length: 2,
                                                 "0": /* tuple */[
                                                   "default",
                                                   /* T_DEFAULT */34
@@ -2174,7 +2123,6 @@ List.iter((function (param) {
                                                 "1": /* constructor */{
                                                   tag: 0,
                                                   name: "::",
-                                                  length: 2,
                                                   "0": /* tuple */[
                                                     "do",
                                                     /* T_DO */35
@@ -2182,7 +2130,6 @@ List.iter((function (param) {
                                                   "1": /* constructor */{
                                                     tag: 0,
                                                     name: "::",
-                                                    length: 2,
                                                     "0": /* tuple */[
                                                       "finally",
                                                       /* T_FINALLY */36
@@ -2190,7 +2137,6 @@ List.iter((function (param) {
                                                     "1": /* constructor */{
                                                       tag: 0,
                                                       name: "::",
-                                                      length: 2,
                                                       "0": /* tuple */[
                                                         "for",
                                                         /* T_FOR */37
@@ -2198,7 +2144,6 @@ List.iter((function (param) {
                                                       "1": /* constructor */{
                                                         tag: 0,
                                                         name: "::",
-                                                        length: 2,
                                                         "0": /* tuple */[
                                                           "class",
                                                           /* T_CLASS */38
@@ -2206,7 +2151,6 @@ List.iter((function (param) {
                                                         "1": /* constructor */{
                                                           tag: 0,
                                                           name: "::",
-                                                          length: 2,
                                                           "0": /* tuple */[
                                                             "extends",
                                                             /* T_EXTENDS */39
@@ -2214,7 +2158,6 @@ List.iter((function (param) {
                                                           "1": /* constructor */{
                                                             tag: 0,
                                                             name: "::",
-                                                            length: 2,
                                                             "0": /* tuple */[
                                                               "static",
                                                               /* T_STATIC */40
@@ -2222,7 +2165,6 @@ List.iter((function (param) {
                                                             "1": /* constructor */{
                                                               tag: 0,
                                                               name: "::",
-                                                              length: 2,
                                                               "0": /* tuple */[
                                                                 "else",
                                                                 /* T_ELSE */41
@@ -2230,7 +2172,6 @@ List.iter((function (param) {
                                                               "1": /* constructor */{
                                                                 tag: 0,
                                                                 name: "::",
-                                                                length: 2,
                                                                 "0": /* tuple */[
                                                                   "new",
                                                                   /* T_NEW */42
@@ -2238,7 +2179,6 @@ List.iter((function (param) {
                                                                 "1": /* constructor */{
                                                                   tag: 0,
                                                                   name: "::",
-                                                                  length: 2,
                                                                   "0": /* tuple */[
                                                                     "delete",
                                                                     /* T_DELETE */43
@@ -2246,7 +2186,6 @@ List.iter((function (param) {
                                                                   "1": /* constructor */{
                                                                     tag: 0,
                                                                     name: "::",
-                                                                    length: 2,
                                                                     "0": /* tuple */[
                                                                       "typeof",
                                                                       /* T_TYPEOF */44
@@ -2254,7 +2193,6 @@ List.iter((function (param) {
                                                                     "1": /* constructor */{
                                                                       tag: 0,
                                                                       name: "::",
-                                                                      length: 2,
                                                                       "0": /* tuple */[
                                                                         "void",
                                                                         /* T_VOID */45
@@ -2262,7 +2200,6 @@ List.iter((function (param) {
                                                                       "1": /* constructor */{
                                                                         tag: 0,
                                                                         name: "::",
-                                                                        length: 2,
                                                                         "0": /* tuple */[
                                                                           "enum",
                                                                           /* T_ENUM */46
@@ -2270,7 +2207,6 @@ List.iter((function (param) {
                                                                         "1": /* constructor */{
                                                                           tag: 0,
                                                                           name: "::",
-                                                                          length: 2,
                                                                           "0": /* tuple */[
                                                                             "export",
                                                                             /* T_EXPORT */47
@@ -2278,7 +2214,6 @@ List.iter((function (param) {
                                                                           "1": /* constructor */{
                                                                             tag: 0,
                                                                             name: "::",
-                                                                            length: 2,
                                                                             "0": /* tuple */[
                                                                               "import",
                                                                               /* T_IMPORT */48
@@ -2286,7 +2221,6 @@ List.iter((function (param) {
                                                                             "1": /* constructor */{
                                                                               tag: 0,
                                                                               name: "::",
-                                                                              length: 2,
                                                                               "0": /* tuple */[
                                                                                 "super",
                                                                                 /* T_SUPER */49
@@ -2294,7 +2228,6 @@ List.iter((function (param) {
                                                                               "1": /* constructor */{
                                                                                 tag: 0,
                                                                                 name: "::",
-                                                                                length: 2,
                                                                                 "0": /* tuple */[
                                                                                   "implements",
                                                                                   /* T_IMPLEMENTS */50
@@ -2302,7 +2235,6 @@ List.iter((function (param) {
                                                                                 "1": /* constructor */{
                                                                                   tag: 0,
                                                                                   name: "::",
-                                                                                  length: 2,
                                                                                   "0": /* tuple */[
                                                                                     "interface",
                                                                                     /* T_INTERFACE */51
@@ -2310,7 +2242,6 @@ List.iter((function (param) {
                                                                                   "1": /* constructor */{
                                                                                     tag: 0,
                                                                                     name: "::",
-                                                                                    length: 2,
                                                                                     "0": /* tuple */[
                                                                                       "package",
                                                                                       /* T_PACKAGE */52
@@ -2318,7 +2249,6 @@ List.iter((function (param) {
                                                                                     "1": /* constructor */{
                                                                                       tag: 0,
                                                                                       name: "::",
-                                                                                      length: 2,
                                                                                       "0": /* tuple */[
                                                                                         "private",
                                                                                         /* T_PRIVATE */53
@@ -2326,7 +2256,6 @@ List.iter((function (param) {
                                                                                       "1": /* constructor */{
                                                                                         tag: 0,
                                                                                         name: "::",
-                                                                                        length: 2,
                                                                                         "0": /* tuple */[
                                                                                           "protected",
                                                                                           /* T_PROTECTED */54
@@ -2334,7 +2263,6 @@ List.iter((function (param) {
                                                                                         "1": /* constructor */{
                                                                                           tag: 0,
                                                                                           name: "::",
-                                                                                          length: 2,
                                                                                           "0": /* tuple */[
                                                                                             "public",
                                                                                             /* T_PUBLIC */55
@@ -2342,7 +2270,6 @@ List.iter((function (param) {
                                                                                           "1": /* constructor */{
                                                                                             tag: 0,
                                                                                             name: "::",
-                                                                                            length: 2,
                                                                                             "0": /* tuple */[
                                                                                               "yield",
                                                                                               /* T_YIELD */56
@@ -2350,7 +2277,6 @@ List.iter((function (param) {
                                                                                             "1": /* constructor */{
                                                                                               tag: 0,
                                                                                               name: "::",
-                                                                                              length: 2,
                                                                                               "0": /* tuple */[
                                                                                                 "debugger",
                                                                                                 /* T_DEBUGGER */57
@@ -2358,7 +2284,6 @@ List.iter((function (param) {
                                                                                               "1": /* constructor */{
                                                                                                 tag: 0,
                                                                                                 name: "::",
-                                                                                                length: 2,
                                                                                                 "0": /* tuple */[
                                                                                                   "declare",
                                                                                                   /* T_DECLARE */58
@@ -2366,7 +2291,6 @@ List.iter((function (param) {
                                                                                                 "1": /* constructor */{
                                                                                                   tag: 0,
                                                                                                   name: "::",
-                                                                                                  length: 2,
                                                                                                   "0": /* tuple */[
                                                                                                     "type",
                                                                                                     /* T_TYPE */59
@@ -2374,7 +2298,6 @@ List.iter((function (param) {
                                                                                                   "1": /* constructor */{
                                                                                                     tag: 0,
                                                                                                     name: "::",
-                                                                                                    length: 2,
                                                                                                     "0": /* tuple */[
                                                                                                       "of",
                                                                                                       /* T_OF */60
@@ -2382,7 +2305,6 @@ List.iter((function (param) {
                                                                                                     "1": /* constructor */{
                                                                                                       tag: 0,
                                                                                                       name: "::",
-                                                                                                      length: 2,
                                                                                                       "0": /* tuple */[
                                                                                                         "async",
                                                                                                         /* T_ASYNC */61
@@ -2390,7 +2312,6 @@ List.iter((function (param) {
                                                                                                       "1": /* constructor */{
                                                                                                         tag: 0,
                                                                                                         name: "::",
-                                                                                                        length: 2,
                                                                                                         "0": /* tuple */[
                                                                                                           "await",
                                                                                                           /* T_AWAIT */62
@@ -2452,7 +2373,6 @@ List.iter((function (param) {
       }), /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         "static",
         /* T_STATIC */40
@@ -2460,7 +2380,6 @@ List.iter((function (param) {
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           "typeof",
           /* T_TYPEOF */44
@@ -2468,7 +2387,6 @@ List.iter((function (param) {
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             "any",
             /* T_ANY_TYPE */107
@@ -2476,7 +2394,6 @@ List.iter((function (param) {
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               "bool",
               /* T_BOOLEAN_TYPE */108
@@ -2484,7 +2401,6 @@ List.iter((function (param) {
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 "boolean",
                 /* T_BOOLEAN_TYPE */108
@@ -2492,7 +2408,6 @@ List.iter((function (param) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   "true",
                   /* T_TRUE */29
@@ -2500,7 +2415,6 @@ List.iter((function (param) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     "false",
                     /* T_FALSE */28
@@ -2508,7 +2422,6 @@ List.iter((function (param) {
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       "number",
                       /* T_NUMBER_TYPE */109
@@ -2516,7 +2429,6 @@ List.iter((function (param) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         "string",
                         /* T_STRING_TYPE */110
@@ -2524,7 +2436,6 @@ List.iter((function (param) {
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           "void",
                           /* T_VOID_TYPE */111
@@ -2532,7 +2443,6 @@ List.iter((function (param) {
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": /* tuple */[
                             "null",
                             /* T_NULL */27
@@ -2580,7 +2490,6 @@ function token(env, lexbuf) {
           var env$2 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return token(env$2, lexbuf$1);
@@ -2662,7 +2571,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 1,
                     name: "T_STRING",
-                    length: 1,
                     "0": /* tuple */[
                       btwn(start$3, match$4[1]),
                       $$Buffer.contents(buf$3),
@@ -2683,7 +2591,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 2,
                     name: "T_TEMPLATE_PART",
-                    length: 1,
                     "0": /* tuple */[
                       match$5[1],
                       /* record */[
@@ -2700,7 +2607,6 @@ function token(env, lexbuf) {
           return illegal_number(env$1, lexbuf$1, w, /* constructor */{
                       tag: 0,
                       name: "T_NUMBER",
-                      length: 1,
                       "0": /* BINARY */0
                     });
       case 11 :
@@ -2709,7 +2615,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 0,
                     name: "T_NUMBER",
-                    length: 1,
                     "0": /* BINARY */0
                   }
                 ];
@@ -2718,7 +2623,6 @@ function token(env, lexbuf) {
           return illegal_number(env$1, lexbuf$1, w$1, /* constructor */{
                       tag: 0,
                       name: "T_NUMBER",
-                      length: 1,
                       "0": /* OCTAL */2
                     });
       case 13 :
@@ -2727,7 +2631,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 0,
                     name: "T_NUMBER",
-                    length: 1,
                     "0": /* OCTAL */2
                   }
                 ];
@@ -2736,7 +2639,6 @@ function token(env, lexbuf) {
           return illegal_number(env$1, lexbuf$1, w$2, /* constructor */{
                       tag: 0,
                       name: "T_NUMBER",
-                      length: 1,
                       "0": /* LEGACY_OCTAL */1
                     });
       case 15 :
@@ -2745,7 +2647,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 0,
                     name: "T_NUMBER",
-                    length: 1,
                     "0": /* LEGACY_OCTAL */1
                   }
                 ];
@@ -2761,7 +2662,6 @@ function token(env, lexbuf) {
                   /* constructor */{
                     tag: 0,
                     name: "T_NUMBER",
-                    length: 1,
                     "0": /* NORMAL */3
                   }
                 ];
@@ -3065,7 +2965,6 @@ function token(env, lexbuf) {
           var env$10 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -3081,7 +2980,6 @@ function token(env, lexbuf) {
     return illegal_number(env$1, lexbuf$1, w$3, /* constructor */{
                 tag: 0,
                 name: "T_NUMBER",
-                length: 1,
                 "0": /* NORMAL */3
               });
   };
@@ -3139,7 +3037,6 @@ function jsx_text(env, mode, buf, raw, lexbuf) {
           var env$2 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -4001,7 +3898,6 @@ function __ocaml_lex_template_tail_rec(_env, lexbuf, ___ocaml_lex_state) {
                   /* constructor */{
                     tag: 2,
                     name: "T_TEMPLATE_PART",
-                    length: 1,
                     "0": /* tuple */[
                       match$2[1],
                       /* record */[
@@ -4017,7 +3913,6 @@ function __ocaml_lex_template_tail_rec(_env, lexbuf, ___ocaml_lex_state) {
           var env$3 = lex_error(env, from_lb(env[/* lex_source */0], lexbuf), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -4025,7 +3920,6 @@ function __ocaml_lex_template_tail_rec(_env, lexbuf, ___ocaml_lex_state) {
                   /* constructor */{
                     tag: 2,
                     name: "T_TEMPLATE_PART",
-                    length: 1,
                     "0": /* tuple */[
                       from_lb(env$3[/* lex_source */0], lexbuf),
                       /* record */[
@@ -4061,7 +3955,6 @@ function template_part(env, start, cooked, raw, literal, lexbuf) {
           var env$2 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -4252,7 +4145,6 @@ function string_escape(env, buf, lexbuf) {
           var env$2 = code$6 > 1114111 ? lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                   tag: 1,
                   name: "UnexpectedToken",
-                  length: 1,
                   "0": "ILLEGAL"
                 }) : env$1;
           List.iter((function (param) {
@@ -4267,7 +4159,6 @@ function string_escape(env, buf, lexbuf) {
           var env$3 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           $$Buffer.add_char(buf$1, c$2);
@@ -4450,7 +4341,6 @@ function comment(env, buf, lexbuf) {
           var env$2 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -4528,7 +4418,6 @@ function string_quote(env, q, buf, raw, octal, lexbuf) {
           var env$2 = lex_error(env$1, from_lb(env$1[/* lex_source */0], lexbuf$1), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           $$Buffer.add_string(buf$1, x);
@@ -4644,7 +4533,6 @@ function type_token(env, lexbuf) {
                   /* constructor */{
                     tag: 1,
                     name: "T_STRING",
-                    length: 1,
                     "0": /* tuple */[
                       btwn(start$3, match$3[1]),
                       $$Buffer.contents(buf$3),
@@ -4709,7 +4597,6 @@ function type_token(env, lexbuf) {
                 /* constructor */{
                   tag: 5,
                   name: "T_NUMBER_SINGLETON_TYPE",
-                  length: 2,
                   "0": /* NORMAL */3,
                   "1": 789.0
                 }
@@ -4737,7 +4624,6 @@ function type_token(env, lexbuf) {
                       /* constructor */{
                         tag: 5,
                         name: "T_NUMBER_SINGLETON_TYPE",
-                        length: 2,
                         "0": /* NORMAL */3,
                         "1": 789.0
                       }
@@ -4976,7 +4862,6 @@ function __ocaml_lex_regexp_rec(_env, lexbuf, ___ocaml_lex_state) {
                   /* constructor */{
                     tag: 3,
                     name: "T_REGEXP",
-                    length: 1,
                     "0": /* tuple */[
                       loc,
                       $$Buffer.contents(buf$2),
@@ -4988,7 +4873,6 @@ function __ocaml_lex_regexp_rec(_env, lexbuf, ___ocaml_lex_state) {
           var env$4 = lex_error(env, from_lb(env[/* lex_source */0], lexbuf), /* constructor */{
                 tag: 1,
                 name: "UnexpectedToken",
-                length: 1,
                 "0": "ILLEGAL"
               });
           return /* tuple */[
@@ -5095,7 +4979,6 @@ function __ocaml_lex_jsx_tag_rec(_env, lexbuf, ___ocaml_lex_state) {
                   /* constructor */{
                     tag: 4,
                     name: "T_JSX_TEXT",
-                    length: 1,
                     "0": /* tuple */[
                       btwn(start$2, match$2[1]),
                       value,
@@ -5140,7 +5023,6 @@ function jsx_child(env, start, buf, raw, lexbuf) {
                   /* constructor */{
                     tag: 4,
                     name: "T_JSX_TEXT",
-                    length: 1,
                     "0": /* tuple */[
                       btwn(start$1, match[1]),
                       value,
@@ -5175,7 +5057,6 @@ function jsx_child(env, start, buf, raw, lexbuf) {
                   /* constructor */{
                     tag: 4,
                     name: "T_JSX_TEXT",
-                    length: 1,
                     "0": /* tuple */[
                       btwn(start$1, match$1[1]),
                       value$1,
@@ -5236,7 +5117,6 @@ function create(l, v, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
-          length: 4,
           "0": l,
           "1": v,
           "2": r,
@@ -5293,7 +5173,6 @@ function bal(l, v, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": l,
             "1": v,
             "2": r,
@@ -5319,7 +5198,6 @@ function add(x, t) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": /* Empty */0,
             "1": x,
             "2": /* Empty */0,
@@ -5509,7 +5387,6 @@ function init_env($staropt$star, $staropt$star$1, source, content) {
           /* lex_mode_stack : record */[/* contents : constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* NORMAL */0,
               "1": /* [] */0
             }],
@@ -5526,7 +5403,6 @@ function error_at(env, param) {
   env[/* errors */0][0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       param[0],
       e
@@ -5547,7 +5423,6 @@ function comment_list(env) {
                     env[/* comments */1][0] = /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": c,
                       "1": env[/* comments */1][0]
                     };
@@ -5565,7 +5440,6 @@ function record_export(env, param) {
                 /* constructor */{
                   tag: 7,
                   name: "DuplicateExport",
-                  length: 1,
                   "0": export_name
                 }
               ]);
@@ -5886,7 +5760,6 @@ function get_unexpected_error(param) {
     return /* constructor */{
             tag: 1,
             name: "UnexpectedToken",
-            length: 1,
             "0": word
           };
   }
@@ -5961,7 +5834,6 @@ function push_lex_mode(env, mode) {
   env[/* lex_mode_stack */16][0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": mode,
     "1": env[/* lex_mode_stack */16][0]
   };
@@ -6097,7 +5969,6 @@ function to_parse(env, parse) {
     return /* constructor */{
             tag: 0,
             name: "ParsedSuccessfully",
-            length: 1,
             "0": result
           };
   }
@@ -6152,7 +6023,6 @@ function create$2(l, v, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
-          length: 4,
           "0": l,
           "1": v,
           "2": r,
@@ -6209,7 +6079,6 @@ function bal$1(l, v, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": l,
             "1": v,
             "2": r,
@@ -6235,7 +6104,6 @@ function add$1(x, t) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": /* Empty */0,
             "1": x,
             "2": /* Empty */0,
@@ -6275,7 +6143,6 @@ function create$3(l, x, d, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
-          length: 5,
           "0": l,
           "1": x,
           "2": d,
@@ -6335,7 +6202,6 @@ function bal$2(l, x, d, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 5,
             "0": l,
             "1": x,
             "2": d,
@@ -6356,7 +6222,6 @@ function add$2(x, data, param) {
       return /* constructor */{
               tag: 0,
               name: "Node",
-              length: 5,
               "0": l,
               "1": x,
               "2": data,
@@ -6372,7 +6237,6 @@ function add$2(x, data, param) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 5,
             "0": /* Empty */0,
             "1": x,
             "2": data,
@@ -6422,7 +6286,6 @@ function create$4(l, v, r) {
   return /* constructor */{
           tag: 0,
           name: "Node",
-          length: 4,
           "0": l,
           "1": v,
           "2": r,
@@ -6479,7 +6342,6 @@ function bal$3(l, v, r) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": l,
             "1": v,
             "2": r,
@@ -6505,7 +6367,6 @@ function add$3(x, t) {
     return /* constructor */{
             tag: 0,
             name: "Node",
-            length: 4,
             "0": /* Empty */0,
             "1": x,
             "2": /* Empty */0,
@@ -6547,7 +6408,6 @@ function filter_duplicate_errors(errs) {
                     /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": err,
                       "1": deduped
                     }
@@ -6567,7 +6427,6 @@ function with_loc(fn, env) {
   var end_loc = match !== undefined ? match : (error$1(env, /* constructor */{
             tag: 0,
             name: "Assertion",
-            length: 1,
             "0": "did not consume any tokens"
           }), Curry._2(Parser_env_Peek.loc, undefined, env));
   return /* tuple */[
@@ -6739,7 +6598,6 @@ function prefix(env) {
             /* constructor */{
               tag: 0,
               name: "Nullable",
-              length: 1,
               "0": t
             }
           ];
@@ -6786,11 +6644,9 @@ function function_param_or_generic_type(env) {
     return /* constructor */{
             tag: 0,
             name: "ParamList",
-            length: 1,
             "0": Curry._2(function_param_list_without_parens, env, /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": param,
                   "1": /* [] */0
                 })
@@ -6799,7 +6655,6 @@ function function_param_or_generic_type(env) {
   return /* constructor */{
           tag: 1,
           name: "Type",
-          length: 1,
           "0": Curry._2(union_with, env, Curry._2(intersection_with, env, postfix_with(env, generic_type_with_identifier(env, id))))
         };
 }
@@ -6811,7 +6666,6 @@ function generic_type_with_identifier(env, id) {
           /* constructor */{
             tag: 4,
             name: "Generic",
-            length: 1,
             "0": match[1]
           }
         ];
@@ -6827,7 +6681,6 @@ function postfix_with(env, _t) {
       var t_001 = /* constructor */{
         tag: 3,
         name: "Array",
-        length: 1,
         "0": t
       };
       var t$1 = /* tuple */[
@@ -6872,7 +6725,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 4,
                     name: "Generic",
-                    length: 1,
                     "0": match[1]
                   }
                 ];
@@ -6883,7 +6735,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 2,
                     name: "Object",
-                    length: 1,
                     "0": match$1[1]
                   }
                 ];
@@ -6903,7 +6754,6 @@ function primary(env) {
                     /* constructor */{
                       tag: 1,
                       name: "Function",
-                      length: 1,
                       "0": /* record */[
                         /* params */match$3[1],
                         /* returnType */returnType,
@@ -6925,7 +6775,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 8,
                     name: "Tuple",
-                    length: 1,
                     "0": tl
                   }
                 ];
@@ -6942,7 +6791,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 7,
                     name: "Typeof",
-                    length: 1,
                     "0": t
                   }
                 ];
@@ -6959,7 +6807,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 1,
                     name: "Function",
-                    length: 1,
                     "0": /* record */[
                       /* params */match$4[1],
                       /* returnType */returnType$1,
@@ -6991,7 +6838,6 @@ function primary(env) {
           token$4(env, /* constructor */{
                 tag: 1,
                 name: "T_STRING",
-                length: 1,
                 "0": /* tuple */[
                   loc$1,
                   value,
@@ -7004,7 +6850,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 9,
                     name: "StringLiteral",
-                    length: 1,
                     "0": /* record */[
                       /* value */value,
                       /* raw */raw
@@ -7018,7 +6863,6 @@ function primary(env) {
           token$4(env, /* constructor */{
                 tag: 5,
                 name: "T_NUMBER_SINGLETON_TYPE",
-                length: 2,
                 "0": number_type,
                 "1": value$1
               });
@@ -7030,7 +6874,6 @@ function primary(env) {
                   /* constructor */{
                     tag: 10,
                     name: "NumberLiteral",
-                    length: 1,
                     "0": /* record */[
                       /* value */value$1,
                       /* raw */raw$1
@@ -7066,7 +6909,6 @@ function primary(env) {
                 /* constructor */{
                   tag: 11,
                   name: "BooleanLiteral",
-                  length: 1,
                   "0": /* record */[
                     /* value */value$2,
                     /* raw */raw$2
@@ -7099,7 +6941,6 @@ function param_list_or_type(env) {
               ret = /* constructor */{
                 tag: 0,
                 name: "ParamList",
-                length: 1,
                 "0": /* tuple */[
                   undefined,
                   /* [] */0
@@ -7121,7 +6962,6 @@ function param_list_or_type(env) {
               ret = /* constructor */{
                 tag: 0,
                 name: "ParamList",
-                length: 1,
                 "0": Curry._2(function_param_list_without_parens, env, /* [] */0)
               };
               break;
@@ -7132,7 +6972,6 @@ function param_list_or_type(env) {
       ret = /* constructor */{
         tag: 0,
         name: "ParamList",
-        length: 1,
         "0": Curry._2(function_param_list_without_parens, env, /* [] */0)
       };
     }
@@ -7169,11 +7008,9 @@ function param_list_or_type(env) {
           ret = /* constructor */{
             tag: 0,
             name: "ParamList",
-            length: 1,
             "0": Curry._2(function_param_list_without_parens, env, /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": param,
                   "1": /* [] */0
                 })
@@ -7182,7 +7019,6 @@ function param_list_or_type(env) {
           ret = /* constructor */{
             tag: 1,
             name: "Type",
-            length: 1,
             "0": union(env)
           };
         }
@@ -7190,7 +7026,6 @@ function param_list_or_type(env) {
         ret = /* constructor */{
           tag: 1,
           name: "Type",
-          length: 1,
           "0": union(env)
         };
       }
@@ -7198,7 +7033,6 @@ function param_list_or_type(env) {
       ret = /* constructor */{
         tag: 1,
         name: "Type",
-        length: 1,
         "0": union(env)
       };
     }
@@ -7217,7 +7051,6 @@ function params(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": union(env),
       "1": acc
     };
@@ -7272,7 +7105,6 @@ function function_param_list_without_parens(env) {
               var acc$1 = /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": param(env$1),
                 "1": acc
               };
@@ -7351,7 +7183,6 @@ function params$1(env, allow_default, _require_default, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": param,
       "1": acc
     };
@@ -7394,7 +7225,6 @@ function intersection_with(env, left) {
     var _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": left,
       "1": /* [] */0
     };
@@ -7406,7 +7236,6 @@ function intersection_with(env, left) {
         _acc = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": prefix(env$1),
           "1": acc
         };
@@ -7418,7 +7247,6 @@ function intersection_with(env, left) {
               /* constructor */{
                 tag: 6,
                 name: "Intersection",
-                length: 1,
                 "0": match$1[1]
               }
             ];
@@ -7434,7 +7262,6 @@ function union_with(env, left) {
     var _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": left,
       "1": /* [] */0
     };
@@ -7446,7 +7273,6 @@ function union_with(env, left) {
         _acc = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": intersection(env$1),
           "1": acc
         };
@@ -7458,7 +7284,6 @@ function union_with(env, left) {
               /* constructor */{
                 tag: 5,
                 name: "Union",
-                length: 1,
                 "0": match$1[1]
               }
             ];
@@ -7478,7 +7303,6 @@ function types(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": union(env),
       "1": acc
     };
@@ -7513,7 +7337,6 @@ function method_property(env, start_loc, $$static, key) {
   var value_001 = /* constructor */{
     tag: 1,
     name: "Function",
-    length: 1,
     "0": value[1]
   };
   var value$1 = /* tuple */[
@@ -7636,7 +7459,6 @@ function properties(allow_static, env, _param) {
                     /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": indexer,
                       "1": indexers
                     },
@@ -7668,7 +7490,6 @@ function properties(allow_static, env, _param) {
             var static_key_001 = /* constructor */{
               tag: 1,
               name: "Identifier",
-              length: 1,
               "0": /* tuple */[
                 start_loc,
                 /* record */[
@@ -7707,7 +7528,6 @@ function properties(allow_static, env, _param) {
             /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": property$1,
               "1": acc
             },
@@ -7730,7 +7550,6 @@ function properties(allow_static, env, _param) {
             /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": call_prop,
               "1": callProperties
             }
@@ -7774,7 +7593,6 @@ function identifier(env, _param) {
       var qualification$1 = /* constructor */{
         tag: 1,
         name: "Qualified",
-        length: 1,
         "0": /* tuple */[
           loc,
           /* record */[
@@ -7802,7 +7620,6 @@ function raw_generic_with_identifier(env, id) {
   var id_001 = /* constructor */{
     tag: 0,
     name: "Unqualified",
-    length: 1,
     "0": id
   };
   var id$1 = /* tuple */[
@@ -8065,14 +7882,12 @@ function param_list(env, _param) {
             /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": match[0],
               "1": params
             },
             /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": $$default,
               "1": defaults
             },
@@ -8118,7 +7933,6 @@ function function_body(env, async, generator) {
           /* constructor */{
             tag: 0,
             name: "BodyBlock",
-            length: 1,
             "0": /* tuple */[
               loc,
               match[1]
@@ -8215,7 +8029,6 @@ function _function(env) {
           /* constructor */{
             tag: 18,
             name: "FunctionDeclaration",
-            length: 1,
             "0": /* record */[
               /* id */id$2,
               /* params */params,
@@ -8251,7 +8064,6 @@ function variable_declaration(env) {
         /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             id[0],
             /* NoUninitializedDestructuring */43
@@ -8283,7 +8095,6 @@ function helper(env, _decls, _errs) {
     var decls$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": decl,
       "1": decls
     };
@@ -8334,7 +8145,6 @@ function $$const(env) {
             return /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       decl[0],
                       /* NoUninitializedConst */42
@@ -8392,7 +8202,6 @@ function variable(env) {
             /* constructor */{
               tag: 19,
               name: "VariableDeclaration",
-              length: 1,
               "0": match$2[1]
             }
           ],
@@ -8509,7 +8318,6 @@ function conditional(env) {
             /* constructor */{
               tag: 10,
               name: "Conditional",
-              length: 1,
               "0": /* record */[
                 /* test */expr,
                 /* consequent */consequent,
@@ -8592,7 +8400,6 @@ function unary(env) {
             /* constructor */{
               tag: 5,
               name: "Unary",
-              length: 1,
               "0": /* record */[
                 /* operator */operator,
                 /* prefix */true,
@@ -8625,7 +8432,6 @@ function unary(env) {
               /* constructor */{
                 tag: 8,
                 name: "Update",
-                length: 1,
                 "0": /* record */[
                   /* operator */op$1,
                   /* argument */argument$1,
@@ -8663,7 +8469,6 @@ function unary(env) {
                   /* constructor */{
                     tag: 8,
                     name: "Update",
-                    length: 1,
                     "0": /* record */[
                       /* operator */op$2,
                       /* argument */argument$2,
@@ -8724,7 +8529,6 @@ function call(env, _left) {
                 /* constructor */{
                   tag: 12,
                   name: "Call",
-                  length: 1,
                   "0": /* record */[
                     /* callee */left,
                     /* arguments */match$1[1]
@@ -8744,13 +8548,11 @@ function call(env, _left) {
               /* constructor */{
                 tag: 13,
                 name: "Member",
-                length: 1,
                 "0": /* record */[
                   /* _object */left,
                   /* property : constructor */{
                     tag: 1,
                     name: "PropertyExpression",
-                    length: 1,
                     "0": expr
                   },
                   /* computed */true
@@ -8767,13 +8569,11 @@ function call(env, _left) {
               /* constructor */{
                 tag: 13,
                 name: "Member",
-                length: 1,
                 "0": /* record */[
                   /* _object */left,
                   /* property : constructor */{
                     tag: 0,
                     name: "PropertyIdentifier",
-                    length: 1,
                     "0": id
                   },
                   /* computed */false
@@ -8818,7 +8618,6 @@ function _new(env, _finish_fn) {
         var callee$prime_001 = /* constructor */{
           tag: 11,
           name: "New",
-          length: 1,
           "0": /* record */[
             /* callee */callee,
             /* arguments */match[1]
@@ -8861,13 +8660,11 @@ function member(env, left) {
                     /* constructor */{
                       tag: 13,
                       name: "Member",
-                      length: 1,
                       "0": /* record */[
                         /* _object */left,
                         /* property : constructor */{
                           tag: 0,
                           name: "PropertyIdentifier",
-                          length: 1,
                           "0": id
                         },
                         /* computed */false
@@ -8885,13 +8682,11 @@ function member(env, left) {
                   /* constructor */{
                     tag: 13,
                     name: "Member",
-                    length: 1,
                     "0": /* record */[
                       /* _object */left,
                       /* property : constructor */{
                         tag: 1,
                         name: "PropertyExpression",
-                        length: 1,
                         "0": expr
                       },
                       /* computed */true
@@ -8941,7 +8736,6 @@ function _function$1(env) {
           /* constructor */{
             tag: 2,
             name: "Function",
-            length: 1,
             "0": /* record */[
               /* id */id$1,
               /* params */params,
@@ -8992,7 +8786,6 @@ function number(env, number_type) {
   token$4(env, /* constructor */{
         tag: 0,
         name: "T_NUMBER",
-        length: 1,
         "0": number_type
       });
   return value$1;
@@ -9012,7 +8805,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 1,
                     name: "Object",
-                    length: 1,
                     "0": match[1]
                   }
                 ];
@@ -9033,7 +8825,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 24,
                     name: "TypeCast",
-                    length: 1,
                     "0": /* record */[
                       /* expression */expression,
                       /* typeAnnotation */typeAnnotation
@@ -9045,7 +8836,6 @@ function primary$1(env) {
               ret = sequence(env$2, /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": expression,
                     "1": /* [] */0
                   });
@@ -9062,7 +8852,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 0,
                     name: "Array",
-                    length: 1,
                     "0": match$2[1]
                   }
                 ];
@@ -9080,7 +8869,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 19,
                     name: "Literal",
-                    length: 1,
                     "0": /* record */[
                       /* value : Null */0,
                       /* raw */raw
@@ -9110,7 +8898,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 18,
                     name: "Identifier",
-                    length: 1,
                     "0": id
                   }
                 ];
@@ -9121,7 +8908,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 22,
                     name: "JSXElement",
-                    length: 1,
                     "0": match$3[1]
                   }
                 ];
@@ -9193,14 +8979,12 @@ function primary$1(env) {
             error$1(env$3, /* constructor */{
                   tag: 3,
                   name: "InvalidRegExpFlags",
-                  length: 1,
                   "0": raw_flags
                 });
           }
           var value = /* constructor */{
             tag: 3,
             name: "RegExp",
-            length: 1,
             "0": /* record */[
               /* pattern */match$5[1],
               /* flags */flags
@@ -9211,7 +8995,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 19,
                     name: "Literal",
-                    length: 1,
                     "0": /* record */[
                       /* value */value,
                       /* raw */match$5[0]
@@ -9228,7 +9011,6 @@ function primary$1(env) {
           var value$1 = /* constructor */{
             tag: 2,
             name: "Number",
-            length: 1,
             "0": number(env, token$5[0])
           };
           return /* tuple */[
@@ -9236,7 +9018,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 19,
                     name: "Literal",
-                    length: 1,
                     "0": /* record */[
                       /* value */value$1,
                       /* raw */raw$2
@@ -9255,7 +9036,6 @@ function primary$1(env) {
           token$4(env, /* constructor */{
                 tag: 1,
                 name: "T_STRING",
-                length: 1,
                 "0": /* tuple */[
                   loc$3,
                   value$2,
@@ -9266,7 +9046,6 @@ function primary$1(env) {
           var value$3 = /* constructor */{
             tag: 0,
             name: "String",
-            length: 1,
             "0": value$2
           };
           return /* tuple */[
@@ -9274,7 +9053,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 19,
                     name: "Literal",
-                    length: 1,
                     "0": /* record */[
                       /* value */value$3,
                       /* raw */raw$3
@@ -9288,7 +9066,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 20,
                     name: "TemplateLiteral",
-                    length: 1,
                     "0": match$8[1]
                   }
                 ];
@@ -9305,7 +9082,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 18,
                     name: "Identifier",
-                    length: 1,
                     "0": id$1
                   }
                 ];
@@ -9319,7 +9095,6 @@ function primary$1(env) {
                   /* constructor */{
                     tag: 19,
                     name: "Literal",
-                    length: 1,
                     "0": /* record */[
                       /* value : Null */0,
                       /* raw */"null"
@@ -9333,7 +9108,6 @@ function primary$1(env) {
         var value$4 = /* constructor */{
           tag: 1,
           name: "Boolean",
-          length: 1,
           "0": token$5 === /* T_TRUE */29
         };
         return /* tuple */[
@@ -9341,7 +9115,6 @@ function primary$1(env) {
                 /* constructor */{
                   tag: 19,
                   name: "Literal",
-                  length: 1,
                   "0": /* record */[
                     /* value */value$4,
                     /* raw */raw$4
@@ -9359,7 +9132,6 @@ function tagged_template(env, tag, part) {
           /* constructor */{
             tag: 21,
             name: "TaggedTemplate",
-            length: 1,
             "0": /* record */[
               /* tag */tag,
               /* quasi */quasi
@@ -9378,7 +9150,6 @@ function sequence(env, _acc) {
       _acc = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": expr,
         "1": acc
       };
@@ -9392,7 +9163,6 @@ function sequence(env, _acc) {
             /* constructor */{
               tag: 4,
               name: "Sequence",
-              length: 1,
               "0": /* record */[/* expressions */expressions]
             }
           ];
@@ -9489,7 +9259,6 @@ function assignment_but_not_arrow_function(env) {
             /* constructor */{
               tag: 7,
               name: "Assignment",
-              length: 1,
               "0": /* record */[
                 /* operator */match,
                 /* left */left,
@@ -9575,7 +9344,6 @@ function assignment(env) {
               /* constructor */{
                 tag: 14,
                 name: "Yield",
-                length: 1,
                 "0": /* record */[
                   /* argument */argument,
                   /* delegate */delegate
@@ -9608,7 +9376,6 @@ function make_logical(left, right, operator, loc) {
           /* constructor */{
             tag: 9,
             name: "Logical",
-            length: 1,
             "0": /* record */[
               /* operator */operator,
               /* left */left,
@@ -9678,7 +9445,6 @@ function binary_op(env) {
           /* constructor */{
             tag: 0,
             name: "Left_assoc",
-            length: 1,
             "0": 6
           }
         ] : (
@@ -9687,7 +9453,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 6
               }
             ]
@@ -9700,7 +9465,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 2
               }
             ];
@@ -9711,7 +9475,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 3
               }
             ];
@@ -9722,7 +9485,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 4
               }
             ];
@@ -9733,7 +9495,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 5
               }
             ];
@@ -9744,7 +9505,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 5
               }
             ];
@@ -9755,7 +9515,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 5
               }
             ];
@@ -9766,7 +9525,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 5
               }
             ];
@@ -9777,7 +9535,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 6
               }
             ];
@@ -9788,7 +9545,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 6
               }
             ];
@@ -9799,7 +9555,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 6
               }
             ];
@@ -9810,7 +9565,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 6
               }
             ];
@@ -9821,7 +9575,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 7
               }
             ];
@@ -9832,7 +9585,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 7
               }
             ];
@@ -9843,7 +9595,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 7
               }
             ];
@@ -9854,7 +9605,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 8
               }
             ];
@@ -9865,7 +9615,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 8
               }
             ];
@@ -9876,7 +9625,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 9
               }
             ];
@@ -9887,7 +9635,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 9
               }
             ];
@@ -9898,7 +9645,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 1,
                 name: "Right_assoc",
-                length: 1,
                 "0": 10
               }
             ];
@@ -9909,7 +9655,6 @@ function binary_op(env) {
               /* constructor */{
                 tag: 0,
                 name: "Left_assoc",
-                length: 1,
                 "0": 9
               }
             ];
@@ -9948,7 +9693,6 @@ function make_binary(left, right, operator, loc) {
           /* constructor */{
             tag: 6,
             name: "Binary",
-            length: 1,
             "0": /* record */[
               /* operator */operator,
               /* left */left,
@@ -9986,7 +9730,6 @@ function add_to_stack(_right, _param, _rloc, _stack) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               right,
               /* tuple */[
@@ -10063,7 +9806,6 @@ function argument(env) {
       return /* constructor */{
               tag: 0,
               name: "Expression",
-              length: 1,
               "0": Curry._1(assignment, env)
             };
     } else {
@@ -10074,7 +9816,6 @@ function argument(env) {
       return /* constructor */{
               tag: 1,
               name: "Spread",
-              length: 1,
               "0": /* tuple */[
                 loc,
                 /* record */[/* argument */argument$1]
@@ -10085,7 +9826,6 @@ function argument(env) {
     return /* constructor */{
             tag: 0,
             name: "Expression",
-            length: 1,
             "0": Curry._1(assignment, env)
           };
   }
@@ -10101,7 +9841,6 @@ function arguments$prime(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": argument(env),
       "1": acc
     };
@@ -10133,7 +9872,6 @@ function template_parts(env, _quasis, _expressions) {
     var expressions$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": expr,
       "1": expressions
     };
@@ -10182,7 +9920,6 @@ function template_parts(env, _quasis, _expressions) {
       var quasis$1 = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           loc,
           match$2[1]
@@ -10219,7 +9956,6 @@ function template_parts(env, _quasis, _expressions) {
             List.rev(/* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": imaginary_quasi,
                   "1": quasis
                 }),
@@ -10235,7 +9971,6 @@ function template_literal(env, part) {
   token$4(env, /* constructor */{
         tag: 2,
         name: "T_TEMPLATE_PART",
-        length: 1,
         "0": part
       });
   var head_001 = /* record */[
@@ -10254,7 +9989,6 @@ function template_literal(env, part) {
       /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": head,
         "1": /* [] */0
       },
@@ -10262,7 +9996,6 @@ function template_literal(env, part) {
     ] : template_parts(env, /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": head,
           "1": /* [] */0
         }, /* [] */0);
@@ -10291,7 +10024,6 @@ function elements(env, _acc) {
                 _acc = /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": undefined,
                   "1": acc
                 };
@@ -10314,7 +10046,6 @@ function elements(env, _acc) {
                 var elem = /* constructor */{
                   tag: 1,
                   name: "Spread",
-                  length: 1,
                   "0": /* tuple */[
                     loc,
                     /* record */[/* argument */argument]
@@ -10323,7 +10054,6 @@ function elements(env, _acc) {
                 _acc = /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": elem,
                   "1": acc
                 };
@@ -10339,7 +10069,6 @@ function elements(env, _acc) {
     var elem$1 = /* constructor */{
       tag: 0,
       name: "Expression",
-      length: 1,
       "0": Curry._1(assignment, env)
     };
     if (Curry._2(Parser_env_Peek.token, undefined, env) !== /* T_RBRACKET */6) {
@@ -10348,7 +10077,6 @@ function elements(env, _acc) {
     _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": elem$1,
       "1": acc
     };
@@ -10399,7 +10127,6 @@ function try_arrow_function(env) {
     var param_001 = /* constructor */{
       tag: 3,
       name: "Identifier",
-      length: 1,
       "0": id
     };
     var param = /* tuple */[
@@ -10410,7 +10137,6 @@ function try_arrow_function(env) {
       /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": param,
         "1": /* [] */0
       },
@@ -10456,7 +10182,6 @@ function try_arrow_function(env) {
                   /* constructor */{
                     tag: 1,
                     name: "BodyExpression",
-                    length: 1,
                     "0": expr
                   },
                   env$2[/* in_strict_mode */5]
@@ -10474,7 +10199,6 @@ function try_arrow_function(env) {
           /* constructor */{
             tag: 3,
             name: "ArrowFunction",
-            length: 1,
             "0": /* record */[
               /* id */undefined,
               /* params */params,
@@ -10501,7 +10225,6 @@ function decorator_list_helper(env, _decorators) {
       _decorators = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": left_hand_side(env),
         "1": decorators
       };
@@ -10534,7 +10257,6 @@ function key(env) {
               /* constructor */{
                 tag: 2,
                 name: "Computed",
-                length: 1,
                 "0": expr
               }
             ];
@@ -10549,7 +10271,6 @@ function key(env) {
           var value$1 = /* constructor */{
             tag: 2,
             name: "Number",
-            length: 1,
             "0": value
           };
           return /* tuple */[
@@ -10557,7 +10278,6 @@ function key(env) {
                   /* constructor */{
                     tag: 0,
                     name: "Literal",
-                    length: 1,
                     "0": /* tuple */[
                       loc,
                       /* record */[
@@ -10579,7 +10299,6 @@ function key(env) {
           token$4(env, /* constructor */{
                 tag: 1,
                 name: "T_STRING",
-                length: 1,
                 "0": /* tuple */[
                   loc$1,
                   value$2,
@@ -10590,7 +10309,6 @@ function key(env) {
           var value$3 = /* constructor */{
             tag: 0,
             name: "String",
-            length: 1,
             "0": value$2
           };
           return /* tuple */[
@@ -10598,7 +10316,6 @@ function key(env) {
                   /* constructor */{
                     tag: 0,
                     name: "Literal",
-                    length: 1,
                     "0": /* tuple */[
                       loc$1,
                       /* record */[
@@ -10619,7 +10336,6 @@ function key(env) {
           /* constructor */{
             tag: 1,
             name: "Identifier",
-            length: 1,
             "0": id
           }
         ];
@@ -10649,13 +10365,11 @@ function _method(env, kind) {
         params = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             param[0],
             /* constructor */{
               tag: 3,
               name: "Identifier",
-              length: 1,
               "0": param
             }
           ],
@@ -10710,7 +10424,6 @@ function property$1(env) {
     return /* constructor */{
             tag: 1,
             name: "SpreadProperty",
-            length: 1,
             "0": /* tuple */[
               btwn(start_loc, argument[0]),
               /* record */[/* argument */argument]
@@ -10772,7 +10485,6 @@ function property$1(env) {
     return /* constructor */{
             tag: 0,
             name: "Property",
-            length: 1,
             "0": tmp
           };
   }
@@ -10785,7 +10497,6 @@ function get(env, start_loc) {
   var value_001 = /* constructor */{
     tag: 2,
     name: "Function",
-    length: 1,
     "0": match$1[1]
   };
   var value = /* tuple */[
@@ -10811,7 +10522,6 @@ function set(env, start_loc) {
   var value_001 = /* constructor */{
     tag: 2,
     name: "Function",
-    length: 1,
     "0": match$1[1]
   };
   var value = /* tuple */[
@@ -10883,7 +10593,6 @@ function init(env, start_loc, key, async, generator) {
                 /* constructor */{
                   tag: 19,
                   name: "Literal",
-                  length: 1,
                   "0": lit[1]
                 }
               ];
@@ -10895,7 +10604,6 @@ function init(env, start_loc, key, async, generator) {
                 /* constructor */{
                   tag: 18,
                   name: "Identifier",
-                  length: 1,
                   "0": id
                 }
               ];
@@ -10934,7 +10642,6 @@ function init(env, start_loc, key, async, generator) {
         var value_001 = /* constructor */{
           tag: 2,
           name: "Function",
-          length: 1,
           "0": /* record */[
             /* id */undefined,
             /* params */params,
@@ -11115,7 +10822,6 @@ function properties$1(env, _param) {
       /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": prop,
         "1": acc
       }
@@ -11156,7 +10862,6 @@ function class_implements(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": implement,
       "1": acc
     };
@@ -11201,7 +10906,6 @@ function init$1(env, start_loc, decorators, key, async, generator, $$static) {
     return /* constructor */{
             tag: 1,
             name: "Property",
-            length: 1,
             "0": /* tuple */[
               loc,
               /* record */[
@@ -11266,7 +10970,6 @@ function init$1(env, start_loc, decorators, key, async, generator, $$static) {
   return /* constructor */{
           tag: 0,
           name: "Method",
-          length: 1,
           "0": /* tuple */[
             btwn(start_loc, end_loc$1),
             /* record */[
@@ -11317,7 +11020,6 @@ function class_element(env) {
                       return /* constructor */{
                               tag: 0,
                               name: "Method",
-                              length: 1,
                               "0": /* tuple */[
                                 btwn(start_loc$1, value[0]),
                                 /* record */[
@@ -11359,7 +11061,6 @@ function class_element(env) {
                       return /* constructor */{
                               tag: 0,
                               name: "Method",
-                              length: 1,
                               "0": /* tuple */[
                                 btwn(start_loc$2, value$1[0]),
                                 /* record */[
@@ -11409,7 +11110,6 @@ function elements$1(env, _acc) {
     _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": Curry._1(class_element, env),
       "1": acc
     };
@@ -11482,7 +11182,6 @@ function class_declaration(env, decorators) {
           /* constructor */{
             tag: 20,
             name: "ClassDeclaration",
-            length: 1,
             "0": /* record */[
               /* id */id,
               /* body */body,
@@ -11541,7 +11240,6 @@ function class_expression(env) {
           /* constructor */{
             tag: 23,
             name: "Class",
-            length: 1,
             "0": /* record */[
               /* id */match$1[0],
               /* body */body,
@@ -11590,7 +11288,6 @@ function expression(env) {
           /* constructor */{
             tag: 1,
             name: "Expression",
-            length: 1,
             "0": /* record */[/* expression */expression$1]
           }
         ];
@@ -11609,7 +11306,6 @@ function declare_function(env, start_loc) {
   var value_001 = /* constructor */{
     tag: 1,
     name: "Function",
-    length: 1,
     "0": /* record */[
       /* params */match[1],
       /* returnType */returnType,
@@ -11672,7 +11368,6 @@ function declare($staropt$star, env) {
                         /* constructor */{
                           tag: 24,
                           name: "DeclareClass",
-                          length: 1,
                           "0": match$1[1]
                         }
                       ];
@@ -11740,7 +11435,6 @@ function declare($staropt$star, env) {
                   /* constructor */{
                     tag: 26,
                     name: "DeclareModuleExports",
-                    length: 1,
                     "0": type_annot
                   }
                 ];
@@ -11753,7 +11447,6 @@ function declare($staropt$star, env) {
             id = /* constructor */{
               tag: 0,
               name: "Identifier",
-              length: 1,
               "0": Curry._2(Parse.identifier, undefined, env$3)
             };
           } else if (match$3.tag === 1) {
@@ -11768,7 +11461,6 @@ function declare($staropt$star, env) {
             token$4(env$3, /* constructor */{
                   tag: 1,
                   name: "T_STRING",
-                  length: 1,
                   "0": /* tuple */[
                     loc$1,
                     value,
@@ -11779,13 +11471,11 @@ function declare($staropt$star, env) {
             var value$1 = /* constructor */{
               tag: 0,
               name: "String",
-              length: 1,
               "0": value
             };
             id = /* constructor */{
               tag: 1,
               name: "Literal",
-              length: 1,
               "0": /* tuple */[
                 loc$1,
                 /* record */[
@@ -11798,7 +11488,6 @@ function declare($staropt$star, env) {
             id = /* constructor */{
               tag: 0,
               name: "Identifier",
-              length: 1,
               "0": Curry._2(Parse.identifier, undefined, env$3)
             };
           }
@@ -11818,7 +11507,6 @@ function declare($staropt$star, env) {
           var kind = module_kind !== undefined ? module_kind : /* constructor */({
                 tag: 0,
                 name: "CommonJS",
-                length: 1,
                 "0": loc$2
               });
           return /* tuple */[
@@ -11826,7 +11514,6 @@ function declare($staropt$star, env) {
                   /* constructor */{
                     tag: 25,
                     name: "DeclareModule",
-                    length: 1,
                     "0": /* record */[
                       /* id */id,
                       /* body */body,
@@ -11905,7 +11592,6 @@ function export_specifiers_and_errs(env, _specifiers, _errs) {
     var errs$1 = err !== undefined ? /* constructor */({
           tag: 0,
           name: "::",
-          length: 2,
           "0": err,
           "1": errs
         }) : errs;
@@ -11913,7 +11599,6 @@ function export_specifiers_and_errs(env, _specifiers, _errs) {
     _specifiers = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": specifier,
       "1": specifiers
     };
@@ -11940,7 +11625,6 @@ function export_source(env) {
     token$4(env, /* constructor */{
           tag: 1,
           name: "T_STRING",
-          length: 1,
           "0": /* tuple */[
             loc,
             value,
@@ -11951,7 +11635,6 @@ function export_source(env) {
     var value$1 = /* constructor */{
       tag: 0,
       name: "String",
-      length: 1,
       "0": value
     };
     return /* tuple */[
@@ -11966,7 +11649,6 @@ function export_source(env) {
   var value$2 = /* constructor */{
     tag: 0,
     name: "String",
-    length: 1,
     "0": raw$1
   };
   var ret_000 = Curry._2(Parser_env_Peek.loc, undefined, env);
@@ -12002,7 +11684,6 @@ function declare_function_statement(env, start_loc) {
           /* constructor */{
             tag: 23,
             name: "DeclareFunction",
-            length: 1,
             "0": match[1]
           }
         ];
@@ -12016,7 +11697,6 @@ function type_alias(env) {
             /* constructor */{
               tag: 7,
               name: "TypeAlias",
-              length: 1,
               "0": match[1]
             }
           ];
@@ -12032,7 +11712,6 @@ function declare_var_statement(env, start_loc) {
           /* constructor */{
             tag: 22,
             name: "DeclareVariable",
-            length: 1,
             "0": match[1]
           }
         ];
@@ -12046,7 +11725,6 @@ function $$interface(env) {
             /* constructor */{
               tag: 21,
               name: "InterfaceDeclaration",
-              length: 1,
               "0": match[1]
             }
           ];
@@ -12079,7 +11757,6 @@ function declare_export_declaration($staropt$star, env) {
           var specifiers = /* constructor */{
             tag: 1,
             name: "ExportBatchSpecifier",
-            length: 2,
             "0": loc,
             "1": local_name
           };
@@ -12093,7 +11770,6 @@ function declare_export_declaration($staropt$star, env) {
                   /* constructor */{
                     tag: 27,
                     name: "DeclareExportDeclaration",
-                    length: 1,
                     "0": /* record */[
                       /* default */false,
                       /* declaration */undefined,
@@ -12112,13 +11788,11 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 27,
                   name: "DeclareExportDeclaration",
-                  length: 1,
                   "0": /* record */[
                     /* default */false,
                     /* declaration *//* constructor */{
                       tag: 4,
                       name: "NamedType",
-                      length: 1,
                       "0": /* tuple */[
                         alias_loc,
                         match$2[1]
@@ -12142,13 +11816,11 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 27,
                   name: "DeclareExportDeclaration",
-                  length: 1,
                   "0": /* record */[
                     /* default */false,
                     /* declaration *//* constructor */{
                       tag: 5,
                       name: "Interface",
-                      length: 1,
                       "0": /* tuple */[
                         iface_loc,
                         match$3[1]
@@ -12180,7 +11852,6 @@ function declare_export_declaration($staropt$star, env) {
                     /* constructor */{
                       tag: 2,
                       name: "Class",
-                      length: 1,
                       "0": _class
                     }
                   ];
@@ -12192,7 +11863,6 @@ function declare_export_declaration($staropt$star, env) {
                   /* constructor */{
                     tag: 1,
                     name: "Function",
-                    length: 1,
                     "0": fn
                   }
                 ];
@@ -12210,7 +11880,6 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 3,
                   name: "DefaultType",
-                  length: 1,
                   "0": _type$1
                 }
               ];
@@ -12220,7 +11889,6 @@ function declare_export_declaration($staropt$star, env) {
                     /* constructor */{
                       tag: 27,
                       name: "DeclareExportDeclaration",
-                      length: 1,
                       "0": /* record */[
                         /* default */true,
                         /* declaration */match$5[1],
@@ -12285,7 +11953,6 @@ function declare_export_declaration($staropt$star, env) {
         var specifiers$1 = /* constructor */{
           tag: 0,
           name: "ExportSpecifiers",
-          length: 1,
           "0": match$8[0]
         };
         var end_loc$2 = Curry._2(Parser_env_Peek.loc, undefined, env$1);
@@ -12303,7 +11970,6 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 27,
                   name: "DeclareExportDeclaration",
-                  length: 1,
                   "0": /* record */[
                     /* default */false,
                     /* declaration */undefined,
@@ -12328,7 +11994,6 @@ function declare_export_declaration($staropt$star, env) {
                   /* constructor */{
                     tag: 2,
                     name: "Class",
-                    length: 1,
                     "0": _class$1
                   }
                 ];
@@ -12345,7 +12010,6 @@ function declare_export_declaration($staropt$star, env) {
               /* constructor */{
                 tag: 1,
                 name: "Function",
-                length: 1,
                 "0": fn$1
               }
             ];
@@ -12381,7 +12045,6 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 0,
                   name: "Variable",
-                  length: 1,
                   "0": $$var
                 }
               ];
@@ -12393,7 +12056,6 @@ function declare_export_declaration($staropt$star, env) {
                 /* constructor */{
                   tag: 27,
                   name: "DeclareExportDeclaration",
-                  length: 1,
                   "0": /* record */[
                     /* default */false,
                     /* declaration */match$10[1],
@@ -12413,7 +12075,6 @@ function supers(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": $$super,
       "1": acc
     };
@@ -12458,7 +12119,6 @@ function supers$1(env, _acc) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": $$super,
       "1": acc
     };
@@ -12552,7 +12212,6 @@ function module_items(env, _module_kind, _acc) {
             module_kind$1 = /* constructor */{
               tag: 0,
               name: "CommonJS",
-              length: 1,
               "0": loc
             };
             break;
@@ -12568,7 +12227,6 @@ function module_items(env, _module_kind, _acc) {
                   module_kind$1 = /* constructor */{
                     tag: 1,
                     name: "ES",
-                    length: 1,
                     "0": loc
                   };
               }
@@ -12576,7 +12234,6 @@ function module_items(env, _module_kind, _acc) {
               module_kind$1 = /* constructor */{
                 tag: 1,
                 name: "ES",
-                length: 1,
                 "0": loc
               };
             }
@@ -12588,7 +12245,6 @@ function module_items(env, _module_kind, _acc) {
     _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": stmt,
       "1": acc
     };
@@ -12631,7 +12287,6 @@ function fold(acc, _param) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     match$1[0],
                     match$1[1][/* name */0]
@@ -12696,7 +12351,6 @@ function _if(env) {
           /* constructor */{
             tag: 2,
             name: "If",
-            length: 1,
             "0": /* record */[
               /* test */test,
               /* consequent */consequent,
@@ -12753,7 +12407,6 @@ function case_list(env, _param) {
     var acc$1 = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         btwn(start_loc, end_loc$1),
         /* record */[
@@ -12802,7 +12455,6 @@ function source(env) {
     token$4(env, /* constructor */{
           tag: 1,
           name: "T_STRING",
-          length: 1,
           "0": /* tuple */[
             loc,
             value,
@@ -12813,7 +12465,6 @@ function source(env) {
     var value$1 = /* constructor */{
       tag: 0,
       name: "String",
-      length: 1,
       "0": value
     };
     return /* tuple */[
@@ -12828,7 +12479,6 @@ function source(env) {
   var value$2 = /* constructor */{
     tag: 0,
     name: "String",
-    length: 1,
     "0": raw$1
   };
   var ret_000 = Curry._2(Parser_env_Peek.loc, undefined, env);
@@ -12861,7 +12511,6 @@ function specifier_list(env, _acc) {
       specifier = /* constructor */{
         tag: 0,
         name: "ImportNamedSpecifier",
-        length: 1,
         "0": /* record */[
           /* local */local,
           /* remote */remote
@@ -12874,7 +12523,6 @@ function specifier_list(env, _acc) {
       specifier = /* constructor */{
         tag: 0,
         name: "ImportNamedSpecifier",
-        length: 1,
         "0": /* record */[
           /* local */undefined,
           /* remote */remote
@@ -12887,7 +12535,6 @@ function specifier_list(env, _acc) {
     _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": specifier,
       "1": acc
     };
@@ -12905,11 +12552,9 @@ function named_or_namespace_specifier(env) {
     return /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* constructor */{
               tag: 2,
               name: "ImportNamespaceSpecifier",
-              length: 1,
               "0": /* tuple */[
                 btwn(start_loc, id[0]),
                 id
@@ -12946,7 +12591,6 @@ function from_expr(env, param) {
                       return /* constructor */{
                               tag: 1,
                               name: "Spread",
-                              length: 1,
                               "0": /* tuple */[
                                 match$1[0],
                                 /* record */[/* argument */argument]
@@ -12957,7 +12601,6 @@ function from_expr(env, param) {
                       return /* constructor */{
                               tag: 0,
                               name: "Element",
-                              length: 1,
                               "0": Curry._2(Parse.pattern_from_expr, env$2, /* tuple */[
                                     match$2[0],
                                     match$2[1]
@@ -12972,7 +12615,6 @@ function from_expr(env, param) {
                   /* constructor */{
                     tag: 1,
                     name: "Array",
-                    length: 1,
                     "0": /* record */[
                       /* elements */elements,
                       /* typeAnnotation */undefined
@@ -12994,7 +12636,6 @@ function from_expr(env, param) {
                     return /* constructor */{
                             tag: 1,
                             name: "SpreadProperty",
-                            length: 1,
                             "0": /* tuple */[
                               match[0],
                               /* record */[/* argument */argument]
@@ -13010,7 +12651,6 @@ function from_expr(env, param) {
                           key$1 = /* constructor */{
                             tag: 0,
                             name: "Literal",
-                            length: 1,
                             "0": key[0]
                           };
                           break;
@@ -13018,7 +12658,6 @@ function from_expr(env, param) {
                           key$1 = /* constructor */{
                             tag: 1,
                             name: "Identifier",
-                            length: 1,
                             "0": key[0]
                           };
                           break;
@@ -13026,7 +12665,6 @@ function from_expr(env, param) {
                           key$1 = /* constructor */{
                             tag: 2,
                             name: "Computed",
-                            length: 1,
                             "0": key[0]
                           };
                           break;
@@ -13036,7 +12674,6 @@ function from_expr(env, param) {
                     return /* constructor */{
                             tag: 0,
                             name: "Property",
-                            length: 1,
                             "0": /* tuple */[
                               match$1[0],
                               /* record */[
@@ -13053,7 +12690,6 @@ function from_expr(env, param) {
                   /* constructor */{
                     tag: 0,
                     name: "Object",
-                    length: 1,
                     "0": /* record */[
                       /* properties */properties,
                       /* typeAnnotation */undefined
@@ -13068,7 +12704,6 @@ function from_expr(env, param) {
                     /* constructor */{
                       tag: 2,
                       name: "Assignment",
-                      length: 1,
                       "0": /* record */[
                         /* left */match[/* left */1],
                         /* right */match[/* right */2]
@@ -13083,7 +12718,6 @@ function from_expr(env, param) {
                   /* constructor */{
                     tag: 3,
                     name: "Identifier",
-                    length: 1,
                     "0": expr[0]
                   }
                 ];
@@ -13096,7 +12730,6 @@ function from_expr(env, param) {
           /* constructor */{
             tag: 4,
             name: "Expression",
-            length: 1,
             "0": /* tuple */[
               loc,
               expr
@@ -13114,7 +12747,6 @@ function _object$2(restricted_error) {
       return /* constructor */{
               tag: 1,
               name: "SpreadProperty",
-              length: 1,
               "0": /* tuple */[
                 loc,
                 /* record */[/* argument */argument]
@@ -13129,7 +12761,6 @@ function _object$2(restricted_error) {
             key = /* constructor */{
               tag: 0,
               name: "Literal",
-              length: 1,
               "0": match$1[0]
             };
             break;
@@ -13137,7 +12768,6 @@ function _object$2(restricted_error) {
             key = /* constructor */{
               tag: 1,
               name: "Identifier",
-              length: 1,
               "0": match$1[0]
             };
             break;
@@ -13145,7 +12775,6 @@ function _object$2(restricted_error) {
             key = /* constructor */{
               tag: 2,
               name: "Computed",
-              length: 1,
               "0": match$1[0]
             };
             break;
@@ -13171,7 +12800,6 @@ function _object$2(restricted_error) {
               var pattern_001 = /* constructor */{
                 tag: 3,
                 name: "Identifier",
-                length: 1,
                 "0": id
               };
               var pattern$2 = /* tuple */[
@@ -13205,7 +12833,6 @@ function _object$2(restricted_error) {
             /* constructor */{
               tag: 2,
               name: "Assignment",
-              length: 1,
               "0": /* record */[
                 /* left */pattern$3,
                 /* right */$$default
@@ -13219,7 +12846,6 @@ function _object$2(restricted_error) {
         return /* constructor */{
                 tag: 0,
                 name: "Property",
-                length: 1,
                 "0": /* tuple */[
                   loc$2,
                   /* record */[
@@ -13249,7 +12875,6 @@ function _object$2(restricted_error) {
         _acc = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": match$1,
           "1": acc
         };
@@ -13283,7 +12908,6 @@ function _object$2(restricted_error) {
               /* constructor */{
                 tag: 0,
                 name: "Object",
-                length: 1,
                 "0": /* record */[
                   /* properties */properties$1,
                   /* typeAnnotation */match[1]
@@ -13309,7 +12933,6 @@ function _array(restricted_error) {
                   _acc = /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": undefined,
                     "1": acc
                   };
@@ -13332,7 +12955,6 @@ function _array(restricted_error) {
                   var element = /* constructor */{
                     tag: 1,
                     name: "Spread",
-                    length: 1,
                     "0": /* tuple */[
                       loc,
                       /* record */[/* argument */argument]
@@ -13341,7 +12963,6 @@ function _array(restricted_error) {
                   _acc = /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": element,
                     "1": acc
                   };
@@ -13366,7 +12987,6 @@ function _array(restricted_error) {
           /* constructor */{
             tag: 2,
             name: "Assignment",
-            length: 1,
             "0": /* record */[
               /* left */pattern$2,
               /* right */$$default
@@ -13379,7 +12999,6 @@ function _array(restricted_error) {
       var element$1 = /* constructor */{
         tag: 0,
         name: "Element",
-        length: 1,
         "0": pattern$3
       };
       if (Curry._2(Parser_env_Peek.token, undefined, env) !== /* T_RBRACKET */6) {
@@ -13388,7 +13007,6 @@ function _array(restricted_error) {
       _acc = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": element$1,
         "1": acc
       };
@@ -13419,7 +13037,6 @@ function _array(restricted_error) {
               /* constructor */{
                 tag: 1,
                 name: "Array",
-                length: 1,
                 "0": /* record */[
                   /* elements */elements$1,
                   /* typeAnnotation */match[1]
@@ -13447,7 +13064,6 @@ function pattern$1(env, restricted_error) {
           /* constructor */{
             tag: 3,
             name: "Identifier",
-            length: 1,
             "0": id
           }
         ];
@@ -13478,14 +13094,12 @@ function expression_container(env) {
     expression = /* constructor */{
       tag: 1,
       name: "EmptyExpression",
-      length: 1,
       "0": empty_loc
     };
   } else {
     expression = /* constructor */{
       tag: 0,
       name: "Expression",
-      length: 1,
       "0": Curry._1(Parse.expression, env)
     };
   }
@@ -13516,7 +13130,6 @@ function member_expression(env, _member) {
       var _object = /* constructor */{
         tag: 1,
         name: "MemberExpression",
-        length: 1,
         "0": member
       };
       token$4(env, /* T_PERIOD */9);
@@ -13547,7 +13160,6 @@ function name(env) {
         return /* constructor */{
                 tag: 0,
                 name: "Identifier",
-                length: 1,
                 "0": name$1
               };
       } else {
@@ -13557,7 +13169,6 @@ function name(env) {
         return /* constructor */{
                 tag: 1,
                 name: "NamespacedName",
-                length: 1,
                 "0": /* tuple */[
                   loc,
                   /* record */[
@@ -13571,7 +13182,6 @@ function name(env) {
       var _object = /* constructor */{
         tag: 0,
         name: "Identifier",
-        length: 1,
         "0": name$1
       };
       token$4(env, /* T_PERIOD */9);
@@ -13588,7 +13198,6 @@ function name(env) {
       return /* constructor */{
               tag: 2,
               name: "MemberExpression",
-              length: 1,
               "0": member_expression(env, member)
             };
     }
@@ -13596,7 +13205,6 @@ function name(env) {
     return /* constructor */{
             tag: 0,
             name: "Identifier",
-            length: 1,
             "0": name$1
           };
   }
@@ -13615,7 +13223,6 @@ function attribute(env) {
       /* constructor */{
         tag: 1,
         name: "NamespacedName",
-        length: 1,
         "0": /* tuple */[
           loc,
           /* record */[
@@ -13631,7 +13238,6 @@ function attribute(env) {
       /* constructor */{
         tag: 0,
         name: "Identifier",
-        length: 1,
         "0": name
       }
     ];
@@ -13655,7 +13261,6 @@ function attribute(env) {
           /* constructor */{
             tag: 1,
             name: "ExpressionContainer",
-            length: 2,
             "0": loc$1,
             "1": expression_container$1
           }
@@ -13670,7 +13275,6 @@ function attribute(env) {
       var value = /* constructor */{
         tag: 0,
         name: "String",
-        length: 1,
         "0": match$4[1]
       };
       match$1 = /* tuple */[
@@ -13678,7 +13282,6 @@ function attribute(env) {
         /* constructor */{
           tag: 0,
           name: "Literal",
-          length: 2,
           "0": loc$2,
           "1": /* record */[
             /* value */value,
@@ -13697,13 +13300,11 @@ function attribute(env) {
         /* constructor */{
           tag: 0,
           name: "Literal",
-          length: 2,
           "0": loc$3,
           "1": /* record */[
             /* value : constructor */{
               tag: 0,
               name: "String",
-              length: 1,
               "0": ""
             },
             /* raw */""
@@ -13746,13 +13347,11 @@ function attributes(env, _acc) {
         var attribute$1 = /* constructor */{
           tag: 1,
           name: "SpreadAttribute",
-          length: 1,
           "0": spread_attribute(env)
         };
         _acc = /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": attribute$1,
           "1": acc
         };
@@ -13762,13 +13361,11 @@ function attributes(env, _acc) {
     var attribute$2 = /* constructor */{
       tag: 0,
       name: "Attribute",
-      length: 1,
       "0": attribute(env)
     };
     _acc = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": attribute$2,
       "1": acc
     };
@@ -13818,7 +13415,6 @@ function child(env) {
               /* constructor */{
                 tag: 1,
                 name: "ExpressionContainer",
-                length: 1,
                 "0": expression_container$1[1]
               }
             ];
@@ -13832,7 +13428,6 @@ function child(env) {
             /* constructor */{
               tag: 2,
               name: "Text",
-              length: 1,
               "0": /* record */[
                 /* value */match[1],
                 /* raw */match[2]
@@ -13846,7 +13441,6 @@ function child(env) {
           /* constructor */{
             tag: 0,
             name: "Element",
-            length: 1,
             "0": element$1[1]
           }
         ];
@@ -13870,14 +13464,12 @@ function element_or_closing(env) {
         return /* constructor */{
                 tag: 1,
                 name: "ChildElement",
-                length: 1,
                 "0": Curry._2(element_without_lt, env, start_loc)
               };
       } else {
         return /* constructor */{
                 tag: 0,
                 name: "Closing",
-                length: 1,
                 "0": closing_element_without_lt(env, start_loc)
               };
       }
@@ -13885,7 +13477,6 @@ function element_or_closing(env) {
       return /* constructor */{
               tag: 0,
               name: "Closing",
-              length: 1,
               "0": closing_element_without_lt(env, start_loc)
             };
     }
@@ -13893,7 +13484,6 @@ function element_or_closing(env) {
     return /* constructor */{
             tag: 1,
             name: "ChildElement",
-            length: 1,
             "0": Curry._2(element_without_lt, env, start_loc)
           };
   }
@@ -13909,7 +13499,6 @@ function children_and_closing(env, _acc) {
           _acc = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": child(env),
             "1": acc
           };
@@ -13929,7 +13518,6 @@ function children_and_closing(env, _acc) {
           var element_001 = /* constructor */{
             tag: 0,
             name: "Element",
-            length: 1,
             "0": element[1]
           };
           var element$1 = /* tuple */[
@@ -13939,7 +13527,6 @@ function children_and_closing(env, _acc) {
           _acc = /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": element$1,
             "1": acc
           };
@@ -13955,7 +13542,6 @@ function children_and_closing(env, _acc) {
       _acc = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": child(env),
         "1": acc
       };
@@ -13978,7 +13564,6 @@ function normalize(name) {
         _object$1 = _object.tag ? normalize(/* constructor */{
                 tag: 2,
                 name: "MemberExpression",
-                length: 1,
                 "0": _object[0]
               }) : _object[0][1][/* name */0];
         return _object$1 + ("." + match$1[/* property */1][1][/* name */0]);
@@ -14001,7 +13586,6 @@ function element_without_lt(env, start_loc) {
       error$1(env, /* constructor */{
             tag: 6,
             name: "ExpectedJSXClosingTag",
-            length: 1,
             "0": opening_name
           });
     }
@@ -14067,13 +13651,11 @@ function module_item(env) {
                                 /* constructor */{
                                   tag: 28,
                                   name: "ExportDeclaration",
-                                  length: 1,
                                   "0": /* record */[
                                     /* default */false,
                                     /* declaration *//* constructor */{
                                       tag: 0,
                                       name: "Declaration",
-                                      length: 1,
                                       "0": $$interface$1
                                     },
                                     /* specifiers */undefined,
@@ -14111,13 +13693,11 @@ function module_item(env) {
                                   /* constructor */{
                                     tag: 28,
                                     name: "ExportDeclaration",
-                                    length: 1,
                                     "0": /* record */[
                                       /* default */false,
                                       /* declaration *//* constructor */{
                                         tag: 0,
                                         name: "Declaration",
-                                        length: 1,
                                         "0": type_alias$1
                                       },
                                       /* specifiers */undefined,
@@ -14154,7 +13734,6 @@ function module_item(env) {
                 var specifiers = /* constructor */{
                   tag: 1,
                   name: "ExportBatchSpecifier",
-                  length: 2,
                   "0": loc,
                   "1": local_name
                 };
@@ -14168,7 +13747,6 @@ function module_item(env) {
                         /* constructor */{
                           tag: 28,
                           name: "ExportDeclaration",
-                          length: 1,
                           "0": /* record */[
                             /* default */false,
                             /* declaration */undefined,
@@ -14197,7 +13775,6 @@ function module_item(env) {
                         /* constructor */{
                           tag: 0,
                           name: "Declaration",
-                          length: 1,
                           "0": fn
                         }
                       ];
@@ -14212,7 +13789,6 @@ function module_item(env) {
                           /* constructor */{
                             tag: 0,
                             name: "Declaration",
-                            length: 1,
                             "0": _class
                           }
                         ];
@@ -14226,7 +13802,6 @@ function module_item(env) {
                           /* constructor */{
                             tag: 1,
                             name: "Expression",
-                            length: 1,
                             "0": expr
                           }
                         ];
@@ -14237,7 +13812,6 @@ function module_item(env) {
                             /* constructor */{
                               tag: 28,
                               name: "ExportDeclaration",
-                              length: 1,
                               "0": /* record */[
                                 /* default */true,
                                 /* declaration */match$6[1],
@@ -14293,7 +13867,6 @@ function module_item(env) {
                 var specifiers$1 = /* constructor */{
                   tag: 0,
                   name: "ExportSpecifiers",
-                  length: 1,
                   "0": match$9[0]
                 };
                 var end_loc$4 = Curry._2(Parser_env_Peek.loc, undefined, env$2);
@@ -14311,7 +13884,6 @@ function module_item(env) {
                         /* constructor */{
                           tag: 28,
                           name: "ExportDeclaration",
-                          length: 1,
                           "0": /* record */[
                             /* default */false,
                             /* declaration */undefined,
@@ -14339,7 +13911,6 @@ function module_item(env) {
                           names = /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": /* tuple */[
                               loc$1,
                               extract_ident_name(match$12)
@@ -14361,7 +13932,6 @@ function module_item(env) {
                                 var param$2 = /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": id,
                                   "1": /* [] */0
                                 };
@@ -14374,7 +13944,6 @@ function module_item(env) {
                           names = /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": /* tuple */[
                               loc$1,
                               extract_ident_name(match$13)
@@ -14402,7 +13971,6 @@ function module_item(env) {
                 var declaration = /* constructor */{
                   tag: 0,
                   name: "Declaration",
-                  length: 1,
                   "0": stmt
                 };
                 return /* tuple */[
@@ -14410,7 +13978,6 @@ function module_item(env) {
                         /* constructor */{
                           tag: 28,
                           name: "ExportDeclaration",
-                          length: 1,
                           "0": /* record */[
                             /* default */false,
                             /* declaration */declaration,
@@ -14484,7 +14051,6 @@ function module_item(env) {
             token$4(env$4, /* constructor */{
                   tag: 1,
                   name: "T_STRING",
-                  length: 1,
                   "0": /* tuple */[
                     str_loc,
                     value,
@@ -14495,7 +14061,6 @@ function module_item(env) {
             var value$1 = /* constructor */{
               tag: 0,
               name: "String",
-              length: 1,
               "0": value
             };
             var source_001 = /* record */[
@@ -14514,7 +14079,6 @@ function module_item(env) {
                     /* constructor */{
                       tag: 29,
                       name: "ImportDeclaration",
-                      length: 1,
                       "0": /* record */[
                         /* importKind */importKind,
                         /* source */source$4,
@@ -14536,7 +14100,6 @@ function module_item(env) {
                     /* constructor */{
                       tag: 29,
                       name: "ImportDeclaration",
-                      length: 1,
                       "0": /* record */[
                         /* importKind */importKind,
                         /* source */source$5,
@@ -14560,7 +14123,6 @@ function module_item(env) {
                   /* constructor */{
                     tag: 1,
                     name: "ImportDefaultSpecifier",
-                    length: 1,
                     "0": type_ident$1
                   }
                 ];
@@ -14571,7 +14133,6 @@ function module_item(env) {
                 /* constructor */{
                   tag: 1,
                   name: "ImportDefaultSpecifier",
-                  length: 1,
                   "0": type_ident$1
                 }
               ];
@@ -14585,7 +14146,6 @@ function module_item(env) {
               /* constructor */{
                 tag: 1,
                 name: "ImportDefaultSpecifier",
-                length: 1,
                 "0": Curry._2(Parse.identifier, undefined, env$4)
               }
             ];
@@ -14601,14 +14161,12 @@ function module_item(env) {
                   /* constructor */{
                     tag: 29,
                     name: "ImportDeclaration",
-                    length: 1,
                     "0": /* record */[
                       /* importKind */match$23[0],
                       /* source */source$6,
                       /* specifiers : constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": match$23[1],
                         "1": additional_specifiers
                       }
@@ -14658,7 +14216,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 0,
                           name: "Block",
-                          length: 1,
                           "0": match$1[1]
                         }
                       ];
@@ -14690,7 +14247,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 9,
                           name: "Return",
-                          length: 1,
                           "0": /* record */[/* argument */argument]
                         }
                       ];
@@ -14713,7 +14269,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 8,
                           name: "Switch",
-                          length: 1,
                           "0": /* record */[
                             /* discriminant */discriminant,
                             /* cases */cases,
@@ -14740,7 +14295,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 10,
                           name: "Throw",
-                          length: 1,
                           "0": /* record */[/* argument */argument$1]
                         }
                       ];
@@ -14760,7 +14314,6 @@ function statement(env) {
                   var param_001 = /* constructor */{
                     tag: 3,
                     name: "Identifier",
-                    length: 1,
                     "0": id
                   };
                   var param = /* tuple */[
@@ -14794,7 +14347,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 11,
                           name: "Try",
-                          length: 1,
                           "0": /* record */[
                             /* block */block,
                             /* handler */handler,
@@ -14818,7 +14370,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 12,
                           name: "While",
-                          length: 1,
                           "0": /* record */[
                             /* test */test,
                             /* body */body$1
@@ -14843,7 +14394,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 6,
                           name: "With",
-                          length: 1,
                           "0": /* record */[
                             /* _object */_object,
                             /* body */body$2
@@ -14864,7 +14414,6 @@ function statement(env) {
                     error$1(env$9, /* constructor */{
                           tag: 4,
                           name: "UnknownLabel",
-                          length: 1,
                           "0": name
                         });
                   }
@@ -14887,7 +14436,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 4,
                           name: "Break",
-                          length: 1,
                           "0": /* record */[/* label */label]
                         }
                       ];
@@ -14905,7 +14453,6 @@ function statement(env) {
                     error$1(env$10, /* constructor */{
                           tag: 4,
                           name: "UnknownLabel",
-                          length: 1,
                           "0": name$1
                         });
                   }
@@ -14928,7 +14475,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 5,
                           name: "Continue",
-                          length: 1,
                           "0": /* record */[/* label */label$2]
                         }
                       ];
@@ -14952,7 +14498,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 13,
                           name: "DoWhile",
-                          length: 1,
                           "0": /* record */[
                             /* body */body$3,
                             /* test */test$1
@@ -14979,7 +14524,6 @@ function statement(env) {
                               /* constructor */{
                                 tag: 0,
                                 name: "InitDeclaration",
-                                length: 1,
                                 "0": match$11[0]
                               },
                               match$11[1]
@@ -14995,7 +14539,6 @@ function statement(env) {
                               /* constructor */{
                                 tag: 0,
                                 name: "InitDeclaration",
-                                length: 1,
                                 "0": match$12[0]
                               },
                               match$12[1]
@@ -15007,7 +14550,6 @@ function statement(env) {
                               /* constructor */{
                                 tag: 0,
                                 name: "InitDeclaration",
-                                length: 1,
                                 "0": match$13[0]
                               },
                               match$13[1]
@@ -15033,7 +14575,6 @@ function statement(env) {
                     /* constructor */{
                       tag: 1,
                       name: "InitExpression",
-                      length: 1,
                       "0": expr
                     },
                     /* [] */0
@@ -15051,12 +14592,10 @@ function statement(env) {
                         left = match$15.tag ? /* constructor */({
                               tag: 1,
                               name: "LeftExpression",
-                              length: 1,
                               "0": match$15[0]
                             }) : /* constructor */({
                               tag: 0,
                               name: "LeftDeclaration",
-                              length: 1,
                               "0": match$15[0]
                             });
                       } else {
@@ -15078,7 +14617,6 @@ function statement(env) {
                               /* constructor */{
                                 tag: 16,
                                 name: "ForOf",
-                                length: 1,
                                 "0": /* record */[
                                   /* left */left,
                                   /* right */right,
@@ -15096,12 +14634,10 @@ function statement(env) {
                       left$1 = match$16.tag ? /* constructor */({
                             tag: 1,
                             name: "LeftExpression",
-                            length: 1,
                             "0": match$16[0]
                           }) : /* constructor */({
                             tag: 0,
                             name: "LeftDeclaration",
-                            length: 1,
                             "0": match$16[0]
                           });
                     } else {
@@ -15123,7 +14659,6 @@ function statement(env) {
                             /* constructor */{
                               tag: 15,
                               name: "ForIn",
-                              length: 1,
                               "0": /* record */[
                                 /* left */left$1,
                                 /* right */right$1,
@@ -15152,7 +14687,6 @@ function statement(env) {
                         /* constructor */{
                           tag: 14,
                           name: "For",
-                          length: 1,
                           "0": /* record */[
                             /* init */init,
                             /* test */test$2,
@@ -15248,7 +14782,6 @@ function statement(env) {
                   /* constructor */{
                     tag: 5,
                     name: "Redeclaration",
-                    length: 2,
                     "0": "Label",
                     "1": name$2
                   }
@@ -15261,7 +14794,6 @@ function statement(env) {
                   /* constructor */{
                     tag: 3,
                     name: "Labeled",
-                    length: 1,
                     "0": /* record */[
                       /* label */label$4,
                       /* body */labeled_stmt
@@ -15277,7 +14809,6 @@ function statement(env) {
                 /* constructor */{
                   tag: 1,
                   name: "Expression",
-                  length: 1,
                   "0": /* record */[/* expression */expr$1]
                 }
               ];
@@ -15379,7 +14910,6 @@ function statement_list_item($staropt$star, env) {
                   /* constructor */{
                     tag: 17,
                     name: "Let",
-                    length: 1,
                     "0": /* record */[
                       /* head */head,
                       /* body */body
@@ -15391,7 +14921,6 @@ function statement_list_item($staropt$star, env) {
           var declaration = /* constructor */{
             tag: 19,
             name: "VariableDeclaration",
-            length: 1,
             "0": /* record */[
               /* declarations */match$3[1],
               /* kind : Let */1
@@ -15459,7 +14988,6 @@ function module_body(term_fn, env) {
       _acc = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": module_item(env$1),
         "1": acc
       };
@@ -15499,7 +15027,6 @@ function statement_list(_env, term_fn, item_fn, _param) {
       var stmts$1 = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": possible_directive,
         "1": stmts
       };
@@ -15534,7 +15061,6 @@ function statement_list(_env, term_fn, item_fn, _param) {
             var string_tokens$1 = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": string_token,
               "1": string_tokens
             };
@@ -15599,7 +15125,6 @@ function statement_list$1(term_fn, env) {
       _acc = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": statement_list_item(undefined, env$1),
         "1": acc
       };
@@ -15620,7 +15145,6 @@ function identifier$2(restricted_error, env) {
       error$1(env, /* constructor */{
             tag: 1,
             name: "UnexpectedToken",
-            length: 1,
             "0": name
           });
     }
@@ -15667,7 +15191,6 @@ function statement_list_with_directives(term_fn, env) {
           return /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": stmt,
                   "1": acc
                 };
@@ -15685,7 +15208,6 @@ function module_body_with_directives(env, term_fn) {
                 return /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": stmt,
                         "1": acc
                       };
@@ -15714,7 +15236,6 @@ function expression$1(env) {
     return sequence(env, /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": expr,
                 "1": /* [] */0
               });
@@ -15815,7 +15336,6 @@ function predicate(env) {
               /* constructor */{
                 tag: 0,
                 name: "Declared",
-                length: 1,
                 "0": exp
               }
             ];
@@ -15999,7 +15519,6 @@ function regexp$1(loc, pattern, flags) {
     translation_errors[0] = /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         loc,
         /* InvalidRegExp */12
@@ -18424,14 +17943,12 @@ function eq(loc, x, y) {
   suites[0] = /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       loc + (" id " + String(test_id[0])),
       (function (param) {
           return /* constructor */{
                   tag: 0,
                   name: "Eq",
-                  length: 2,
                   "0": x,
                   "1": y
                 };

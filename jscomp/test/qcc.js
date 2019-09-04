@@ -203,7 +203,6 @@ function next(param) {
               return /* constructor */{
                       tag: 1,
                       name: "ILit",
-                      length: 1,
                       "0": n
                     };
             } else {
@@ -225,7 +224,6 @@ function next(param) {
         return /* constructor */{
                 tag: 1,
                 name: "ILit",
-                length: 1,
                 "0": ch
               };
       }
@@ -246,7 +244,6 @@ function next(param) {
           return /* constructor */{
                   tag: 2,
                   name: "SLit",
-                  length: 2,
                   "0": (b + 232 | 0) + 4194304 | 0,
                   "1": Bytes.to_string(Bytes.sub(glo, b, e - b | 0))
                 };
@@ -268,7 +265,6 @@ function next(param) {
           return /* constructor */{
                   tag: 3,
                   name: "Sym",
-                  length: 1,
                   "0": addsym(Bytes.to_string(Bytes.sub(s, 0, n$1 + 1 | 0)))
                 };
         }
@@ -278,52 +274,42 @@ function next(param) {
       var _param = /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": "++",
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": "--",
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": "&&",
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": "||",
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": "==",
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": "<=",
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": ">=",
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": "!=",
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": ">>",
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": "<<",
                           "1": /* [] */0
                         }
@@ -345,7 +331,6 @@ function next(param) {
             return /* constructor */{
                     tag: 0,
                     name: "Op",
-                    length: 1,
                     "0": lop
                   };
           } else {
@@ -356,7 +341,6 @@ function next(param) {
           return /* constructor */{
                   tag: 0,
                   name: "Op",
-                  length: 1,
                   "0": Caml_bytes.bytes_to_string(Bytes.make(1, ch$2))
                 };
         }
@@ -366,7 +350,6 @@ function next(param) {
     return /* constructor */{
             tag: 0,
             name: "Op",
-            length: 1,
             "0": "EOF!"
           };
   }
@@ -431,47 +414,39 @@ function patch(rel, loc, n) {
       Curry._3(Printf.eprintf(/* constructor */{
                 tag: 0,
                 name: "Format",
-                length: 2,
                 "0": /* constructor */{
                   tag: 11,
                   name: "String_literal",
-                  length: 2,
                   "0": "patching at ",
                   "1": /* constructor */{
                     tag: 4,
                     name: "Int",
-                    length: 4,
                     "0": /* Int_d */0,
                     "1": /* No_padding */0,
                     "2": /* No_precision */0,
                     "3": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": " to ",
                       "1": /* constructor */{
                         tag: 4,
                         name: "Int",
-                        length: 4,
                         "0": /* Int_d */0,
                         "1": /* No_padding */0,
                         "2": /* No_precision */0,
                         "3": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": " (n=",
                           "1": /* constructor */{
                             tag: 4,
                             name: "Int",
-                            length: 4,
                             "0": /* Int_d */0,
                             "1": /* No_padding */0,
                             "2": /* No_precision */0,
                             "3": /* constructor */{
                               tag: 11,
                               name: "String_literal",
-                              length: 2,
                               "0": ")\n",
                               "1": /* End_of_format */0
                             }
@@ -536,7 +511,6 @@ var lval = /* record */[/* contents : tuple */[
     /* constructor */{
       tag: 0,
       name: "Mov",
-      length: 1,
       "0": 0
     },
     /* Int */0
@@ -561,7 +535,6 @@ function read(param) {
       /* constructor */{
         tag: 1,
         name: "Del",
-        length: 1,
         "0": 4
       },
       /* Chr */1
@@ -574,7 +547,6 @@ function read(param) {
       /* constructor */{
         tag: 1,
         name: "Del",
-        length: 1,
         "0": 3
       },
       /* Int */0
@@ -591,7 +563,6 @@ var globs = Caml_array.caml_make_vect(100, /* record */[
 var lvls = /* constructor */{
   tag: 0,
   name: "::",
-  length: 2,
   "0": /* tuple */[
     "*",
     0
@@ -599,7 +570,6 @@ var lvls = /* constructor */{
   "1": /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       "/",
       0
@@ -607,7 +577,6 @@ var lvls = /* constructor */{
     "1": /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         "%",
         0
@@ -615,7 +584,6 @@ var lvls = /* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           "+",
           1
@@ -623,7 +591,6 @@ var lvls = /* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             "-",
             1
@@ -631,7 +598,6 @@ var lvls = /* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               "<<",
               2
@@ -639,7 +605,6 @@ var lvls = /* constructor */{
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 ">>",
                 2
@@ -647,7 +612,6 @@ var lvls = /* constructor */{
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   "<",
                   3
@@ -655,7 +619,6 @@ var lvls = /* constructor */{
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     "<=",
                     3
@@ -663,7 +626,6 @@ var lvls = /* constructor */{
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       ">",
                       3
@@ -671,7 +633,6 @@ var lvls = /* constructor */{
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         ">=",
                         3
@@ -679,7 +640,6 @@ var lvls = /* constructor */{
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           "==",
                           4
@@ -687,7 +647,6 @@ var lvls = /* constructor */{
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": /* tuple */[
                             "!=",
                             4
@@ -695,7 +654,6 @@ var lvls = /* constructor */{
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": /* tuple */[
                               "&",
                               5
@@ -703,7 +661,6 @@ var lvls = /* constructor */{
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": /* tuple */[
                                 "^",
                                 6
@@ -711,7 +668,6 @@ var lvls = /* constructor */{
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": /* tuple */[
                                   "|",
                                   7
@@ -719,7 +675,6 @@ var lvls = /* constructor */{
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": /* tuple */[
                                     "&&",
                                     8
@@ -727,7 +682,6 @@ var lvls = /* constructor */{
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
-                                    length: 2,
                                     "0": /* tuple */[
                                       "||",
                                       9
@@ -755,17 +709,14 @@ var lvls = /* constructor */{
 var inss = /* constructor */{
   tag: 0,
   name: "::",
-  length: 2,
   "0": /* tuple */[
     "*",
     /* constructor */{
       tag: 0,
       name: "Bin",
-      length: 1,
       "0": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": 1208987585,
         "1": /* [] */0
       }
@@ -774,27 +725,22 @@ var inss = /* constructor */{
   "1": /* constructor */{
     tag: 0,
     name: "::",
-    length: 2,
     "0": /* tuple */[
       "/",
       /* constructor */{
         tag: 0,
         name: "Bin",
-        length: 1,
         "0": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": 18577,
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": 18585,
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": 4782073,
               "1": /* [] */0
             }
@@ -805,32 +751,26 @@ var inss = /* constructor */{
     "1": /* constructor */{
       tag: 0,
       name: "::",
-      length: 2,
       "0": /* tuple */[
         "%",
         /* constructor */{
           tag: 0,
           name: "Bin",
-          length: 1,
           "0": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": 18577,
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": 18585,
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": 4782073,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": 18578,
                   "1": /* [] */0
                 }
@@ -842,17 +782,14 @@ var inss = /* constructor */{
       "1": /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": /* tuple */[
           "+",
           /* constructor */{
             tag: 0,
             name: "Bin",
-            length: 1,
             "0": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": 4719048,
               "1": /* [] */0
             }
@@ -861,22 +798,18 @@ var inss = /* constructor */{
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": /* tuple */[
             "-",
             /* constructor */{
               tag: 0,
               name: "Bin",
-              length: 1,
               "0": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": 18577,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": 4729288,
                   "1": /* [] */0
                 }
@@ -886,22 +819,18 @@ var inss = /* constructor */{
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": /* tuple */[
               "<<",
               /* constructor */{
                 tag: 0,
                 name: "Bin",
-                length: 1,
                 "0": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": 18577,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": 4772832,
                     "1": /* [] */0
                   }
@@ -911,22 +840,18 @@ var inss = /* constructor */{
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 ">>",
                 /* constructor */{
                   tag: 0,
                   name: "Bin",
-                  length: 1,
                   "0": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": 18577,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": 4772856,
                       "1": /* [] */0
                     }
@@ -936,95 +861,80 @@ var inss = /* constructor */{
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   "<",
                   /* constructor */{
                     tag: 1,
                     name: "Cmp",
-                    length: 1,
                     "0": 10
                   }
                 ],
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     "<=",
                     /* constructor */{
                       tag: 1,
                       name: "Cmp",
-                      length: 1,
                       "0": 12
                     }
                   ],
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       ">",
                       /* constructor */{
                         tag: 1,
                         name: "Cmp",
-                        length: 1,
                         "0": 13
                       }
                     ],
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         ">=",
                         /* constructor */{
                           tag: 1,
                           name: "Cmp",
-                          length: 1,
                           "0": 11
                         }
                       ],
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           "==",
                           /* constructor */{
                             tag: 1,
                             name: "Cmp",
-                            length: 1,
                             "0": 2
                           }
                         ],
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": /* tuple */[
                             "!=",
                             /* constructor */{
                               tag: 1,
                               name: "Cmp",
-                              length: 1,
                               "0": 3
                             }
                           ],
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": /* tuple */[
                               "&",
                               /* constructor */{
                                 tag: 0,
                                 name: "Bin",
-                                length: 1,
                                 "0": /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": 4727240,
                                   "1": /* [] */0
                                 }
@@ -1033,17 +943,14 @@ var inss = /* constructor */{
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": /* tuple */[
                                 "^",
                                 /* constructor */{
                                   tag: 0,
                                   name: "Bin",
-                                  length: 1,
                                   "0": /* constructor */{
                                     tag: 0,
                                     name: "::",
-                                    length: 2,
                                     "0": 4731336,
                                     "1": /* [] */0
                                   }
@@ -1052,17 +959,14 @@ var inss = /* constructor */{
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": /* tuple */[
                                   "|",
                                   /* constructor */{
                                     tag: 0,
                                     name: "Bin",
-                                    length: 1,
                                     "0": /* constructor */{
                                       tag: 0,
                                       name: "::",
-                                      length: 2,
                                       "0": 4721096,
                                       "1": /* [] */0
                                     }
@@ -1089,56 +993,48 @@ var inss = /* constructor */{
 var tokint = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("int")
 };
 
 var tokchar = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("char")
 };
 
 var tokret = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("return")
 };
 
 var tokif = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("if")
 };
 
 var tokelse = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("else")
 };
 
 var tokwhile = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("while")
 };
 
 var tokfor = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("for")
 };
 
 var tokbreak = /* constructor */{
   tag: 3,
   name: "Sym",
-  length: 1,
   "0": addsym("break")
 };
 
@@ -1223,7 +1119,6 @@ function unary(stk) {
                 match$1 = Caml_obj.caml_equal(Curry._1(next$1, /* () */0), /* constructor */{
                       tag: 0,
                       name: "Op",
-                      length: 1,
                       "0": "*"
                     }) ? /* tuple */[
                     /* Int */0,
@@ -1252,7 +1147,6 @@ function unary(stk) {
             var unops = /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": /* tuple */[
                 "+",
                 0
@@ -1260,7 +1154,6 @@ function unary(stk) {
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": /* tuple */[
                   "-",
                   4782040
@@ -1268,7 +1161,6 @@ function unary(stk) {
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     "~",
                     4782032
@@ -1276,7 +1168,6 @@ function unary(stk) {
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       "!",
                       4752832
@@ -1291,16 +1182,13 @@ function unary(stk) {
               var s = Curry._1(Printf.sprintf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "unknown operator ",
                           "1": /* constructor */{
                             tag: 2,
                             name: "String",
-                            length: 2,
                             "0": /* No_padding */0,
                             "1": /* End_of_format */0
                           }
@@ -1344,7 +1232,6 @@ function unary(stk) {
             /* constructor */{
               tag: 0,
               name: "Mov",
-              length: 1,
               "0": 3
             },
             /* Int */0
@@ -1380,7 +1267,6 @@ function postfix(stk) {
               if (nextis(/* constructor */{
                       tag: 0,
                       name: "Op",
-                      length: 1,
                       "0": ")"
                     })) {
                 Curry._1(next$1, /* () */0);
@@ -1391,7 +1277,6 @@ function postfix(stk) {
                 if (nextis(/* constructor */{
                         tag: 0,
                         name: "Op",
-                        length: 1,
                         "0": ","
                       })) {
                   Curry._1(next$1, /* () */0);
@@ -1400,7 +1285,6 @@ function postfix(stk) {
                 _l = /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": List.hd(rl),
                   "1": l
                 };
@@ -1413,32 +1297,26 @@ function postfix(stk) {
           emitargs(/* [] */0, /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": 7,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": 6,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": 2,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": 1,
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": 8,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": 9,
                           "1": /* [] */0
                         }
@@ -1472,7 +1350,6 @@ function postfix(stk) {
                   ], /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       /* tuple */[
                         "++",
@@ -1483,7 +1360,6 @@ function postfix(stk) {
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": /* tuple */[
                         /* tuple */[
                           "--",
@@ -1494,7 +1370,6 @@ function postfix(stk) {
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": /* tuple */[
                           /* tuple */[
                             "++",
@@ -1505,7 +1380,6 @@ function postfix(stk) {
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": /* tuple */[
                             /* tuple */[
                               "--",
@@ -1560,7 +1434,6 @@ function decl(g, _n, _stk) {
           while(nextis(/* constructor */{
                   tag: 0,
                   name: "Op",
-                  length: 1,
                   "0": "*"
                 })) {
             Curry._1(next$1, /* () */0);
@@ -1568,7 +1441,6 @@ function decl(g, _n, _stk) {
           if (nextis(/* constructor */{
                   tag: 0,
                   name: "Op",
-                  length: 1,
                   "0": ";"
                 })) {
             return /* tuple */[
@@ -1600,7 +1472,6 @@ function decl(g, _n, _stk) {
                 stk$prime = /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": /* tuple */[
                     s,
                     top - (n$prime << 3) | 0
@@ -1611,7 +1482,6 @@ function decl(g, _n, _stk) {
               if (nextis(/* constructor */{
                       tag: 0,
                       name: "Op",
-                      length: 1,
                       "0": ","
                     })) {
                 Curry._1(next$1, /* () */0);
@@ -1640,23 +1510,19 @@ function decl(g, _n, _stk) {
         Curry._1(Printf.eprintf(/* constructor */{
                   tag: 0,
                   name: "Format",
-                  length: 2,
                   "0": /* constructor */{
                     tag: 11,
                     name: "String_literal",
-                    length: 2,
                     "0": "end of decl (",
                     "1": /* constructor */{
                       tag: 4,
                       name: "Int",
-                      length: 4,
                       "0": /* Int_d */0,
                       "1": /* No_padding */0,
                       "2": /* No_precision */0,
                       "3": /* constructor */{
                         tag: 11,
                         name: "String_literal",
-                        length: 2,
                         "0": " vars)\n",
                         "1": /* End_of_format */0
                       }
@@ -1740,7 +1606,6 @@ function stmt(brk, stk) {
       if (!nextis(/* constructor */{
               tag: 0,
               name: "Op",
-              length: 1,
               "0": ";"
             })) {
         expr(stk);
@@ -1750,7 +1615,6 @@ function stmt(brk, stk) {
       if (nextis(/* constructor */{
               tag: 0,
               name: "Op",
-              length: 1,
               "0": ";"
             })) {
         bl[0] = 0;
@@ -1784,7 +1648,6 @@ function stmt(brk, stk) {
     if (!nextis(/* constructor */{
             tag: 0,
             name: "Op",
-            length: 1,
             "0": ";"
           })) {
       expr(stk);
@@ -1841,7 +1704,6 @@ function block(brk, stk) {
   while(!nextis(/* constructor */{
           tag: 0,
           name: "Op",
-          length: 1,
           "0": "}"
         })) {
     stmt(brk, stk$prime);
@@ -1862,7 +1724,6 @@ function top(_param) {
     if (nextis(/* constructor */{
             tag: 0,
             name: "Op",
-            length: 1,
             "0": "EOF!"
           })) {
       return 0;
@@ -1913,7 +1774,6 @@ function top(_param) {
                   if (nextis(/* constructor */{
                           tag: 0,
                           name: "Op",
-                          length: 1,
                           "0": ","
                         })) {
                     Curry._1(next$1, /* () */0);
@@ -1921,7 +1781,6 @@ function top(_param) {
                   var stk$prime = /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": /* tuple */[
                       match[0],
                       ((-n | 0) << 3)
@@ -1943,32 +1802,26 @@ function top(_param) {
         var stk = emitargs(/* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": 7,
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": 6,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": 2,
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": 1,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": 8,
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": 9,
                         "1": /* [] */0
                       }
@@ -1980,7 +1833,6 @@ function top(_param) {
         while(Caml_obj.caml_notequal(Curry._1(next$1, /* () */0), /* constructor */{
                 tag: 0,
                 name: "Op",
-                length: 1,
                 "0": "{"
               })) {
           
@@ -1996,21 +1848,17 @@ function top(_param) {
           Curry._1(Printf.eprintf(/* constructor */{
                     tag: 0,
                     name: "Format",
-                    length: 2,
                     "0": /* constructor */{
                       tag: 11,
                       name: "String_literal",
-                      length: 2,
                       "0": "done with function ",
                       "1": /* constructor */{
                         tag: 2,
                         name: "String",
-                        length: 2,
                         "0": /* No_padding */0,
                         "1": /* constructor */{
                           tag: 12,
                           name: "Char_literal",
-                          length: 2,
                           "0": /* "\n" */10,
                           "1": /* End_of_format */0
                         }
@@ -2034,77 +1882,62 @@ function top(_param) {
 var elfhdr = Bytes.of_string($$String.concat("", /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": "\x7fELF\x02\x01\x01\0",
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": "\0\0\0\0\0\0\0\0",
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": "\x02\0",
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": ">\0",
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": "\x01\0\0\0",
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": "\0\0\0\0\0\0\0\0",
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": "@\0\0\0\0\0\0\0",
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": "\0\0\0\0\0\0\0\0",
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": "\0\0\0\0",
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": "@\0",
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": "8\0",
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": "\x03\0",
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": "@\0",
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
-                                    length: 2,
                                     "0": "\0\0",
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
-                                      length: 2,
                                       "0": "\0\0",
                                       "1": /* [] */0
                                     }
@@ -2232,97 +2065,78 @@ function elfgen(outf) {
         }), /* constructor */{
         tag: 0,
         name: "::",
-        length: 2,
         "0": 1,
         "1": /* constructor */{
           tag: 0,
           name: "::",
-          length: 2,
           "0": 29,
           "1": /* constructor */{
             tag: 0,
             name: "::",
-            length: 2,
             "0": 4,
             "1": /* constructor */{
               tag: 0,
               name: "::",
-              length: 2,
               "0": va(hash),
               "1": /* constructor */{
                 tag: 0,
                 name: "::",
-                length: 2,
                 "0": 5,
                 "1": /* constructor */{
                   tag: 0,
                   name: "::",
-                  length: 2,
                   "0": va(strtab),
                   "1": /* constructor */{
                     tag: 0,
                     name: "::",
-                    length: 2,
                     "0": 6,
                     "1": /* constructor */{
                       tag: 0,
                       name: "::",
-                      length: 2,
                       "0": va(symtab),
                       "1": /* constructor */{
                         tag: 0,
                         name: "::",
-                        length: 2,
                         "0": 7,
                         "1": /* constructor */{
                           tag: 0,
                           name: "::",
-                          length: 2,
                           "0": va(rel),
                           "1": /* constructor */{
                             tag: 0,
                             name: "::",
-                            length: 2,
                             "0": 8,
                             "1": /* constructor */{
                               tag: 0,
                               name: "::",
-                              length: 2,
                               "0": hash - rel | 0,
                               "1": /* constructor */{
                                 tag: 0,
                                 name: "::",
-                                length: 2,
                                 "0": 9,
                                 "1": /* constructor */{
                                   tag: 0,
                                   name: "::",
-                                  length: 2,
                                   "0": 24,
                                   "1": /* constructor */{
                                     tag: 0,
                                     name: "::",
-                                    length: 2,
                                     "0": 10,
                                     "1": /* constructor */{
                                       tag: 0,
                                       name: "::",
-                                      length: 2,
                                       "0": symtab - strtab | 0,
                                       "1": /* constructor */{
                                         tag: 0,
                                         name: "::",
-                                        length: 2,
                                         "0": 11,
                                         "1": /* constructor */{
                                           tag: 0,
                                           name: "::",
-                                          length: 2,
                                           "0": 24,
                                           "1": /* constructor */{
                                             tag: 0,
                                             name: "::",
-                                            length: 2,
                                             "0": 0,
                                             "1": /* [] */0
                                           }
@@ -2373,21 +2187,17 @@ function main(param) {
           return Curry._1(Printf.printf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Operator '",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "'\n",
                                 "1": /* End_of_format */0
                               }
@@ -2399,23 +2209,19 @@ function main(param) {
           return Curry._1(Printf.printf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Int literal ",
                             "1": /* constructor */{
                               tag: 4,
                               name: "Int",
-                              length: 4,
                               "0": /* Int_d */0,
                               "1": /* No_padding */0,
                               "2": /* No_precision */0,
                               "3": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* "\n" */10,
                                 "1": /* End_of_format */0
                               }
@@ -2427,21 +2233,17 @@ function main(param) {
           return Curry._1(Printf.printf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Str literal ",
                             "1": /* constructor */{
                               tag: 3,
                               name: "Caml_string",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 12,
                                 name: "Char_literal",
-                                length: 2,
                                 "0": /* "\n" */10,
                                 "1": /* End_of_format */0
                               }
@@ -2454,33 +2256,27 @@ function main(param) {
           return Curry._2(Printf.printf(/* constructor */{
                           tag: 0,
                           name: "Format",
-                          length: 2,
                           "0": /* constructor */{
                             tag: 11,
                             name: "String_literal",
-                            length: 2,
                             "0": "Symbol '",
                             "1": /* constructor */{
                               tag: 2,
                               name: "String",
-                              length: 2,
                               "0": /* No_padding */0,
                               "1": /* constructor */{
                                 tag: 11,
                                 name: "String_literal",
-                                length: 2,
                                 "0": "' (",
                                 "1": /* constructor */{
                                   tag: 4,
                                   name: "Int",
-                                  length: 4,
                                   "0": /* Int_d */0,
                                   "1": /* No_padding */0,
                                   "2": /* No_precision */0,
                                   "3": /* constructor */{
                                     tag: 11,
                                     name: "String_literal",
-                                    length: 2,
                                     "0": ")\n",
                                     "1": /* End_of_format */0
                                   }
@@ -2520,11 +2316,9 @@ function main(param) {
             return Printf.printf(/* constructor */{
                         tag: 0,
                         name: "Format",
-                        length: 2,
                         "0": /* constructor */{
                           tag: 11,
                           name: "String_literal",
-                          length: 2,
                           "0": "End of input stream\n",
                           "1": /* End_of_format */0
                         },

@@ -4,14 +4,12 @@
 var b = /* constructor */{
   tag: 0,
   name: "B",
-  length: 1,
   "0": 34
 };
 
 var c = /* constructor */{
   tag: 1,
   name: "C",
-  length: 2,
   "0": 4,
   "1": 2
 };

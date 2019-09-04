@@ -17,7 +17,6 @@ function $plus$colon(_f, _g) {
         return /* constructor */{
                 tag: 0,
                 name: "Int",
-                length: 1,
                 "0": n + g[0] | 0
               };
       }
@@ -28,7 +27,6 @@ function $plus$colon(_f, _g) {
             return /* constructor */{
                     tag: 2,
                     name: "Add",
-                    length: 2,
                     "0": f,
                     "1": g
                   };
@@ -44,7 +42,6 @@ function $plus$colon(_f, _g) {
           return /* constructor */{
                   tag: 2,
                   name: "Add",
-                  length: 2,
                   "0": f,
                   "1": g
                 };
@@ -70,7 +67,6 @@ function $star$colon(_f, _g) {
           return /* constructor */{
                   tag: 0,
                   name: "Int",
-                  length: 1,
                   "0": 0
                 };
         }
@@ -78,7 +74,6 @@ function $star$colon(_f, _g) {
         return /* constructor */{
                 tag: 0,
                 name: "Int",
-                length: 1,
                 "0": Caml_int32.imul(n, g[0])
               };
       }
@@ -90,7 +85,6 @@ function $star$colon(_f, _g) {
         return /* constructor */{
                 tag: 0,
                 name: "Int",
-                length: 1,
                 "0": 0
               };
       }
@@ -104,7 +98,6 @@ function $star$colon(_f, _g) {
             return /* constructor */{
                     tag: 3,
                     name: "Mul",
-                    length: 2,
                     "0": f,
                     "1": g
                   };
@@ -116,7 +109,6 @@ function $star$colon(_f, _g) {
           return /* constructor */{
                   tag: 3,
                   name: "Mul",
-                  length: 2,
                   "0": f,
                   "1": g
                 };
